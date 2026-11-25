@@ -1,0 +1,2865 @@
+{
+  "kid_girl": {
+    "path": "C:\\Users\\cross\\Downloads\\xc\\5oclock-ep1-the-fourth-note_2026-11-23\\assets\\cast_v2\\kid_girl.blend",
+    "meshes": [
+      {
+        "name": "Kid_girl_yellow_cap",
+        "verts": 145,
+        "materials": [
+          "Kid_girl_yellow_cap",
+          "Kid_girl_Line_yellow_cap"
+        ],
+        "vertex_groups_count": 0,
+        "sample_vgs": [],
+        "bbox_x": [
+          -0.151,
+          0.157
+        ],
+        "bbox_y": [
+          -0.147,
+          0.179
+        ],
+        "bbox_z": [
+          1.424,
+          1.527
+        ],
+        "parent": "Kid_girl_Rig"
+      },
+      {
+        "name": "Kid_girl_randoseru",
+        "verts": 88,
+        "materials": [
+          "Kid_girl_randoseru",
+          "Kid_girl_Line_randoseru"
+        ],
+        "vertex_groups_count": 0,
+        "sample_vgs": [],
+        "bbox_x": [
+          -0.126,
+          0.126
+        ],
+        "bbox_y": [
+          -0.119,
+          0.295
+        ],
+        "bbox_z": [
+          0.872,
+          1.216
+        ],
+        "parent": "Kid_girl_Rig"
+      },
+      {
+        "name": "Kid_girl_Hair001",
+        "verts": 15206,
+        "materials": [
+          "Kid_girl_Hair_0",
+          "Kid_girl_Hair_1",
+          "Kid_girl_Line_Hair_0",
+          "Kid_girl_Line_Hair_1"
+        ],
+        "vertex_groups_count": 139,
+        "sample_vgs": [
+          "Root",
+          "Global",
+          "Position",
+          "J_Bip_C_Hips",
+          "J_Bip_C_Spine",
+          "J_Bip_C_Chest",
+          "J_Bip_C_UpperChest",
+          "J_Sec_L_Bust1",
+          "J_Sec_L_Bust2",
+          "J_Sec_R_Bust1",
+          "J_Sec_R_Bust2",
+          "J_Bip_C_Neck",
+          "J_Bip_C_Head",
+          "J_Adj_L_FaceEyeSet",
+          "J_Adj_L_FaceEye"
+        ],
+        "bbox_x": [
+          -0.144,
+          0.149
+        ],
+        "bbox_y": [
+          -0.141,
+          0.169
+        ],
+        "bbox_z": [
+          1.214,
+          1.579
+        ],
+        "parent": "Kid_girl_Rig"
+      },
+      {
+        "name": "Kid_girl_Face_Outline",
+        "verts": 778,
+        "materials": [
+          "Kid_girl_Line_Face"
+        ],
+        "vertex_groups_count": 139,
+        "sample_vgs": [
+          "Root",
+          "Global",
+          "Position",
+          "J_Bip_C_Hips",
+          "J_Bip_C_Spine",
+          "J_Bip_C_Chest",
+          "J_Bip_C_UpperChest",
+          "J_Sec_L_Bust1",
+          "J_Sec_L_Bust2",
+          "J_Sec_R_Bust1",
+          "J_Sec_R_Bust2",
+          "J_Bip_C_Neck",
+          "J_Bip_C_Head",
+          "J_Adj_L_FaceEyeSet",
+          "J_Adj_L_FaceEye"
+        ],
+        "bbox_x": [
+          -0.136,
+          0.136
+        ],
+        "bbox_y": [
+          -0.137,
+          0.051
+        ],
+        "bbox_z": [
+          1.252,
+          1.542
+        ],
+        "parent": "Kid_girl_Rig"
+      },
+      {
+        "name": "Kid_girl_Face",
+        "verts": 2148,
+        "materials": [
+          "Kid_girl_FaceMisc_0",
+          "Kid_girl_FaceMisc_1",
+          "Kid_girl_FaceLine_2",
+          "Kid_girl_FaceLine_3",
+          "Kid_girl_FaceLine_4",
+          "Kid_girl_Iris_5",
+          "Kid_girl_FaceMisc_6",
+          "Kid_girl_Skin_7",
+          "Kid_girl_FaceMisc_8"
+        ],
+        "vertex_groups_count": 139,
+        "sample_vgs": [
+          "Root",
+          "Global",
+          "Position",
+          "J_Bip_C_Hips",
+          "J_Bip_C_Spine",
+          "J_Bip_C_Chest",
+          "J_Bip_C_UpperChest",
+          "J_Sec_L_Bust1",
+          "J_Sec_L_Bust2",
+          "J_Sec_R_Bust1",
+          "J_Sec_R_Bust2",
+          "J_Bip_C_Neck",
+          "J_Bip_C_Head",
+          "J_Adj_L_FaceEyeSet",
+          "J_Adj_L_FaceEye"
+        ],
+        "bbox_x": [
+          -0.135,
+          0.134
+        ],
+        "bbox_y": [
+          -0.135,
+          0.05
+        ],
+        "bbox_z": [
+          1.254,
+          1.541
+        ],
+        "parent": "Kid_girl_Rig"
+      },
+      {
+        "name": "Kid_girl_Body",
+        "verts": 7798,
+        "materials": [
+          "Kid_girl_Skin_0",
+          "Kid_girl_Tops_1",
+          "Kid_girl_Tops_2",
+          "Kid_girl_Bottoms_3",
+          "Kid_girl_Shoes_4",
+          "Kid_girl_Hair_5",
+          "Kid_girl_Line_Skin_0",
+          "Kid_girl_Line_Tops_1",
+          "Kid_girl_Line_Tops_2",
+          "Kid_girl_Line_Bottoms_3",
+          "Kid_girl_Line_Shoes_4",
+          "Kid_girl_Line_Hair_5"
+        ],
+        "vertex_groups_count": 139,
+        "sample_vgs": [
+          "Root",
+          "Global",
+          "Position",
+          "J_Bip_C_Hips",
+          "J_Bip_C_Spine",
+          "J_Bip_C_Chest",
+          "J_Bip_C_UpperChest",
+          "J_Sec_L_Bust1",
+          "J_Sec_L_Bust2",
+          "J_Sec_R_Bust1",
+          "J_Sec_R_Bust2",
+          "J_Bip_C_Neck",
+          "J_Bip_C_Head",
+          "J_Adj_L_FaceEyeSet",
+          "J_Adj_L_FaceEye"
+        ],
+        "bbox_x": [
+          -0.488,
+          0.487
+        ],
+        "bbox_y": [
+          -0.136,
+          0.151
+        ],
+        "bbox_z": [
+          0.319,
+          1.558
+        ],
+        "parent": "Kid_girl_Rig"
+      }
+    ],
+    "armatures": [
+      {
+        "name": "Kid_girl_Rig",
+        "bone_count": 139,
+        "bones": [
+          {
+            "name": "Root",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.0,
+            "parent": null
+          },
+          {
+            "name": "Global",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.0,
+            "parent": "Root"
+          },
+          {
+            "name": "Position",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.0,
+            "parent": "Global"
+          },
+          {
+            "name": "J_Bip_C_Hips",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.88,
+            "parent": "Position"
+          },
+          {
+            "name": "J_Bip_C_Spine",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.931,
+            "parent": "J_Bip_C_Hips"
+          },
+          {
+            "name": "J_Bip_C_Chest",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.019,
+            "parent": "J_Bip_C_Spine"
+          },
+          {
+            "name": "J_Bip_C_UpperChest",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.116,
+            "parent": "J_Bip_C_Chest"
+          },
+          {
+            "name": "J_Sec_L_Bust1",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.094,
+            "parent": "J_Bip_C_UpperChest"
+          },
+          {
+            "name": "J_Sec_L_Bust2",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.097,
+            "parent": "J_Sec_L_Bust1"
+          },
+          {
+            "name": "J_Sec_R_Bust1",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.094,
+            "parent": "J_Bip_C_UpperChest"
+          },
+          {
+            "name": "J_Sec_R_Bust2",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.097,
+            "parent": "J_Sec_R_Bust1"
+          },
+          {
+            "name": "J_Bip_C_Neck",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.205,
+            "parent": "J_Bip_C_UpperChest"
+          },
+          {
+            "name": "J_Bip_C_Head",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.295,
+            "parent": "J_Bip_C_Neck"
+          },
+          {
+            "name": "J_Adj_L_FaceEyeSet",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.367,
+            "parent": "J_Bip_C_Head"
+          },
+          {
+            "name": "J_Adj_L_FaceEye",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.372,
+            "parent": "J_Adj_L_FaceEyeSet"
+          },
+          {
+            "name": "J_Adj_R_FaceEyeSet",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.367,
+            "parent": "J_Bip_C_Head"
+          },
+          {
+            "name": "J_Adj_R_FaceEye",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.372,
+            "parent": "J_Adj_R_FaceEyeSet"
+          },
+          {
+            "name": "HairJoint-a04788eb-7a77-4b6e-95a1-3f403354b3fc",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.477,
+            "parent": "J_Bip_C_Head"
+          },
+          {
+            "name": "HairJoint-535acb8b-04f1-4807-8564-bcde390e8d9d",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.442,
+            "parent": "HairJoint-a04788eb-7a77-4b6e-95a1-3f403354b3fc"
+          },
+          {
+            "name": "HairJoint-07972c93-5c49-440c-aab6-666d97f53896",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.408,
+            "parent": "HairJoint-535acb8b-04f1-4807-8564-bcde390e8d9d"
+          },
+          {
+            "name": "HairJoint-c35bc030-3da3-4d49-ab7c-4aabeedc2de1",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.481,
+            "parent": "J_Bip_C_Head"
+          },
+          {
+            "name": "HairJoint-900f4eb5-ad8f-49c8-a862-358f11add7c6",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.448,
+            "parent": "HairJoint-c35bc030-3da3-4d49-ab7c-4aabeedc2de1"
+          },
+          {
+            "name": "HairJoint-b6fab7f2-19e4-4f4c-9184-b1dfe71f0e31",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.415,
+            "parent": "HairJoint-900f4eb5-ad8f-49c8-a862-358f11add7c6"
+          },
+          {
+            "name": "HairJoint-f24a30fb-6c62-40b1-b06f-0e969332fc96",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.483,
+            "parent": "J_Bip_C_Head"
+          },
+          {
+            "name": "HairJoint-6346d9ad-cf3d-482c-b671-f83145042ac7",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.449,
+            "parent": "HairJoint-f24a30fb-6c62-40b1-b06f-0e969332fc96"
+          },
+          {
+            "name": "HairJoint-09341a53-cba3-4835-b2d0-91b5066b5dda",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.414,
+            "parent": "HairJoint-6346d9ad-cf3d-482c-b671-f83145042ac7"
+          },
+          {
+            "name": "HairJoint-0db13061-2c8b-4731-b8fe-864e6080e928",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.388,
+            "parent": "J_Bip_C_Head"
+          },
+          {
+            "name": "HairJoint-3e473c0c-8279-48c2-89f4-1210d66869f9",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.333,
+            "parent": "HairJoint-0db13061-2c8b-4731-b8fe-864e6080e928"
+          },
+          {
+            "name": "HairJoint-051a7dfd-721e-44bf-9ceb-3b2117bf45c1",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.28,
+            "parent": "HairJoint-3e473c0c-8279-48c2-89f4-1210d66869f9"
+          },
+          {
+            "name": "HairJoint-47abc8e5-1a6d-4b56-a4a2-ce87870c9c4b",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.23,
+            "parent": "HairJoint-051a7dfd-721e-44bf-9ceb-3b2117bf45c1"
+          },
+          {
+            "name": "HairJoint-1275757f-6fe5-4d78-be03-7138f9d26007",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.355,
+            "parent": "J_Bip_C_Head"
+          },
+          {
+            "name": "HairJoint-74486861-7fd4-4229-a39c-53391b427112",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.317,
+            "parent": "HairJoint-1275757f-6fe5-4d78-be03-7138f9d26007"
+          },
+          {
+            "name": "HairJoint-6d601c59-2c9b-428e-ac14-a6d790c24324",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.279,
+            "parent": "HairJoint-74486861-7fd4-4229-a39c-53391b427112"
+          },
+          {
+            "name": "HairJoint-5a19dd4b-e27f-4e05-ae88-ce6f37072a1d",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.245,
+            "parent": "HairJoint-6d601c59-2c9b-428e-ac14-a6d790c24324"
+          },
+          {
+            "name": "HairJoint-7c3e840e-e897-4444-9f28-c78b33eaa6d6",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.457,
+            "parent": "J_Bip_C_Head"
+          },
+          {
+            "name": "HairJoint-bc1e78e1-423f-4bc9-8559-699bb36fd4d5",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.416,
+            "parent": "HairJoint-7c3e840e-e897-4444-9f28-c78b33eaa6d6"
+          },
+          {
+            "name": "HairJoint-8fcd18cf-f70c-4b57-958b-1d705adf7c8d",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.377,
+            "parent": "HairJoint-bc1e78e1-423f-4bc9-8559-699bb36fd4d5"
+          },
+          {
+            "name": "HairJoint-5b7d4f8d-4a41-452f-b278-3e04ef74d159",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.469,
+            "parent": "J_Bip_C_Head"
+          },
+          {
+            "name": "HairJoint-31f3a8c7-c08e-4c02-9b56-d3e8688f2fba",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.429,
+            "parent": "HairJoint-5b7d4f8d-4a41-452f-b278-3e04ef74d159"
+          },
+          {
+            "name": "HairJoint-bef70c9d-db6a-453f-b754-55576a091cb5",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.389,
+            "parent": "HairJoint-31f3a8c7-c08e-4c02-9b56-d3e8688f2fba"
+          },
+          {
+            "name": "HairJoint-0436323a-45d9-4b3f-9caf-8c613e7ab228",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.468,
+            "parent": "J_Bip_C_Head"
+          },
+          {
+            "name": "HairJoint-140a6dba-15a2-4230-8f22-928cebc7e306",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.43,
+            "parent": "HairJoint-0436323a-45d9-4b3f-9caf-8c613e7ab228"
+          },
+          {
+            "name": "HairJoint-42a997d0-311a-46a4-bdba-ec37dc34ba20",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.393,
+            "parent": "HairJoint-140a6dba-15a2-4230-8f22-928cebc7e306"
+          },
+          {
+            "name": "HairJoint-92a4c79d-a4ef-4650-87e3-545a0fb44ae4",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.475,
+            "parent": "J_Bip_C_Head"
+          },
+          {
+            "name": "HairJoint-753e682b-3480-43d0-b85d-71fbb4429587",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.438,
+            "parent": "HairJoint-92a4c79d-a4ef-4650-87e3-545a0fb44ae4"
+          },
+          {
+            "name": "HairJoint-1228e397-dc7b-4a07-a596-21637462b95b",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.401,
+            "parent": "HairJoint-753e682b-3480-43d0-b85d-71fbb4429587"
+          },
+          {
+            "name": "HairJoint-13e01abf-f503-4a07-a66f-e746d3276851",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.373,
+            "parent": "J_Bip_C_Head"
+          },
+          {
+            "name": "HairJoint-1ab438c8-7662-4380-9858-23f300f6c595",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.324,
+            "parent": "HairJoint-13e01abf-f503-4a07-a66f-e746d3276851"
+          },
+          {
+            "name": "HairJoint-a3eb3cc9-022c-455d-98da-6fd99adeb1f5",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.276,
+            "parent": "HairJoint-1ab438c8-7662-4380-9858-23f300f6c595"
+          },
+          {
+            "name": "HairJoint-098820b3-4aa3-48c9-94a4-2c89e3d2ac8b",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.401,
+            "parent": "J_Bip_C_Head"
+          },
+          {
+            "name": "HairJoint-97d2c5b4-4bf5-4777-8502-0a7d5b5d1e97",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.347,
+            "parent": "HairJoint-098820b3-4aa3-48c9-94a4-2c89e3d2ac8b"
+          },
+          {
+            "name": "HairJoint-fa6be46a-2b0c-429a-9860-d99be16f6202",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.295,
+            "parent": "HairJoint-97d2c5b4-4bf5-4777-8502-0a7d5b5d1e97"
+          },
+          {
+            "name": "HairJoint-39978425-d125-4c40-8806-32f61b76cdc5",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.387,
+            "parent": "J_Bip_C_Head"
+          },
+          {
+            "name": "HairJoint-47328f54-5b10-4eed-86a0-664ba54b2fad",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.344,
+            "parent": "HairJoint-39978425-d125-4c40-8806-32f61b76cdc5"
+          },
+          {
+            "name": "HairJoint-2efd2204-78ee-49d7-aeb0-f3427e8ee41c",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.303,
+            "parent": "HairJoint-47328f54-5b10-4eed-86a0-664ba54b2fad"
+          },
+          {
+            "name": "HairJoint-6d9c818f-ed94-4f17-a332-09e58964f5de",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.397,
+            "parent": "J_Bip_C_Head"
+          },
+          {
+            "name": "HairJoint-7ff5fb53-379e-4c21-8550-d8cdd9897c75",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.342,
+            "parent": "HairJoint-6d9c818f-ed94-4f17-a332-09e58964f5de"
+          },
+          {
+            "name": "HairJoint-60de1643-eab0-4af9-9009-1224aab7c934",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.289,
+            "parent": "HairJoint-7ff5fb53-379e-4c21-8550-d8cdd9897c75"
+          },
+          {
+            "name": "HairJoint-e9356468-a496-4b6f-b576-dc4a5b963d4d",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.389,
+            "parent": "J_Bip_C_Head"
+          },
+          {
+            "name": "HairJoint-a3d11577-b757-46db-8937-6176fcaa4e65",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.328,
+            "parent": "HairJoint-e9356468-a496-4b6f-b576-dc4a5b963d4d"
+          },
+          {
+            "name": "HairJoint-76f251b5-25b0-4882-8e23-8883ec50ef59",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.274,
+            "parent": "HairJoint-a3d11577-b757-46db-8937-6176fcaa4e65"
+          },
+          {
+            "name": "J_Bip_L_Shoulder",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.184,
+            "parent": "J_Bip_C_UpperChest"
+          },
+          {
+            "name": "J_Bip_L_UpperArm",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.172,
+            "parent": "J_Bip_L_Shoulder"
+          },
+          {
+            "name": "J_Sec_L_UpperArm",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.169,
+            "parent": "J_Bip_L_UpperArm"
+          },
+          {
+            "name": "J_Bip_L_LowerArm",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.166,
+            "parent": "J_Bip_L_UpperArm"
+          },
+          {
+            "name": "J_Sec_L_LowerArm",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.166,
+            "parent": "J_Bip_L_LowerArm"
+          },
+          {
+            "name": "J_Bip_L_Hand",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.166,
+            "parent": "J_Bip_L_LowerArm"
+          },
+          {
+            "name": "J_Bip_L_Index1",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.17,
+            "parent": "J_Bip_L_Hand"
+          },
+          {
+            "name": "J_Bip_L_Index2",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.17,
+            "parent": "J_Bip_L_Index1"
+          },
+          {
+            "name": "J_Bip_L_Index3",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.169,
+            "parent": "J_Bip_L_Index2"
+          },
+          {
+            "name": "J_Bip_L_Index3_end",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.169,
+            "parent": "J_Bip_L_Index3"
+          },
+          {
+            "name": "J_Bip_L_Little1",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.169,
+            "parent": "J_Bip_L_Hand"
+          },
+          {
+            "name": "J_Bip_L_Little2",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.169,
+            "parent": "J_Bip_L_Little1"
+          },
+          {
+            "name": "J_Bip_L_Little3",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.169,
+            "parent": "J_Bip_L_Little2"
+          },
+          {
+            "name": "J_Bip_L_Little3_end",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.17,
+            "parent": "J_Bip_L_Little3"
+          },
+          {
+            "name": "J_Bip_L_Middle1",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.172,
+            "parent": "J_Bip_L_Hand"
+          },
+          {
+            "name": "J_Bip_L_Middle2",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.171,
+            "parent": "J_Bip_L_Middle1"
+          },
+          {
+            "name": "J_Bip_L_Middle3",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.17,
+            "parent": "J_Bip_L_Middle2"
+          },
+          {
+            "name": "J_Bip_L_Middle3_end",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.169,
+            "parent": "J_Bip_L_Middle3"
+          },
+          {
+            "name": "J_Bip_L_Ring1",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.172,
+            "parent": "J_Bip_L_Hand"
+          },
+          {
+            "name": "J_Bip_L_Ring2",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.172,
+            "parent": "J_Bip_L_Ring1"
+          },
+          {
+            "name": "J_Bip_L_Ring3",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.173,
+            "parent": "J_Bip_L_Ring2"
+          },
+          {
+            "name": "J_Bip_L_Ring3_end",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.173,
+            "parent": "J_Bip_L_Ring3"
+          },
+          {
+            "name": "J_Bip_L_Thumb1",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.161,
+            "parent": "J_Bip_L_Hand"
+          },
+          {
+            "name": "J_Bip_L_Thumb2",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.159,
+            "parent": "J_Bip_L_Thumb1"
+          },
+          {
+            "name": "J_Bip_L_Thumb3",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.158,
+            "parent": "J_Bip_L_Thumb2"
+          },
+          {
+            "name": "J_Bip_L_Thumb3_end",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.157,
+            "parent": "J_Bip_L_Thumb3"
+          },
+          {
+            "name": "J_Bip_R_Shoulder",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.184,
+            "parent": "J_Bip_C_UpperChest"
+          },
+          {
+            "name": "J_Bip_R_UpperArm",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.172,
+            "parent": "J_Bip_R_Shoulder"
+          },
+          {
+            "name": "J_Sec_R_UpperArm",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.169,
+            "parent": "J_Bip_R_UpperArm"
+          },
+          {
+            "name": "J_Bip_R_LowerArm",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.166,
+            "parent": "J_Bip_R_UpperArm"
+          },
+          {
+            "name": "J_Sec_R_LowerArm",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.166,
+            "parent": "J_Bip_R_LowerArm"
+          },
+          {
+            "name": "J_Bip_R_Hand",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.166,
+            "parent": "J_Bip_R_LowerArm"
+          },
+          {
+            "name": "J_Bip_R_Index1",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.17,
+            "parent": "J_Bip_R_Hand"
+          },
+          {
+            "name": "J_Bip_R_Index2",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.17,
+            "parent": "J_Bip_R_Index1"
+          },
+          {
+            "name": "J_Bip_R_Index3",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.169,
+            "parent": "J_Bip_R_Index2"
+          },
+          {
+            "name": "J_Bip_R_Index3_end",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.169,
+            "parent": "J_Bip_R_Index3"
+          },
+          {
+            "name": "J_Bip_R_Little1",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.169,
+            "parent": "J_Bip_R_Hand"
+          },
+          {
+            "name": "J_Bip_R_Little2",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.169,
+            "parent": "J_Bip_R_Little1"
+          },
+          {
+            "name": "J_Bip_R_Little3",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.169,
+            "parent": "J_Bip_R_Little2"
+          },
+          {
+            "name": "J_Bip_R_Little3_end",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.17,
+            "parent": "J_Bip_R_Little3"
+          },
+          {
+            "name": "J_Bip_R_Middle1",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.172,
+            "parent": "J_Bip_R_Hand"
+          },
+          {
+            "name": "J_Bip_R_Middle2",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.171,
+            "parent": "J_Bip_R_Middle1"
+          },
+          {
+            "name": "J_Bip_R_Middle3",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.17,
+            "parent": "J_Bip_R_Middle2"
+          },
+          {
+            "name": "J_Bip_R_Middle3_end",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.169,
+            "parent": "J_Bip_R_Middle3"
+          },
+          {
+            "name": "J_Bip_R_Ring1",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.172,
+            "parent": "J_Bip_R_Hand"
+          },
+          {
+            "name": "J_Bip_R_Ring2",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.172,
+            "parent": "J_Bip_R_Ring1"
+          },
+          {
+            "name": "J_Bip_R_Ring3",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.173,
+            "parent": "J_Bip_R_Ring2"
+          },
+          {
+            "name": "J_Bip_R_Ring3_end",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.173,
+            "parent": "J_Bip_R_Ring3"
+          },
+          {
+            "name": "J_Bip_R_Thumb1",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.161,
+            "parent": "J_Bip_R_Hand"
+          },
+          {
+            "name": "J_Bip_R_Thumb2",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.159,
+            "parent": "J_Bip_R_Thumb1"
+          },
+          {
+            "name": "J_Bip_R_Thumb3",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.158,
+            "parent": "J_Bip_R_Thumb2"
+          },
+          {
+            "name": "J_Bip_R_Thumb3_end",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.157,
+            "parent": "J_Bip_R_Thumb3"
+          },
+          {
+            "name": "J_Bip_L_UpperLeg",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.841,
+            "parent": "J_Bip_C_Hips"
+          },
+          {
+            "name": "J_Sec_L_UpperLeg",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.795,
+            "parent": "J_Bip_L_UpperLeg"
+          },
+          {
+            "name": "J_Sec_L_SkirtBack",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.817,
+            "parent": "J_Bip_L_UpperLeg"
+          },
+          {
+            "name": "J_Sec_L_SkirtBack_end",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.761,
+            "parent": "J_Sec_L_SkirtBack"
+          },
+          {
+            "name": "J_Sec_L_SkirtFront",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.805,
+            "parent": "J_Bip_L_UpperLeg"
+          },
+          {
+            "name": "J_Sec_L_SkirtFront_end",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.744,
+            "parent": "J_Sec_L_SkirtFront"
+          },
+          {
+            "name": "J_Sec_L_SkirtSide",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.812,
+            "parent": "J_Bip_L_UpperLeg"
+          },
+          {
+            "name": "J_Sec_L_SkirtSide_end",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.75,
+            "parent": "J_Sec_L_SkirtSide"
+          },
+          {
+            "name": "J_Bip_L_LowerLeg",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.61,
+            "parent": "J_Bip_L_UpperLeg"
+          },
+          {
+            "name": "J_Sec_L_LowerLeg",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.54,
+            "parent": "J_Bip_L_LowerLeg"
+          },
+          {
+            "name": "J_Bip_L_Foot",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.38,
+            "parent": "J_Bip_L_LowerLeg"
+          },
+          {
+            "name": "J_Bip_L_ToeBase",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.344,
+            "parent": "J_Bip_L_Foot"
+          },
+          {
+            "name": "J_Bip_L_ToeBase_end",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.343,
+            "parent": "J_Bip_L_ToeBase"
+          },
+          {
+            "name": "J_Bip_R_UpperLeg",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.841,
+            "parent": "J_Bip_C_Hips"
+          },
+          {
+            "name": "J_Sec_R_UpperLeg",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.795,
+            "parent": "J_Bip_R_UpperLeg"
+          },
+          {
+            "name": "J_Sec_R_SkirtBack",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.817,
+            "parent": "J_Bip_R_UpperLeg"
+          },
+          {
+            "name": "J_Sec_R_SkirtBack_end",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.761,
+            "parent": "J_Sec_R_SkirtBack"
+          },
+          {
+            "name": "J_Sec_R_SkirtFront",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.805,
+            "parent": "J_Bip_R_UpperLeg"
+          },
+          {
+            "name": "J_Sec_R_SkirtFront_end",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.744,
+            "parent": "J_Sec_R_SkirtFront"
+          },
+          {
+            "name": "J_Sec_R_SkirtSide",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.812,
+            "parent": "J_Bip_R_UpperLeg"
+          },
+          {
+            "name": "J_Sec_R_SkirtSide_end",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.75,
+            "parent": "J_Sec_R_SkirtSide"
+          },
+          {
+            "name": "J_Bip_R_LowerLeg",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.61,
+            "parent": "J_Bip_R_UpperLeg"
+          },
+          {
+            "name": "J_Sec_R_LowerLeg",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.54,
+            "parent": "J_Bip_R_LowerLeg"
+          },
+          {
+            "name": "J_Bip_R_Foot",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.38,
+            "parent": "J_Bip_R_LowerLeg"
+          },
+          {
+            "name": "J_Bip_R_ToeBase",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.344,
+            "parent": "J_Bip_R_Foot"
+          },
+          {
+            "name": "J_Bip_R_ToeBase_end",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.343,
+            "parent": "J_Bip_R_ToeBase"
+          }
+        ]
+      }
+    ]
+  },
+  "sam_toon": {
+    "path": "C:\\Users\\cross\\Downloads\\xc\\5oclock-ep1-the-fourth-note_2026-11-23\\assets\\toon_sam\\sam_toon.blend",
+    "meshes": [
+      {
+        "name": "Hoodie_Sleeves",
+        "verts": 514,
+        "materials": [
+          "Sam_Hoodie",
+          "Line_Generic"
+        ],
+        "vertex_groups_count": 117,
+        "sample_vgs": [
+          "Root",
+          "Global",
+          "Position",
+          "J_Bip_C_Hips",
+          "J_Bip_C_Spine",
+          "J_Bip_C_Chest",
+          "J_Bip_C_UpperChest",
+          "J_Bip_C_Neck",
+          "J_Bip_C_Head",
+          "J_Adj_L_FaceEyeSet",
+          "J_Adj_L_FaceEye",
+          "J_Adj_R_FaceEyeSet",
+          "J_Adj_R_FaceEye",
+          "HairJoint-8b570e90-81c6-48ed-aaeb-f0f3b081d5a9",
+          "HairJoint-ebc64fff-f226-4d7a-8f81-9a4382ff7e95"
+        ],
+        "bbox_x": [
+          -0.293,
+          0.291
+        ],
+        "bbox_y": [
+          -0.106,
+          0.061
+        ],
+        "bbox_z": [
+          1.094,
+          1.562
+        ],
+        "parent": "Sam_Rig"
+      },
+      {
+        "name": "Hoodie_HoodRoll",
+        "verts": 828,
+        "materials": [
+          "Sam_Hoodie",
+          "Line_Generic"
+        ],
+        "vertex_groups_count": 0,
+        "sample_vgs": [],
+        "bbox_x": [
+          -0.124,
+          0.124
+        ],
+        "bbox_y": [
+          -0.084,
+          0.116
+        ],
+        "bbox_z": [
+          1.509,
+          1.599
+        ],
+        "parent": "Sam_Rig"
+      },
+      {
+        "name": "Hoodie_HoodBack",
+        "verts": 385,
+        "materials": [
+          "Sam_Hoodie",
+          "Line_Generic"
+        ],
+        "vertex_groups_count": 0,
+        "sample_vgs": [],
+        "bbox_x": [
+          -0.088,
+          0.089
+        ],
+        "bbox_y": [
+          0.059,
+          0.118
+        ],
+        "bbox_z": [
+          1.38,
+          1.539
+        ],
+        "parent": "Sam_Rig"
+      },
+      {
+        "name": "Hoodie_Aglet_R",
+        "verts": 384,
+        "materials": [
+          "Sam_Drawstring",
+          "Line_Generic"
+        ],
+        "vertex_groups_count": 0,
+        "sample_vgs": [],
+        "bbox_x": [
+          -0.039,
+          -0.031
+        ],
+        "bbox_y": [
+          -0.13,
+          -0.122
+        ],
+        "bbox_z": [
+          1.378,
+          1.392
+        ],
+        "parent": "Sam_Rig"
+      },
+      {
+        "name": "Hoodie_Aglet_L",
+        "verts": 384,
+        "materials": [
+          "Sam_Drawstring",
+          "Line_Generic"
+        ],
+        "vertex_groups_count": 0,
+        "sample_vgs": [],
+        "bbox_x": [
+          0.031,
+          0.039
+        ],
+        "bbox_y": [
+          -0.13,
+          -0.122
+        ],
+        "bbox_z": [
+          1.378,
+          1.392
+        ],
+        "parent": "Sam_Rig"
+      },
+      {
+        "name": "Headphone_Pad_R",
+        "verts": 480,
+        "materials": [
+          "Sam_Headphone_Pad",
+          "Line_Generic"
+        ],
+        "vertex_groups_count": 0,
+        "sample_vgs": [],
+        "bbox_x": [
+          -0.116,
+          -0.083
+        ],
+        "bbox_y": [
+          -0.02,
+          0.07
+        ],
+        "bbox_z": [
+          1.66,
+          1.748
+        ],
+        "parent": "Sam_Rig"
+      },
+      {
+        "name": "Headphone_Pad_L",
+        "verts": 480,
+        "materials": [
+          "Sam_Headphone_Pad",
+          "Line_Generic"
+        ],
+        "vertex_groups_count": 0,
+        "sample_vgs": [],
+        "bbox_x": [
+          0.084,
+          0.117
+        ],
+        "bbox_y": [
+          -0.055,
+          0.035
+        ],
+        "bbox_z": [
+          1.663,
+          1.751
+        ],
+        "parent": "Sam_Rig"
+      },
+      {
+        "name": "Headphone_Cup_R",
+        "verts": 960,
+        "materials": [
+          "Sam_Headphones",
+          "Line_Generic"
+        ],
+        "vertex_groups_count": 0,
+        "sample_vgs": [],
+        "bbox_x": [
+          -0.135,
+          -0.094
+        ],
+        "bbox_y": [
+          -0.018,
+          0.074
+        ],
+        "bbox_z": [
+          1.66,
+          1.748
+        ],
+        "parent": "Sam_Rig"
+      },
+      {
+        "name": "Headphone_Cup_L",
+        "verts": 960,
+        "materials": [
+          "Sam_Headphones",
+          "Line_Generic"
+        ],
+        "vertex_groups_count": 0,
+        "sample_vgs": [],
+        "bbox_x": [
+          0.095,
+          0.136
+        ],
+        "bbox_y": [
+          -0.058,
+          0.033
+        ],
+        "bbox_z": [
+          1.663,
+          1.751
+        ],
+        "parent": "Sam_Rig"
+      },
+      {
+        "name": "Headphone_Cap_R",
+        "verts": 960,
+        "materials": [
+          "Sam_Headphone_Pad",
+          "Line_Generic"
+        ],
+        "vertex_groups_count": 0,
+        "sample_vgs": [],
+        "bbox_x": [
+          -0.136,
+          -0.12
+        ],
+        "bbox_y": [
+          0.003,
+          0.058
+        ],
+        "bbox_z": [
+          1.676,
+          1.731
+        ],
+        "parent": "Sam_Rig"
+      },
+      {
+        "name": "Headphone_Cap_L",
+        "verts": 960,
+        "materials": [
+          "Sam_Headphone_Pad",
+          "Line_Generic"
+        ],
+        "vertex_groups_count": 0,
+        "sample_vgs": [],
+        "bbox_x": [
+          0.121,
+          0.137
+        ],
+        "bbox_y": [
+          -0.043,
+          0.013
+        ],
+        "bbox_z": [
+          1.68,
+          1.735
+        ],
+        "parent": "Sam_Rig"
+      },
+      {
+        "name": "Hair",
+        "verts": 19198,
+        "materials": [
+          "Sam_Hair_0",
+          "Sam_Hair_1",
+          "Line_Hair_0",
+          "Line_Hair_1"
+        ],
+        "vertex_groups_count": 117,
+        "sample_vgs": [
+          "Root",
+          "Global",
+          "Position",
+          "J_Bip_C_Hips",
+          "J_Bip_C_Spine",
+          "J_Bip_C_Chest",
+          "J_Bip_C_UpperChest",
+          "J_Bip_C_Neck",
+          "J_Bip_C_Head",
+          "J_Adj_L_FaceEyeSet",
+          "J_Adj_L_FaceEye",
+          "J_Adj_R_FaceEyeSet",
+          "J_Adj_R_FaceEye",
+          "HairJoint-8b570e90-81c6-48ed-aaeb-f0f3b081d5a9",
+          "HairJoint-ebc64fff-f226-4d7a-8f81-9a4382ff7e95"
+        ],
+        "bbox_x": [
+          -0.13,
+          0.121
+        ],
+        "bbox_y": [
+          -0.13,
+          0.181
+        ],
+        "bbox_z": [
+          1.641,
+          1.909
+        ],
+        "parent": "Sam_Rig"
+      },
+      {
+        "name": "Glasses_Lens_R",
+        "verts": 28,
+        "materials": [
+          "Sam_Lens"
+        ],
+        "vertex_groups_count": 0,
+        "sample_vgs": [],
+        "bbox_x": [
+          -0.083,
+          -0.039
+        ],
+        "bbox_y": [
+          -0.097,
+          -0.083
+        ],
+        "bbox_z": [
+          1.722,
+          1.747
+        ],
+        "parent": "Sam_Rig"
+      },
+      {
+        "name": "Glasses_Lens_L",
+        "verts": 28,
+        "materials": [
+          "Sam_Lens"
+        ],
+        "vertex_groups_count": 0,
+        "sample_vgs": [],
+        "bbox_x": [
+          0.001,
+          0.045
+        ],
+        "bbox_y": [
+          -0.112,
+          -0.098
+        ],
+        "bbox_z": [
+          1.723,
+          1.748
+        ],
+        "parent": "Sam_Rig"
+      },
+      {
+        "name": "Face_Outline",
+        "verts": 790,
+        "materials": [
+          "Line_Face"
+        ],
+        "vertex_groups_count": 117,
+        "sample_vgs": [
+          "Root",
+          "Global",
+          "Position",
+          "J_Bip_C_Hips",
+          "J_Bip_C_Spine",
+          "J_Bip_C_Chest",
+          "J_Bip_C_UpperChest",
+          "J_Bip_C_Neck",
+          "J_Bip_C_Head",
+          "J_Adj_L_FaceEyeSet",
+          "J_Adj_L_FaceEye",
+          "J_Adj_R_FaceEyeSet",
+          "J_Adj_R_FaceEye",
+          "HairJoint-8b570e90-81c6-48ed-aaeb-f0f3b081d5a9",
+          "HairJoint-ebc64fff-f226-4d7a-8f81-9a4382ff7e95"
+        ],
+        "bbox_x": [
+          -0.106,
+          0.109
+        ],
+        "bbox_y": [
+          -0.117,
+          0.046
+        ],
+        "bbox_z": [
+          1.63,
+          1.864
+        ],
+        "parent": "Sam_Rig"
+      },
+      {
+        "name": "Face",
+        "verts": 2062,
+        "materials": [
+          "Sam_FaceBrow",
+          "Sam_FaceMouth",
+          "Sam_Iris",
+          "Sam_EyeHighlight",
+          "Sam_EyeWhite",
+          "Sam_Skin_Face",
+          "Sam_FaceEyelash",
+          "Sam_FaceEyeline",
+          "Sam_EyeExtra"
+        ],
+        "vertex_groups_count": 117,
+        "sample_vgs": [
+          "Root",
+          "Global",
+          "Position",
+          "J_Bip_C_Hips",
+          "J_Bip_C_Spine",
+          "J_Bip_C_Chest",
+          "J_Bip_C_UpperChest",
+          "J_Bip_C_Neck",
+          "J_Bip_C_Head",
+          "J_Adj_L_FaceEyeSet",
+          "J_Adj_L_FaceEye",
+          "J_Adj_R_FaceEyeSet",
+          "J_Adj_R_FaceEye",
+          "HairJoint-8b570e90-81c6-48ed-aaeb-f0f3b081d5a9",
+          "HairJoint-ebc64fff-f226-4d7a-8f81-9a4382ff7e95"
+        ],
+        "bbox_x": [
+          -0.106,
+          0.108
+        ],
+        "bbox_y": [
+          -0.116,
+          0.045
+        ],
+        "bbox_z": [
+          1.631,
+          1.863
+        ],
+        "parent": "Sam_Rig"
+      },
+      {
+        "name": "Body",
+        "verts": 7143,
+        "materials": [
+          "Sam_Skin_Body",
+          "Sam_Hoodie_Body",
+          "Sam_Accessory",
+          "Sam_Jeans",
+          "Sam_Shoes",
+          "Sam_Hair_5",
+          "Line_Skin_0",
+          "Line_Tops",
+          "INVISIBLE",
+          "Line_Bottoms",
+          "Line_Shoes",
+          "Line_Hair_5"
+        ],
+        "vertex_groups_count": 117,
+        "sample_vgs": [
+          "Root",
+          "Global",
+          "Position",
+          "J_Bip_C_Hips",
+          "J_Bip_C_Spine",
+          "J_Bip_C_Chest",
+          "J_Bip_C_UpperChest",
+          "J_Bip_C_Neck",
+          "J_Bip_C_Head",
+          "J_Adj_L_FaceEyeSet",
+          "J_Adj_L_FaceEye",
+          "J_Adj_R_FaceEyeSet",
+          "J_Adj_R_FaceEye",
+          "HairJoint-8b570e90-81c6-48ed-aaeb-f0f3b081d5a9",
+          "HairJoint-ebc64fff-f226-4d7a-8f81-9a4382ff7e95"
+        ],
+        "bbox_x": [
+          -0.332,
+          0.331
+        ],
+        "bbox_y": [
+          -0.191,
+          0.116
+        ],
+        "bbox_z": [
+          -0.001,
+          1.877
+        ],
+        "parent": "Sam_Rig"
+      }
+    ],
+    "armatures": [
+      {
+        "name": "Sam_Rig",
+        "bone_count": 117,
+        "bones": [
+          {
+            "name": "Root",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.0,
+            "parent": null
+          },
+          {
+            "name": "Global",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.0,
+            "parent": "Root"
+          },
+          {
+            "name": "Position",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.0,
+            "parent": "Global"
+          },
+          {
+            "name": "J_Bip_C_Hips",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.134,
+            "parent": "Position"
+          },
+          {
+            "name": "J_Bip_C_Spine",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.275,
+            "parent": "J_Bip_C_Hips"
+          },
+          {
+            "name": "J_Bip_C_Chest",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.354,
+            "parent": "J_Bip_C_Spine"
+          },
+          {
+            "name": "J_Bip_C_UpperChest",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.431,
+            "parent": "J_Bip_C_Chest"
+          },
+          {
+            "name": "J_Bip_C_Neck",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.583,
+            "parent": "J_Bip_C_UpperChest"
+          },
+          {
+            "name": "J_Bip_C_Head",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.672,
+            "parent": "J_Bip_C_Neck"
+          },
+          {
+            "name": "J_Adj_L_FaceEyeSet",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.736,
+            "parent": "J_Bip_C_Head"
+          },
+          {
+            "name": "J_Adj_L_FaceEye",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.734,
+            "parent": "J_Adj_L_FaceEyeSet"
+          },
+          {
+            "name": "J_Adj_R_FaceEyeSet",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.735,
+            "parent": "J_Bip_C_Head"
+          },
+          {
+            "name": "J_Adj_R_FaceEye",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.734,
+            "parent": "J_Adj_R_FaceEyeSet"
+          },
+          {
+            "name": "HairJoint-8b570e90-81c6-48ed-aaeb-f0f3b081d5a9",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.884,
+            "parent": "J_Bip_C_Head"
+          },
+          {
+            "name": "HairJoint-ebc64fff-f226-4d7a-8f81-9a4382ff7e95",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.842,
+            "parent": "HairJoint-8b570e90-81c6-48ed-aaeb-f0f3b081d5a9"
+          },
+          {
+            "name": "HairJoint-76d7b2e2-fdcd-4072-9c8b-00312276e8a3",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.791,
+            "parent": "HairJoint-ebc64fff-f226-4d7a-8f81-9a4382ff7e95"
+          },
+          {
+            "name": "HairJoint-eac327e9-ca53-4bde-916e-0296e4035041",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.812,
+            "parent": "J_Bip_C_Head"
+          },
+          {
+            "name": "HairJoint-2fb35e2a-58f0-43a5-bce2-f0a0cd6dfa62",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.776,
+            "parent": "HairJoint-eac327e9-ca53-4bde-916e-0296e4035041"
+          },
+          {
+            "name": "HairJoint-b8602e07-07a7-450d-b908-5db240bc1053",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.739,
+            "parent": "HairJoint-2fb35e2a-58f0-43a5-bce2-f0a0cd6dfa62"
+          },
+          {
+            "name": "HairJoint-9af38447-5989-4a4c-8f8a-1bd8196b341e",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.802,
+            "parent": "J_Bip_C_Head"
+          },
+          {
+            "name": "HairJoint-78c2f48e-d58f-4248-931d-20f38a34d4e7",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.764,
+            "parent": "HairJoint-9af38447-5989-4a4c-8f8a-1bd8196b341e"
+          },
+          {
+            "name": "HairJoint-377a36d9-49b7-4774-a80b-cda026c579e3",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.725,
+            "parent": "HairJoint-78c2f48e-d58f-4248-931d-20f38a34d4e7"
+          },
+          {
+            "name": "HairJoint-afaa31fd-7753-479f-90ca-613120baa81e",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.818,
+            "parent": "J_Bip_C_Head"
+          },
+          {
+            "name": "HairJoint-a0c29532-e891-4d0a-9e54-333915336860",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.793,
+            "parent": "HairJoint-afaa31fd-7753-479f-90ca-613120baa81e"
+          },
+          {
+            "name": "HairJoint-9e4db3eb-5c4f-4e48-9f61-e34a867c41a3",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.767,
+            "parent": "HairJoint-a0c29532-e891-4d0a-9e54-333915336860"
+          },
+          {
+            "name": "HairJoint-fbec18df-4ac2-4978-992f-7583b8fa65e1",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.793,
+            "parent": "J_Bip_C_Head"
+          },
+          {
+            "name": "HairJoint-d5923853-3f80-4e88-adbb-9f111bcd4635",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.753,
+            "parent": "HairJoint-fbec18df-4ac2-4978-992f-7583b8fa65e1"
+          },
+          {
+            "name": "HairJoint-162c54c3-92dc-4ef1-a655-90959d84fdf1",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.712,
+            "parent": "HairJoint-d5923853-3f80-4e88-adbb-9f111bcd4635"
+          },
+          {
+            "name": "HairJoint-220c9be7-44c9-4b73-96cf-5797b94dca25",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.807,
+            "parent": "J_Bip_C_Head"
+          },
+          {
+            "name": "HairJoint-ce7ffa7f-bfb7-448e-9381-02da6a00db13",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.763,
+            "parent": "HairJoint-220c9be7-44c9-4b73-96cf-5797b94dca25"
+          },
+          {
+            "name": "HairJoint-8e334f51-84b7-45e8-b74a-02f92e50d0a5",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.721,
+            "parent": "HairJoint-ce7ffa7f-bfb7-448e-9381-02da6a00db13"
+          },
+          {
+            "name": "HairJoint-5806da88-2c3c-4025-9683-392e3113379d",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.793,
+            "parent": "J_Bip_C_Head"
+          },
+          {
+            "name": "HairJoint-38a1cd8b-b8f4-42db-b9a5-d39df4beedf4",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.767,
+            "parent": "HairJoint-5806da88-2c3c-4025-9683-392e3113379d"
+          },
+          {
+            "name": "HairJoint-1de8d0f7-e107-444a-a55e-3c20e698e69e",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.742,
+            "parent": "HairJoint-38a1cd8b-b8f4-42db-b9a5-d39df4beedf4"
+          },
+          {
+            "name": "HairJoint-a6f9f1af-ac4e-4d78-921f-e81d4daa1e83",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.791,
+            "parent": "J_Bip_C_Head"
+          },
+          {
+            "name": "HairJoint-6e2a4b7c-1848-4e04-a969-0efc2a18c9ee",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.77,
+            "parent": "HairJoint-a6f9f1af-ac4e-4d78-921f-e81d4daa1e83"
+          },
+          {
+            "name": "HairJoint-80e4940a-0c32-4ed7-9ad9-72a862f13613",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.75,
+            "parent": "HairJoint-6e2a4b7c-1848-4e04-a969-0efc2a18c9ee"
+          },
+          {
+            "name": "HairJoint-da1cf04e-ae6f-4690-8da2-79c6a4a98b53",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.781,
+            "parent": "J_Bip_C_Head"
+          },
+          {
+            "name": "HairJoint-827e22e3-0a38-4b89-9ad2-f16e1af526ce",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.757,
+            "parent": "HairJoint-da1cf04e-ae6f-4690-8da2-79c6a4a98b53"
+          },
+          {
+            "name": "HairJoint-7e210ce5-9ce0-4184-b3d7-4142f06ec9fd",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.731,
+            "parent": "HairJoint-827e22e3-0a38-4b89-9ad2-f16e1af526ce"
+          },
+          {
+            "name": "HairJoint-07253a6e-1fcd-4b10-ad83-dc8bd00055dc",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.782,
+            "parent": "J_Bip_C_Head"
+          },
+          {
+            "name": "HairJoint-67dcd927-f908-41a4-8cf3-0e14a4bb045b",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.746,
+            "parent": "HairJoint-07253a6e-1fcd-4b10-ad83-dc8bd00055dc"
+          },
+          {
+            "name": "HairJoint-a3900a31-460c-47ac-9cfd-4c63b420bd4c",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.71,
+            "parent": "HairJoint-67dcd927-f908-41a4-8cf3-0e14a4bb045b"
+          },
+          {
+            "name": "HairJoint-568f927a-7f7d-4af2-9434-fc00cdd3824c",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.745,
+            "parent": "J_Bip_C_Head"
+          },
+          {
+            "name": "HairJoint-721da19d-2e49-4566-aa37-e29bbbc8eaac",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.696,
+            "parent": "HairJoint-568f927a-7f7d-4af2-9434-fc00cdd3824c"
+          },
+          {
+            "name": "HairJoint-1be31375-8e0b-4df8-a0ee-52d1bedd9b55",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.794,
+            "parent": "J_Bip_C_Head"
+          },
+          {
+            "name": "HairJoint-be66e7fb-a995-49fb-a75c-41a2e6c1e36c",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.771,
+            "parent": "HairJoint-1be31375-8e0b-4df8-a0ee-52d1bedd9b55"
+          },
+          {
+            "name": "HairJoint-48832974-1ad8-4e30-8903-41299da5e704",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.749,
+            "parent": "HairJoint-be66e7fb-a995-49fb-a75c-41a2e6c1e36c"
+          },
+          {
+            "name": "HairJoint-36018f64-526d-4e13-b27a-9e70096cebec",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.779,
+            "parent": "J_Bip_C_Head"
+          },
+          {
+            "name": "HairJoint-44ee48ec-a132-4c6b-a14f-b0b1a0526502",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.753,
+            "parent": "HairJoint-36018f64-526d-4e13-b27a-9e70096cebec"
+          },
+          {
+            "name": "HairJoint-3f2840e0-ff46-45a2-83ad-8fa808411224",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.727,
+            "parent": "HairJoint-44ee48ec-a132-4c6b-a14f-b0b1a0526502"
+          },
+          {
+            "name": "J_Bip_L_Shoulder",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.55,
+            "parent": "J_Bip_C_UpperChest"
+          },
+          {
+            "name": "J_Bip_L_UpperArm",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.529,
+            "parent": "J_Bip_L_Shoulder"
+          },
+          {
+            "name": "J_Sec_L_UpperArm",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.418,
+            "parent": "J_Bip_L_UpperArm"
+          },
+          {
+            "name": "J_Bip_L_LowerArm",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.317,
+            "parent": "J_Bip_L_UpperArm"
+          },
+          {
+            "name": "J_Sec_L_LowerArm",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.247,
+            "parent": "J_Bip_L_LowerArm"
+          },
+          {
+            "name": "J_Bip_L_Hand",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.09,
+            "parent": "J_Bip_L_LowerArm"
+          },
+          {
+            "name": "J_Bip_L_Index1",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.031,
+            "parent": "J_Bip_L_Hand"
+          },
+          {
+            "name": "J_Bip_L_Index2",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.999,
+            "parent": "J_Bip_L_Index1"
+          },
+          {
+            "name": "J_Bip_L_Index3",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.978,
+            "parent": "J_Bip_L_Index2"
+          },
+          {
+            "name": "J_Bip_L_Index3_end",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.953,
+            "parent": "J_Bip_L_Index3"
+          },
+          {
+            "name": "J_Bip_L_Little1",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.02,
+            "parent": "J_Bip_L_Hand"
+          },
+          {
+            "name": "J_Bip_L_Little2",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.987,
+            "parent": "J_Bip_L_Little1"
+          },
+          {
+            "name": "J_Bip_L_Little3",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.969,
+            "parent": "J_Bip_L_Little2"
+          },
+          {
+            "name": "J_Bip_L_Little3_end",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.949,
+            "parent": "J_Bip_L_Little3"
+          },
+          {
+            "name": "J_Bip_L_Middle1",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.026,
+            "parent": "J_Bip_L_Hand"
+          },
+          {
+            "name": "J_Bip_L_Middle2",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.988,
+            "parent": "J_Bip_L_Middle1"
+          },
+          {
+            "name": "J_Bip_L_Middle3",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.964,
+            "parent": "J_Bip_L_Middle2"
+          },
+          {
+            "name": "J_Bip_L_Middle3_end",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.938,
+            "parent": "J_Bip_L_Middle3"
+          },
+          {
+            "name": "J_Bip_L_Ring1",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.022,
+            "parent": "J_Bip_L_Hand"
+          },
+          {
+            "name": "J_Bip_L_Ring2",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.986,
+            "parent": "J_Bip_L_Ring1"
+          },
+          {
+            "name": "J_Bip_L_Ring3",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.966,
+            "parent": "J_Bip_L_Ring2"
+          },
+          {
+            "name": "J_Bip_L_Ring3_end",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.944,
+            "parent": "J_Bip_L_Ring3"
+          },
+          {
+            "name": "J_Bip_L_Thumb1",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.09,
+            "parent": "J_Bip_L_Hand"
+          },
+          {
+            "name": "J_Bip_L_Thumb2",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.064,
+            "parent": "J_Bip_L_Thumb1"
+          },
+          {
+            "name": "J_Bip_L_Thumb3",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.046,
+            "parent": "J_Bip_L_Thumb2"
+          },
+          {
+            "name": "J_Bip_L_Thumb3_end",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.034,
+            "parent": "J_Bip_L_Thumb3"
+          },
+          {
+            "name": "J_Bip_R_Shoulder",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.55,
+            "parent": "J_Bip_C_UpperChest"
+          },
+          {
+            "name": "J_Bip_R_UpperArm",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.529,
+            "parent": "J_Bip_R_Shoulder"
+          },
+          {
+            "name": "J_Sec_R_UpperArm",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.418,
+            "parent": "J_Bip_R_UpperArm"
+          },
+          {
+            "name": "J_Bip_R_LowerArm",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.317,
+            "parent": "J_Bip_R_UpperArm"
+          },
+          {
+            "name": "J_Sec_R_LowerArm",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.247,
+            "parent": "J_Bip_R_LowerArm"
+          },
+          {
+            "name": "J_Bip_R_Hand",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.09,
+            "parent": "J_Bip_R_LowerArm"
+          },
+          {
+            "name": "J_Bip_R_Index1",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.031,
+            "parent": "J_Bip_R_Hand"
+          },
+          {
+            "name": "J_Bip_R_Index2",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.999,
+            "parent": "J_Bip_R_Index1"
+          },
+          {
+            "name": "J_Bip_R_Index3",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.978,
+            "parent": "J_Bip_R_Index2"
+          },
+          {
+            "name": "J_Bip_R_Index3_end",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.953,
+            "parent": "J_Bip_R_Index3"
+          },
+          {
+            "name": "J_Bip_R_Little1",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.02,
+            "parent": "J_Bip_R_Hand"
+          },
+          {
+            "name": "J_Bip_R_Little2",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.987,
+            "parent": "J_Bip_R_Little1"
+          },
+          {
+            "name": "J_Bip_R_Little3",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.969,
+            "parent": "J_Bip_R_Little2"
+          },
+          {
+            "name": "J_Bip_R_Little3_end",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.949,
+            "parent": "J_Bip_R_Little3"
+          },
+          {
+            "name": "J_Bip_R_Middle1",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.026,
+            "parent": "J_Bip_R_Hand"
+          },
+          {
+            "name": "J_Bip_R_Middle2",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.988,
+            "parent": "J_Bip_R_Middle1"
+          },
+          {
+            "name": "J_Bip_R_Middle3",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.964,
+            "parent": "J_Bip_R_Middle2"
+          },
+          {
+            "name": "J_Bip_R_Middle3_end",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.938,
+            "parent": "J_Bip_R_Middle3"
+          },
+          {
+            "name": "J_Bip_R_Ring1",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.022,
+            "parent": "J_Bip_R_Hand"
+          },
+          {
+            "name": "J_Bip_R_Ring2",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.986,
+            "parent": "J_Bip_R_Ring1"
+          },
+          {
+            "name": "J_Bip_R_Ring3",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.966,
+            "parent": "J_Bip_R_Ring2"
+          },
+          {
+            "name": "J_Bip_R_Ring3_end",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.944,
+            "parent": "J_Bip_R_Ring3"
+          },
+          {
+            "name": "J_Bip_R_Thumb1",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.09,
+            "parent": "J_Bip_R_Hand"
+          },
+          {
+            "name": "J_Bip_R_Thumb2",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.064,
+            "parent": "J_Bip_R_Thumb1"
+          },
+          {
+            "name": "J_Bip_R_Thumb3",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.046,
+            "parent": "J_Bip_R_Thumb2"
+          },
+          {
+            "name": "J_Bip_R_Thumb3_end",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.035,
+            "parent": "J_Bip_R_Thumb3"
+          },
+          {
+            "name": "J_Bip_L_UpperLeg",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.091,
+            "parent": "J_Bip_C_Hips"
+          },
+          {
+            "name": "J_Sec_L_UpperLeg",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.001,
+            "parent": "J_Bip_L_UpperLeg"
+          },
+          {
+            "name": "J_Bip_L_LowerLeg",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.637,
+            "parent": "J_Bip_L_UpperLeg"
+          },
+          {
+            "name": "J_Sec_L_LowerLeg",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.478,
+            "parent": "J_Bip_L_LowerLeg"
+          },
+          {
+            "name": "J_Bip_L_Foot",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.121,
+            "parent": "J_Bip_L_LowerLeg"
+          },
+          {
+            "name": "J_Bip_L_ToeBase",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.045,
+            "parent": "J_Bip_L_Foot"
+          },
+          {
+            "name": "J_Bip_L_ToeBase_end",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.042,
+            "parent": "J_Bip_L_ToeBase"
+          },
+          {
+            "name": "J_Bip_R_UpperLeg",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.091,
+            "parent": "J_Bip_C_Hips"
+          },
+          {
+            "name": "J_Sec_R_UpperLeg",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.001,
+            "parent": "J_Bip_R_UpperLeg"
+          },
+          {
+            "name": "J_Bip_R_LowerLeg",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.637,
+            "parent": "J_Bip_R_UpperLeg"
+          },
+          {
+            "name": "J_Sec_R_LowerLeg",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.478,
+            "parent": "J_Bip_R_LowerLeg"
+          },
+          {
+            "name": "J_Bip_R_Foot",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.121,
+            "parent": "J_Bip_R_LowerLeg"
+          },
+          {
+            "name": "J_Bip_R_ToeBase",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.046,
+            "parent": "J_Bip_R_Foot"
+          },
+          {
+            "name": "J_Bip_R_ToeBase_end",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.043,
+            "parent": "J_Bip_R_ToeBase"
+          }
+        ]
+      }
+    ]
+  },
+  "shopkeeper": {
+    "path": "C:\\Users\\cross\\Downloads\\xc\\5oclock-ep1-the-fourth-note_2026-11-23\\assets\\cast_v2\\shopkeeper.blend",
+    "meshes": [
+      {
+        "name": "Shopkeeper_hachimaki",
+        "verts": 108,
+        "materials": [
+          "Shopkeeper_hachimaki",
+          "Shopkeeper_Line_hachimaki"
+        ],
+        "vertex_groups_count": 0,
+        "sample_vgs": [],
+        "bbox_x": [
+          -0.141,
+          0.14
+        ],
+        "bbox_y": [
+          -0.252,
+          -0.061
+        ],
+        "bbox_z": [
+          1.548,
+          1.606
+        ],
+        "parent": "Shopkeeper_Rig"
+      },
+      {
+        "name": "Shopkeeper_Face_Outline",
+        "verts": 784,
+        "materials": [
+          "Shopkeeper_Line_Face"
+        ],
+        "vertex_groups_count": 67,
+        "sample_vgs": [
+          "Root",
+          "J_Bip_C_Hips",
+          "J_Bip_C_Spine",
+          "J_Bip_C_Chest",
+          "J_Bip_C_UpperChest",
+          "J_Bip_C_Neck",
+          "J_Bip_C_Head",
+          "J_Adj_L_FaceEye",
+          "J_Adj_R_FaceEye",
+          "J_Bip_L_Shoulder",
+          "J_Bip_L_UpperArm",
+          "J_Bip_L_LowerArm",
+          "J_Bip_L_Hand",
+          "J_Bip_L_Index1",
+          "J_Bip_L_Index2"
+        ],
+        "bbox_x": [
+          -0.132,
+          0.131
+        ],
+        "bbox_y": [
+          -0.205,
+          -0.032
+        ],
+        "bbox_z": [
+          1.428,
+          1.668
+        ],
+        "parent": "Shopkeeper_Rig"
+      },
+      {
+        "name": "Shopkeeper_Face",
+        "verts": 2056,
+        "materials": [
+          "Shopkeeper_FaceLine_0",
+          "Shopkeeper_FaceMisc_1",
+          "Shopkeeper_Iris_2",
+          "Shopkeeper_FaceMisc_3",
+          "Shopkeeper_FaceMisc_4",
+          "Shopkeeper_Skin_5",
+          "Shopkeeper_FaceLine_6",
+          "Shopkeeper_FaceLine_7",
+          "Shopkeeper_FaceMisc_8"
+        ],
+        "vertex_groups_count": 67,
+        "sample_vgs": [
+          "Root",
+          "J_Bip_C_Hips",
+          "J_Bip_C_Spine",
+          "J_Bip_C_Chest",
+          "J_Bip_C_UpperChest",
+          "J_Bip_C_Neck",
+          "J_Bip_C_Head",
+          "J_Adj_L_FaceEye",
+          "J_Adj_R_FaceEye",
+          "J_Bip_L_Shoulder",
+          "J_Bip_L_UpperArm",
+          "J_Bip_L_LowerArm",
+          "J_Bip_L_Hand",
+          "J_Bip_L_Index1",
+          "J_Bip_L_Index2"
+        ],
+        "bbox_x": [
+          -0.131,
+          0.13
+        ],
+        "bbox_y": [
+          -0.204,
+          -0.033
+        ],
+        "bbox_z": [
+          1.429,
+          1.667
+        ],
+        "parent": "Shopkeeper_Rig"
+      },
+      {
+        "name": "Shopkeeper_Body",
+        "verts": 7822,
+        "materials": [
+          "Shopkeeper_Skin_0",
+          "Shopkeeper_Tops_1",
+          "Shopkeeper_Tops_2",
+          "Shopkeeper_Bottoms_3",
+          "Shopkeeper_Shoes_4",
+          "Shopkeeper_Hair_5",
+          "Shopkeeper_Line_Skin_0",
+          "Shopkeeper_Line_Tops_1",
+          "Shopkeeper_Line_Tops_2",
+          "Shopkeeper_Line_Bottoms_3",
+          "Shopkeeper_Line_Shoes_4",
+          "Shopkeeper_Line_Hair_5"
+        ],
+        "vertex_groups_count": 67,
+        "sample_vgs": [
+          "Root",
+          "J_Bip_C_Hips",
+          "J_Bip_C_Spine",
+          "J_Bip_C_Chest",
+          "J_Bip_C_UpperChest",
+          "J_Bip_C_Neck",
+          "J_Bip_C_Head",
+          "J_Adj_L_FaceEye",
+          "J_Adj_R_FaceEye",
+          "J_Bip_L_Shoulder",
+          "J_Bip_L_UpperArm",
+          "J_Bip_L_LowerArm",
+          "J_Bip_L_Hand",
+          "J_Bip_L_Index1",
+          "J_Bip_L_Index2"
+        ],
+        "bbox_x": [
+          -0.91,
+          0.909
+        ],
+        "bbox_y": [
+          -0.204,
+          0.108
+        ],
+        "bbox_z": [
+          -0.002,
+          1.692
+        ],
+        "parent": "Shopkeeper_Rig"
+      },
+      {
+        "name": "Shopkeeper_apron",
+        "verts": 252,
+        "materials": [
+          "Shopkeeper_apron",
+          "Shopkeeper_Line_apron"
+        ],
+        "vertex_groups_count": 0,
+        "sample_vgs": [],
+        "bbox_x": [
+          -0.15,
+          0.149
+        ],
+        "bbox_y": [
+          -0.161,
+          -0.145
+        ],
+        "bbox_z": [
+          0.5,
+          1.034
+        ],
+        "parent": "Shopkeeper_Rig"
+      }
+    ],
+    "armatures": [
+      {
+        "name": "Shopkeeper_Rig",
+        "bone_count": 67,
+        "bones": [
+          {
+            "name": "Root",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.0,
+            "parent": null
+          },
+          {
+            "name": "J_Bip_C_Hips",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.973,
+            "parent": "Root"
+          },
+          {
+            "name": "J_Bip_C_Spine",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.108,
+            "parent": "J_Bip_C_Hips"
+          },
+          {
+            "name": "J_Bip_C_Chest",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.184,
+            "parent": "J_Bip_C_Spine"
+          },
+          {
+            "name": "J_Bip_C_UpperChest",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.259,
+            "parent": "J_Bip_C_Chest"
+          },
+          {
+            "name": "J_Bip_C_Neck",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.405,
+            "parent": "J_Bip_C_UpperChest"
+          },
+          {
+            "name": "J_Bip_C_Head",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.485,
+            "parent": "J_Bip_C_Neck"
+          },
+          {
+            "name": "J_Adj_L_FaceEye",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.542,
+            "parent": "J_Bip_C_Head"
+          },
+          {
+            "name": "J_Adj_R_FaceEye",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.542,
+            "parent": "J_Bip_C_Head"
+          },
+          {
+            "name": "J_Bip_L_Shoulder",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.375,
+            "parent": "J_Bip_C_UpperChest"
+          },
+          {
+            "name": "J_Bip_L_UpperArm",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.354,
+            "parent": "J_Bip_L_Shoulder"
+          },
+          {
+            "name": "J_Bip_L_LowerArm",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.344,
+            "parent": "J_Bip_L_UpperArm"
+          },
+          {
+            "name": "J_Bip_L_Hand",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.341,
+            "parent": "J_Bip_L_LowerArm"
+          },
+          {
+            "name": "J_Bip_L_Index1",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.344,
+            "parent": "J_Bip_L_Hand"
+          },
+          {
+            "name": "J_Bip_L_Index2",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.343,
+            "parent": "J_Bip_L_Index1"
+          },
+          {
+            "name": "J_Bip_L_Index3",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.342,
+            "parent": "J_Bip_L_Index2"
+          },
+          {
+            "name": "J_Bip_L_Index3_end",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.341,
+            "parent": "J_Bip_L_Index3"
+          },
+          {
+            "name": "J_Bip_L_Little1",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.349,
+            "parent": "J_Bip_L_Hand"
+          },
+          {
+            "name": "J_Bip_L_Little2",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.349,
+            "parent": "J_Bip_L_Little1"
+          },
+          {
+            "name": "J_Bip_L_Little3",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.35,
+            "parent": "J_Bip_L_Little2"
+          },
+          {
+            "name": "J_Bip_L_Little3_end",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.351,
+            "parent": "J_Bip_L_Little3"
+          },
+          {
+            "name": "J_Bip_L_Middle1",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.35,
+            "parent": "J_Bip_L_Hand"
+          },
+          {
+            "name": "J_Bip_L_Middle2",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.348,
+            "parent": "J_Bip_L_Middle1"
+          },
+          {
+            "name": "J_Bip_L_Middle3",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.345,
+            "parent": "J_Bip_L_Middle2"
+          },
+          {
+            "name": "J_Bip_L_Middle3_end",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.344,
+            "parent": "J_Bip_L_Middle3"
+          },
+          {
+            "name": "J_Bip_L_Ring1",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.352,
+            "parent": "J_Bip_L_Hand"
+          },
+          {
+            "name": "J_Bip_L_Ring2",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.352,
+            "parent": "J_Bip_L_Ring1"
+          },
+          {
+            "name": "J_Bip_L_Ring3",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.352,
+            "parent": "J_Bip_L_Ring2"
+          },
+          {
+            "name": "J_Bip_L_Ring3_end",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.353,
+            "parent": "J_Bip_L_Ring3"
+          },
+          {
+            "name": "J_Bip_L_Thumb1",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.331,
+            "parent": "J_Bip_L_Hand"
+          },
+          {
+            "name": "J_Bip_L_Thumb2",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.325,
+            "parent": "J_Bip_L_Thumb1"
+          },
+          {
+            "name": "J_Bip_L_Thumb3",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.321,
+            "parent": "J_Bip_L_Thumb2"
+          },
+          {
+            "name": "J_Bip_L_Thumb3_end",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.318,
+            "parent": "J_Bip_L_Thumb3"
+          },
+          {
+            "name": "J_Bip_R_Shoulder",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.375,
+            "parent": "J_Bip_C_UpperChest"
+          },
+          {
+            "name": "J_Bip_R_UpperArm",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.354,
+            "parent": "J_Bip_R_Shoulder"
+          },
+          {
+            "name": "J_Bip_R_LowerArm",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.344,
+            "parent": "J_Bip_R_UpperArm"
+          },
+          {
+            "name": "J_Bip_R_Hand",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.341,
+            "parent": "J_Bip_R_LowerArm"
+          },
+          {
+            "name": "J_Bip_R_Index1",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.344,
+            "parent": "J_Bip_R_Hand"
+          },
+          {
+            "name": "J_Bip_R_Index2",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.343,
+            "parent": "J_Bip_R_Index1"
+          },
+          {
+            "name": "J_Bip_R_Index3",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.342,
+            "parent": "J_Bip_R_Index2"
+          },
+          {
+            "name": "J_Bip_R_Index3_end",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.341,
+            "parent": "J_Bip_R_Index3"
+          },
+          {
+            "name": "J_Bip_R_Little1",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.349,
+            "parent": "J_Bip_R_Hand"
+          },
+          {
+            "name": "J_Bip_R_Little2",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.349,
+            "parent": "J_Bip_R_Little1"
+          },
+          {
+            "name": "J_Bip_R_Little3",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.35,
+            "parent": "J_Bip_R_Little2"
+          },
+          {
+            "name": "J_Bip_R_Little3_end",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.351,
+            "parent": "J_Bip_R_Little3"
+          },
+          {
+            "name": "J_Bip_R_Middle1",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.35,
+            "parent": "J_Bip_R_Hand"
+          },
+          {
+            "name": "J_Bip_R_Middle2",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.348,
+            "parent": "J_Bip_R_Middle1"
+          },
+          {
+            "name": "J_Bip_R_Middle3",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.345,
+            "parent": "J_Bip_R_Middle2"
+          },
+          {
+            "name": "J_Bip_R_Middle3_end",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.344,
+            "parent": "J_Bip_R_Middle3"
+          },
+          {
+            "name": "J_Bip_R_Ring1",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.352,
+            "parent": "J_Bip_R_Hand"
+          },
+          {
+            "name": "J_Bip_R_Ring2",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.352,
+            "parent": "J_Bip_R_Ring1"
+          },
+          {
+            "name": "J_Bip_R_Ring3",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.352,
+            "parent": "J_Bip_R_Ring2"
+          },
+          {
+            "name": "J_Bip_R_Ring3_end",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.353,
+            "parent": "J_Bip_R_Ring3"
+          },
+          {
+            "name": "J_Bip_R_Thumb1",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.331,
+            "parent": "J_Bip_R_Hand"
+          },
+          {
+            "name": "J_Bip_R_Thumb2",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.325,
+            "parent": "J_Bip_R_Thumb1"
+          },
+          {
+            "name": "J_Bip_R_Thumb3",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.321,
+            "parent": "J_Bip_R_Thumb2"
+          },
+          {
+            "name": "J_Bip_R_Thumb3_end",
+            "rot_mode": "QUATERNION",
+            "head_z": 1.318,
+            "parent": "J_Bip_R_Thumb3"
+          },
+          {
+            "name": "J_Bip_L_UpperLeg",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.93,
+            "parent": "J_Bip_C_Hips"
+          },
+          {
+            "name": "J_Bip_L_LowerLeg",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.556,
+            "parent": "J_Bip_L_UpperLeg"
+          },
+          {
+            "name": "J_Bip_L_Foot",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.117,
+            "parent": "J_Bip_L_LowerLeg"
+          },
+          {
+            "name": "J_Bip_L_ToeBase",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.043,
+            "parent": "J_Bip_L_Foot"
+          },
+          {
+            "name": "J_Bip_L_ToeBase_end",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.039,
+            "parent": "J_Bip_L_ToeBase"
+          },
+          {
+            "name": "J_Bip_R_UpperLeg",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.93,
+            "parent": "J_Bip_C_Hips"
+          },
+          {
+            "name": "J_Bip_R_LowerLeg",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.556,
+            "parent": "J_Bip_R_UpperLeg"
+          },
+          {
+            "name": "J_Bip_R_Foot",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.117,
+            "parent": "J_Bip_R_LowerLeg"
+          },
+          {
+            "name": "J_Bip_R_ToeBase",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.043,
+            "parent": "J_Bip_R_Foot"
+          },
+          {
+            "name": "J_Bip_R_ToeBase_end",
+            "rot_mode": "QUATERNION",
+            "head_z": 0.039,
+            "parent": "J_Bip_R_ToeBase"
+          }
+        ]
+      }
+    ]
+  }
+}

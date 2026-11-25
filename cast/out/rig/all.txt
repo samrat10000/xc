@@ -1,0 +1,5 @@
+walker2 0 1
+runner 0 1
+crawler 0 1
+screamer 0 1
+brute 0 1

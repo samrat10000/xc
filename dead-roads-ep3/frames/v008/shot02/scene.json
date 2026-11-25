@@ -1,0 +1,11 @@
+{
+  "shot": 2,
+  "name": "High beams",
+  "frames": 36,
+  "objects": 1019,
+  "camera": "Ep3 shot 2",
+  "device": "CPU",
+  "stage": "BLOCKING - contact, collision and motion need visual QA",
+  "scene": "C:\\Users\\cross\\Downloads\\xc\\dead-roads-ep3\\assets\\v008\\shot02.blend",
+  "warnings": []
+}

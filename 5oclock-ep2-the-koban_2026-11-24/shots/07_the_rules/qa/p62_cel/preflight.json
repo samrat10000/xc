@@ -1,0 +1,202 @@
+{
+  "shot": "07",
+  "frames": 128,
+  "resolution_percent": 50,
+  "camera_clip_m": [
+    0.014999999664723873,
+    1000.0
+  ],
+  "light_energy": {
+    "Desk warm key": 2.9,
+    "Quiet purple bounce": 0.35,
+    "Lamp pooling light": 33.0
+  },
+  "key_projections": [
+    {
+      "source_frame": 1,
+      "figures": [
+        {
+          "actor": "Sam_Rig",
+          "head_m": [
+            0.767,
+            -0.143,
+            1.173
+          ],
+          "head_uv_depth": [
+            2.317,
+            0.251,
+            0.455
+          ]
+        },
+        {
+          "actor": "Sam_Rig.001",
+          "head_m": [
+            0.024,
+            0.602,
+            1.433
+          ],
+          "head_uv_depth": [
+            0.481,
+            0.723,
+            1.397
+          ]
+        }
+      ]
+    },
+    {
+      "source_frame": 18,
+      "figures": [
+        {
+          "actor": "Sam_Rig",
+          "head_m": [
+            0.767,
+            -0.143,
+            1.173
+          ],
+          "head_uv_depth": [
+            2.338,
+            0.257,
+            0.454
+          ]
+        },
+        {
+          "actor": "Sam_Rig.001",
+          "head_m": [
+            0.009,
+            0.563,
+            1.39
+          ],
+          "head_uv_depth": [
+            0.436,
+            0.688,
+            1.369
+          ]
+        }
+      ]
+    },
+    {
+      "source_frame": 35,
+      "figures": [
+        {
+          "actor": "Sam_Rig",
+          "head_m": [
+            0.746,
+            -0.143,
+            1.183
+          ],
+          "head_uv_depth": [
+            7.833,
+            -1.673,
+            0.179
+          ]
+        },
+        {
+          "actor": "Sam_Rig.001",
+          "head_m": [
+            0.009,
+            0.563,
+            1.39
+          ],
+          "head_uv_depth": [
+            0.964,
+            1.777,
+            0.47
+          ]
+        }
+      ]
+    },
+    {
+      "source_frame": 61,
+      "figures": [
+        {
+          "actor": "Sam_Rig",
+          "head_m": [
+            0.478,
+            -0.133,
+            1.291
+          ],
+          "head_uv_depth": [
+            8.249,
+            -1.758,
+            0.107
+          ]
+        },
+        {
+          "actor": "Sam_Rig.001",
+          "head_m": [
+            0.009,
+            0.563,
+            1.39
+          ],
+          "head_uv_depth": [
+            0.977,
+            1.84,
+            0.443
+          ]
+        }
+      ]
+    },
+    {
+      "source_frame": 87,
+      "figures": [
+        {
+          "actor": "Sam_Rig",
+          "head_m": [
+            0.391,
+            -0.143,
+            1.173
+          ],
+          "head_uv_depth": [
+            3.939,
+            -1.088,
+            0.196
+          ]
+        },
+        {
+          "actor": "Sam_Rig.001",
+          "head_m": [
+            0.009,
+            0.563,
+            1.39
+          ],
+          "head_uv_depth": [
+            0.992,
+            1.914,
+            0.416
+          ]
+        }
+      ]
+    },
+    {
+      "source_frame": 128,
+      "figures": [
+        {
+          "actor": "Sam_Rig",
+          "head_m": [
+            0.614,
+            -0.143,
+            1.173
+          ],
+          "head_uv_depth": [
+            7.169,
+            -1.556,
+            0.174
+          ]
+        },
+        {
+          "actor": "Sam_Rig.001",
+          "head_m": [
+            0.009,
+            0.563,
+            1.39
+          ],
+          "head_uv_depth": [
+            1.006,
+            1.981,
+            0.393
+          ]
+        }
+      ]
+    }
+  ]
+}

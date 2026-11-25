@@ -1,0 +1,84 @@
+{
+  "duration": 63,
+  "dialogue": [
+    {
+      "role": "Narrator",
+      "start": 3.4,
+      "end": 5.097,
+      "deadline": 5.13,
+      "text": "On the other side, everything is the same.",
+      "take": "N1_takeA.mp3"
+    },
+    {
+      "role": "Narrator",
+      "start": 5.2,
+      "end": 6.787,
+      "deadline": 6.86,
+      "text": "Just turned around.",
+      "take": "N2_takeA.mp3"
+    },
+    {
+      "role": "Mirror-Mom",
+      "start": 12.6,
+      "end": 14.149,
+      "deadline": 14.15,
+      "text": "You're late, Sam.",
+      "take": "MM1_takeA.mp3"
+    },
+    {
+      "role": "Narrator",
+      "start": 25.0,
+      "end": 28.599,
+      "deadline": 28.68,
+      "text": "Officer Tanaka lasted eleven days. He wrote everything down.",
+      "take": "N3_takeA.mp3"
+    },
+    {
+      "role": "Sam",
+      "start": 30.6,
+      "end": 32.864,
+      "deadline": 32.92,
+      "text": "Mom! I'm here! Mom!",
+      "take": "S1_takeA.mp3"
+    },
+    {
+      "role": "Narrator",
+      "start": 42.5,
+      "end": 44.615,
+      "deadline": 44.8,
+      "text": "Time runs differently on this side.",
+      "take": "N4_takeA.mp3"
+    },
+    {
+      "role": "Mirror-Sam",
+      "start": 56.5,
+      "end": 59.541,
+      "deadline": 59.61,
+      "text": "Sam. Let me in. It's my turn now.",
+      "take": "M1_takeA_edit.wav"
+    },
+    {
+      "role": "Narrator",
+      "start": 60.5,
+      "end": 61.409,
+      "deadline": 62.45,
+      "text": "Rule eight.",
+      "take": "N5_takeA_edit.wav"
+    }
+  ],
+  "chime_midi": [
+    66,
+    70,
+    73,
+    78
+  ],
+  "chime_shot_frames": [
+    35,
+    52,
+    69,
+    86
+  ],
+  "missing_takes": [],
+  "optional_hum_present": true,
+  "speech_source": "ElevenLabs named takes"
+}

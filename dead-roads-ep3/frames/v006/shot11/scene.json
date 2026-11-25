@@ -1,0 +1,11 @@
+{
+  "shot": 11,
+  "name": "J-turn",
+  "frames": 72,
+  "objects": 1961,
+  "camera": "Ep3 shot 11",
+  "device": "CPU",
+  "stage": "BLOCKING - contact, collision and motion need visual QA",
+  "scene": "C:\\Users\\cross\\Downloads\\xc\\dead-roads-ep3\\assets\\v006\\shot11.blend",
+  "warnings": []
+}

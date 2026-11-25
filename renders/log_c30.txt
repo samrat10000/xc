@@ -1,0 +1,150 @@
+00:01.875  cycles           | WARNING HIPEW initialization failed: Error opening HIP dynamic library
+00:31.656  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0001.png'
+01:00.640  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0002.png'
+01:28.500  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0003.png'
+01:57.000  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0004.png'
+02:24.687  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0005.png'
+02:53.125  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0006.png'
+03:21.656  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0007.png'
+03:50.140  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0008.png'
+04:18.484  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0009.png'
+04:47.203  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0010.png'
+05:15.594  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0011.png'
+05:44.312  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0012.png'
+06:13.765  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0013.png'
+06:42.672  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0014.png'
+07:11.781  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0015.png'
+07:41.828  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0016.png'
+08:10.390  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0017.png'
+08:40.234  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0018.png'
+09:10.625  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0019.png'
+09:42.562  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0020.png'
+10:13.797  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0021.png'
+10:39.828  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0022.png'
+11:03.531  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0023.png'
+11:26.515  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0024.png'
+11:49.484  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0025.png'
+12:12.359  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0026.png'
+12:35.719  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0027.png'
+12:58.734  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0028.png'
+13:22.297  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0029.png'
+13:45.422  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0030.png'
+14:08.734  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0031.png'
+14:32.172  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0032.png'
+14:54.640  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0033.png'
+15:17.344  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0034.png'
+15:39.844  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0035.png'
+16:01.734  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0036.png'
+16:24.531  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0037.png'
+16:46.594  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0038.png'
+17:09.344  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0039.png'
+17:32.406  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0040.png'
+17:55.672  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0041.png'
+18:18.422  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0042.png'
+18:41.187  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0043.png'
+19:04.094  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0044.png'
+19:26.890  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0045.png'
+19:49.609  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0046.png'
+20:12.594  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0047.png'
+20:35.734  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0048.png'
+20:59.172  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0049.png'
+21:22.250  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0050.png'
+21:45.047  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0051.png'
+22:07.469  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0052.png'
+22:29.922  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0053.png'
+22:53.359  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0054.png'
+23:17.219  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0055.png'
+23:41.078  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0056.png'
+24:04.312  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0057.png'
+24:28.828  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0058.png'
+24:54.015  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0059.png'
+25:18.922  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0060.png'
+25:43.906  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0061.png'
+26:08.375  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0062.png'
+26:33.797  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0063.png'
+26:59.594  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0064.png'
+27:24.922  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0065.png'
+27:47.469  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0066.png'
+28:08.375  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0067.png'
+28:29.578  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0068.png'
+28:50.328  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0069.png'
+29:10.812  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0070.png'
+29:31.281  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0071.png'
+29:51.531  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0072.png'
+30:12.187  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0073.png'
+30:32.156  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0074.png'
+30:57.265  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0075.png'
+31:22.578  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0076.png'
+31:48.515  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0077.png'
+32:14.015  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0078.png'
+32:38.500  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0079.png'
+33:01.640  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0080.png'
+33:24.453  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0081.png'
+33:47.844  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0082.png'
+34:11.156  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0083.png'
+34:35.328  render           | Saved: 'C:\Users\cross\Downloads\xc\renders\c30\f0084.png'
+CRBB Crawler body -4.805880069732666 -3.7264935970306396 -3.4368720054626465 -1.730624794960022
+CRBB Crawler body hull -4.806290149688721 -3.7230892181396484 -3.4365603923797607 -1.7277518510818481
+CRBB Crawler cavity -4.102837562561035 -3.975904703140259 -2.455625057220459 -2.194873809814453
+CRBB Crawler claw.L1 -4.120301723480225 -4.067647933959961 -1.823866844177246 -1.7922489643096924
+CRBB Crawler claw.L1 hull -4.121505260467529 -4.066180229187012 -1.8251715898513794 -1.7907967567443848
+CRBB Crawler claw.L2 -4.147727966308594 -4.134145736694336 -1.91908860206604 -1.8518270254135132
+CRBB Crawler claw.L2 hull -4.149179935455322 -4.1329121589660645 -1.9204435348510742 -1.8504072427749634
+CRBB Crawler claw.L3 -4.136642932891846 -4.117838382720947 -1.8838106393814087 -1.8259456157684326
+CRBB Crawler claw.L3 hull -4.137918472290039 -4.116672039031982 -1.885174036026001 -1.8244812488555908
+CRBB Crawler claw.L4 -4.160263538360596 -4.141329765319824 -1.862295389175415 -1.8085033893585205
+CRBB Crawler claw.L4 hull -4.161563873291016 -4.140170574188232 -1.8637936115264893 -1.807012915611267
+CRBB Crawler claw.L5 -4.180379390716553 -4.157428741455078 -1.847928762435913 -1.7956156730651855
+CRBB Crawler claw.L5 hull -4.181736469268799 -4.156033039093018 -1.8494257926940918 -1.7941316366195679
+CRBB Crawler claw.R1 -3.8942484855651855 -3.8397490978240967 -1.7909246683120728 -1.7602635622024536
+CRBB Crawler claw.R1 hull -3.895453453063965 -3.8382999897003174 -1.79216468334198 -1.7588268518447876
+CRBB Crawler claw.R2 -3.9083974361419678 -3.8936519622802734 -1.8928402662277222 -1.814941644668579
+CRBB Crawler claw.R2 hull -3.909626007080078 -3.8922743797302246 -1.8941954374313354 -1.8135793209075928
+CRBB Crawler claw.R3 -3.9047417640686035 -3.8774354457855225 -1.8569786548614502 -1.7858449220657349
+CRBB Crawler claw.R3 hull -3.906132221221924 -3.8761940002441406 -1.8582708835601807 -1.7844550609588623
+CRBB Crawler claw.R4 -3.924969434738159 -3.913351535797119 -1.8401036262512207 -1.7667335271835327
+CRBB Crawler claw.R4 hull -3.9264488220214844 -3.9122562408447266 -1.8415777683258057 -1.765312671661377
+CRBB Crawler claw.R5 -3.9470572471618652 -3.922555923461914 -1.822648048400879 -1.7541968822479248
+CRBB Crawler claw.R5 hull -3.948427200317383 -3.921146869659424 -1.8240952491760254 -1.7528584003448486
+CRBB Crawler eyeL -3.8264288902282715 -3.812629461288452 -1.9660253524780273 -1.9506009817123413
+CRBB Crawler eyeR -3.806074619293213 -3.7922754287719727 -1.9598190784454346 -1.9443947076797485
+CRBB Crawler gown -4.34983491897583 -3.9710850715637207 -2.807018518447876 -2.0704281330108643
+CRBB Crawler gown hull -4.352831840515137 -3.968301773071289 -2.8100056648254395 -2.06756854057312
+CRBB Crawler ribs -4.151635646820068 -3.9518325328826904 -2.5077953338623047 -2.2029953002929688
+CRBB Crawler ribs hull -4.153347492218018 -3.9501278400421143 -2.509577512741089 -2.201340675354004
+CRBB Crawler shreds -4.400956630706787 -3.9776272773742676 -2.7768073081970215 -2.0711872577667236
+CRBB Crawler strands -4.04490852355957 -3.9555087089538574 -2.4981348514556885 -2.250432252883911
+CRBB Crawler stump -4.23900032043457 -4.157630443572998 -3.1567251682281494 -3.0706427097320557
+CRBB Crawler teethL -3.8960213661193848 -3.8595995903015137 -1.973334789276123 -1.9186296463012695
+CRBB Crawler teethU -3.8764703273773193 -3.829488754272461 -1.9675304889678955 -1.9045213460922241
+CRBB Crawler tongue -3.9272987842559814 -3.8567938804626465 -2.0000014305114746 -1.9248706102371216
+CRBB Crawler tooth00 -3.856052875518799 -3.850522994995117 -1.9077222347259521 -1.9039599895477295
+CRBB Crawler tooth01 -3.8558743000030518 -3.8499529361724854 -1.9044328927993774 -1.9004900455474854
+CRBB Crawler tooth010 -3.869304656982422 -3.862213611602783 -1.9074734449386597 -1.9036303758621216
+CRBB Crawler tooth011 -3.867250919342041 -3.8635077476501465 -1.9121428728103638 -1.9085716009140015
+CRBB Crawler tooth02 -3.8557469844818115 -3.8496885299682617 -1.901702880859375 -1.8978735208511353
+CRBB Crawler tooth03 -3.855912685394287 -3.8499419689178467 -1.899894118309021 -1.8957688808441162
+CRBB Crawler tooth04 -3.8593430519104004 -3.8512158393859863 -1.8976260423660278 -1.8944637775421143
+CRBB Crawler tooth05 -3.8599166870117188 -3.852236270904541 -1.8975437879562378 -1.893970012664795
+CRBB Crawler tooth06 -3.8588664531707764 -3.853151798248291 -1.8986258506774902 -1.8948241472244263
+CRBB Crawler tooth07 -3.8601372241973877 -3.854900598526001 -1.9000601768493652 -1.8960649967193604
+CRBB Crawler tooth08 -3.864074230194092 -3.857492446899414 -1.9016869068145752 -1.8976036310195923
+CRBB Crawler tooth09 -3.866401195526123 -3.859890937805176 -1.9044686555862427 -1.9001606702804565
+CRBB Crawler tooth10 -3.8694255352020264 -3.8612496852874756 -1.921578288078308 -1.9181345701217651
+CRBB Crawler tooth11 -3.8684465885162354 -3.8598690032958984 -1.9189372062683105 -1.9153869152069092
+CRBB Crawler tooth110 -3.8815553188323975 -3.876039743423462 -1.92197847366333 -1.919345498085022
+CRBB Crawler tooth111 -3.8842554092407227 -3.879241943359375 -1.925356388092041 -1.9225785732269287
+CRBB Crawler tooth12 -3.8697104454040527 -3.86407732963562 -1.9158287048339844 -1.9130678176879883
+CRBB Crawler tooth13 -3.8684351444244385 -3.860248565673828 -1.9150446653366089 -1.9115530252456665
+CRBB Crawler tooth14 -3.870213031768799 -3.864180326461792 -1.9133880138397217 -1.9106347560882568
+CRBB Crawler tooth15 -3.869697332382202 -3.8600854873657227 -1.9136204719543457 -1.9110708236694336
+CRBB Crawler tooth16 -3.872485637664795 -3.866257905960083 -1.9137377738952637 -1.9109523296356201
+CRBB Crawler tooth17 -3.874401569366455 -3.8686249256134033 -1.9149415493011475 -1.9120200872421265
+CRBB Crawler tooth18 -3.8753323554992676 -3.8674535751342773 -1.9173924922943115 -1.9139904975891113
+CRBB Crawler tooth19 -3.878282070159912 -3.8713130950927734 -1.9194375276565552 -1.9164743423461914
+CAM70 <Vector (0.5953, -0.4424, -1.8520)>
+CUT DONE 30
+Blender 5.0.1 (hash a3db93c5b259 built 2025-12-16 01:32:30)
+
+Blender quit
+Error: Not freed memory blocks: 158, total unfreed memory 5.885437 MB

@@ -1,0 +1,145 @@
+{
+ "AvatarSample_D": {
+  "height_m": 1.616,
+  "file": "avatarsample_d_0\\AvatarSample_D.vrm",
+  "meta": {
+   "title": "千駄ヶ谷渋",
+   "author": "VRoidプロジェクト",
+   "version": "",
+   "license_name": "Other",
+   "allowed_user_name": "Everyone",
+   "commercial_ussage_name": "Allow",
+   "other_license_url": "https://hub.vroid.com/license?allowed_to_use_user=everyone&characterization_allowed_user=everyone&corporate_commercial_use=allow&credit=unnecessary&modification=allow&personal_commercial_use=profit&redistribution=allow&sexual_expression=allow&version=1&violent_expression=allow"
+  }
+ },
+ "AvatarSample_D_Darkness": {
+  "height_m": 1.733,
+  "file": "avatarsample_d_darkness\\AvatarSample_D_Darkness.vrm",
+  "meta": {
+   "title": "AvatarSample_D",
+   "author": "VRoidプロジェクト",
+   "version": "",
+   "license_name": "CC0",
+   "allowed_user_name": "Everyone",
+   "commercial_ussage_name": "Allow",
+   "other_license_url": "https://hub.vroid.com/license?allowed_to_use_user=everyone&characterization_allowed_user=everyone&corporate_commercial_use=allow&credit=unnecessary&modification=allow&personal_commercial_use=profit&redistribution=allow&sexual_expression=allow&version=1&violent_expression=allow"
+  }
+ },
+ "AvatarSample_E": {
+  "height_m": 1.412,
+  "file": "avatarsample_e\\AvatarSample_E.vrm",
+  "meta": {
+   "title": "ビビ",
+   "author": "VRoidプロジェクト",
+   "version": "",
+   "license_name": "Other",
+   "allowed_user_name": "Everyone",
+   "commercial_ussage_name": "Allow",
+   "other_license_url": "https://hub.vroid.com/license?allowed_to_use_user=everyone&characterization_allowed_user=everyone&corporate_commercial_use=allow&credit=unnecessary&modification=allow&personal_commercial_use=profit&redistribution=allow&sexual_expression=allow&version=1&violent_expression=allow"
+  }
+ },
+ "AvatarSample_F": {
+  "height_m": 1.713,
+  "file": "avatarsample_f\\AvatarSample_F.vrm",
+  "meta": {
+   "title": "ヴィータ",
+   "author": "VRoidプロジェクト",
+   "version": "",
+   "license_name": "Other",
+   "allowed_user_name": "Everyone",
+   "commercial_ussage_name": "Allow",
+   "other_license_url": "https://hub.vroid.com/license?allowed_to_use_user=everyone&characterization_allowed_user=everyone&corporate_commercial_use=allow&credit=unnecessary&modification=allow&personal_commercial_use=profit&redistribution=allow&sexual_expression=allow&version=1&violent_expression=allow"
+  }
+ },
+ "AvatarSample_G": {
+  "height_m": 1.737,
+  "file": "avatarsample_g\\AvatarSample_G.vrm",
+  "meta": {
+   "title": "ヴィクトリア・ルービン",
+   "author": "VRoidプロジェクト",
+   "version": "",
+   "license_name": "Other",
+   "allowed_user_name": "Everyone",
+   "commercial_ussage_name": "Allow",
+   "other_license_url": "https://hub.vroid.com/license?allowed_to_use_user=everyone&characterization_allowed_user=everyone&corporate_commercial_use=allow&credit=unnecessary&modification=allow&personal_commercial_use=profit&redistribution=allow&sexual_expression=allow&version=1&violent_expression=allow"
+  }
+ },
+ "Base_Female": {
+  "height_m": 1.598,
+  "file": "base_female\\Base_Female.vrm",
+  "meta": {
+   "title": "Base_Female",
+   "author": "VRoidプロジェクト",
+   "version": "",
+   "license_name": "CC0",
+   "allowed_user_name": "Everyone",
+   "commercial_ussage_name": "Allow",
+   "other_license_url": "https://hub.vroid.com/license?allowed_to_use_user=everyone&characterization_allowed_user=everyone&corporate_commercial_use=allow&credit=unnecessary&modification=allow&personal_commercial_use=profit&redistribution=allow&sexual_expression=allow&version=1&violent_expression=allow"
+  }
+ },
+ "Base_Male": {
+  "height_m": 1.757,
+  "file": "base_male\\Base_Male.vrm",
+  "meta": {
+   "title": "Base_Male",
+   "author": "VRoidプロジェクト",
+   "version": "",
+   "license_name": "CC0",
+   "allowed_user_name": "Everyone",
+   "commercial_ussage_name": "Allow",
+   "other_license_url": "https://hub.vroid.com/license?allowed_to_use_user=everyone&characterization_allowed_user=everyone&corporate_commercial_use=allow&credit=unnecessary&modification=allow&personal_commercial_use=profit&redistribution=allow&sexual_expression=allow&version=1&violent_expression=allow"
+  }
+ },
+ "HairSample_Female": {
+  "height_m": 1.668,
+  "file": "hairsample_female\\HairSample_Female.vrm",
+  "meta": {
+   "title": "HairSample_Female",
+   "author": "VRoidプロジェクト",
+   "version": "",
+   "license_name": "CC0",
+   "allowed_user_name": "Everyone",
+   "commercial_ussage_name": "Allow",
+   "other_license_url": "https://hub.vroid.com/license?allowed_to_use_user=everyone&characterization_allowed_user=everyone&corporate_commercial_use=allow&credit=unnecessary&modification=allow&personal_commercial_use=profit&redistribution=allow&sexual_expression=allow&version=1&violent_expression=allow"
+  }
+ },
+ "HairSample_Male": {
+  "height_m": 1.806,
+  "file": "hairsample_male\\HairSample_Male.vrm",
+  "meta": {
+   "title": "HairSample_Male",
+   "author": "VRoidプロジェクト",
+   "version": "",
+   "license_name": "CC0",
+   "allowed_user_name": "Everyone",
+   "commercial_ussage_name": "Allow",
+   "other_license_url": "https://hub.vroid.com/license?allowed_to_use_user=everyone&characterization_allowed_user=everyone&corporate_commercial_use=allow&credit=unnecessary&modification=allow&personal_commercial_use=profit&redistribution=allow&sexual_expression=allow&version=1&violent_expression=allow"
+  }
+ },
+ "Sakurada Fumiriya": {
+  "height_m": 1.909,
+  "file": "sakurada_fumiriya\\Sakurada Fumiriya.vrm",
+  "meta": {
+   "title": "桜田 史利矢",
+   "author": "VRoidプロジェクト",
+   "version": "",
+   "license_name": "Other",
+   "allowed_user_name": "Everyone",
+   "commercial_ussage_name": "Allow",
+   "other_license_url": "https://hub.vroid.com/license?allowed_to_use_user=everyone&characterization_allowed_user=everyone&corporate_commercial_use=allow&credit=unnecessary&modification=allow&personal_commercial_use=profit&redistribution=allow&sexual_expression=allow&version=1&violent_expression=allow"
+  }
+ },
+ "Sendagaya Shino": {
+  "height_m": 1.645,
+  "file": "sendagaya_shino\\Sendagaya Shino.vrm",
+  "meta": {
+   "title": "千駄ヶ谷篠",
+   "author": "VRoidプロジェクト",
+   "version": "",
+   "license_name": "Other",
+   "allowed_user_name": "Everyone",
+   "commercial_ussage_name": "Allow",
+   "other_license_url": "https://hub.vroid.com/license?allowed_to_use_user=everyone&characterization_allowed_user=everyone&corporate_commercial_use=allow&credit=unnecessary&modification=allow&personal_commercial_use=profit&redistribution=allow&sexual_expression=allow&version=1&violent_expression=allow"
+  }
+ }
+}

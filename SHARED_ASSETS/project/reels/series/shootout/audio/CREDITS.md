@@ -1,0 +1,17 @@
+# SFX credits (Freesound via Openverse)
+- 1951 Mercury-Idle and Throttle 2.wav by lonemonk (BY) https://freesound.org/people/lonemonk/sounds/62567
+- 50 Cal MG by qubodup (CC0) https://freesound.org/people/qubodup/sounds/239138
+- Bullets hitting Gore by bananplyte (CC0) https://freesound.org/people/bananplyte/sounds/452155
+- Deep Cinematic Impact by MeijstroAudio (BY) https://freesound.org/people/MeijstroAudio/sounds/377303
+- Gunshots Rifle by JD_Brick_Productions (CC0) https://freesound.org/people/JD_Brick_Productions/sounds/678527
+- M4 Assault rifle firing.wav by mnslugger20 (CC0) https://freesound.org/people/mnslugger20/sounds/259758
+- Monster Growls and Grunt by LaurenPonder (BY) https://freesound.org/people/LaurenPonder/sounds/638897
+- Pistol Gun Cocking by EminYILDIRIM (BY) https://freesound.org/people/EminYILDIRIM/sounds/543927
+- Ricochet 2_2.wav by Benboncan (BY) https://freesound.org/people/Benboncan/sounds/78091
+- Roar.wav by CGEffex (BY) https://freesound.org/people/CGEffex/sounds/98337
+- Taurus G2c Dry Trigger Pull by NoonerBear (CC0) https://freesound.org/people/NoonerBear/sounds/589848
+- Zombie Attack by soykevin (CC0) https://freesound.org/people/soykevin/sounds/213509
+- bullet shells falling on the floor by casadalenha (BY) https://freesound.org/people/casadalenha/sounds/494402
+- city evening hum winter SHORT 130220_02.wav by klankbeeld (BY) https://freesound.org/people/klankbeeld/sounds/178686
+- city from pasture 03.WAV by klankbeeld (BY) https://freesound.org/people/klankbeeld/sounds/169080
+- Score and monster footsteps: Google Flow Music (Sam's account)

@@ -1,0 +1,50 @@
+[
+  {
+    "file": "C:\\Users\\cross\\Downloads\\xc\\SHARED_ASSETS\\ep3\\v001\\assets\\khronos\\ToyCar\\glTF-Binary\\ToyCar.glb",
+    "source": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/ToyCar/glTF-Binary/ToyCar.glb",
+    "sha256": "01a60862de55cd4b9f3acfab0b0def86451800f9c42467fcd61052c16cb9838c",
+    "bytes": 5422412
+  },
+  {
+    "file": "C:\\Users\\cross\\Downloads\\xc\\SHARED_ASSETS\\ep3\\v001\\assets\\khronos\\ToyCar\\LICENSE.md",
+    "source": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/ToyCar/LICENSE.md",
+    "sha256": "6e7c41dba03a561a67197a5aba92219bcc462806d69d13d8aba1c0ccbe183253",
+    "bytes": 911
+  },
+  {
+    "file": "C:\\Users\\cross\\Downloads\\xc\\SHARED_ASSETS\\ep3\\v001\\assets\\khronos\\ToyCar\\README.md",
+    "source": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/ToyCar/README.md",
+    "sha256": "aed216cda25deab59a115bdd6f486da0437fe4e1d9df11c34e496242dbf89fe2",
+    "bytes": 2073
+  },
+  {
+    "file": "C:\\Users\\cross\\Downloads\\xc\\SHARED_ASSETS\\ep3\\v001\\assets\\khronos\\ToyCar\\metadata.json",
+    "source": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/ToyCar/metadata.json",
+    "sha256": "4ccccf4f019521aea50d462a8b20b876478aca456ab6adde17cd8e4a53110b73",
+    "bytes": 1070
+  },
+  {
+    "file": "C:\\Users\\cross\\Downloads\\xc\\SHARED_ASSETS\\ep3\\v001\\assets\\khronos\\CarConcept\\glTF-Binary\\CarConcept.glb",
+    "source": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/CarConcept/glTF-Binary/CarConcept.glb",
+    "sha256": "c272098089d78c5cd9fd9f24ff50ee8acf8d932c55f2d55fc10adb6c8998966b",
+    "bytes": 11778688
+  },
+  {
+    "file": "C:\\Users\\cross\\Downloads\\xc\\SHARED_ASSETS\\ep3\\v001\\assets\\khronos\\CarConcept\\LICENSE.md",
+    "source": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/CarConcept/LICENSE.md",
+    "sha256": "e11477f29eab33d1a5c9fc8534f931556faeb2e11a7fee9e4723d917fcfaee50",
+    "bytes": 943
+  },
+  {
+    "file": "C:\\Users\\cross\\Downloads\\xc\\SHARED_ASSETS\\ep3\\v001\\assets\\khronos\\CarConcept\\README.md",
+    "source": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/CarConcept/README.md",
+    "sha256": "af5f76ead54a5039288924f37081d6e1fcd5ccc5b2628faedb926325a73099cd",
+    "bytes": 20382
+  },
+  {
+    "file": "C:\\Users\\cross\\Downloads\\xc\\SHARED_ASSETS\\ep3\\v001\\assets\\khronos\\CarConcept\\metadata.json",
+    "source": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/CarConcept/metadata.json",
+    "sha256": "89555a6cb9dc0a4f300abe3cc6476c2d8d77c6f3f2cbde9bf790c1bd320027ed",
+    "bytes": 1334
+  }
+]

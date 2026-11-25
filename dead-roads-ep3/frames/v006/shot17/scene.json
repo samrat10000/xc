@@ -1,0 +1,14 @@
+{
+  "shot": 17,
+  "name": "Traffic",
+  "frames": 96,
+  "objects": 1061,
+  "camera": "Ep3 shot 17",
+  "device": "CPU",
+  "stage": "BLOCKING - contact, collision and motion need visual QA",
+  "scene": "C:\\Users\\cross\\Downloads\\xc\\dead-roads-ep3\\assets\\v006\\shot17.blend",
+  "warnings": [
+    "Authored human poses/contact need reference comparison and temporal QA",
+    "Two licensed car designs repeated; cabin intersections and head turns require visual QA"
+  ]
+}

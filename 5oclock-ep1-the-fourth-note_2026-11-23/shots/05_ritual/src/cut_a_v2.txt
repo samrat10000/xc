@@ -1,0 +1,50 @@
+    # v2 staging: the broom already leans on the pillar (she has stopped sweeping); both hands take the mirror's rim and turn it
+    # to the wall. Camera on her right side: her profile + the mirror glass at 3/4 (lens 45).
+    MIR = E('mirror_pivot', (4.20, 4.80, 1.50))                  # lathe axis = local +Y = the glass normal
+    FRM = toon('mirror_frame05', (0.45, 0.08, 0.06), (0.80, 0.16, 0.12), (1.0, 0.8, 0.6), None, 0.5)
+    GL = toon('mirror_glass05', (0.40, 0.46, 0.60), (0.80, 0.86, 0.96), (1.0, 0.95, 0.85), None, 0.5)
+    mesh_obj('mirror_back', lathe([(0.0, 0.215), (0.035, 0.215), (0.035, 0.0005)], 48), FRM, MIR, 0.005)
+    mesh_obj('mirror_rim', lathe([(-0.03, 0.235), (0.035, 0.235), (0.035, 0.205), (-0.03, 0.205)], 48), FRM, MIR, 0.005)
+    mesh_obj('mirror_glass', lathe([(-0.012, 0.0005), (-0.008, 0.12), (0.0, 0.205)], 48, cap_back=False), GL, MIR, 0)   # convex
+    arm_ = mesh_obj('mirror_arm', lathe([(0, 0.014), (0.22, 0.014)], 10), STEEL, ROAD, 0.003)
+    arm_.location = (4.20, 4.80, 1.50); arm_.rotation_euler = (0, 0, 0)                                         # into the pillar (+y)
+    # the broom she just stopped using, leaning on the pillar
+    BR = E('broom', (4.62, 4.80, 0.0)); BR.rotation_euler = (math.radians(14), 0, math.radians(8))
+    HND = toon('broom_handle', (0.40, 0.30, 0.18), (0.74, 0.60, 0.38), (1.0, 0.85, 0.6), None, 0.5)
+    TW = toon('broom_twigs', (0.38, 0.30, 0.16), (0.70, 0.58, 0.32), (1.0, 0.86, 0.55), None, 0.5)
+    h = mesh_obj('broom_h', lathe([(0, 0.016), (1.25, 0.014), (1.26, 0.0)], 10), HND, BR, 0.004)
+    h.rotation_euler = (math.radians(90), 0, 0); h.location = (0, 0, 0.32)
+    bm = bmesh.new(); rr = random.Random(5)
+    for k in range(70):
+        a = math.radians(rr.uniform(-30, 30)); L_ = rr.uniform(0.30, 0.42); w = 0.0045
+        top = Vector((math.sin(a) * 0.03, rr.uniform(-0.012, 0.012), 0.34)); bot = Vector((math.sin(a) * L_ * 0.95, rr.uniform(-0.04, 0.04), 0.0))
+        bm.faces.new([bm.verts.new(top - Vector((w, 0, 0))), bm.verts.new(top + Vector((w, 0, 0))), bm.verts.new(bot + Vector((w, 0, 0))), bm.verts.new(bot - Vector((w, 0, 0)))])
+    mesh_obj('broom_twigs', bm, TW, BR, 0.0015)
+    gm, gmo, gb = load_char('grandma', (4.62, 4.30, 0.0), -150)     # faces the mirror (up-left in the shot)
+    CH = [(gm, gmo)]
+    for nm in ('broom',): pass
+    # rim grips: the hand targets ride on the mirror, so the hands turn WITH it
+    hands = {}
+    for S, sx in (('L', 1), ('R', -1)):
+        t_ = E('mt' + S, (sx * 0.225, -0.035, -0.02), MIR); a_ = E('ma' + S, (sx * 0.225, -0.035, 0.30), MIR)
+        p_ = E('mp' + S, (sx * 0.06, 0.3, -0.02), MIR); po = E('mpo' + S, (4.62 + sx * 0.5, 3.95, 0.95))
+        hands[S] = grip(gm, S, t_, a_, p_, po)
+    _curl_fingers(gm, 1, 0.75); _curl_fingers(gm, -1, 0.75)
+
+    def ANIM(f):
+        fp = f - (f - 1) % 2
+        reset(gm, gb)
+        look = ease((fp - 1) / 6.0); reach = ease((fp - 5) / 6.0); turn = ease((fp - 11) / 9.0); back = ease((fp - 21) / 5.0)
+        R(gm, 'J_Bip_C_Head', (1, 0, 0), -16 * look * (1 - back))                        # eyes up to the mirror
+        R(gm, 'J_Bip_C_Neck', (0, 0, 1), 34 * back); R(gm, 'J_Bip_C_Head', (0, 0, 1), 16 * back)   # then to the street / the kids
+        R(gm, 'J_Bip_C_Spine', (1, 0, 0), 4 * reach)
+        for S in ('L', 'R'): setinf(hands[S], reach * (1 - 0.85 * back))
+        MIR.rotation_mode = 'XYZ'; MIR.rotation_euler = (0, 0, math.radians(-32 + (180 + 32) * turn))   # glass toward the street -> to the wall
+        bpy.context.view_layer.update(); plant(gm, gmo, 4.62, 4.30)
+        mouth(gmo, ('E', 'A', 'U', 'I', 'U')[min(4, max(0, (fp - 17) // 2))], 0.5 if 17 <= fp <= 27 else 0.0)
+
+    def CAMP(f):
+        k = ease((f - 1) / 27.0)
+        p = ROAD.matrix_world @ Vector((6.15 - 0.10 * k, 4.05, 1.30)) + Vector((0.005 * math.sin(f * 0.4), 0, 0.004 * math.sin(f * 0.7)))
+        tgt = ROAD.matrix_world @ Vector((4.45, 4.55, 1.38))
+        return p, (tgt - p).to_track_quat('-Z', 'Y')

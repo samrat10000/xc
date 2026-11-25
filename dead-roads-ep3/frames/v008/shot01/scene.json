@@ -1,0 +1,11 @@
+{
+  "shot": 1,
+  "name": "It never landed",
+  "frames": 48,
+  "objects": 640,
+  "camera": "Ep3 shot 1",
+  "device": "CPU",
+  "stage": "BLOCKING - contact, collision and motion need visual QA",
+  "scene": "C:\\Users\\cross\\Downloads\\xc\\dead-roads-ep3\\assets\\v008\\shot01.blend",
+  "warnings": []
+}

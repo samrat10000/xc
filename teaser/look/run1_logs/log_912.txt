@@ -1,0 +1,28 @@
+﻿blender.exe : shots2.py:260: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+At C:\Users\cross\AppData\Local\Temp\claude\2025787e23e4a901\f24a9c15-d376-44f4-b436-0aba9cf3e929\scratchpad\run_look.p
+s1:19 char:3
++   & $blender -b -P teaser.py *> $log
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (shots2.py:260: ... in Blender 6.0:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  m = bpy.data.materials.new('Steam'); m.use_nodes = True; nt = m.node_tree; n = nt.nodes; l = nt.links
+Blender 5.0.1 (hash a3db93c5b259 built 2025-12-16 01:32:30)
+Traceback (most recent call last):
+  File "C:\Users\cross\Downloads\xc\ep1\teaser.py", line 337, in <module>
+    f0, f1 = globals()[f'cut{SHOT}']()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cross\Downloads\xc\ep1\teaser.py", line 328, in cut912
+    nf = 4; st, sg = hero_set(nf)
+                     ^^^^^^^^^^^^
+  File "C:\Users\cross\Downloads\xc\ep1\teaser.py", line 154, in hero_set
+    st = overpass_set(nf, hits=(int(os.environ.get('HIT', '9999')),))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "shots2.py", line 607, in overpass_set
+    st = K.char('stalker', V(.8, -30, 10.1), math.radians(172))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cross\Downloads\xc\ep1\city.py", line 319, in char
+    with bpy.data.libraries.load(path, link=False) as (src, dst):
+OSError: load: C:\Users\cross\Downloads\xc\cast\out\stalker\stalker.blend failed to open blend file
+
+Blender quit

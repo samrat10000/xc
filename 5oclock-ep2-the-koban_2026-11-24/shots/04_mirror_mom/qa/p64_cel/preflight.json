@@ -1,0 +1,124 @@
+{
+  "shot": "04",
+  "frames": 96,
+  "resolution_percent": 50,
+  "camera_clip_m": [
+    0.014999999664723873,
+    1000.0
+  ],
+  "light_energy": {
+    "Sun coming through back grid": 4.3,
+    "Cool room bounce": 0.26,
+    "Window side light": 115.0
+  },
+  "key_projections": [
+    {
+      "source_frame": 1,
+      "figures": [
+        {
+          "actor": "Mom_Rig",
+          "head_m": [
+            -0.09,
+            0.027,
+            1.387
+          ],
+          "head_uv_depth": [
+            0.292,
+            0.519,
+            1.713
+          ]
+        }
+      ]
+    },
+    {
+      "source_frame": 22,
+      "figures": [
+        {
+          "actor": "Mom_Rig",
+          "head_m": [
+            -0.089,
+            0.026,
+            1.387
+          ],
+          "head_uv_depth": [
+            0.286,
+            0.518,
+            1.685
+          ]
+        }
+      ]
+    },
+    {
+      "source_frame": 46,
+      "figures": [
+        {
+          "actor": "Mom_Rig",
+          "head_m": [
+            -0.09,
+            0.034,
+            1.385
+          ],
+          "head_uv_depth": [
+            0.268,
+            0.514,
+            1.639
+          ]
+        }
+      ]
+    },
+    {
+      "source_frame": 64,
+      "figures": [
+        {
+          "actor": "Mom_Rig",
+          "head_m": [
+            -0.091,
+            0.027,
+            1.387
+          ],
+          "head_uv_depth": [
+            0.257,
+            0.514,
+            1.611
+          ]
+        }
+      ]
+    },
+    {
+      "source_frame": 79,
+      "figures": [
+        {
+          "actor": "Mom_Rig",
+          "head_m": [
+            -0.091,
+            0.028,
+            1.387
+          ],
+          "head_uv_depth": [
+            -6.525,
+            1.121,
+            0.264
+          ]
+        }
+      ]
+    },
+    {
+      "source_frame": 96,
+      "figures": [
+        {
+          "actor": "Mom_Rig",
+          "head_m": [
+            -0.09,
+            0.026,
+            1.387
+          ],
+          "head_uv_depth": [
+            -7.338,
+            1.192,
+            0.236
+          ]
+        }
+      ]
+    }
+  ]
+}

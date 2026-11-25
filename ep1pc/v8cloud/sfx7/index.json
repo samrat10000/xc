@@ -1,0 +1,598 @@
+{
+ "stairs": [
+  {
+   "file": "stairs/0_ac0a940b.mp3",
+   "title": "Footsteps Wooden Stairs 3.wav",
+   "license": "cc0",
+   "creator": "RutgerMuller",
+   "dur": 32303
+  },
+  {
+   "file": "stairs/1_85019719.mp3",
+   "title": "Running Down Stairs",
+   "license": "by",
+   "creator": "qubodup",
+   "dur": 10251
+  },
+  {
+   "file": "stairs/2_52f02135.mp3",
+   "title": "firealarm.wav",
+   "license": "cc0",
+   "creator": "sagetyrtle",
+   "dur": 142488
+  },
+  {
+   "file": "stairs/3_f50a0154.mp3",
+   "title": "Running Downstairs.wav",
+   "license": "by",
+   "creator": "lewis100011",
+   "dur": 4968
+  },
+  {
+   "file": "stairs/4_21cb40cc.mp3",
+   "title": "Running_Down_Stairs_Two_People.wav",
+   "license": "by",
+   "creator": "Tdude9000",
+   "dur": 4045
+  },
+  {
+   "file": "stairs/5_59b045a2.mp3",
+   "title": "basement-stairs.aif",
+   "license": "cc0",
+   "creator": "alienistcog",
+   "dur": 71264
+  }
+ ],
+ "shoe": [
+  {
+   "file": "shoe/0_8897b20d.mp3",
+   "title": "male-foot-walk-marble-stereo.aif",
+   "license": "cc0",
+   "creator": "ragamuffin",
+   "dur": 7342
+  },
+  {
+   "file": "shoe/1_6bed9802.mp3",
+   "title": "high heels.wav",
+   "license": "cc0",
+   "creator": "derekdincer",
+   "dur": 6919
+  },
+  {
+   "file": "shoe/2_db81e3b4.mp3",
+   "title": "Step1.wav",
+   "license": "cc0",
+   "creator": "AudioTorpedo",
+   "dur": 1000
+  },
+  {
+   "file": "shoe/3_f35f2ede.mp3",
+   "title": "Step9.wav",
+   "license": "cc0",
+   "creator": "AudioTorpedo",
+   "dur": 1000
+  },
+  {
+   "file": "shoe/4_a48b33af.mp3",
+   "title": "Step7.wav",
+   "license": "cc0",
+   "creator": "AudioTorpedo",
+   "dur": 1000
+  },
+  {
+   "file": "shoe/5_5651f19e.mp3",
+   "title": "Step3.wav",
+   "license": "cc0",
+   "creator": "AudioTorpedo",
+   "dur": 1000
+  }
+ ],
+ "breath": [],
+ "stairamb": [
+  {
+   "file": "stairamb/0_d5a16e87.mp3",
+   "title": "br mus tk3 steps door.wav",
+   "license": "by",
+   "creator": "ERH",
+   "dur": 26687
+  },
+  {
+   "file": "stairamb/1_1c5a8bf1.mp3",
+   "title": "br mus tk3 steps 2f.wav",
+   "license": "by",
+   "creator": "ERH",
+   "dur": 14687
+  },
+  {
+   "file": "stairamb/2_2a4e960e.mp3",
+   "title": "Boa Vista Cabo Verde stairwell 5.1",
+   "license": "cc0",
+   "creator": "blaukreuz",
+   "dur": 160140
+  }
+ ],
+ "growl": [],
+ "buzz": [
+  {
+   "file": "buzz/0_fdee707b.mp3",
+   "title": "Switch on the fluorescent tube sound effect",
+   "license": "by",
+   "creator": "Garuda1982",
+   "dur": 15558
+  },
+  {
+   "file": "buzz/1_4424c024.mp3",
+   "title": "Desk Lamp Switch On",
+   "license": "cc0",
+   "creator": "nintendoto",
+   "dur": 7035
+  },
+  {
+   "file": "buzz/2_d8e0bafe.mp3",
+   "title": "Fluorescent light fixture, buzz, clicks, noisy, lofi, 2011.wav",
+   "license": "cc0",
+   "creator": "TRP",
+   "dur": 29993
+  }
+ ],
+ "sting": [
+  {
+   "file": "sting/0_fcf5c599.mp3",
+   "title": "spooky 14.mp3",
+   "license": "cc0",
+   "creator": "nomiqbomi",
+   "dur": 6048
+  },
+  {
+   "file": "sting/1_7b6eb450.mp3",
+   "title": "Horror Sting (Deep in the Void) 1",
+   "license": "by",
+   "creator": "SilverIllusionist",
+   "dur": 8000
+  },
+  {
+   "file": "sting/2_23d4122c.mp3",
+   "title": "Horror Sting (Apollyon) 1",
+   "license": "by",
+   "creator": "SilverIllusionist",
+   "dur": 8250
+  },
+  {
+   "file": "sting/3_f6e999f4.mp3",
+   "title": "Horror Sting (Eyes in the Dark) 1",
+   "license": "by",
+   "creator": "SilverIllusionist",
+   "dur": 11000
+  },
+  {
+   "file": "sting/4_8d3bb921.mp3",
+   "title": "Shock Stab 10",
+   "license": "cc0",
+   "creator": "nomiqbomi",
+   "dur": 3671
+  },
+  {
+   "file": "sting/5_3a80bb90.mp3",
+   "title": "Horror Sting (Eyes in the dark) 2",
+   "license": "by",
+   "creator": "SilverIllusionist",
+   "dur": 8250
+  }
+ ],
+ "siren": [
+  {
+   "file": "siren/0_ead5a45b.mp3",
+   "title": "201110 Distant sirens, urban, night, quiet, roof 11pm.flac",
+   "license": "cc0",
+   "creator": "TRP",
+   "dur": 197349
+  },
+  {
+   "file": "siren/1_083abdbc.mp3",
+   "title": "city-rain.mp3",
+   "license": "cc0",
+   "creator": "ragamuffin",
+   "dur": 271400
+  },
+  {
+   "file": "siren/2_bfadfa9b.mp3",
+   "title": "071616 Michigan Avenue at night edited.wav",
+   "license": "cc0",
+   "creator": "thaighaudio",
+   "dur": 217000
+  },
+  {
+   "file": "siren/3_0388b81b.mp3",
+   "title": "Roman courtyard at night.wav",
+   "license": "by",
+   "creator": "gagarinpost",
+   "dur": 116053
+  },
+  {
+   "file": "siren/4_efbb32df.mp3",
+   "title": "city, night, light wind gusts, dry leaves fly on pavement, dog bark and walk, distant train horn, cars maneuvring, police or ambulance sirens, sparse people, Warsaw, Poland.wav",
+   "license": "cc0",
+   "creator": "be_a_hero_not_a_patriot",
+   "dur": 265209
+  },
+  {
+   "file": "siren/5_f0690ad8.mp3",
+   "title": "City night alarm in the back.wav",
+   "license": "cc0",
+   "creator": "javierat",
+   "dur": 159072
+  }
+ ],
+ "vib": [
+  {
+   "file": "vib/0_c9ed7654.mp3",
+   "title": "Cell phone vibrate, on table hard surface.wav",
+   "license": "cc0",
+   "creator": "SpliceSound",
+   "dur": 10005
+  },
+  {
+   "file": "vib/1_ef80fe25.mp3",
+   "title": "Vibrating Mobile Phone 2 x 1500ms",
+   "license": "cc0",
+   "creator": "ThePacifist",
+   "dur": 4224
+  },
+  {
+   "file": "vib/2_df6b4d0e.mp3",
+   "title": "mobile_phone_vibration.wav",
+   "license": "cc0",
+   "creator": "wangzhuokun",
+   "dur": 30522
+  },
+  {
+   "file": "vib/3_f217c877.mp3",
+   "title": "cell phone vibrate glass_loopable.wav",
+   "license": "cc0",
+   "creator": "mobaudio",
+   "dur": 3030
+  },
+  {
+   "file": "vib/4_c6fbf4f4.mp3",
+   "title": "vibrating phone on table.wav",
+   "license": "cc0",
+   "creator": "GallerShades",
+   "dur": 1625
+  }
+ ],
+ "ring": [
+  {
+   "file": "ring/0_1eda0ad8.mp3",
+   "title": "mobile phone ringtone.aif",
+   "license": "cc0",
+   "creator": "7by7",
+   "dur": 37687
+  },
+  {
+   "file": "ring/1_bff011ae.mp3",
+   "title": "Mobile Message 2",
+   "license": "cc0",
+   "creator": "katjajansen1997",
+   "dur": 63997
+  },
+  {
+   "file": "ring/2_20857514.mp3",
+   "title": "Motorola_Ultra_Classic.wav",
+   "license": "cc0",
+   "creator": "OmegaZeta",
+   "dur": 4000
+  },
+  {
+   "file": "ring/3_0af307fc.mp3",
+   "title": "Simple ringtone",
+   "license": "cc0",
+   "creator": "TheZero",
+   "dur": 7093
+  },
+  {
+   "file": "ring/4_00c44d49.mp3",
+   "title": "Generic Ringtone.wav",
+   "license": "cc0",
+   "creator": "Hupguy",
+   "dur": 6000
+  }
+ ],
+ "rainglass": [
+  {
+   "file": "rainglass/0_6aa99d64.mp3",
+   "title": "car windshield wipers seamless loop 1 fast.wav",
+   "license": "cc0",
+   "creator": "RutgerMuller",
+   "dur": 3681
+  },
+  {
+   "file": "rainglass/1_971669dc.mp3",
+   "title": "car windshield wipers seamless loop 3 slowest squeakier.wav",
+   "license": "cc0",
+   "creator": "RutgerMuller",
+   "dur": 6401
+  },
+  {
+   "file": "rainglass/2_ebb23cd3.mp3",
+   "title": "car windshield wipers spray water squeaky.wav",
+   "license": "cc0",
+   "creator": "RutgerMuller",
+   "dur": 10039
+  },
+  {
+   "file": "rainglass/3_c0f69197.mp3",
+   "title": "Rain on window",
+   "license": "cc0",
+   "creator": "ckjzam",
+   "dur": 44330
+  },
+  {
+   "file": "rainglass/4_12959bb7.mp3",
+   "title": "Rain recorded inside with open window.WAV",
+   "license": "cc0",
+   "creator": "BonnyOrbit",
+   "dur": 277878
+  }
+ ],
+ "fridge": [
+  {
+   "file": "fridge/0_e7ba27fc.mp3",
+   "title": "Refrigerator Hum",
+   "license": "cc0",
+   "creator": "p0lter",
+   "dur": 15918
+  },
+  {
+   "file": "fridge/1_5435f147.mp3",
+   "title": "Refrigerator Hum",
+   "license": "cc0",
+   "creator": "katfolker",
+   "dur": 123048
+  },
+  {
+   "file": "fridge/2_3777d89a.mp3",
+   "title": "Refrigerator humming",
+   "license": "cc0",
+   "creator": "RCSound99",
+   "dur": 31184
+  },
+  {
+   "file": "fridge/3_b3aa154f.mp3",
+   "title": "basement with fridge room tone.wav",
+   "license": "cc0",
+   "creator": "kmckinney7",
+   "dur": 57504
+  },
+  {
+   "file": "fridge/4_45c6e7b4.mp3",
+   "title": "refrigerator door opening and closing.wav",
+   "license": "cc0",
+   "creator": "sethlind",
+   "dur": 15066
+  }
+ ],
+ "boom": [
+  {
+   "file": "boom/0_f533ccd3.mp3",
+   "title": "OverheadExplosion.wav",
+   "license": "cc0",
+   "creator": "noirenex",
+   "dur": 2310
+  },
+  {
+   "file": "boom/1_2de491df.mp3",
+   "title": "Distant Thunder 3",
+   "license": "cc0",
+   "creator": "Fission9",
+   "dur": 8246
+  },
+  {
+   "file": "boom/2_f79c3c38.mp3",
+   "title": "G43-14-25 Distant Explosions.wav",
+   "license": "cc0",
+   "creator": "craigsmith",
+   "dur": 101074
+  },
+  {
+   "file": "boom/3_8182ef5b.mp3",
+   "title": "Distant booming traffic",
+   "license": "cc0",
+   "creator": "peridactyloptrix",
+   "dur": 82031
+  },
+  {
+   "file": "boom/4_4ed3143d.mp3",
+   "title": "Huge Distant Explosion",
+   "license": "cc0",
+   "creator": "Fission9",
+   "dur": 14529
+  }
+ ],
+ "alarm": [
+  {
+   "file": "alarm/0_46d3e28a.mp3",
+   "title": "Car Alarm Distant.wav",
+   "license": "cc0",
+   "creator": "Romeo_Kaleikau",
+   "dur": 13125
+  },
+  {
+   "file": "alarm/1_6dea7ed7.mp3",
+   "title": "Distant Alarm Car.aif",
+   "license": "cc0",
+   "creator": "noesunatarea",
+   "dur": 16000
+  },
+  {
+   "file": "alarm/2_84a90a41.mp3",
+   "title": "traffic light intersection small town morning pedestrian activity and throaty motorcycles good detail and distant car alarm a few times Saravena, Colombia 2016.flac",
+   "license": "cc0",
+   "creator": "kyles",
+   "dur": 532124
+  },
+  {
+   "file": "alarm/3_4500f10a.mp3",
+   "title": "Before the Storm with Distant Car Alarm",
+   "license": "cc0",
+   "creator": "ericnorcross81",
+   "dur": 107774
+  },
+  {
+   "file": "alarm/4_dac4fdba.mp3",
+   "title": "Distant horn beeps 09.flac",
+   "license": "cc0",
+   "creator": "TRP",
+   "dur": 16541
+  }
+ ],
+ "rattle": [
+  {
+   "file": "rattle/0_39998d8c.mp3",
+   "title": "Glass Windows Shaking.aif",
+   "license": "cc0",
+   "creator": "RutgerMuller",
+   "dur": 3066
+  },
+  {
+   "file": "rattle/1_3b69b563.mp3",
+   "title": "door wood old with inlaid glass close hard rattle or window pane shutter.flac",
+   "license": "cc0",
+   "creator": "kyles",
+   "dur": 7776
+  },
+  {
+   "file": "rattle/2_80773615.mp3",
+   "title": "Glass Windows Squeaking.aif",
+   "license": "cc0",
+   "creator": "RutgerMuller",
+   "dur": 1916
+  },
+  {
+   "file": "rattle/3_ae5a25c6.mp3",
+   "title": "Glass Windows Shaking 2.aif",
+   "license": "cc0",
+   "creator": "RutgerMuller",
+   "dur": 1226
+  },
+  {
+   "file": "rattle/4_7a5aec1c.mp3",
+   "title": "Glass Window Scraping 2.aif",
+   "license": "cc0",
+   "creator": "RutgerMuller",
+   "dur": 2070
+  }
+ ],
+ "static": [
+  {
+   "file": "static/0_8e8a4fbc.mp3",
+   "title": "Cell Phone Interference Noise 1.wav",
+   "license": "cc0",
+   "creator": "RutgerMuller",
+   "dur": 3500
+  }
+ ],
+ "calldrop": [],
+ "scream": [
+  {
+   "file": "scream/333832_3840537.mp3",
+   "title": "Demonic Woman Scream.wav",
+   "license": "cc0",
+   "creator": "nick121087",
+   "url": "https://freesound.org/people/nick121087/sounds/333832"
+  },
+  {
+   "file": "scream/169811_1122547.mp3",
+   "title": "Female scream 02",
+   "license": "cc0",
+   "creator": "missozzy",
+   "url": "https://freesound.org/people/missozzy/sounds/169811"
+  },
+  {
+   "file": "scream/221547_4096172.mp3",
+   "title": "Horror scream (high-pitched voice)",
+   "license": "cc0",
+   "creator": "joseppujol",
+   "url": "https://freesound.org/people/joseppujol/sounds/221547"
+  }
+ ],
+ "keys": [
+  {
+   "file": "keys/390324.mp3",
+   "title": "Keys jingling",
+   "license": "cc0",
+   "url": "https://freesound.org/s/390324"
+  },
+  {
+   "file": "keys/485117.mp3",
+   "title": "Keys Jingling 2_1",
+   "license": "cc0",
+   "url": "https://freesound.org/s/485117"
+  }
+ ],
+ "camhandle": [
+  {
+   "file": "camhandle/368322.mp3",
+   "title": "Camera handling",
+   "license": "cc0",
+   "url": "https://freesound.org/s/368322"
+  },
+  {
+   "file": "camhandle/637689.mp3",
+   "title": "miniDV video camera handling +buzz3 pickup",
+   "license": "cc0",
+   "url": "https://freesound.org/s/637689"
+  }
+ ],
+ "runwood": [
+  {
+   "file": "runwood/234860.mp3",
+   "title": "Footsteps_Running_Wooden Floor.wav",
+   "license": "cc0",
+   "url": "https://freesound.org/s/234860"
+  }
+ ],
+ "sob": [
+  {
+   "file": "sob/368388.mp3",
+   "title": "Female sobbing",
+   "license": "cc0",
+   "url": "https://freesound.org/s/368388"
+  },
+  {
+   "file": "sob/449439.mp3",
+   "title": "Woman Crying.wav",
+   "license": "cc0",
+   "url": "https://freesound.org/s/449439"
+  }
+ ],
+ "pushbar": [
+  {
+   "file": "pushbar/475312.mp3",
+   "title": "Push-bar fire door opening",
+   "license": "cc0",
+   "url": "https://freesound.org/s/475312"
+  }
+ ],
+ "horde": [
+  {
+   "file": "horde/235797.mp3",
+   "title": "Mix of zombie groans screams",
+   "license": "cc0",
+   "url": "https://freesound.org/s/235797"
+  },
+  {
+   "file": "horde/189230.mp3",
+   "title": "Shuffling 3 Front.wav",
+   "license": "cc0",
+   "url": "https://freesound.org/s/189230"
+  }
+ ],
+ "glassknock": [
+  {
+   "file": "glassknock/483499.mp3",
+   "title": "Knocking on glass pane",
+   "license": "cc0",
+   "url": "https://freesound.org/s/483499"
+  }
+ ]
+}

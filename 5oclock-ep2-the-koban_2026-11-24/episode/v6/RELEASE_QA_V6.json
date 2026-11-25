@@ -1,0 +1,46 @@
+{
+  "frames": 1378,
+  "duration": 57.416666666666664,
+  "black_span_frames": [
+    [
+      1275,
+      1282
+    ]
+  ],
+  "boundary_matches": [
+    "01a",
+    "01b",
+    "02",
+    "03",
+    "04",
+    "05a",
+    "05b",
+    "06",
+    "07",
+    "08",
+    "09",
+    "10",
+    "11",
+    "12",
+    "13a",
+    "13b",
+    "13c",
+    "14",
+    "15"
+  ],
+  "voice_count": 7,
+  "audio": {
+    "input_i": "-14.94",
+    "input_tp": "-2.94",
+    "input_lra": "7.80",
+    "input_thresh": "-25.10",
+    "output_i": "-15.73",
+    "output_tp": "-3.06",
+    "output_lra": "7.60",
+    "output_thresh": "-25.85",
+    "normalization_type": "dynamic",
+    "target_offset": "0.73"
+  },
+  "theme_gap_seconds": 0.6199999999999974,
+  "theme_gap_decoded_peak": 0.0
+}

@@ -1,0 +1,300 @@
+{
+  "shot": "12",
+  "frames": 120,
+  "resolution_percent": 100,
+  "camera_clip_m": [
+    0.014999999664723873,
+    1000.0
+  ],
+  "light_energy": {
+    "Late brass sky": 4.85,
+    "Violet street bounce": 0.35
+  },
+  "key_projections": [
+    {
+      "source_frame": 1,
+      "figures": [
+        {
+          "actor": "Grandma_Rig",
+          "head_m": [
+            -0.832,
+            1.98,
+            1.338
+          ],
+          "head_uv_depth": [
+            -0.527,
+            0.224,
+            3.832
+          ]
+        },
+        {
+          "actor": "Shopkeeper_Rig",
+          "head_m": [
+            0.99,
+            2.922,
+            1.525
+          ],
+          "head_uv_depth": [
+            0.412,
+            0.308,
+            5.015
+          ]
+        },
+        {
+          "actor": "Kid_girl_Rig",
+          "head_m": [
+            -0.962,
+            5.115,
+            1.332
+          ],
+          "head_uv_depth": [
+            -0.231,
+            0.299,
+            6.91
+          ]
+        },
+        {
+          "actor": "Kid_boy_Rig",
+          "head_m": [
+            0.97,
+            6.271,
+            1.498
+          ],
+          "head_uv_depth": [
+            0.333,
+            0.338,
+            8.317
+          ]
+        }
+      ]
+    },
+    {
+      "source_frame": 30,
+      "figures": [
+        {
+          "actor": "Grandma_Rig",
+          "head_m": [
+            -0.832,
+            1.98,
+            1.338
+          ],
+          "head_uv_depth": [
+            -0.57,
+            0.213,
+            3.678
+          ]
+        },
+        {
+          "actor": "Shopkeeper_Rig",
+          "head_m": [
+            0.99,
+            2.922,
+            1.525
+          ],
+          "head_uv_depth": [
+            0.409,
+            0.301,
+            4.86
+          ]
+        },
+        {
+          "actor": "Kid_girl_Rig",
+          "head_m": [
+            -0.962,
+            5.115,
+            1.332
+          ],
+          "head_uv_depth": [
+            -0.247,
+            0.292,
+            6.755
+          ]
+        },
+        {
+          "actor": "Kid_boy_Rig",
+          "head_m": [
+            0.97,
+            6.271,
+            1.498
+          ],
+          "head_uv_depth": [
+            0.33,
+            0.333,
+            8.161
+          ]
+        }
+      ]
+    },
+    {
+      "source_frame": 60,
+      "figures": [
+        {
+          "actor": "Grandma_Rig",
+          "head_m": [
+            -0.831,
+            1.981,
+            1.338
+          ],
+          "head_uv_depth": [
+            -0.618,
+            0.201,
+            3.516
+          ]
+        },
+        {
+          "actor": "Shopkeeper_Rig",
+          "head_m": [
+            0.991,
+            2.922,
+            1.525
+          ],
+          "head_uv_depth": [
+            0.407,
+            0.294,
+            4.698
+          ]
+        },
+        {
+          "actor": "Kid_girl_Rig",
+          "head_m": [
+            -0.962,
+            5.115,
+            1.332
+          ],
+          "head_uv_depth": [
+            -0.265,
+            0.286,
+            6.592
+          ]
+        },
+        {
+          "actor": "Kid_boy_Rig",
+          "head_m": [
+            0.97,
+            6.271,
+            1.498
+          ],
+          "head_uv_depth": [
+            0.327,
+            0.327,
+            7.998
+          ]
+        }
+      ]
+    },
+    {
+      "source_frame": 90,
+      "figures": [
+        {
+          "actor": "Grandma_Rig",
+          "head_m": [
+            -0.927,
+            2.314,
+            1.349
+          ],
+          "head_uv_depth": [
+            0.044,
+            0.442,
+            4.345
+          ]
+        },
+        {
+          "actor": "Shopkeeper_Rig",
+          "head_m": [
+            0.955,
+            3.062,
+            1.529
+          ],
+          "head_uv_depth": [
+            0.868,
+            0.484,
+            5.136
+          ]
+        },
+        {
+          "actor": "Kid_girl_Rig",
+          "head_m": [
+            -0.972,
+            5.124,
+            1.331
+          ],
+          "head_uv_depth": [
+            0.194,
+            0.44,
+            7.149
+          ]
+        },
+        {
+          "actor": "Kid_boy_Rig",
+          "head_m": [
+            0.961,
+            6.331,
+            1.499
+          ],
+          "head_uv_depth": [
+            0.711,
+            0.464,
+            8.399
+          ]
+        }
+      ]
+    },
+    {
+      "source_frame": 120,
+      "figures": [
+        {
+          "actor": "Grandma_Rig",
+          "head_m": [
+            -0.934,
+            2.313,
+            1.349
+          ],
+          "head_uv_depth": [
+            0.032,
+            0.441,
+            4.215
+          ]
+        },
+        {
+          "actor": "Shopkeeper_Rig",
+          "head_m": [
+            0.945,
+            3.06,
+            1.53
+          ],
+          "head_uv_depth": [
+            0.875,
+            0.483,
+            5.017
+          ]
+        },
+        {
+          "actor": "Kid_girl_Rig",
+          "head_m": [
+            -0.969,
+            5.12,
+            1.331
+          ],
+          "head_uv_depth": [
+            0.187,
+            0.439,
+            7.016
+          ]
+        },
+        {
+          "actor": "Kid_boy_Rig",
+          "head_m": [
+            0.949,
+            6.328,
+            1.499
+          ],
+          "head_uv_depth": [
+            0.708,
+            0.464,
+            8.279
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "shot": "04",
+  "frames": 96,
+  "resolution_percent": 100,
+  "camera_clip_m": [
+    0.014999999664723873,
+    1000.0
+  ],
+  "light_energy": {
+    "Sun coming through back grid": 4.3,
+    "Cool room bounce": 0.26,
+    "Window side light": 115.0
+  },
+  "key_projections": [
+    {
+      "source_frame": 1,
+      "figures": [
+        {
+          "actor": "Mom_Rig",
+          "head_m": [
+            -0.09,
+            0.027,
+            1.387
+          ],
+          "head_uv_depth": [
+            0.292,
+            0.519,
+            1.713
+          ]
+        }
+      ]
+    },
+    {
+      "source_frame": 24,
+      "figures": [
+        {
+          "actor": "Mom_Rig",
+          "head_m": [
+            -0.089,
+            0.025,
+            1.387
+          ],
+          "head_uv_depth": [
+            0.284,
+            0.518,
+            1.681
+          ]
+        }
+      ]
+    },
+    {
+      "source_frame": 48,
+      "figures": [
+        {
+          "actor": "Mom_Rig",
+          "head_m": [
+            -0.09,
+            0.034,
+            1.385
+          ],
+          "head_uv_depth": [
+            0.266,
+            0.514,
+            1.635
+          ]
+        }
+      ]
+    },
+    {
+      "source_frame": 72,
+      "figures": [
+        {
+          "actor": "Mom_Rig",
+          "head_m": [
+            -0.091,
+            0.028,
+            1.387
+          ],
+          "head_uv_depth": [
+            -6.203,
+            1.094,
+            0.278
+          ]
+        }
+      ]
+    },
+    {
+      "source_frame": 96,
+      "figures": [
+        {
+          "actor": "Mom_Rig",
+          "head_m": [
+            -0.09,
+            0.026,
+            1.387
+          ],
+          "head_uv_depth": [
+            -7.338,
+            1.192,
+            0.236
+          ]
+        }
+      ]
+    }
+  ]
+}

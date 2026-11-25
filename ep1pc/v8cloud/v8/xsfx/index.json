@@ -1,0 +1,137 @@
+{
+ "crank": {
+  "file": "crank.mp3",
+  "t": "1983 Volvo 245 starter engagement failure + successful start",
+  "by": "nissse",
+  "lic": "cc0",
+  "url": "https://cdn.freesound.org/previews/322/322974_326207-hq.mp3",
+  "land": "https://freesound.org/people/nissse/sounds/322974",
+  "dur": 62414
+ },
+ "start": {
+  "file": "start.mp3",
+  "t": "Car engine start up running and turning off.wav",
+  "by": "sound_catcher99",
+  "lic": "cc0",
+  "url": "https://cdn.freesound.org/previews/425/425158_4370343-hq.mp3",
+  "land": "https://freesound.org/people/sound_catcher99/sounds/425158",
+  "dur": 12180
+ },
+ "idle": {
+  "file": "idle.mp3",
+  "t": "G13-15-V8 Engine Idle Out.wav",
+  "by": "craigsmith",
+  "lic": "cc0",
+  "url": "https://cdn.freesound.org/previews/437/437997_2524442-hq.mp3",
+  "land": "https://freesound.org/people/craigsmith/sounds/437997",
+  "dur": 25104
+ },
+ "idle2": {
+  "file": "idle2.mp3",
+  "t": "Chrysler Start and Idle (Exhaust perspective)",
+  "by": "lonemonk",
+  "lic": "by",
+  "url": "https://cdn.freesound.org/previews/240/240671_230160-hq.mp3",
+  "land": "https://freesound.org/people/lonemonk/sounds/240671",
+  "dur": 48158
+ },
+ "door": {
+  "file": "door.mp3",
+  "t": "CAR DOOR CLOSING FROM INSIDE.wav",
+  "by": "metrostock99",
+  "lic": "cc0",
+  "url": "https://cdn.freesound.org/previews/345/345066_1256155-hq.mp3",
+  "land": "https://freesound.org/people/metrostock99/sounds/345066",
+  "dur": 1629
+ },
+ "stairs": {
+  "file": "stairs.mp3",
+  "t": "Footsteps_Stairs_echo_background_noise_Take_4_FAST - 220718_002_Tr6_",
+  "by": "TSP-Talk",
+  "lic": "cc0",
+  "url": "https://cdn.freesound.org/previews/643/643040_14079354-hq.mp3",
+  "land": "https://freesound.org/people/TSP-Talk/sounds/643040",
+  "dur": 7259
+ },
+ "keys": {
+  "file": "keys.mp3",
+  "t": "Keys Jingling",
+  "by": "vmgraw",
+  "lic": "cc0",
+  "url": "https://cdn.freesound.org/previews/235/235614_4028838-hq.mp3",
+  "land": "https://freesound.org/people/vmgraw/sounds/235614",
+  "dur": 8408
+ },
+ "deadbolt": {
+  "file": "deadbolt.mp3",
+  "t": "Deadbolt1.wav",
+  "by": "orestes910",
+  "lic": "cc0",
+  "url": "https://cdn.freesound.org/previews/108/108844_1495942-hq.mp3",
+  "land": "https://freesound.org/people/orestes910/sounds/108844",
+  "dur": 10883
+ },
+ "chain": {
+  "file": "chain.mp3",
+  "t": "door chain put on lock wood metal rattle 2.wav",
+  "by": "MattRuthSound",
+  "lic": "by",
+  "url": "https://cdn.freesound.org/previews/381/381961_7107243-hq.mp3",
+  "land": "https://freesound.org/people/MattRuthSound/sounds/381961",
+  "dur": 2000
+ },
+ "pushbar": {
+  "file": "pushbar.mp3",
+  "t": "Push-bar fire door opening",
+  "by": "wlabarron",
+  "lic": "cc0",
+  "url": "https://cdn.freesound.org/previews/475/475312_3782735-hq.mp3",
+  "land": "https://freesound.org/people/wlabarron/sounds/475312",
+  "dur": 859
+ },
+ "vibe": {
+  "file": "vibe.mp3",
+  "t": "Cell phone vibrate, on table hard surface.wav",
+  "by": "SpliceSound",
+  "lic": "cc0",
+  "url": "https://cdn.freesound.org/previews/369/369839_1480854-hq.mp3",
+  "land": "https://freesound.org/people/SpliceSound/sounds/369839",
+  "dur": 10005
+ },
+ "alarm": {
+  "file": "alarm.mp3",
+  "t": "Car Alarm in Parking Structure.wav",
+  "by": "erkanozan",
+  "lic": "cc0",
+  "url": "https://cdn.freesound.org/previews/51/51747_616218-hq.mp3",
+  "land": "https://freesound.org/people/erkanozan/sounds/51747",
+  "dur": 2622
+ },
+ "alarm2": {
+  "file": "alarm2.mp3",
+  "t": "Car Alarm Distant.wav",
+  "by": "Romeo_Kaleikau",
+  "lic": "cc0",
+  "url": "https://cdn.freesound.org/previews/588/588245_10029869-hq.mp3",
+  "land": "https://freesound.org/people/Romeo_Kaleikau/sounds/588245",
+  "dur": 13125
+ },
+ "heart": {
+  "file": "heart.mp3",
+  "t": "Four Heartbeats HQ_BeatSmith.wav",
+  "by": "Lunardrive",
+  "lic": "cc0",
+  "url": "https://cdn.freesound.org/previews/22/22416_120830-hq.mp3",
+  "land": "https://freesound.org/people/Lunardrive/sounds/22416",
+  "dur": 3606
+ },
+ "bone": {
+  "file": "bone.mp3",
+  "t": "Multiple Bones Cracking",
+  "by": "rydra_wong",
+  "lic": "cc0",
+  "url": "https://cdn.freesound.org/previews/621/621977_13685159-hq.mp3",
+  "land": "https://freesound.org/people/rydra_wong/sounds/621977",
+  "dur": 2268
+ }
+}

@@ -1,0 +1,13 @@
+{
+  "shot": 15,
+  "name": "Antler",
+  "frames": 60,
+  "objects": 700,
+  "camera": "Ep3 shot 15",
+  "device": "CPU",
+  "stage": "BLOCKING - contact, collision and motion need visual QA",
+  "scene": "C:\\Users\\cross\\Downloads\\xc\\dead-roads-ep3\\assets\\v013\\shot15.blend",
+  "warnings": [
+    "Impact mechanics and left-antler split require temporal and spatial QA"
+  ]
+}

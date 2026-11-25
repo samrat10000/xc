@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sam's Voice Recorder</title>
+<style>
+:root{--bg:#121010;--fg:#efe9e3;--muted:#a59b91;--line:#332e2b;--accent:#e5484d;color-scheme:dark}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 system-ui,sans-serif}
+main{max-width:520px;margin:0 auto;padding:32px 16px;display:grid;gap:18px}
+h1{font:700 2.2rem Impact,"Arial Narrow",sans-serif;letter-spacing:.03em;margin:0}
+p{margin:0;color:var(--muted)}
+button{padding:16px;border-radius:999px;border:0;font:600 1.1rem system-ui;cursor:pointer}
+#rec{background:var(--accent);color:#fff}
+#rec.on{background:#fff;color:#000}
+#save{background:transparent;color:var(--fg);border:2px solid var(--fg)}
+button:disabled{opacity:.4;cursor:default}
+#time{font:700 3rem ui-monospace,monospace;text-align:center}
+audio{width:100%}
+#msg{min-height:1.5em;color:var(--fg)}
+ul{margin:0;padding-left:1.2em;color:var(--muted)}
+</style></head><body><main>
+<h1>VOICE RECORDER</h1>
+<p>Talk for 60 to 90 seconds like you do on a reel. Quiet room, no music or fan.</p>
+<div id="time">0:00</div>
+<button id="rec">Start recording</button>
+<audio id="play" controls hidden></audio>
+<button id="save" disabled>Save recording</button>
+<div id="msg"></div>
+<ul>
+<li>What Night Terror is and why you started it.</li>
+<li>Why the Stalker got a ten out of ten.</li>
+<li>How the bad AI music felt.</li>
+<li>Advice for someone making a series alone with AI.</li>
+</ul>
+<p>After saving, attach the file in the Claude chat.</p>
+</main>
+<script>
+const $=id=>document.getElementById(id);
+let mr=null,chunks=[],blob=null,t0=0,tick=null,stream=null;
+function fmt(s){return Math.floor(s/60)+":"+String(Math.floor(s%60)).padStart(2,"0")}
+$("rec").onclick=async()=>{
+  if(mr&&mr.state==="recording"){mr.stop();return}
+  try{
+    stream=await navigator.mediaDevices.getUserMedia({audio:{echoCancellation:false,noiseSuppression:false,autoGainControl:false,channelCount:1}});
+  }catch(e){$("msg").textContent="Mic blocked. Allow the microphone in the address bar and try again.";return}
+  const type=["audio/webm;codecs=opus","audio/mp4","audio/ogg"].find(t=>window.MediaRecorder&&MediaRecorder.isTypeSupported(t))||"";
+  mr=new MediaRecorder(stream,type?{mimeType:type,audioBitsPerSecond:192000}:{});
+  chunks=[];mr.ondataavailable=e=>e.data.size&&chunks.push(e.data);
+  mr.onstop=()=>{
+    clearInterval(tick);stream.getTracks().forEach(t=>t.stop());
+    blob=new Blob(chunks,{type:mr.mimeType});
+    $("play").src=URL.createObjectURL(blob);$("play").hidden=false;
+    $("save").disabled=false;$("rec").textContent="Record again";$("rec").classList.remove("on");
+    $("msg").textContent="Listen back. If it sounds good, save it.";
+  };
+  mr.start();t0=Date.now();$("rec").textContent="Stop";$("rec").classList.add("on");$("save").disabled=true;$("msg").textContent="Recording...";
+  tick=setInterval(()=>$("time").textContent=fmt((Date.now()-t0)/1000),250);
+};
+$("save").onclick=()=>{
+  if(!blob)return;
+  const ext=blob.type.includes("mp4")?"m4a":blob.type.includes("ogg")?"ogg":"webm";
+  const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="sam-voice-sample."+ext;document.body.appendChild(a);a.click();a.remove();
+  $("msg").textContent="Saved to your Downloads as sam-voice-sample."+ext+". Now attach it in the Claude chat.";
+};
+</script></body></html>

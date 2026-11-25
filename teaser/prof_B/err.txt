@@ -1,0 +1,10 @@
+shots2.py:260: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m = bpy.data.materials.new('Steam'); m.use_nodes = True; nt = m.node_tree; n = nt.nodes; l = nt.links
+shots2.py:656: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m.use_nodes = True; b = m.node_tree.nodes.get('Principled BSDF')
+shots2.py:111: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  glowm = bpy.data.materials.new('HeadGlow'); glowm.use_nodes = True
+C:\Users\cross\Downloads\xc\ep1\teaser.py:41: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  wm = bpy.data.materials.new('Water'); wm.use_nodes = True; b = wm.node_tree.nodes['Principled BSDF']
+C:\Users\cross\Downloads\xc\ep1\teaser.py:82: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m = bpy.data.materials.new('Shard'); m.use_nodes = True; b = m.node_tree.nodes['Principled BSDF']

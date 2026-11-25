@@ -1,0 +1,36 @@
+{
+  "shot": "15",
+  "frames": 96,
+  "resolution_percent": 100,
+  "camera_clip_m": [
+    0.014999999664723873,
+    1000.0
+  ],
+  "light_energy": {
+    "Desk lamp beam": 41.0,
+    "Low rust edge to stinger": 3.1,
+    "Violet paper fill": 0.27
+  },
+  "key_projections": [
+    {
+      "source_frame": 1,
+      "figures": []
+    },
+    {
+      "source_frame": 24,
+      "figures": []
+    },
+    {
+      "source_frame": 48,
+      "figures": []
+    },
+    {
+      "source_frame": 72,
+      "figures": []
+    },
+    {
+      "source_frame": 96,
+      "figures": []
+    }
+  ]
+}

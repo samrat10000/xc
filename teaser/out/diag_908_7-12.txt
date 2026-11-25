@@ -1,0 +1,4 @@
+device=GPU type=OPTIX res=720x1280*100% samp=20
+  OPTIX NVIDIA GeForce RTX 3050 Laptop GPU use=True
+  CPU 12th Gen Intel Core i5-12500H use=False
+  CUDA NVIDIA GeForce RTX 3050 Laptop GPU use=False

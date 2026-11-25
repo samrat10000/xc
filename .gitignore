@@ -1,0 +1,58 @@
+# xc on GitHub = the WORK (scripts, notes, docs, configs). Media, renders, installs and other repos stay on the PC
+# (GitHub rejects files > 100 MB; the whole folder is ~90 GB). Finished videos: github.com/samrat10000/5oclock-ep1/releases
+
+# allowlist: ignore every file, then re-include text/code types
+*
+!*/
+!.gitignore
+!*.py
+!*.ps1
+!*.sh
+!*.md
+!*.txt
+!*.json
+!*.yml
+!*.yaml
+!*.toml
+!*.cfg
+!*.js
+!*.ts
+!*.html
+!*.css
+
+# never: installs, environments, caches, trash, transfer copies
+blender5/
+blender501/
+nvidia-driver/
+_incoming_trash/
+gitxfer/
+_wt_ep1v2/
+_wt_skills/
+__pycache__/
+**/*venv*/
+**/site-packages/
+**/node_modules/
+.claude/
+logs/
+
+# folders that are their own git repositories (kept separate; some are private)
+5oclock-ep1-release/
+anime-5oclock/ep1v2/build/vsco/
+dead-roads-ep2/
+ep1patch/
+money-skills/
+mocap-test/src/PosePipe/
+tools/earshot/
+_ms/
+
+# private keys / local secrets, whatever their extension
+**/.elevenlabs_key
+**/*.key
+**/.env*
+**/*secret*
+**/*credential*
+**/settings.local.json
+# bulky generated data that slips through as .json/.txt
+**/meta.json
+**/takes_check.json
+5oclock-ep2-the-koban_2026-11-24/story/handoff_scripts/pre_handoff_audio/research/piano/

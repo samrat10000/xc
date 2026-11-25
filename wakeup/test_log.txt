@@ -1,0 +1,29 @@
+﻿00:00.344  blend            | Read blend: "C:\Users\cross\Downloads\xc\wakeup\sam.blend"
+blender.exe : C:\Users\cross\Downloads\xc\wakeup\penthouse.py:24: DeprecationWarning: 'Material.use_nodes' is expected 
+to be removed in Blender 6.0
+At line:3 char:14
++ ... t=Get-Date; & C:\Users\cross\Downloads\xc\blender501\blender.exe -b - ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Users\cross\... in Blender 6.0:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  m = bpy.data.materials.new(name); m.use_nodes = True
+C:\Users\cross\Downloads\xc\wakeup\penthouse.py:132: DeprecationWarning: 'Material.use_nodes' is expected to be 
+removed in Blender 6.0
+  m = bpy.data.materials.new('WindowGlass'); m.use_nodes = True; nt = m.node_tree; n = nt.nodes; l = nt.links
+C:\Users\cross\Downloads\xc\wakeup\penthouse.py:303: DeprecationWarning: 'Material.use_nodes' is expected to be 
+removed in Blender 6.0
+  m = bpy.data.materials.new(name); m.use_nodes = True; nt = m.node_tree; n = nt.nodes; l = nt.links
+C:\Users\cross\Downloads\xc\wakeup\penthouse.py:324: DeprecationWarning: 'World.use_nodes' is expected to be removed 
+in Blender 6.0
+  w = bpy.data.worlds.new('NightFire'); sc.world = w; w.use_nodes = True
+00:04.391  cycles           | WARNING HIPEW initialization failed: Error opening HIP dynamic library
+05:11.875  render           | Saved: 'C:\Users\cross\Downloads\xc\wakeup\frames\test_0001.png'
+Warning: File written by newer Blender binary (503.31), expect loss of data!
+HIP <Vector (0.0000, -0.0946, 0.4700)> HEEL <Vector (0.1998, -0.5511, 0.1202)> HEAD <Vector (0.0000, 0.0236, 1.2240)>
+PHONE <Vector (-0.1192, -0.1994, 0.9279)> EYE <Vector (0.0000, -0.0364, 1.1440)>
+PLATE <Vector (107.6937, -579.6861, -102.5450)> <Vector (904.2649, 678.1987, 0.0000)> <Vector (-0.4200, 1.2236, 1.6440)>
+Blender 5.0.1 (hash a3db93c5b259 built 2025-12-16 01:32:30)
+
+Blender quit
+Error: Not freed memory blocks: 92, total unfreed memory 0.727913 MB

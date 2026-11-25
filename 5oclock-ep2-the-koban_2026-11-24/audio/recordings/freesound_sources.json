@@ -1,0 +1,34 @@
+{
+  "buzz": {
+    "page": "https://freesound.org/people/mobaudio/sounds/384485/",
+    "preview": "https://cdn.freesound.org/previews/384/384485_208707-hq.mp3"
+  },
+  "broom": {
+    "page": "https://freesound.org/people/randbsoundbites/sounds/792417/",
+    "preview": "https://cdn.freesound.org/previews/792/792417_16968183-hq.mp3"
+  },
+  "knock": {
+    "page": "https://freesound.org/people/qubodup/sounds/442878/",
+    "preview": "https://cdn.freesound.org/previews/442/442878_71257-hq.mp3"
+  },
+  "paper": {
+    "page": "https://freesound.org/people/Mihacappy/sounds/814247/",
+    "preview": "https://cdn.freesound.org/previews/814/814247_10594370-hq.mp3"
+  },
+  "steps": {
+    "page": "https://freesound.org/people/FOSSarts/sounds/740419/",
+    "preview": "https://cdn.freesound.org/previews/740/740419_14631530-hq.mp3"
+  },
+  "door": {
+    "page": "https://freesound.org/people/RutgerMuller/sounds/50706/",
+    "preview": "https://cdn.freesound.org/previews/50/50706_179538-hq.mp3"
+  },
+  "kettle": {
+    "page": "https://freesound.org/people/sethlind/sounds/265017/",
+    "preview": "https://cdn.freesound.org/previews/265/265017_4101863-hq.mp3"
+  },
+  "hinge": {
+    "page": "https://freesound.org/people/Mariayolanda511/sounds/850566/",
+    "preview": "https://cdn.freesound.org/previews/850/850566_18454513-hq.mp3"
+  }
+}

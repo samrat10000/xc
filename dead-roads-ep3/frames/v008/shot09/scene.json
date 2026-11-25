@@ -1,0 +1,11 @@
+{
+  "shot": 9,
+  "name": "Lift",
+  "frames": 60,
+  "objects": 722,
+  "camera": "Ep3 shot 9",
+  "device": "CPU",
+  "stage": "BLOCKING - contact, collision and motion need visual QA",
+  "scene": "C:\\Users\\cross\\Downloads\\xc\\dead-roads-ep3\\assets\\v008\\shot09.blend",
+  "warnings": []
+}

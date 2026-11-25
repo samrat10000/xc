@@ -1,0 +1,211 @@
+[
+  {
+    "id": "01a",
+    "part_of_shot": 1,
+    "asset": "C:\\Users\\cross\\Downloads\\xc\\5oclock-ep2-the-koban_2026-11-24\\episode\\v6\\listener_ep1_reference.mp4",
+    "source_in": 46,
+    "source_out": 64,
+    "in_frame": 0,
+    "out_frame": 18,
+    "filter": "crop=720:1280:330:94,scale=1080:1920,eq=saturation=0.91",
+    "segment": "C:\\Users\\cross\\Downloads\\xc\\5oclock-ep2-the-koban_2026-11-24\\episode\\v6\\01a_listener_ep1_reference_edit.mp4"
+  },
+  {
+    "id": "01b",
+    "part_of_shot": 1,
+    "asset": "C:\\Users\\cross\\Downloads\\xc\\5oclock-ep2-the-koban_2026-11-24\\shots\\01_alarm\\01_alarm_v1.mp4",
+    "source_in": 3,
+    "source_out": 33,
+    "in_frame": 18,
+    "out_frame": 48,
+    "filter": "",
+    "segment": "C:\\Users\\cross\\Downloads\\xc\\5oclock-ep2-the-koban_2026-11-24\\episode\\v6\\01b_edit.mp4"
+  },
+  {
+    "id": "02",
+    "part_of_shot": 2,
+    "asset": "C:\\Users\\cross\\Downloads\\xc\\5oclock-ep2-the-koban_2026-11-24\\shots\\02_wrong_room\\02_wrong_room_v2.mp4",
+    "source_in": 0,
+    "source_out": 96,
+    "in_frame": 48,
+    "out_frame": 144,
+    "filter": "",
+    "segment": "C:\\Users\\cross\\Downloads\\xc\\5oclock-ep2-the-koban_2026-11-24\\shots\\02_wrong_room\\02_wrong_room_v2.mp4"
+  },
+  {
+    "id": "03",
+    "part_of_shot": 3,
+    "asset": "C:\\Users\\cross\\Downloads\\xc\\5oclock-ep2-the-koban_2026-11-24\\shots\\03_the_crack\\03_the_crack_v2.mp4",
+    "source_in": 0,
+    "source_out": 90,
+    "in_frame": 144,
+    "out_frame": 234,
+    "filter": "",
+    "segment": "C:\\Users\\cross\\Downloads\\xc\\5oclock-ep2-the-koban_2026-11-24\\episode\\v6\\03_03_the_crack_v2_edit.mp4"
+  },
+  {
+    "id": "04",
+    "part_of_shot": 4,
+    "asset": "C:\\Users\\cross\\Downloads\\xc\\5oclock-ep2-the-koban_2026-11-24\\shots\\04_mirror_mom\\04_mirror_mom_v3.mp4",
+    "source_in": 0,
+    "source_out": 96,
+    "in_frame": 234,
+    "out_frame": 330,
+    "filter": "",
+    "segment": "C:\\Users\\cross\\Downloads\\xc\\5oclock-ep2-the-koban_2026-11-24\\shots\\04_mirror_mom\\04_mirror_mom_v3.mp4"
+  },
+  {
+    "id": "05a",
+    "part_of_shot": 5,
+    "asset": "C:\\Users\\cross\\Downloads\\xc\\5oclock-ep2-the-koban_2026-11-24\\shots\\05_the_street\\05_the_street_v3.mp4",
+    "source_in": 0,
+    "source_out": 42,
+    "in_frame": 330,
+    "out_frame": 372,
+    "filter": "",
+    "segment": "C:\\Users\\cross\\Downloads\\xc\\5oclock-ep2-the-koban_2026-11-24\\episode\\v6\\05a_05_the_street_v3_edit.mp4"
+  },
+  {
+    "id": "05b",
+    "part_of_shot": 5,
+    "asset": "C:\\Users\\cross\\Downloads\\xc\\5oclock-ep2-the-koban_2026-11-24\\shots\\05_the_street\\05_the_street_v3.mp4",
+    "source_in": 52,
+    "source_out": 96,
+    "in_frame": 372,
+    "out_frame": 416,
+    "filter": "",
+    "segment": "C:\\Users\\cross\\Downloads\\xc\\5oclock-ep2-the-koban_2026-11-24\\episode\\v6\\05b_05_the_street_v3_edit.mp4"
+  },
+  {
+    "id": "06",
+    "part_of_shot": 6,
+    "asset": "C:\\Users\\cross\\Downloads\\xc\\5oclock-ep2-the-koban_2026-11-24\\shots\\06_the_koban\\06_the_koban_v2.mp4",
+    "source_in": 0,
+    "source_out": 98,
+    "in_frame": 416,
+    "out_frame": 514,
+    "filter": "",
+    "segment": "C:\\Users\\cross\\Downloads\\xc\\5oclock-ep2-the-koban_2026-11-24\\episode\\v6\\06_06_the_koban_v2_edit.mp4"
+  },
+  {
+    "id": "07",
+    "part_of_shot": 7,
+    "asset": "C:\\Users\\cross\\Downloads\\xc\\5oclock-ep2-the-koban_2026-11-24\\shots\\07_the_rules\\07_the_rules_v2.mp4",
+    "source_in": 0,
+    "source_out": 128,
+    "in_frame": 514,
+    "out_frame": 642,
+    "filter": "",
+    "segment": "C:\\Users\\cross\\Downloads\\xc\\5oclock-ep2-the-koban_2026-11-24\\shots\\07_the_rules\\07_the_rules_v2.mp4"
+  },
+  {
+    "id": "08",
+    "part_of_shot": 8,
+    "asset": "C:\\Users\\cross\\Downloads\\xc\\5oclock-ep2-the-koban_2026-11-24\\shots\\08_mom_calls\\08_mom_calls_v2.mp4",
+    "source_in": 0,
+    "source_out": 70,
+    "in_frame": 642,
+    "out_frame": 712,
+    "filter": "",
+    "segment": "C:\\Users\\cross\\Downloads\\xc\\5oclock-ep2-the-koban_2026-11-24\\episode\\v6\\08_edit.mp4"
+  },
+  {
+    "id": "09",
+    "part_of_shot": 9,
+    "asset": "C:\\Users\\cross\\Downloads\\xc\\5oclock-ep2-the-koban_2026-11-24\\shots\\09_behind_him\\09_behind_him_v1.mp4",
+    "source_in": 34,
+    "source_out": 85,
+    "in_frame": 712,
+    "out_frame": 763,
+    "filter": "",
+    "segment": "C:\\Users\\cross\\Downloads\\xc\\5oclock-ep2-the-koban_2026-11-24\\episode\\v6\\09_edit.mp4"
+  },
+  {
+    "id": "10",
+    "part_of_shot": 10,
+    "asset": "C:\\Users\\cross\\Downloads\\xc\\5oclock-ep2-the-koban_2026-11-24\\shots\\10_the_window\\10_the_window_v3.mp4",
+    "source_in": 0,
+    "source_out": 96,
+    "in_frame": 763,
+    "out_frame": 859,
+    "filter": "",
+    "segment": "C:\\Users\\cross\\Downloads\\xc\\5oclock-ep2-the-koban_2026-11-24\\shots\\10_the_window\\10_the_window_v3.mp4"
+  },
+  {
+    "id": "11",
+    "part_of_shot": 11,
+    "asset": "C:\\Users\\cross\\Downloads\\xc\\5oclock-ep2-the-koban_2026-11-24\\shots\\11_1659\\11_1659_v2.mp4",
+    "source_in": 24,
+    "source_out": 79,
+    "in_frame": 859,
+    "out_frame": 914,
+    "filter": "",
+    "segment": "C:\\Users\\cross\\Downloads\\xc\\5oclock-ep2-the-koban_2026-11-24\\episode\\v6\\11_11_1659_v2_edit.mp4"
+  },
+  {
+    "id": "12",
+    "part_of_shot": 12,
+    "asset": "C:\\Users\\cross\\Downloads\\xc\\5oclock-ep2-the-koban_2026-11-24\\shots\\12_the_horns_turn\\12_the_horns_turn_v2.mp4",
+    "source_in": 0,
+    "source_out": 120,
+    "in_frame": 914,
+    "out_frame": 1034,
+    "filter": "",
+    "segment": "C:\\Users\\cross\\Downloads\\xc\\5oclock-ep2-the-koban_2026-11-24\\shots\\12_the_horns_turn\\12_the_horns_turn_v2.mp4"
+  },
+  {
+    "id": "13a",
+    "part_of_shot": 13,
+    "asset": "C:\\Users\\cross\\Downloads\\xc\\5oclock-ep2-the-koban_2026-11-24\\shots\\13_rule_one\\13_rule_one_v2.mp4",
+    "source_in": 0,
+    "source_out": 68,
+    "in_frame": 1034,
+    "out_frame": 1102,
+    "filter": "",
+    "segment": "C:\\Users\\cross\\Downloads\\xc\\5oclock-ep2-the-koban_2026-11-24\\episode\\v6\\13a_13_rule_one_v2_edit.mp4"
+  },
+  {
+    "id": "13b",
+    "part_of_shot": 13,
+    "asset": "C:\\Users\\cross\\Downloads\\xc\\5oclock-ep2-the-koban_2026-11-24\\episode\\v6\\listener_ep1_reference.mp4",
+    "source_in": 77,
+    "source_out": 101,
+    "in_frame": 1102,
+    "out_frame": 1126,
+    "filter": "crop=972:1728:108:56,scale=1080:1920,eq=saturation=0.93:gamma=1.03",
+    "segment": "C:\\Users\\cross\\Downloads\\xc\\5oclock-ep2-the-koban_2026-11-24\\episode\\v6\\13b_edit.mp4"
+  },
+  {
+    "id": "13c",
+    "part_of_shot": 13,
+    "asset": "C:\\Users\\cross\\Downloads\\xc\\5oclock-ep2-the-koban_2026-11-24\\shots\\13_rule_one\\13_rule_one_v2.mp4",
+    "source_in": 84,
+    "source_out": 120,
+    "in_frame": 1126,
+    "out_frame": 1162,
+    "filter": "",
+    "segment": "C:\\Users\\cross\\Downloads\\xc\\5oclock-ep2-the-koban_2026-11-24\\episode\\v6\\13c_13_rule_one_v2_edit.mp4"
+  },
+  {
+    "id": "14",
+    "part_of_shot": 14,
+    "asset": "C:\\Users\\cross\\Downloads\\xc\\5oclock-ep2-the-koban_2026-11-24\\shots\\14_the_knock\\14_the_knock_v2.mp4",
+    "source_in": 0,
+    "source_out": 120,
+    "in_frame": 1162,
+    "out_frame": 1282,
+    "filter": "",
+    "segment": "C:\\Users\\cross\\Downloads\\xc\\5oclock-ep2-the-koban_2026-11-24\\shots\\14_the_knock\\14_the_knock_v2.mp4"
+  },
+  {
+    "id": "15",
+    "part_of_shot": 15,
+    "asset": "C:\\Users\\cross\\Downloads\\xc\\5oclock-ep2-the-koban_2026-11-24\\shots\\15_rule_eight\\15_rule_eight_v2.mp4",
+    "source_in": 0,
+    "source_out": 96,
+    "in_frame": 1282,
+    "out_frame": 1378,
+    "filter": "",
+    "segment": "C:\\Users\\cross\\Downloads\\xc\\5oclock-ep2-the-koban_2026-11-24\\shots\\15_rule_eight\\15_rule_eight_v2.mp4"
+  }
+]

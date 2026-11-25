@@ -1,0 +1,13 @@
+{
+  "shot": 18,
+  "name": "Heads turn",
+  "frames": 60,
+  "objects": 1061,
+  "camera": "Ep3 shot 18",
+  "device": "CPU",
+  "stage": "BLOCKING - contact, collision and motion need visual QA",
+  "scene": "C:\\Users\\cross\\Downloads\\xc\\dead-roads-ep3\\assets\\v006\\shot18.blend",
+  "warnings": [
+    "Two licensed car designs repeated; cabin intersections and head turns require visual QA"
+  ]
+}

@@ -1,0 +1,235 @@
+{
+  "shot": "10",
+  "frames": 96,
+  "resolution_percent": 100,
+  "camera_clip_m": [
+    0.014999999664723873,
+    1000.0
+  ],
+  "light_energy": {
+    "Mirror side sidelight": 2.98,
+    "Stale force in the room": 0.31
+  },
+  "key_projections": [
+    {
+      "source_frame": 1,
+      "figures": [
+        {
+          "actor": "Sam_Rig",
+          "head_m": [
+            -0.204,
+            0.627,
+            1.662
+          ],
+          "head_uv_depth": [
+            -0.038,
+            0.676,
+            1.189
+          ]
+        },
+        {
+          "actor": "Sam_Rig.001",
+          "head_m": [
+            -0.002,
+            -0.003,
+            1.672
+          ],
+          "head_uv_depth": [
+            0.748,
+            0.809,
+            0.677
+          ]
+        },
+        {
+          "actor": "Mom_Rig",
+          "head_m": [
+            -0.0,
+            0.008,
+            1.402
+          ],
+          "head_uv_depth": [
+            0.734,
+            0.38,
+            0.693
+          ]
+        }
+      ]
+    },
+    {
+      "source_frame": 24,
+      "figures": [
+        {
+          "actor": "Sam_Rig",
+          "head_m": [
+            -0.203,
+            0.622,
+            1.662
+          ],
+          "head_uv_depth": [
+            -6.181,
+            1.332,
+            0.287
+          ]
+        },
+        {
+          "actor": "Sam_Rig.001",
+          "head_m": [
+            -0.002,
+            -0.003,
+            1.672
+          ],
+          "head_uv_depth": [
+            -1.421,
+            1.05,
+            0.405
+          ]
+        },
+        {
+          "actor": "Mom_Rig",
+          "head_m": [
+            -0.0,
+            0.008,
+            1.402
+          ],
+          "head_uv_depth": [
+            -1.443,
+            0.398,
+            0.423
+          ]
+        }
+      ]
+    },
+    {
+      "source_frame": 48,
+      "figures": [
+        {
+          "actor": "Sam_Rig",
+          "head_m": [
+            -0.202,
+            0.623,
+            1.662
+          ],
+          "head_uv_depth": [
+            -1.474,
+            0.75,
+            0.821
+          ]
+        },
+        {
+          "actor": "Sam_Rig.001",
+          "head_m": [
+            0.387,
+            1.542,
+            1.659
+          ],
+          "head_uv_depth": [
+            -0.762,
+            0.631,
+            1.843
+          ]
+        },
+        {
+          "actor": "Mom_Rig",
+          "head_m": [
+            0.698,
+            1.613,
+            1.428
+          ],
+          "head_uv_depth": [
+            -0.474,
+            0.507,
+            2.143
+          ]
+        }
+      ]
+    },
+    {
+      "source_frame": 72,
+      "figures": [
+        {
+          "actor": "Sam_Rig",
+          "head_m": [
+            -0.204,
+            0.627,
+            1.662
+          ],
+          "head_uv_depth": [
+            -0.07,
+            0.688,
+            1.163
+          ]
+        },
+        {
+          "actor": "Sam_Rig.001",
+          "head_m": [
+            0.355,
+            1.567,
+            1.694
+          ],
+          "head_uv_depth": [
+            0.358,
+            0.625,
+            2.242
+          ]
+        },
+        {
+          "actor": "Mom_Rig",
+          "head_m": [
+            0.698,
+            1.613,
+            1.448
+          ],
+          "head_uv_depth": [
+            0.62,
+            0.502,
+            2.417
+          ]
+        }
+      ]
+    },
+    {
+      "source_frame": 96,
+      "figures": [
+        {
+          "actor": "Sam_Rig",
+          "head_m": [
+            -0.204,
+            0.627,
+            1.662
+          ],
+          "head_uv_depth": [
+            -0.132,
+            0.718,
+            1.079
+          ]
+        },
+        {
+          "actor": "Sam_Rig.001",
+          "head_m": [
+            0.373,
+            1.549,
+            1.672
+          ],
+          "head_uv_depth": [
+            0.361,
+            0.627,
+            2.152
+          ]
+        },
+        {
+          "actor": "Mom_Rig",
+          "head_m": [
+            0.698,
+            1.613,
+            1.448
+          ],
+          "head_uv_depth": [
+            0.628,
+            0.502,
+            2.341
+          ]
+        }
+      ]
+    }
+  ]
+}

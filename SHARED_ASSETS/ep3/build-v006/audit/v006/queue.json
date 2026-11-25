@@ -1,0 +1,32 @@
+[
+  {
+    "shot": 6,
+    "returncode": 0,
+    "elapsed_s": 46.37,
+    "device": "CPU"
+  },
+  {
+    "shot": 7,
+    "returncode": 0,
+    "elapsed_s": 40.28,
+    "device": "CPU"
+  },
+  {
+    "shot": 8,
+    "returncode": 0,
+    "elapsed_s": 60.21,
+    "device": "CPU"
+  },
+  {
+    "shot": 9,
+    "returncode": 0,
+    "elapsed_s": 59.65,
+    "device": "CPU"
+  },
+  {
+    "shot": 10,
+    "returncode": 0,
+    "elapsed_s": 56.09,
+    "device": "CPU"
+  }
+]

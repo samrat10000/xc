@@ -1,0 +1,24 @@
+{
+  "stage": "Silent blocking preview",
+  "source_scene": "assets/v007/shot11.blend",
+  "source_frames": [
+    1,
+    72
+  ],
+  "elapsed_s": 645.8128623962402,
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "width": 270,
+        "height": 480,
+        "r_frame_rate": "24/1",
+        "nb_read_frames": "72"
+      }
+    ],
+    "format": {
+      "duration": "3.000000"
+    }
+  }
+}

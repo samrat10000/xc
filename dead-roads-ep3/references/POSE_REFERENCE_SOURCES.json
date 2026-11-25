@@ -1,0 +1,18 @@
+[
+  {
+    "name": "driving-hands-reference.jpg",
+    "page": "https://unsplash.com/photos/person-driving-car-during-night-time-94SJZvsnEzY",
+    "author": "Edwin Harvey",
+    "url": "https://images.unsplash.com/photo-1594436261352-cd1d57393acb?w=900&q=80",
+    "sha256": "07ddd4c9926b71a5667762920fa1ade21b1ee8fb97a2467e73bc8a4caa3fd7d9",
+    "use": "Internal reference only; not a licensed episode asset or cleared for public redistribution"
+  },
+  {
+    "name": "forearm-grip-reference.jpg",
+    "page": "https://depositphotos.com/photos/helping-each-other.html",
+    "author": "Depositphotos public preview; underlying photographer unknown",
+    "url": "https://st4.depositphotos.com/1784615/21947/i/450/depositphotos_219471508-stock-photo-man-saving-rescuing-helping-woman.jpg",
+    "sha256": "0797107df370b81860a8ea1dcf7a40d5700f02d8043d12a2f1ef6689a1256e38",
+    "use": "Internal reference only; not a licensed episode asset or cleared for public redistribution"
+  }
+]

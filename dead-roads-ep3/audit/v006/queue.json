@@ -1,0 +1,86 @@
+[
+  {
+    "shot": 6,
+    "returncode": 0,
+    "elapsed_s": 46.37,
+    "device": "CPU"
+  },
+  {
+    "shot": 7,
+    "returncode": 0,
+    "elapsed_s": 40.28,
+    "device": "CPU"
+  },
+  {
+    "shot": 8,
+    "returncode": 0,
+    "elapsed_s": 60.21,
+    "device": "CPU"
+  },
+  {
+    "shot": 9,
+    "returncode": 0,
+    "elapsed_s": 59.65,
+    "device": "CPU"
+  },
+  {
+    "shot": 10,
+    "returncode": 0,
+    "elapsed_s": 56.09,
+    "device": "CPU"
+  },
+  {
+    "shot": 11,
+    "returncode": 0,
+    "elapsed_s": 108.9,
+    "device": "CPU"
+  },
+  {
+    "shot": 12,
+    "returncode": 0,
+    "elapsed_s": 79.14,
+    "device": "CPU"
+  },
+  {
+    "shot": 13,
+    "returncode": 0,
+    "elapsed_s": 39.31,
+    "device": "CPU"
+  },
+  {
+    "shot": 14,
+    "returncode": 0,
+    "elapsed_s": 15.6,
+    "device": "CPU"
+  },
+  {
+    "shot": 15,
+    "returncode": 0,
+    "elapsed_s": 14.62,
+    "device": "CPU"
+  },
+  {
+    "shot": 16,
+    "returncode": 0,
+    "elapsed_s": 18.02,
+    "device": "CPU"
+  },
+  {
+    "shot": 17,
+    "returncode": 0,
+    "elapsed_s": 15.63,
+    "device": "CPU"
+  },
+  {
+    "shot": 18,
+    "returncode": 0,
+    "elapsed_s": 18.44,
+    "device": "CPU"
+  },
+  {
+    "shot": 19,
+    "returncode": 0,
+    "elapsed_s": 1.88,
+    "device": "CPU"
+  }
+]

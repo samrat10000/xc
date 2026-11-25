@@ -1,0 +1,233 @@
+<title>Tunnel Vision: Episode 3</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: same dark film-strip column as the Ep2 board so the series reads as one; premise, act strip, 2-up shot board with pixel frames, build sheet for Codex. Single night look on purpose. */
+:root{
+  --bg:#0d0f13; --panel:#151922; --line:#262c38; --fg:#e7e3da; --dim:#9aa1ad;
+  --blood:#c8322a; --sodium:#f2a43a; --steel:#7fa3c7; --ok:#7fbf7a; --vhs:#e8343a;
+  --display:"Big Shoulders Display","Oswald","Arial Narrow",sans-serif;
+  --body:"Inter",system-ui,sans-serif; --mono:"JetBrains Mono",ui-monospace,monospace;
+  color-scheme:dark;
+}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);line-height:1.55;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 60px}
+.wrap{max-width:1080px;margin:0 auto;display:flex;flex-direction:column;gap:44px}
+h1,h2{font-family:var(--display);letter-spacing:.02em;text-wrap:balance;margin:0;line-height:1}
+h1{font-size:clamp(44px,9vw,92px);font-weight:800;text-transform:uppercase}
+h1 span{color:var(--blood)}
+h2{font-size:clamp(26px,4.4vw,38px);font-weight:600;text-transform:uppercase;margin-bottom:14px}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--sodium)}
+p{margin:0;max-width:68ch}.dim{color:var(--dim)}
+header{display:flex;flex-direction:column;gap:14px}
+.facts{display:flex;flex-wrap:wrap;gap:8px 22px;font-family:var(--mono);font-size:13px;color:var(--dim)}
+.facts b{color:var(--fg);font-weight:600}
+.why{border-left:3px solid var(--blood);padding:4px 0 4px 16px;display:grid;gap:8px}
+.chain{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.chain div{background:var(--panel);border:1px solid var(--line);padding:12px 14px;font-size:13.5px;min-width:0}
+.chain b{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--steel);margin-bottom:4px}
+.chain .now{border-color:var(--blood)}.chain .now b{color:var(--blood)}
+.acts{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;font-family:var(--mono);font-size:11px}
+.acts div{background:var(--panel);border-top:3px solid var(--steel);padding:8px}
+.acts div:nth-child(2){border-color:var(--sodium)}.acts div:nth-child(3){border-color:var(--blood)}.acts div:nth-child(4){border-color:#fff}
+.board{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,480px),1fr));gap:14px}
+.shot{display:grid;grid-template-columns:132px 1fr;gap:14px;border-top:1px solid var(--line);padding-top:14px;min-width:0}
+.shot canvas{width:132px;height:234px;image-rendering:pixelated;background:#000;display:block}
+.shot .meta{display:flex;flex-direction:column;gap:6px;min-width:0}
+.tc{font-family:var(--mono);font-size:12px;color:var(--sodium);font-variant-numeric:tabular-nums}
+.shot h3{font-family:var(--display);font-size:24px;font-weight:600;margin:0;text-transform:uppercase;letter-spacing:.03em;line-height:1.05}
+.shot .row{font-size:13.5px}.shot .row b{font-family:var(--mono);font-size:11px;letter-spacing:.08em;color:var(--steel);font-weight:600;margin-right:6px}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{display:inline-block;font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;padding:2px 6px;border:1px solid var(--blood);color:var(--blood)}
+.tag.vhs{border-color:var(--vhs);color:var(--fg);background:#3a1214}
+.tag.sig{border-color:var(--ok);color:var(--ok)}
+@media(max-width:560px){.acts,.chain{grid-template-columns:1fr 1fr}.shot{grid-template-columns:96px 1fr}.shot canvas{width:96px;height:170px}}
+table{border-collapse:collapse;width:100%;font-size:14px;min-width:640px}
+.tscroll{overflow-x:auto}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);font-weight:600}
+td code,li code{font-family:var(--mono);font-size:12.5px;color:var(--sodium)}
+.st{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.08em}
+.st.have{color:var(--ok)}.st.new{color:var(--blood)}.st.mod{color:var(--sodium)}
+ul.rules{display:grid;gap:8px;padding-left:20px;margin:0;max-width:75ch}
+button{font:600 13px var(--mono);background:var(--panel);color:var(--fg);border:1px solid var(--steel);padding:10px 14px;cursor:pointer}
+button:focus-visible{outline:2px solid var(--sodium);outline-offset:2px}
+pre{background:#090b0e;border:1px solid var(--line);padding:12px;font:12px/1.5 var(--mono);color:var(--dim);max-height:260px;overflow:auto;white-space:pre-wrap;margin:10px 0 0}
+footer{font-size:13px;color:var(--dim)}
+</style>
+
+<div class="wrap">
+<header>
+  <div class="eyebrow">Night Terror: Dead Roads · Episode 3 · storyboard v1 · build: Codex</div>
+  <h1>Tunnel <span>Vision</span></h1>
+  <p>Episode 2 smashed to black as the Stalker leapt at the rider. Episode 3 reveals what really hit in that black: Sam's Night Terror, at full speed, from the side. The two survivors meet, the Stalker gets up, and a chase through the street ends in a tunnel. The Stalker loses an antler at the mouth. The way ahead is full of parked cars, and someone is sitting in every one.</p>
+  <div class="facts"><span><b>48.0 s</b> runtime</span><span><b>19</b> shots</span><span><b>24 fps</b> · 1,152 frames</span><span><b>1080×1920</b></span><span>RTX 3050 at ~4 s/frame ≈ <b>77 min</b> per full pass</span><span>only text: hook on frame 0</span></div>
+</header>
+
+<section class="why">
+  <div class="eyebrow">Why this episode works</div>
+  <p>It pays off the Ep2 cliffhanger with a twist: the hit in the black was Sam's car, not the Stalker. That turns a cheap cut into a reveal, and it finally puts Ep1's hero and Ep2's rider in the same frame, so the series has a crew. The Stalker takes its first real wound and stays alive, which makes it a recurring villain with a grudge. The tunnel full of seated, silent infected escalates from one monster to a whole hidden population, and it costs little to render because a single headlight lights it.</p>
+</section>
+
+<section>
+  <div class="eyebrow">Where it sits in the story</div>
+  <div class="chain">
+    <div><b>Ep1 · wake-up</b>3:12 AM, NYC. Sam wakes to the alert, runs to the garage, grabs gear (including the camcorder) and takes out the Night Terror.</div>
+    <div><b>Ep2 · The 43rd Round</b>The rider on the IVORY trike runs out of rounds. The Stalker shoves the truck at her, roars, leaps. Black.</div>
+    <div class="now"><b>Ep3 · Tunnel Vision</b>The car T-bones the Stalker mid-air. Sam and the rider escape into a tunnel, rip the Stalker off the roof, and find the tunnel is not empty.</div>
+  </div>
+</section>
+
+<section>
+  <div class="eyebrow">Four acts</div>
+  <h2>Structure</h2>
+  <div class="acts">
+    <div><b>I · IMPACT</b><br>0–10.5 s · leap, beams, T-bone</div>
+    <div><b>II · MEET</b><br>10.5–20 s · grip, belt, it lifts</div>
+    <div><b>III · CHASE</b><br>20–36 s · scream, J-turn, roof, tunnel</div>
+    <div><b>IV · HEADLIGHT</b><br>36–48 s · breathe, traffic, heads turn</div>
+  </div>
+</section>
+
+<section>
+  <div class="eyebrow">Shot board · pixel frames are layout, not final look</div>
+  <h2>19 shots</h2>
+  <div class="board" id="board"></div>
+</section>
+
+<section>
+  <div class="eyebrow">What Codex needs</div>
+  <h2>Characters, models, sets</h2>
+  <p class="dim" style="margin-bottom:12px">Paths starting <code>xc\</code> are on Sam's Asus. Paths starting <code>project:</code> are in Claude's project folder; Claude copies them into <code>xc\dead-roads-ep3\assets\</code> when Sam says go.</p>
+  <div class="tscroll"><table>
+    <thead><tr><th>Asset</th><th>Status</th><th>Where / what to do</th><th>Shots</th></tr></thead>
+    <tbody>
+      <tr><td>Night Terror car (Sam's armoured fastback)</td><td><span class="st mod">have, add damage</span></td><td>Sam's original GLB (<code>Night_Terror_Fastback_v2.glb</code>, Draco, decode with <code>pipeline/undraco.py</code>). Add a crumple shape key on the nose, left headlight dead (steady, no flicker), a spidered windscreen, claw-hole roof dents as a second shape key.</td><td>2–6, 9, 11–19</td></tr>
+      <tr><td>Rider</td><td><span class="st have">have</span></td><td><code>xc\dead-roads-ep2\assets\rider.blend</code> (rigged v3.2). Needs: pulled-up pose, walk to car, seated passenger, pistol fire up.</td><td>2, 6, 7, 12, 13, 16</td></tr>
+      <tr><td>Sam</td><td><span class="st have">have</span></td><td><code>xc\wakeup\sam.blend</code> (Ep1 v6 build). Lean ectomorph, baggy jeans, loose black hoodie, red glasses. Seated driver rig plus a climb-out.</td><td>4, 6, 13, 16</td></tr>
+      <tr><td>Stalker</td><td><span class="st mod">have, add one antler break</span></td><td><code>xc\dead-roads-ep2\assets\stalker_rig.blend</code>. Split the left antler into its own object for the snap in shot 14. Needs gallop, roof-crawl, ragdoll tumble.</td><td>1–3, 8, 9, 12–15, 19</td></tr>
+      <tr><td>IVORY trike (wrecked)</td><td><span class="st mod">have, damage</span></td><td><code>xc\dead-roads-ep2\assets\trike.blend</code>. Lay it on its side, bent front cage, rubber tyres (matte, squashed).</td><td>5, 7</td></tr>
+      <tr><td>Rusted box truck + Ep2 street</td><td><span class="st have">have</span></td><td>Same set as Ep2, built by <code>xc\dead-roads-ep2\sc\ep2.py</code> with CC0 assets in <code>assets\cc0</code>. Start Ep3 exactly where shot 16 of Ep2 framed it.</td><td>1–11</td></tr>
+      <tr><td>Screamer</td><td><span class="st have">have</span></td><td><code>project:reels/series/models/screamer-v1.glb</code>. One rooftop silhouette. Use the approved scream take.</td><td>10</td></tr>
+      <tr><td>Runners / walkers (horde)</td><td><span class="st have">have</span></td><td><code>xc\dead-roads-ep2\assets\walker.blend</code> + <code>project:…/runner-v2.glb</code>. Geometry Nodes instancing, 30–60 bodies, mostly backlit.</td><td>10–12</td></tr>
+      <tr><td>Husks (seated in cars)</td><td><span class="st have">have</span></td><td><code>project:…/husk-v2.glb</code>. Seated pose, instanced 40+ times into car seats, one head-turn action shared with random offsets of 0–2 frames.</td><td>17, 18</td></tr>
+      <tr><td>Tunnel set</td><td><span class="st new">new</span></td><td>Modular: tiled walls (ambientCG tiles, dirty), concrete ceiling, dead strip lights, a lane divider. Mouth with clearance sign <code>CLEARANCE 12'6"</code>. About 200 m long, repeated in sections.</td><td>14–19</td></tr>
+      <tr><td>Abandoned car jam</td><td><span class="st new">new</span></td><td>6–8 Poly Haven / BlenderKit sedans, instanced 25+, doors open on some, dust on glass.</td><td>17, 18</td></tr>
+      <tr><td>Dash camcorder</td><td><span class="st new">new, tiny</span></td><td>Small 90s camcorder gaffer-taped to the dash. It is the in-story "someone is always recording" camera.</td><td>4, 13, 16</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section>
+  <div class="eyebrow">Sound and music</div>
+  <h2>Score map</h2>
+  <ul class="rules">
+    <li><b>Score:</b> make it in Flow Music, continuing the locked v5 sound (orchestra, original 80s synth, real recorded electric guitar doubled by bass). No AI-guitar distortion, and no cutting the music out suddenly. Keep 120 BPM through Acts I–III so the cut feels continuous with Ep2.</li>
+    <li><b>0–3.5 s:</b> no music. Breath, rain, then the V8 rising from left to right before we see it.</li>
+    <li><b>3.5 s:</b> the impact is the downbeat. Full score enters on the T-bone.</li>
+    <li><b>8–20 s:</b> score drops to a low pulse and synth bed. Truck groan and click-growl sit on top.</li>
+    <li><b>20–33.5 s:</b> full drive. The Screamer scream starts the bar, the roof claw hits land on beats.</li>
+    <li><b>33.5–36 s:</b> the tunnel swallows the sound. Low-pass sweep, the score rings out naturally over 2 bars (no hard stop).</li>
+    <li><b>36–46.5 s:</b> no music. Engine ticks, wind through claw holes, a dripping pipe, tyres creeping on grit.</li>
+    <li><b>46.5–48 s:</b> one sub hit on the cut to black, then the Stalker's click from far behind.</li>
+    <li><b>SFX sources:</b> Freesound / Openverse CC0 checked with earshot (see <code>xc\dead-roads-ep2\audio</code>). Stalker voice is the designed Ep2 voice, never a stock monster growl.</li>
+  </ul>
+</section>
+
+<section>
+  <div class="eyebrow">Style and realism rules</div>
+  <h2>Look</h2>
+  <ul class="rules">
+    <li><b>Found footage:</b> every ground shot is handheld documentary at eye height, with operator micro-shake, late reframes, slight focus breathing and motion blur. Never drone-smooth. Three shots (4, 13, 16) are the dash camcorder itself: VHS softness, chroma bleed, head-switch noise on the bottom 8 px, a small <code>REC ● 3:47 AM</code> in the corner and nothing else.</li>
+    <li><b>Signature moves Sam loves:</b> the low side-follow keeping the body centred (shots 3, 14), the crash zoom over a roof to the creature's face and fast pull-back (shot 9), and the 20 mm camera on the asphalt at the tyre (shots 8, 15).</li>
+    <li><b>No slow-mo in this episode.</b> Ep2 already used it. Everything is real speed. The J-turn is one smooth motion with no stop-start.</li>
+    <li><b>Lights:</b> the car's left headlight is dead from shot 5 on and stays dead. No flickering or toggling lights anywhere.</li>
+    <li><b>Humans:</b> perfect anatomy. The pull-up in shot 6 is a forearm grip, so no fingers splay. Relaxed hands hang palm to thigh. Compare against real reference photos before sending a frame.</li>
+    <li><b>Realism:</b> wet scanned asphalt, ordinary messy streets, sensor noise in the dark, lens smudge in rain, AgX grade without over-saturating. Nothing glossy or symmetric.</li>
+    <li><b>Render:</b> Blender 5.0.1 portable <code>xc\blender501\blender.exe</code>, OptiX only, adaptive sampling, OptiX denoiser, reduced bounces, persistent data. One GPU render at a time across both AIs.</li>
+  </ul>
+</section>
+
+<section>
+  <div class="eyebrow">For Codex</div>
+  <h2>Build sheet</h2>
+  <p>The full shot list as JSON, the same data that draws the board above. Copy it into <code>xc\dead-roads-ep3\SHOTS.json</code> and build one shot script per entry. Finished episode goes to <code>xc\dead-roads-ep3\out\ep3.mp4</code>; questions for Claude go in <code>xc\INBOX_FOR_CLAUDE.md</code>.</p>
+  <div style="margin-top:12px"><button id="copy" type="button">Copy shot list JSON</button> <span id="copied" class="dim" aria-live="polite"></span></div>
+  <pre id="json"></pre>
+</section>
+
+<footer>Episode 3 plan, made 21 Nov 2026 for Sam's review before any build. Pixel frames are layout sketches: the real shots are Blender renders.</footer>
+</div>
+
+<script>
+const SHOTS=[
+ {tc:"0.0–2.0",name:"It never landed",cam:"Low road cam, 18 mm, exactly the Ep2 leap angle",act:"The Stalker is mid-leap over the lens, claws out, rain hanging around it. Hook text on frame 0 only.",snd:"Rain, its scream from Ep2 picking up mid-breath",models:"Stalker, Ep2 street",key:"leap",tags:["hook"]},
+ {tc:"2.0–3.5",name:"High beams",cam:"Handheld, rider's eye line, 24 mm, looking up",act:"Its body fills the sky above her. A white high beam blows out the left of frame and swings across its ribs.",snd:"V8 roars in from the left, a long horn blast",models:"Stalker, rider (hands in frame)",key:"beams",tags:[]},
+ {tc:"3.5–6.0",name:"T-bone",cam:"Low side-follow, 28 mm, keeps the Stalker centred",act:"The Night Terror hits the Stalker mid-air at about 70 km/h and carries it ten metres into the side of the box truck. Glass, sparks, the truck rocks.",snd:"Impact is the downbeat; score slams in. Metal, bone, glass rain",models:"Night Terror, Stalker (ragdoll), truck",key:"tbone",tags:["sig"]},
+ {tc:"6.0–8.0",name:"Dashcam",cam:"The dash camcorder, 4:3 framing inside 9:16, VHS",act:"Same hit from inside. The windscreen spiders. Sam's hands jolt on the wheel, his glasses fly forward on the strap. Antlers scrape past the glass.",snd:"Camcorder mic clipping, airbag-less thump, his grunt",models:"Sam (seated), car interior, camcorder",key:"dash",tags:["vhs"]},
+ {tc:"8.0–10.5",name:"Steam",cam:"Handheld documentary, eye height, walking in",act:"Crumpled bonnet steaming in the rain, left headlight dead, the trike on its side. The driver door creaks open.",snd:"Radiator hiss, ticking metal, car alarm far off",models:"Night Terror (damaged), trike (wrecked)",key:"steam",tags:[]},
+ {tc:"10.5–13.0",name:"Take my arm",cam:"MCU handheld, 50 mm, low",act:"Sam reaches down. She locks his forearm, he hauls her up in one motion. First time they see each other. No words.",snd:"Leather creak, two breaths, rain",models:"Sam, rider",key:"grip",tags:[]},
+ {tc:"13.0–15.0",name:"Last belt",cam:"Insert, 85 mm, handheld",act:"She rips the empty bandolier off the trike, then the one live belt from the tray, and slings it. The 43rd round, finally.",snd:"Brass rattle, buckle snap",models:"Rider (hands), trike",key:"belt",tags:[]},
+ {tc:"15.0–17.5",name:"It moves",cam:"20 mm on the asphalt under the truck",act:"In the puddle under the truck, an antler tip twitches. A clawed hand slaps flat into the water.",snd:"The click-growl, water slap. Score falls to a pulse",models:"Stalker, truck",key:"under",tags:["sig"]},
+ {tc:"17.5–20.0",name:"Lift",cam:"Crash zoom up over the truck roof, then fast pull-back",act:"The truck tips up on one side. The camera rushes over the roof to its face pushing up from beneath, then rips back as Sam and the rider dive into the car.",snd:"Metal groan, sub swell, doors slam",models:"Stalker, truck, Sam, rider, car",key:"lift",tags:["sig"]},
+ {tc:"20.0–22.0",name:"Screamer",cam:"Handheld wide, 35 mm, from street level",act:"On a rooftop, a thin silhouette arches back and screams. Windows down the whole street fill with running shapes.",snd:"Approved Screamer take; full drive kicks in",models:"Screamer, runners (instanced)",key:"scream",tags:[]},
+ {tc:"22.0–25.0",name:"J-turn",cam:"Camera-car orbit, one continuous move",act:"The Night Terror reverses hard and spins 180° in one smooth arc, the single headlight sweeping across the horde, then drives away.",snd:"Gearbox whine, tyre scream, engine on the beat",models:"Night Terror, horde",key:"jturn",tags:[]},
+ {tc:"25.0–28.0",name:"Gallop",cam:"Handheld from the back seat, through the rear window",act:"The Stalker on all fours behind them, gaining, the horde streaming behind it under the street lamps.",snd:"Gallop on asphalt, engine strain",models:"Stalker, horde, car interior",key:"gallop",tags:[]},
+ {tc:"28.0–30.5",name:"On the roof",cam:"The dash camcorder, VHS",act:"THUNK. The roof dents in. Claws punch through the headliner between their heads. She fires the pistol straight up three times; each flash lights the cabin.",snd:"Roof hits on beats, three pistol shots, her shout",models:"Sam, rider, car interior, Stalker claws",key:"roof",tags:["vhs"]},
+ {tc:"30.5–33.5",name:"Clearance 12'6\"",cam:"Low side-follow, 24 mm, real speed",act:"The tunnel mouth rushes in. The Stalker rises on the roof, antlers up. They hit the concrete lip; it is ripped off backwards and the left antler snaps.",snd:"Crack of bone on concrete, roof scrape",models:"Night Terror, Stalker, tunnel mouth",key:"mouth",tags:["sig"]},
+ {tc:"33.5–36.0",name:"Antler",cam:"20 mm on the tunnel floor, looking back",act:"The Stalker tumbles in the rain at the tunnel mouth and shrinks away. The broken antler skids along the asphalt right past the lens.",snd:"Antler skitter, score rings out under a low-pass sweep",models:"Stalker (ragdoll), antler prop, tunnel",key:"antler",tags:["sig"]},
+ {tc:"36.0–40.0",name:"Breathe",cam:"The dash camcorder, two-shot, VHS",act:"Quiet. One headlight on tiled walls. She reloads with steady hands. Sam's hands shake on the wheel. Wind whistles through the claw holes.",snd:"No music. Engine ticks, wind, a drip",models:"Sam, rider, car interior",key:"breathe",tags:["vhs"]},
+ {tc:"40.0–44.0",name:"Traffic",cam:"Handheld over Sam's shoulder through the cracked glass",act:"The headlight crawls over a jam of abandoned cars filling the tunnel. The car rolls to a stop. In every car, someone is sitting upright.",snd:"Tyres on grit, brake squeak, silence",models:"Car jam, husks (seated), tunnel",key:"jam",tags:[]},
+ {tc:"44.0–46.5",name:"Heads turn",cam:"Slow handheld push toward one windscreen, 50 mm",act:"Every head turns into the light at once. Milky eyes catch the beam, two frames apart down the line.",snd:"Dozens of necks cracking, one breath held",models:"Husks (seated, instanced)",key:"heads",tags:[]},
+ {tc:"46.5–48.0",name:"Click",cam:"Hard cut to black",act:"Black. Far behind them, from the tunnel mouth, the Stalker's click.",snd:"Sub hit, then the click, echoing",models:"none",key:"black",tags:[]}
+];
+const W=72,H=128,P={sky:"#0b1020",sky2:"#141a30",bld:"#1b2133",bld2:"#232a3f",win:"#f2a43a",road:"#121418",wet:"#2a3242",line:"#c9b56b",car:"#16181d",car2:"#2c3038",trike:"#e9e2d0",zom:"#5d6157",zom2:"#3d4038",husk:"#77736a",blood:"#a51e1a",flash:"#fff3c4",hl:"#fff8dc",bone:"#e8ddc6",ant:"#8a7a63",skin:"#c9a58a",glove:"#5a3b25",brass:"#d9a441",hood:"#15161a",red:"#d23a32",hair:"#efe8dd",tan:"#8a6440",tile:"#3b4a4a",tile2:"#2e3a3b",eye:"#ff3b2f",milk:"#d9e2d6"};
+function px(c,col,x,y,w=1,h=1){c.fillStyle=col;c.fillRect(Math.round(x),Math.round(y),Math.round(w),Math.round(h))}
+function city(c,hor=60){px(c,P.sky,0,0,W,hor);px(c,P.sky2,0,hor-18,W,18);let x=0,s=7;while(x<W){s=(s*73+19)%101;const w=8+s%10,h=18+s%30;px(c,s%2?P.bld:P.bld2,x,hor-h,w,h);for(let yy=hor-h+3;yy<hor-3;yy+=4)for(let xx=x+2;xx<x+w-2;xx+=3)if((xx*7+yy*13+s)%5==0)px(c,P.win,xx,yy);x+=w}px(c,P.road,0,hor,W,H-hor);for(let i=0;i<6;i++)px(c,P.wet,6+(i*17)%40,hor+6+i*11,14+(i%3)*5,2)}
+function rain(c,n=40,seed=3){c.globalAlpha=.35;for(let i=0;i<n;i++)px(c,"#9fb3d1",(i*37+seed*11)%W,(i*53+seed*7)%H,1,3);c.globalAlpha=1}
+function zombie(c,x,y,s=1,col=P.zom2){px(c,col,x-2*s,y-14*s,4*s,9*s);px(c,P.zom,x-1.5*s,y-18*s,3*s,4*s);px(c,col,x-2*s,y-5*s,1.5*s,5*s);px(c,col,x+.5*s,y-5*s,1.5*s,5*s);px(c,col,x-4*s,y-13*s,2*s,6*s);px(c,col,x+2*s,y-12*s,2*s,7*s)}
+function stalker(c,x,y,s=1,oneAnt=false){px(c,"#7a2c25",x-4*s,y-20*s,8*s,14*s);px(c,P.bone,x-2*s,y-26*s,4*s,6*s);px(c,P.eye,x-1.5*s,y-24*s,1,1);px(c,P.eye,x+1*s,y-24*s,1,1);for(const d of[-1,1]){if(oneAnt&&d<0)continue;px(c,P.ant,x+d*2*s,y-34*s,1*s,8*s);px(c,P.ant,x+d*4*s,y-38*s,1*s,6*s);px(c,P.ant,x+d*3*s,y-34*s,2*s,1*s)}px(c,"#5e211c",x-7*s,y-18*s,3*s,14*s);px(c,"#5e211c",x+4*s,y-18*s,3*s,14*s);px(c,"#5e211c",x-3*s,y-6*s,2*s,6*s);px(c,"#5e211c",x+1*s,y-6*s,2*s,6*s)}
+function truck(c,x,y,s=1){px(c,"#5b4a3a",x-12*s,y-16*s,24*s,13*s);px(c,"#6e5a46",x-12*s,y-16*s,24*s,2*s);px(c,"#222",x-9*s,y-4*s,5*s,4*s);px(c,"#222",x+5*s,y-4*s,5*s,4*s)}
+function car(c,x,y,s=1,dead=true){px(c,P.car,x-14*s,y-8*s,28*s,7*s);px(c,P.car2,x-8*s,y-13*s,15*s,5*s);px(c,"#3c4656",x-6*s,y-12*s,11*s,3*s);px(c,"#0a0a0a",x-11*s,y-3*s,6*s,4*s);px(c,"#0a0a0a",x+5*s,y-3*s,6*s,4*s);px(c,P.hl,x-14*s,y-7*s,2*s,2*s);if(!dead)px(c,P.hl,x+12*s,y-7*s,2*s,2*s)}
+function beam(c,x,y,dx,w,a=.18){c.globalAlpha=a;c.fillStyle=P.hl;c.beginPath();c.moveTo(x,y);c.lineTo(x+dx,y-w);c.lineTo(x+dx,y+w);c.fill();c.globalAlpha=1}
+function flash(c,x,y,r=4){c.globalAlpha=.25;px(c,P.flash,x-r*2,y-r*2,r*4,r*4);c.globalAlpha=1;px(c,P.flash,x-r/2,y-r,r,r*2);px(c,P.flash,x-r,y-r/2,r*2,r)}
+function sam(c,x,y,s=1){px(c,P.hood,x-4*s,y-14*s,8*s,10*s);px(c,"#2b3a55",x-3*s,y-4*s,6*s,6*s);px(c,P.skin,x-2*s,y-19*s,4*s,5*s);px(c,"#111",x-3*s,y-21*s,6*s,3*s);px(c,P.red,x-2*s,y-17*s,4*s,1)}
+function rider(c,x,y,s=1){px(c,P.tan,x-4*s,y-14*s,8*s,9*s);px(c,"#111",x-3*s,y-5*s,6*s,3*s);px(c,P.tan,x-3*s,y-2*s,2*s,4*s);px(c,P.tan,x+1*s,y-2*s,2*s,4*s);px(c,P.skin,x-2*s,y-19*s,4*s,5*s);px(c,P.hair,x-3*s,y-21*s,6*s,4*s);px(c,"#b8642c",x-2*s,y-21*s,4*s,1)}
+function interior(c){px(c,"#07080b",0,0,W,H);px(c,"#1c1f25",0,0,W,14);px(c,"#20242b",0,96,W,32);px(c,"#2a2f38",0,92,W,6);c.globalAlpha=.6;px(c,"#0f1522",6,16,60,72);c.globalAlpha=1}
+function vhs(c){c.globalAlpha=.08;for(let y=0;y<H;y+=2)px(c,"#ffffff",0,y,W,1);c.globalAlpha=1;px(c,"#e8343a",4,5,3,3);c.fillStyle="#e7e3da";c.font="5px monospace";c.fillText("REC",9,9);c.fillText("3:47AM",44,9);c.globalAlpha=.35;px(c,"#9aa1ad",0,H-4,W,2);c.globalAlpha=1}
+function tunnel(c,lit=.6){px(c,"#050607",0,0,W,H);for(let i=0;i<7;i++){const t=i/7,w=W*(1-t*.8),h=H*(1-t*.75),x=(W-w)/2,y=(H-h)/2-6;c.globalAlpha=lit*(1-t);px(c,i%2?P.tile:P.tile2,x,y,w*.12,h);px(c,i%2?P.tile:P.tile2,x+w*.88,y,w*.12,h);c.globalAlpha=1}px(c,"#0d0e10",0,92,W,36)}
+const DRAW={
+ leap(c){city(c,90);stalker(c,36,70,1.8);rain(c,50,2)},
+ beams(c){city(c,100);stalker(c,40,74,1.9);beam(c,0,60,72,40,.35);px(c,P.hl,0,52,6,16);px(c,P.glove,52,112,18,16)},
+ tbone(c){city(c,56);truck(c,48,92,1.3);car(c,26,100,1.3,false);stalker(c,44,82,1,false);for(let i=0;i<14;i++)px(c,i%2?P.flash:"#cfe0ff",30+(i*7)%26,70+(i*5)%22,1,1)},
+ dash(c){interior(c);for(let i=0;i<10;i++){c.strokeStyle="#9aa1ad";c.globalAlpha=.6;c.beginPath();c.moveTo(36,44);c.lineTo(36+Math.cos(i)*30,44+Math.sin(i)*30);c.stroke()}c.globalAlpha=1;px(c,P.ant,10,30,24,2);sam(c,36,112,1.6);px(c,"#111",20,98,32,4);vhs(c)},
+ steam(c){city(c,60);car(c,30,100,1.5,true);c.globalAlpha=.3;for(let i=0;i<8;i++)px(c,"#c7d3e6",8+i*3,74-i*4,8,6);c.globalAlpha=1;c.save();c.translate(56,108);c.rotate(-1.2);px(c,P.trike,-8,-5,16,5);c.restore();rain(c,40,4)},
+ grip(c){px(c,"#0e1014",0,0,W,H);rain(c,30,6);px(c,P.hood,30,0,20,60);px(c,P.tan,24,64,22,64);px(c,P.hood,34,54,8,22);px(c,P.tan,30,70,10,8);px(c,P.glove,32,68,10,8);rider(c,22,128,1.7)},
+ belt(c){px(c,"#101318",0,0,W,H);px(c,P.trike,0,80,W,20);for(let i=0;i<6;i++)px(c,P.brass,12+i*8,52,4,12);px(c,"#3a2a1d",8,62,56,4);px(c,P.glove,48,46,16,14);rain(c,30,9)},
+ under(c){px(c,"#07080a",0,0,W,40);px(c,"#3a3029",0,40,W,8);px(c,P.road,0,48,W,80);px(c,P.wet,4,80,64,14);px(c,P.ant,20,74,2,8);px(c,P.ant,22,70,6,1);px(c,"#5e211c",40,82,12,4);for(let i=0;i<5;i++)px(c,"#cfe0ff",38+i*4,78,1,1)},
+ lift(c){city(c,64);c.save();c.translate(36,96);c.rotate(-.35);truck(c,0,0,1.5);c.restore();stalker(c,40,98,1.1);car(c,14,118,.7,true)},
+ scream(c){city(c,70);px(c,"#0d1120",44,30,28,40);zombie(c,56,32,1.1,"#0b0d14");px(c,"#0b0d14",53,8,6,8);for(let i=0;i<20;i++)if(i%3)zombie(c,6+(i*11)%60,74+(i*7)%40,.6)},
+ jturn(c){city(c,40);c.globalAlpha=.35;c.strokeStyle="#6b7180";c.lineWidth=5;c.beginPath();c.arc(36,92,22,Math.PI*1.1,Math.PI*2.1);c.stroke();c.globalAlpha=1;car(c,36,96,1.2,true);beam(c,19,90,-19,14,.25);for(let i=0;i<8;i++)zombie(c,4+i*9,58+(i%2)*4,.6)},
+ gallop(c){interior(c);px(c,"#0f1522",8,20,56,50);c.save();c.beginPath();c.rect(8,20,56,50);c.clip();city(c,52);stalker(c,36,70,1.1);for(let i=0;i<6;i++)zombie(c,8+i*10,58,.4);c.restore();px(c,"#20242b",0,70,W,58)},
+ roof(c){interior(c);px(c,"#3a3f48",26,12,22,8);px(c,P.bone,32,14,2,12);px(c,P.bone,37,14,2,14);px(c,P.bone,42,14,2,11);flash(c,50,40,4);sam(c,20,120,1.4);rider(c,54,120,1.4);px(c,P.glove,48,44,4,40);vhs(c)},
+ mouth(c){px(c,P.sky,0,0,W,60);px(c,"#2a2d33",0,20,W,40);px(c,"#050607",14,30,44,30);c.fillStyle="#e7e3da";c.font="4px monospace";c.fillText("12'6\"",28,27);px(c,P.road,0,60,W,68);car(c,30,108,1.5,true);stalker(c,32,84,.9);px(c,P.ant,44,46,1,8);for(let i=0;i<8;i++)px(c,P.flash,40+(i*3)%10,48+(i%3),1,1)},
+ antler(c){tunnel(c,.5);px(c,"#1a2030",26,20,20,30);stalker(c,36,46,.35,true);c.save();c.translate(36,108);c.rotate(.4);px(c,P.ant,-14,-1,28,3);px(c,P.ant,-6,-6,2,6);px(c,P.ant,4,-5,2,5);c.restore()},
+ breathe(c){interior(c);tunnel(c,.0);c.save();c.beginPath();c.rect(6,16,60,60);c.clip();tunnel(c,.5);c.restore();px(c,"#20242b",0,76,W,52);sam(c,20,122,1.5);rider(c,54,122,1.5);px(c,P.brass,52,88,3,5);vhs(c)},
+ jam(c){tunnel(c,.35);for(let i=0;i<9;i++){const r=Math.floor(i/3),k=i%3,s=.5+r*.25,x=14+k*22,y=64+r*16;car(c,x,y,s,true);px(c,P.husk,x-2*s,y-12*s,3*s,4*s)}beam(c,0,110,72,22,.15);px(c,P.hood,0,96,22,32)},
+ heads(c){tunnel(c,.3);px(c,"#20252c",6,40,60,44);px(c,"#3c4656",10,44,52,22);px(c,P.husk,30,50,12,16);px(c,P.husk,28,66,16,14);px(c,P.milk,32,56,3,2);px(c,P.milk,37,56,3,2);c.globalAlpha=.6;for(let i=0;i<4;i++){px(c,P.husk,4+i*16,24,4,5);px(c,P.milk,5+i*16,25,1,1)}c.globalAlpha=1},
+ black(c){px(c,"#000",0,0,W,H);px(c,"#1a1a1a",34,62,4,4)}
+};
+const board=document.getElementById('board');
+SHOTS.forEach((s,i)=>{const el=document.createElement('article');el.className='shot';
+ const cv=document.createElement('canvas');cv.width=W;cv.height=H;cv.setAttribute('role','img');cv.setAttribute('aria-label','Pixel frame: '+s.name);
+ const c=cv.getContext('2d');c.imageSmoothingEnabled=false;DRAW[s.key](c);
+ if(i===0){c.fillStyle="#fff";c.font="6px monospace";c.fillText("IT NEVER",16,22);c.fillText("LANDED.",18,30)}
+ const tg={hook:'<span class="tag">hook frame</span>',vhs:'<span class="tag vhs">dash camcorder</span>',sig:'<span class="tag sig">signature move</span>'};
+ const m=document.createElement('div');m.className='meta';
+ m.innerHTML=`<span class="tc">${String(i+1).padStart(2,'0')} · ${s.tc} s</span><h3>${s.name}</h3>`+(s.tags.length?`<div class="tags">${s.tags.map(t=>tg[t]).join('')}</div>`:'')+`<div class="row"><b>CAM</b>${s.cam}</div><div class="row"><b>ACTION</b>${s.act}</div><div class="row"><b>SOUND</b>${s.snd}</div><div class="row"><b>NEEDS</b>${s.models}</div>`;
+ el.append(cv,m);board.append(el)});
+const json=JSON.stringify({episode:3,title:"Tunnel Vision",fps:24,res:[1080,1920],runtime_s:48,hook_frame0:"IT NEVER LANDED.",shots:SHOTS.map((s,i)=>({n:i+1,time_s:s.tc,name:s.name,camera:s.cam,action:s.act,sound:s.snd,needs:s.models,vhs:s.tags.includes('vhs')}))},null,1);
+document.getElementById('json').textContent=json;
+document.getElementById('copy').addEventListener('click',()=>{const o=document.getElementById('copied');
+ navigator.clipboard.writeText(json).then(()=>o.textContent='Copied.').catch(()=>{const r=document.createRange();r.selectNodeContents(document.getElementById('json'));const sel=getSelection();sel.removeAllRanges();sel.addRange(r);o.textContent='Selected. Press Ctrl+C to copy.'})});
+</script>

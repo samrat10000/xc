@@ -1,0 +1,13 @@
+{
+  "shot": 14,
+  "name": "Clearance 12'6\"",
+  "frames": 72,
+  "objects": 708,
+  "camera": "Ep3 shot 14",
+  "device": "CPU",
+  "stage": "BLOCKING - contact, collision and motion need visual QA",
+  "scene": "C:\\Users\\cross\\Downloads\\xc\\dead-roads-ep3\\assets\\v013\\shot14.blend",
+  "warnings": [
+    "Impact mechanics and left-antler split require temporal and spatial QA"
+  ]
+}

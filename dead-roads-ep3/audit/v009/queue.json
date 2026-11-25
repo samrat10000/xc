@@ -1,0 +1,14 @@
+[
+  {
+    "shot": 6,
+    "returncode": 0,
+    "elapsed_s": 30.49,
+    "device": "CPU"
+  },
+  {
+    "shot": 18,
+    "returncode": 11,
+    "elapsed_s": 4.17,
+    "device": "CPU"
+  }
+]

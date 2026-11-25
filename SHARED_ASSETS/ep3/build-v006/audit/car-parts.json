@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Long faceted hood top",
+    "center": [
+      -1.12287999689579,
+      1.1056661605834961e-05,
+      1.1228083372116089
+    ],
+    "parent": "03 \u2022 Layered angular armor bodywork"
+  },
+  {
+    "name": "Bucket seat cushion",
+    "center": [
+      0.32999999821186066,
+      8.083879947662354e-06,
+      0.8470045328140259
+    ],
+    "parent": "05 \u2022 Rebuilt organized cockpit and cage"
+  },
+  {
+    "name": "Steering wheel spoke",
+    "center": [
+      -0.08250131458044052,
+      1.3082753866910934e-06,
+      1.1687500476837158
+    ],
+    "parent": "05 \u2022 Rebuilt organized cockpit and cage"
+  },
+  {
+    "name": "Steering wheel spoke.001",
+    "center": [
+      -0.08249970525503159,
+      -0.0500129631254822,
+      1.082125723361969
+    ],
+    "parent": "05 \u2022 Rebuilt organized cockpit and cage"
+  },
+  {
+    "name": "Steering wheel spoke.002",
+    "center": [
+      -0.08249970525503159,
+      0.05001296917907894,
+      1.082125723361969
+    ],
+    "parent": "05 \u2022 Rebuilt organized cockpit and cage"
+  },
+  {
+    "name": "Three spoke steering wheel",
+    "center": [
+      -0.08249610662460327,
+      -2.9802322387695312e-08,
+      1.1110000312328339
+    ],
+    "parent": "05 \u2022 Rebuilt organized cockpit and cage"
+  },
+  {
+    "name": "Shaped off-road tire carcass",
+    "center": [
+      -1.5136000514030457,
+      -0.8525018692016602,
+      0.5995000060647726
+    ],
+    "parent": "Front left wheel assembly"
+  },
+  {
+    "name": "Shaped off-road tire carcass.001",
+    "center": [
+      -1.5136000514030457,
+      0.8524982035160065,
+      0.5995000060647726
+    ],
+    "parent": "Front right wheel assembly"
+  },
+  {
+    "name": "Shaped off-road tire carcass.002",
+    "center": [
+      1.5136000514030457,
+      -0.8525018692016602,
+      0.5995000060647726
+    ],
+    "parent": "Rear left wheel assembly"
+  },
+  {
+    "name": "Shaped off-road tire carcass.003",
+    "center": [
+      1.5136000514030457,
+      0.8524982035160065,
+      0.5995000060647726
+    ],
+    "parent": "Rear right wheel assembly"
+  }
+]

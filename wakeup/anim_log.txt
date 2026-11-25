@@ -1,0 +1,20 @@
+﻿00:00.297  blend            | Read blend: "C:\Users\cross\Downloads\xc\wakeup\sam.blend"
+blender.exe : C:\Users\cross\Downloads\xc\wakeup\penthouse.py:24: DeprecationWarning: 'Material.use_nodes' is expected 
+to be removed in Blender 6.0
+At line:3 char:14
++ ... t=Get-Date; & C:\Users\cross\Downloads\xc\blender501\blender.exe -b - ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Users\cross\... in Blender 6.0:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  m = bpy.data.materials.new(name); m.use_nodes = True
+C:\Users\cross\Downloads\xc\wakeup\penthouse.py:132: DeprecationWarning: 'Material.use_nodes' is expected to be 
+removed in Blender 6.0
+  m = bpy.data.materials.new('WindowGlass'); m.use_nodes = True; nt = m.node_tree; n = nt.nodes; l = nt.links
+C:\Users\cross\Downloads\xc\wakeup\penthouse.py:303: DeprecationWarning: 'Material.use_nodes' is expected to be 
+removed in Blender 6.0
+  m = bpy.data.materials.new(name); m.use_nodes = True; nt = m.node_tree; n = nt.nodes; l = nt.links
+C:\Users\cross\Downloads\xc\wakeup\penthouse.py:324: DeprecationWarning: 'World.use_nodes' is expected to be removed 
+in Blender 6.0
+  w = bpy.data.worlds.new('NightFire'); sc.world = w; w.use_nodes = True
+00:03.953  cycles           | WARNING HIPEW initialization failed: Error opening HIP dynamic library

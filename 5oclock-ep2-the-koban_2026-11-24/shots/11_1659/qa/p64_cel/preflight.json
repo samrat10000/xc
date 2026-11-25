@@ -1,0 +1,126 @@
+{
+  "shot": "11",
+  "frames": 96,
+  "resolution_percent": 50,
+  "camera_clip_m": [
+    0.014999999664723873,
+    1000.0
+  ],
+  "light_energy": {
+    "Small upper bounce": 2.65,
+    "Cool fill": 0.31,
+    "Before time jump": 26.0,
+    "After time jump": 14.0,
+    "Dusk after the jump": 38.0
+  },
+  "key_projections": [
+    {
+      "source_frame": 1,
+      "figures": [
+        {
+          "actor": "Sam_Rig",
+          "head_m": [
+            -0.002,
+            -0.003,
+            1.672
+          ],
+          "head_uv_depth": [
+            0.513,
+            -0.812,
+            -1.123
+          ]
+        }
+      ]
+    },
+    {
+      "source_frame": 20,
+      "figures": [
+        {
+          "actor": "Sam_Rig",
+          "head_m": [
+            -0.002,
+            -0.003,
+            1.672
+          ],
+          "head_uv_depth": [
+            0.513,
+            -0.793,
+            -1.13
+          ]
+        }
+      ]
+    },
+    {
+      "source_frame": 40,
+      "figures": [
+        {
+          "actor": "Sam_Rig",
+          "head_m": [
+            -0.002,
+            -0.003,
+            1.672
+          ],
+          "head_uv_depth": [
+            0.512,
+            -0.744,
+            -1.148
+          ]
+        }
+      ]
+    },
+    {
+      "source_frame": 47,
+      "figures": [
+        {
+          "actor": "Sam_Rig",
+          "head_m": [
+            -0.002,
+            -0.003,
+            1.672
+          ],
+          "head_uv_depth": [
+            0.512,
+            -0.724,
+            -1.156
+          ]
+        }
+      ]
+    },
+    {
+      "source_frame": 53,
+      "figures": [
+        {
+          "actor": "Sam_Rig",
+          "head_m": [
+            -0.002,
+            -0.003,
+            1.672
+          ],
+          "head_uv_depth": [
+            0.512,
+            -0.706,
+            -1.163
+          ]
+        }
+      ]
+    },
+    {
+      "source_frame": 96,
+      "figures": [
+        {
+          "actor": "Sam_Rig",
+          "head_m": [
+            0.014,
+            0.478,
+            1.657
+          ],
+          "head_uv_depth": [
+            0.425,
+            0.779,
+            0.804
+          ]
+        }
+      ]
+    }
+  ]
+}

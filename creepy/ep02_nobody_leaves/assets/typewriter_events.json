@@ -1,0 +1,478 @@
+[
+  {
+    "line_id": 1,
+    "char": "W",
+    "frame": 21.0,
+    "time_sec": 0.8333,
+    "is_red": false
+  },
+  {
+    "line_id": 1,
+    "char": "h",
+    "frame": 22.35135135135135,
+    "time_sec": 0.8896,
+    "is_red": false
+  },
+  {
+    "line_id": 1,
+    "char": "a",
+    "frame": 23.7027027027027,
+    "time_sec": 0.9459,
+    "is_red": false
+  },
+  {
+    "line_id": 1,
+    "char": "t",
+    "frame": 25.054054054054056,
+    "time_sec": 1.0023,
+    "is_red": false
+  },
+  {
+    "line_id": 1,
+    "char": "a",
+    "frame": 27.756756756756758,
+    "time_sec": 1.1149,
+    "is_red": false
+  },
+  {
+    "line_id": 1,
+    "char": "r",
+    "frame": 29.10810810810811,
+    "time_sec": 1.1712,
+    "is_red": false
+  },
+  {
+    "line_id": 1,
+    "char": "e",
+    "frame": 30.45945945945946,
+    "time_sec": 1.2275,
+    "is_red": false
+  },
+  {
+    "line_id": 1,
+    "char": "y",
+    "frame": 33.16216216216216,
+    "time_sec": 1.3401,
+    "is_red": false
+  },
+  {
+    "line_id": 1,
+    "char": "o",
+    "frame": 34.513513513513516,
+    "time_sec": 1.3964,
+    "is_red": false
+  },
+  {
+    "line_id": 1,
+    "char": "u",
+    "frame": 35.86486486486486,
+    "time_sec": 1.4527,
+    "is_red": false
+  },
+  {
+    "line_id": 1,
+    "char": "l",
+    "frame": 38.567567567567565,
+    "time_sec": 1.5653,
+    "is_red": false
+  },
+  {
+    "line_id": 1,
+    "char": "o",
+    "frame": 39.91891891891892,
+    "time_sec": 1.6216,
+    "is_red": false
+  },
+  {
+    "line_id": 1,
+    "char": "o",
+    "frame": 41.270270270270274,
+    "time_sec": 1.6779,
+    "is_red": false
+  },
+  {
+    "line_id": 1,
+    "char": "k",
+    "frame": 42.62162162162162,
+    "time_sec": 1.7342,
+    "is_red": false
+  },
+  {
+    "line_id": 1,
+    "char": "i",
+    "frame": 43.97297297297297,
+    "time_sec": 1.7905,
+    "is_red": false
+  },
+  {
+    "line_id": 1,
+    "char": "n",
+    "frame": 45.32432432432432,
+    "time_sec": 1.8468,
+    "is_red": false
+  },
+  {
+    "line_id": 1,
+    "char": "g",
+    "frame": 46.67567567567568,
+    "time_sec": 1.9032,
+    "is_red": false
+  },
+  {
+    "line_id": 1,
+    "char": "f",
+    "frame": 49.37837837837838,
+    "time_sec": 2.0158,
+    "is_red": false
+  },
+  {
+    "line_id": 1,
+    "char": "o",
+    "frame": 50.729729729729726,
+    "time_sec": 2.0721,
+    "is_red": false
+  },
+  {
+    "line_id": 1,
+    "char": "r",
+    "frame": 52.08108108108108,
+    "time_sec": 2.1284,
+    "is_red": false
+  },
+  {
+    "line_id": 1,
+    "char": "?",
+    "frame": 53.432432432432435,
+    "time_sec": 2.1847,
+    "is_red": false
+  },
+  {
+    "line_id": 2,
+    "char": "V",
+    "frame": 117.0,
+    "time_sec": 4.8333,
+    "is_red": false
+  },
+  {
+    "line_id": 2,
+    "char": "e",
+    "frame": 118.19047619047619,
+    "time_sec": 4.8829,
+    "is_red": false
+  },
+  {
+    "line_id": 2,
+    "char": "r",
+    "frame": 119.38095238095238,
+    "time_sec": 4.9325,
+    "is_red": false
+  },
+  {
+    "line_id": 2,
+    "char": "y",
+    "frame": 120.57142857142857,
+    "time_sec": 4.9821,
+    "is_red": false
+  },
+  {
+    "line_id": 2,
+    "char": "b",
+    "frame": 122.95238095238095,
+    "time_sec": 5.0813,
+    "is_red": false
+  },
+  {
+    "line_id": 2,
+    "char": "r",
+    "frame": 124.14285714285714,
+    "time_sec": 5.131,
+    "is_red": false
+  },
+  {
+    "line_id": 2,
+    "char": "a",
+    "frame": 125.33333333333333,
+    "time_sec": 5.1806,
+    "is_red": false
+  },
+  {
+    "line_id": 2,
+    "char": "v",
+    "frame": 126.52380952380952,
+    "time_sec": 5.2302,
+    "is_red": false
+  },
+  {
+    "line_id": 2,
+    "char": "e",
+    "frame": 127.71428571428572,
+    "time_sec": 5.2798,
+    "is_red": false
+  },
+  {
+    "line_id": 2,
+    "char": "o",
+    "frame": 130.0952380952381,
+    "time_sec": 5.379,
+    "is_red": false
+  },
+  {
+    "line_id": 2,
+    "char": "f",
+    "frame": 131.28571428571428,
+    "time_sec": 5.4286,
+    "is_red": false
+  },
+  {
+    "line_id": 2,
+    "char": "y",
+    "frame": 133.66666666666666,
+    "time_sec": 5.5278,
+    "is_red": false
+  },
+  {
+    "line_id": 2,
+    "char": "o",
+    "frame": 134.85714285714286,
+    "time_sec": 5.5774,
+    "is_red": false
+  },
+  {
+    "line_id": 2,
+    "char": "u",
+    "frame": 136.04761904761904,
+    "time_sec": 5.627,
+    "is_red": false
+  },
+  {
+    "line_id": 2,
+    "char": "t",
+    "frame": 138.42857142857144,
+    "time_sec": 5.7262,
+    "is_red": false
+  },
+  {
+    "line_id": 2,
+    "char": "o",
+    "frame": 139.61904761904762,
+    "time_sec": 5.7758,
+    "is_red": false
+  },
+  {
+    "line_id": 2,
+    "char": "c",
+    "frame": 142.0,
+    "time_sec": 5.875,
+    "is_red": false
+  },
+  {
+    "line_id": 2,
+    "char": "o",
+    "frame": 143.1904761904762,
+    "time_sec": 5.9246,
+    "is_red": false
+  },
+  {
+    "line_id": 2,
+    "char": "m",
+    "frame": 144.38095238095238,
+    "time_sec": 5.9742,
+    "is_red": false
+  },
+  {
+    "line_id": 2,
+    "char": "e",
+    "frame": 145.57142857142858,
+    "time_sec": 6.0238,
+    "is_red": false
+  },
+  {
+    "line_id": 2,
+    "char": "h",
+    "frame": 147.95238095238096,
+    "time_sec": 6.123,
+    "is_red": false
+  },
+  {
+    "line_id": 2,
+    "char": "e",
+    "frame": 149.14285714285714,
+    "time_sec": 6.1726,
+    "is_red": false
+  },
+  {
+    "line_id": 2,
+    "char": "r",
+    "frame": 150.33333333333334,
+    "time_sec": 6.2222,
+    "is_red": false
+  },
+  {
+    "line_id": 2,
+    "char": "e",
+    "frame": 151.52380952380952,
+    "time_sec": 6.2718,
+    "is_red": false
+  },
+  {
+    "line_id": 2,
+    "char": ".",
+    "frame": 152.71428571428572,
+    "time_sec": 6.3214,
+    "is_red": false
+  },
+  {
+    "line_id": 2,
+    "char": ".",
+    "frame": 153.9047619047619,
+    "time_sec": 6.371,
+    "is_red": false
+  },
+  {
+    "line_id": 2,
+    "char": ".",
+    "frame": 155.0952380952381,
+    "time_sec": 6.4206,
+    "is_red": false
+  },
+  {
+    "line_id": 3,
+    "char": "B",
+    "frame": 202.0,
+    "time_sec": 8.375,
+    "is_red": true
+  },
+  {
+    "line_id": 3,
+    "char": "u",
+    "frame": 203.33333333333334,
+    "time_sec": 8.4306,
+    "is_red": true
+  },
+  {
+    "line_id": 3,
+    "char": "t",
+    "frame": 204.66666666666666,
+    "time_sec": 8.4861,
+    "is_red": true
+  },
+  {
+    "line_id": 3,
+    "char": "n",
+    "frame": 207.33333333333334,
+    "time_sec": 8.5972,
+    "is_red": true
+  },
+  {
+    "line_id": 3,
+    "char": "o",
+    "frame": 208.66666666666666,
+    "time_sec": 8.6528,
+    "is_red": true
+  },
+  {
+    "line_id": 3,
+    "char": "b",
+    "frame": 210.0,
+    "time_sec": 8.7083,
+    "is_red": true
+  },
+  {
+    "line_id": 3,
+    "char": "o",
+    "frame": 211.33333333333334,
+    "time_sec": 8.7639,
+    "is_red": true
+  },
+  {
+    "line_id": 3,
+    "char": "d",
+    "frame": 212.66666666666666,
+    "time_sec": 8.8194,
+    "is_red": true
+  },
+  {
+    "line_id": 3,
+    "char": "y",
+    "frame": 214.0,
+    "time_sec": 8.875,
+    "is_red": true
+  },
+  {
+    "line_id": 3,
+    "char": "e",
+    "frame": 216.66666666666666,
+    "time_sec": 8.9861,
+    "is_red": true
+  },
+  {
+    "line_id": 3,
+    "char": "v",
+    "frame": 218.0,
+    "time_sec": 9.0417,
+    "is_red": true
+  },
+  {
+    "line_id": 3,
+    "char": "e",
+    "frame": 219.33333333333334,
+    "time_sec": 9.0972,
+    "is_red": true
+  },
+  {
+    "line_id": 3,
+    "char": "r",
+    "frame": 220.66666666666666,
+    "time_sec": 9.1528,
+    "is_red": true
+  },
+  {
+    "line_id": 3,
+    "char": "l",
+    "frame": 223.33333333333334,
+    "time_sec": 9.2639,
+    "is_red": true
+  },
+  {
+    "line_id": 3,
+    "char": "e",
+    "frame": 224.66666666666666,
+    "time_sec": 9.3194,
+    "is_red": true
+  },
+  {
+    "line_id": 3,
+    "char": "a",
+    "frame": 226.0,
+    "time_sec": 9.375,
+    "is_red": true
+  },
+  {
+    "line_id": 3,
+    "char": "v",
+    "frame": 227.33333333333334,
+    "time_sec": 9.4306,
+    "is_red": true
+  },
+  {
+    "line_id": 3,
+    "char": "e",
+    "frame": 228.66666666666666,
+    "time_sec": 9.4861,
+    "is_red": true
+  },
+  {
+    "line_id": 3,
+    "char": "s",
+    "frame": 230.0,
+    "time_sec": 9.5417,
+    "is_red": true
+  },
+  {
+    "line_id": 3,
+    "char": ".",
+    "frame": 231.33333333333334,
+    "time_sec": 9.5972,
+    "is_red": true
+  }
+]

@@ -1,0 +1,134 @@
+{
+ "crows": [
+  {
+   "file": "crows/0_cb745265.mp3",
+   "title": "210701 American Crows, caws calling, sparrows, robin, urban residential, TORONTO, 7am.wav",
+   "license": "cc0",
+   "creator": "TRP",
+   "url": "https://freesound.org/people/TRP/sounds/616975",
+   "dur": 25911
+  },
+  {
+   "file": "crows/1_92e12a79.mp3",
+   "title": "Raven Croak or Crow Caw",
+   "license": "cc0",
+   "creator": "fudgealtoid",
+   "url": "https://freesound.org/people/fudgealtoid/sounds/716962",
+   "dur": 4783
+  },
+  {
+   "file": "crows/2_c5e82138.mp3",
+   "title": "Crow Cawing",
+   "license": "cc0",
+   "creator": "tripjazz",
+   "url": "https://freesound.org/people/tripjazz/sounds/509103",
+   "dur": 610
+  },
+  {
+   "file": "crows/3_129073ce.mp3",
+   "title": "Alien Crow Cawing Sound effect",
+   "license": "cc0",
+   "creator": "Mastersoundboy2005",
+   "url": "https://freesound.org/people/Mastersoundboy2005/sounds/719975",
+   "dur": 16693
+  },
+  {
+   "file": "crows/4_b5516209.mp3",
+   "title": "crow CAWS",
+   "license": "cc0",
+   "creator": "storyofthelie",
+   "url": "https://freesound.org/people/storyofthelie/sounds/649580",
+   "dur": 2236
+  },
+  {
+   "file": "crows/5_ac24889d.mp3",
+   "title": "Crows.wav",
+   "license": "cc0",
+   "creator": "ken788",
+   "url": "https://freesound.org/people/ken788/sounds/386768",
+   "dur": 108524
+  },
+  {
+   "file": "crows/6_434326d3.mp3",
+   "title": "Raven_Caw.wav",
+   "license": "cc0",
+   "creator": "KiddoFish86",
+   "url": "https://freesound.org/people/KiddoFish86/sounds/274439",
+   "dur": 91460
+  },
+  {
+   "file": "crows/7_9de860e6.mp3",
+   "title": "Bell with Crows",
+   "license": "cc0",
+   "creator": "MKzing",
+   "url": "https://freesound.org/people/MKzing/sounds/474266",
+   "dur": 10460
+  }
+ ],
+ "wires": [
+  {
+   "file": "wires/0_72e0b9e4.mp3",
+   "title": "lake&river NL 03 140203_0040.wav",
+   "license": "by",
+   "creator": "klankbeeld",
+   "url": "https://freesound.org/people/klankbeeld/sounds/219008",
+   "dur": 381663
+  },
+  {
+   "file": "wires/1_cf6b9070.mp3",
+   "title": "lake&river Winter NL LONG 140203_0041.flac",
+   "license": "by",
+   "creator": "klankbeeld",
+   "url": "https://freesound.org/people/klankbeeld/sounds/217262",
+   "dur": 464963
+  },
+  {
+   "file": "wires/2_91bae77e.mp3",
+   "title": "lake&river NL 02 140203_0039.wav",
+   "license": "by",
+   "creator": "klankbeeld",
+   "url": "https://freesound.org/people/klankbeeld/sounds/222592",
+   "dur": 99785
+  },
+  {
+   "file": "wires/3_ae83e978.mp3",
+   "title": "lake&river NL 01 140203_0039.wav",
+   "license": "by",
+   "creator": "klankbeeld",
+   "url": "https://freesound.org/people/klankbeeld/sounds/217368",
+   "dur": 96280
+  },
+  {
+   "file": "wires/4_bd334702.mp3",
+   "title": "Tuuli s\u00e4hk\u00f6langoissa / Wind humming and howling in the electric wires, power line",
+   "license": "by",
+   "creator": "YleArkisto",
+   "url": "https://freesound.org/people/YleArkisto/sounds/362914",
+   "dur": 318607
+  },
+  {
+   "file": "wires/5_6a47a161.mp3",
+   "title": "Tuuli s\u00e4hk\u00f6langoissa / Wind humming and howling in the electric wires, cables, power line, metal tinkling",
+   "license": "by",
+   "creator": "YleArkisto",
+   "url": "https://freesound.org/people/YleArkisto/sounds/362915",
+   "dur": 172920
+  },
+  {
+   "file": "wires/6_b9335170.mp3",
+   "title": "Tiny waves lapping #2.m4a",
+   "license": "cc0",
+   "creator": "guyburns",
+   "url": "https://freesound.org/people/guyburns/sounds/464799",
+   "dur": 91205
+  },
+  {
+   "file": "wires/7_178ecb1c.mp3",
+   "title": "Tiny waves lapping #1.m4a",
+   "license": "cc0",
+   "creator": "guyburns",
+   "url": "https://freesound.org/people/guyburns/sounds/464798",
+   "dur": 119174
+  }
+ ]
+}

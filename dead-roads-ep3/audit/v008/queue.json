@@ -1,0 +1,50 @@
+[
+  {
+    "shot": 6,
+    "returncode": 0,
+    "elapsed_s": 33.22,
+    "device": "CPU"
+  },
+  {
+    "shot": 18,
+    "returncode": 0,
+    "elapsed_s": 45.51,
+    "device": "CPU"
+  },
+  {
+    "shot": 1,
+    "returncode": 0,
+    "elapsed_s": 19.64,
+    "device": "CPU"
+  },
+  {
+    "shot": 2,
+    "returncode": 0,
+    "elapsed_s": 22.81,
+    "device": "CPU"
+  },
+  {
+    "shot": 3,
+    "returncode": 0,
+    "elapsed_s": 54.55,
+    "device": "CPU"
+  },
+  {
+    "shot": 8,
+    "returncode": 0,
+    "elapsed_s": 51.06,
+    "device": "CPU"
+  },
+  {
+    "shot": 9,
+    "returncode": 0,
+    "elapsed_s": 46.26,
+    "device": "CPU"
+  },
+  {
+    "shot": 10,
+    "returncode": 1,
+    "elapsed_s": 36.49,
+    "device": "CPU"
+  }
+]

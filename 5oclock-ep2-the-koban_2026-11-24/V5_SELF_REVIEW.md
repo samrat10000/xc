@@ -1,0 +1,79 @@
+# The Koban · v5 self-review
+
+Reviewed on 2026-11-24. This is a list of issues with the delivered 63-second cut. The review uses the decoded master, 105 sampled frames across all 15 shots, denser samples of the run, shoulder contact, crouch and final rule, and the original takes, dialogue timeline and stems. Sam's playback notes are the listening evidence. The further audio observations below come from timing, signal measurements and source inspection. The Instagram comments are judgments about clarity and pacing on a small screen.
+
+## Highest-impact issues
+
+1. **The opening spends its first seven seconds on an easily missed clue and rushed explanation.** The mirrored alarm is a strong premise, but it stays essentially one phone image for three seconds. The bedroom then takes several seconds to pose the first human reaction. The opening line is forced into 1.70 s, and the first unambiguous supernatural image is at 7 s. The sequence feels slower visually while the narrator sounds pushed in the opposite direction.
+2. **Too many shots change the camera more than the character.** The run, the window, and the crouch are the clearest examples. The camera moves and the atmosphere is animated, but the characters too often arrive at a readable pose without enough weight, hesitation, contact or reaction between beats. The earlier review passed the pose and the technical movement checks too readily.
+3. **The middle spends four consecutive shots on two surfaces.** The notebook leads into roughly eight seconds of call imagery, followed by a repeated reflection idea, then another phone insert. Between 29 and 45 s the largest visual changes are the camera push, whip and light sweep. Sam's interpretation of the danger remains mostly offscreen or barely changes.
+4. **The mix leaves the narration exposed and the threats too similar.** The piano repeats closely related figures through distinct story beats. The thin recurring ambience does not consistently establish location. At 56.5–59.6 the score and foley stems are silent under the door voice. The voice has no audible room context supplied by the mix. Dryness in that passage is a design choice the production should have tested against the fogged-door image.
+5. **The last reveal gives the viewer less than a second to finish the rule.** The final writing step occurs about 62.33 s. The image ends at 63.0, leaving about 0.67 seconds of full reading time. The narrator says only “Rule eight,” so the payoff depends on the page.
+
+## Voice and sound
+
+| Time | Problem | Evidence |
+| --- | --- | --- |
+| 3.40–5.10 | The narrator's first eight words are hurried. | 2.64 s trimmed source to 1.70 s in the cut, about 36% shorter and 283 words/min across the entire cue. The next voice starts around 0.10 s later. The held bedroom action gives no reason for this urgency. |
+| 5.20–6.79 | The narration cadence jumps between takes. | “Just turned around” stays at its original 1.59 s, or 113 words/min overall, immediately after the first line at 283. Word alignment also shows the pause after “side” compressed from about 0.52 s to 0.38 s. The change between takes comes from the edit constraints. |
+| 11.15–14.15 | The background hum risks sounding like three triggered sounds placed beside the character. | Three transpositions are made from one short generated “Hmm” sample, with repeated envelope shapes. Her back and shoulders provide little visible breath or vocal timing. The kettle, hum and speech all need independent placement checks. |
+| 25.00–28.60 | Tanaka's line has little time to let “eleven days” land. | Approximately 5.01 s trimmed source to 3.60 s, about 28% shorter. Word alignment places the pause between the two sentences at about 0.82 s in the take and 0.58 s in the export. The cue explains the book while the hand action and handwriting compete for attention. |
+| 30.60–32.86 | The panic line has less natural space between calls. The speaker's location is unclear. | Trimmed source about 2.74 s, cut 2.26 s, about 17% shorter. Sam speaks offscreen while Mom's image fills the phone and separate static bursts interrupt the scene. The recording is Sam in the room, yet there is little room acoustic to separate him from the video feed. |
+| 42.50–44.62 | The line describes a time jump the image is already attempting to show. | Near-original duration of 2.12 s. This cue repeats information the image is already trying to show. Its pace is close to the source. |
+| 55.73–59.54 | The knock works as a break. The sustained door voice feels detached from the physical door. | After the knock, both piano and foley sit at the analysis floor during 56.5–59.6. Mirror-Sam is the dry dialogue stem alone for this part, and the silhouette scarcely reacts after its first movement. The line duration itself changed only slightly from the edited take. |
+| 60.50–61.41 | The last spoken cue arrives while the warning is still being written. | The performance is approximately 0.91 s and nearly unchanged from the edit. It currently announces the rule early without giving the completed warning a sound accent or extra read time. |
+
+**Music and environment.** The score is a single sampled grand with recurring short figures and similar decay. Between 33–37 and 37–41 the piano RMS is −40.2 and −39.5 dBFS respectively, and foley is near −40 in both passages. The similar levels alone do not explain the effect. The arrangement and repeated wind clip also give the call, reflection and window limited separation. Under the first narration cue the pre-master piano is around −77 dBFS RMS against dialogue near −23, and it is silent through the second cue. Turning up the background globally would miss the problem. The first three notes in the kitchen are an authored signal, but the score does little with the difference between those notes and the later four-note chime until the last act. The opening buzz, same-room static/whip effect, street machinery, chime and knock need distinct sound identities. Final compliance at −15.04 LUFS and −2.85 dBTP verifies delivery level and peak headroom. It does not establish good musical pacing, convincing space or an expressive performance.
+
+## Shot-by-shot issue list
+
+| Time | Shot | What is weak |
+| --- | --- | --- |
+| 0–3 | 01 Alarm | A reversed display is legible as “wrong” on a second look. The first frame can still register as an ordinary alarm close-up. The phone's small judder and the three buzzes repeat the same beat. |
+| 3–7 | 02 Wrong room | The shift from lying to propped up is posed cleanly in stills. Around 4.3–5.6 the head, planted wrist and torso resolve without a clear struggle or eye-led search. The cut to phone reflection asks the viewer to catch a small hair-detail clue just as the line changes. |
+| 7–11 | 03 The crack | The layered sky gives scale, but Sam's silhouette and gaze barely change. Haze and bright cloud can read before the horn silhouette does. Almost the whole shot is atmosphere and camera movement, with little visible fear. |
+| 11–15 | 04 Mirror-Mom | Her elbow motion repeats evenly and can read as a loop. The six-frame faceless insert is effective when caught, but the framing and performance do little to direct attention to it before the cut. |
+| 15–19 | 05 The street | The receding camera makes the run look faster than Sam's mechanics do. Between 15.33 and 16.21 the legs are frequently straight through the swing and the upper body has limited counter-rotation. The synchronized broom stop and Grandma's exception are both small, so the payoff of her looking into camera is weak at phone size. |
+| 19–24 | 06 The koban | Sam approaches the door, then the cut hands the beat to the notebook. The entry, decision and discovery are separated. The camera holds the desk for over three seconds while Sam's reaction, movement toward the book and the significance of the date are unclear. The calendar's year is near the top edge. |
+| 24–29 | 07 The rules | Most rules are too small to scan at playback speed. The hand enters after an initial hold and then sweeps across the page. The intentional paper curvature reads, but the audience needs to track the handwriting, hand and spoken “eleven days” at once. |
+| 29–33 | 08 Mom calls | Ringing, answering and reconnecting are separate events, but the handset barely moves and Mom remains a small, subdued subject. The emotional focus and the source of Sam's voice are largely offscreen. |
+| 33–37 | 09 Behind him | The phone push is one of the bigger image changes in the reel, but the clue remains nested in a mirror inside a video inside the screen. The viewer is asked to notice two small figures while Mom is still moving in the feed. The time spent on the phone exceeds the strength of the reveal. |
+| 37–41 | 10 The window | A large share of the whip-pan shows a wall, trim and blank frost. After about 39.6, the elbow bend pulls focus from the fingertip contact. Sam's reflected shoulders and eyes barely register the touch, so the reveal lands like a held pose. |
+| 41–45 | 11 16:59 | The intentional reversed digits take decoding time. The color sweep is clear, but another static handset after 08 and 09 makes the passage feel repetitive. Narration carries Sam's recognition of the missing day. His behavior supplies no visible reaction. |
+| 45–50 | 12 The horns turn | The nearest horn moves clearly. The deeper poles and synchronized people are less legible. Much of the human turn reads as a rotation in place, with limited feet and body weight showing anticipation or intent. |
+| 50–55 | 13 Rule one | The door, duck, headphones and four rings all land, but the arm swing has a conspicuous transition near 51.2–51.4. Once Sam is in cover he mostly holds the same silhouette. There is little accumulating reaction as the notes arrive. |
+| 55–60 | 14 The knock | The knocking hand appears briefly and roughly three seconds of the voice play on a largely unchanged frosted silhouette. Stillness suits the idea, but the shot gives the viewer few details to re-evaluate after the identity is clear. |
+| 60–63 | 15 Rule eight | The text writes in clear strokes. The camera tilt, previous text and torn edge compete until the final line is fully legible. The completed line has a short hold, especially on a small display. |
+
+## Review lesson for motion2d
+
+The export checks caught missing frames, incorrect cue words and a peak overshoot. They should be paired with a short performance review before declaring a cut ready. For every character beat, identify anticipation, weight or contact, and response. For every dialogue cue, compare the source and delivered duration, check how neighboring cues breathe, and make a playback judgment on the combined edit. A transcript can show what was said and still miss how it was said.
+
+## Cross-check with Claude
+
+Claude's independent notes are in [CLAUDE_REVIEW_EP2.md](../CLAUDE_REVIEW_EP2.md). The strongest overlap is the amount of prop coverage, sparse character reaction, and limited escalation. Claude also found the broom grip and the mismatch in notebook appearance. These findings are separate from approval to change the reel.
+
+| Finding | What I verified in the delivered v5 |
+| --- | --- |
+| The reel is visually quieter than Episode 1. | With the same 135 × 240 grayscale decode, after removing black images and very large boundary differences, the median consecutive image change was 0.78 gray levels in Ep2 versus 2.04 in the Ep1 scored cut. At a 0.50 threshold, about 29% of Ep2's frame pairs and less than 0.1% of Ep1's frame pairs fall into the low-change range. The percentage depends on the threshold. These are perceptual proxies for quiet frames. The full-resolution decoded hashes show zero identical nonblack neighbors in Ep2. The whip-pan gives Shot 10 a 7.37 mean and a 0.69 median, which illustrates how a short fast move can hide the long quiet portions. Camera, surface motion, grain and intentional holds contribute to this metric, so it cannot grade acting by itself. |
+| The door shot ends on black. | An independent black-detection pass on v5 put the black at 59.7083–60.0000, exactly seven frames or 0.292 seconds. This is the transition in the brief. Claude's 36-frame count does not match this master. The pacing complaint before the black remains valid. |
+| Most shot reviews lack a dedicated file. | 12 shots lack standalone QA_LOG.md. Each of those shots has 3–8 contact sheets and metrics files, and PRODUCTION_LOG.md lists a master critique. The failure was approving the cut from scattered still-image and technical checks without a dedicated performance and pacing pass for each shot. A missing file alone does not establish that the shot was never reviewed. |
+| The same book carries inconsistent rules between episodes. | Ep1's delivered notebook art was written in Japanese and uses a different list. Ep2's art uses English and follows the six alternate rules in Sam's Episode 2 brief. For instance, Ep1's second rule turns mirrors toward the wall, while Ep2's second rule says never to answer the speaker saying your name. If this is the same notebook, both the language and the rule text need a canon decision. |
+| The Listener fails to escalate. | The crown appears through the haze in 03 and beyond the door in 13. Shot 12 shows the town speakers. The brief puts the Listener at a distance early. Neither actual appearance gives the giant enough readable scale or a strong change in Sam's behavior. |
+| The mix has a wide range. | The delivered AAC measures 15.9 LU loudness range in addition to −15.04 LUFS integrated. That supports the concern that quiet bridges and subtle effects may disappear on a small speaker. The 15.9 LU figure is distinct from the narrator's time compression. Both deserve independent review. |
+
+Claude's suggestion to turn Mirror-Mom toward the lens would conflict with the brief's direct-face restriction. The issue is getting an expressive reaction into the kitchen scene while maintaining that story constraint. Sam's face is visible in 02 and in the koban window in 10, with a much smaller inset glimpse in 09. What is missing is a change in performance when he understands the threat.
+
+### Decision notes to preserve
+
+- Favor stronger action and reaction before extra camera motion. The run and shoulder touch are the first two diagnostic examples.
+- Preserve the mirrored alarm, kettle clue, three-to-four-note motif, and final warning when considering how the hook and payoff read.
+- Check clip timing with the actual voice cadence before committing picture durations. Review dialogue against picture plus sound on a phone before making an attention claim.
+
+The reel, mix, Blender assets and source scripts were left untouched during this review.
+
+### Mechanics verified in the scene and mix recipes
+
+- **05 · Street.** The run uses constant forward speed and keeps the foot orientation target the same through stance and swing. The contact targets anchor the ankles but do not give the runner a changing toe-off, hip drive or shoulder twist. The broom stop starts around 16.58. A falling broom cue from 16.31 continues to about 17.16, overlapping the visual pause. Grandma may justify the residual sweep, but the mix does not give the synchronized stop a distinct break.
+- **10 · Window.** The reflected Sam is assigned the same body and arm pose every frame after the reveal. Mirror-Mom's arm is solved to a fixed target. The review's near-still reaction and stiff contact are present in the blocking, regardless of camera drift or pixel movement.
+- **13 · Door and chime.** The hand target switches from the doorknob to the ear action at frame 25 of the shot. The torso and arms settle into a held cover while the later chime notes are carried mainly by procedural rings, dust and the crown. Passing the note-to-ring timing did not verify Sam's reaction.

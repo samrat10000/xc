@@ -1,0 +1,25 @@
+{
+  "episode": "5 O'CLOCK Episode 3: Day 3 - Don't Answer",
+  "fps": 24,
+  "width": 1080,
+  "height": 1920,
+  "total_frames": 1440,
+  "duration_s": 60.0,
+  "shots": [
+    {"id": "01", "slug": "01_handprint", "title": "The Handprint", "start_s": 0.0, "end_s": 3.0, "frames": 72, "start_f": 1, "end_f": 72, "status": "in_progress"},
+    {"id": "02", "slug": "02_marks", "title": "Eleven Marks", "start_s": 3.0, "end_s": 6.0, "frames": 72, "start_f": 73, "end_f": 144, "status": "pending"},
+    {"id": "03", "slug": "03_crossing", "title": "The Empty Crossing", "start_s": 6.0, "end_s": 10.0, "frames": 96, "start_f": 145, "end_f": 240, "status": "pending"},
+    {"id": "04", "slug": "04_busstop", "title": "The Bus Stop", "start_s": 10.0, "end_s": 14.5, "frames": 108, "start_f": 241, "end_f": 348, "status": "pending"},
+    {"id": "05", "slug": "05_onemore", "title": "Always One More", "start_s": 14.5, "end_s": 18.5, "frames": 96, "start_f": 349, "end_f": 444, "status": "pending"},
+    {"id": "06", "slug": "06_nothingred", "title": "Nothing Red", "start_s": 18.5, "end_s": 22.0, "frames": 84, "start_f": 445, "end_f": 528, "status": "pending"},
+    {"id": "07", "slug": "07_clock1659", "title": "16:59", "start_s": 22.0, "end_s": 25.5, "frames": 84, "start_f": 529, "end_f": 612, "status": "pending"},
+    {"id": "08", "slug": "08_chime", "title": "The Wrong Chime", "start_s": 25.5, "end_s": 29.5, "frames": 96, "start_f": 613, "end_f": 708, "status": "pending"},
+    {"id": "09", "slug": "09_hervoice", "title": "Her Voice", "start_s": 29.5, "end_s": 34.0, "frames": 108, "start_f": 709, "end_f": 816, "status": "pending"},
+    {"id": "10", "slug": "10_dontanswer", "title": "Don't Answer", "start_s": 34.0, "end_s": 38.5, "frames": 108, "start_f": 817, "end_f": 924, "status": "pending"},
+    {"id": "11", "slug": "11_townlistens", "title": "The Town Listens", "start_s": 38.5, "end_s": 43.0, "frames": 108, "start_f": 925, "end_f": 1032, "status": "pending"},
+    {"id": "12", "slug": "12_skybreaks", "title": "The Sky Breaks", "start_s": 43.0, "end_s": 48.0, "frames": 120, "start_f": 1033, "end_f": 1152, "status": "pending"},
+    {"id": "13", "slug": "13_fourthspeaks", "title": "The Fourth Note Speaks", "start_s": 48.0, "end_s": 52.0, "frames": 96, "start_f": 1153, "end_f": 1248, "status": "pending"},
+    {"id": "14", "slug": "14_realvoice", "title": "The Real Voice", "start_s": 52.0, "end_s": 56.5, "frames": 108, "start_f": 1249, "end_f": 1356, "status": "pending"},
+    {"id": "15", "slug": "15_rulenine", "title": "Rule Nine", "start_s": 56.5, "end_s": 60.0, "frames": 84, "start_f": 1357, "end_f": 1440, "status": "pending"}
+  ]
+}

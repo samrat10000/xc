@@ -1,0 +1,103 @@
+{
+  "master": "5oclock_ep2_the_koban_v4.mp4",
+  "video_frames": 1512,
+  "authored_black_ranges": [
+    [
+      1433,
+      1440
+    ]
+  ],
+  "nonblack_identical_neighbor_frames": [],
+  "cut_boundaries": [
+    {
+      "shot_number": 1,
+      "in_frame": 0,
+      "out_frame_exclusive": 72,
+      "first_and_last_frame_match": true
+    },
+    {
+      "shot_number": 2,
+      "in_frame": 72,
+      "out_frame_exclusive": 168,
+      "first_and_last_frame_match": true
+    },
+    {
+      "shot_number": 3,
+      "in_frame": 168,
+      "out_frame_exclusive": 264,
+      "first_and_last_frame_match": true
+    },
+    {
+      "shot_number": 4,
+      "in_frame": 264,
+      "out_frame_exclusive": 360,
+      "first_and_last_frame_match": true
+    },
+    {
+      "shot_number": 5,
+      "in_frame": 360,
+      "out_frame_exclusive": 456,
+      "first_and_last_frame_match": true
+    },
+    {
+      "shot_number": 6,
+      "in_frame": 456,
+      "out_frame_exclusive": 576,
+      "first_and_last_frame_match": true
+    },
+    {
+      "shot_number": 7,
+      "in_frame": 576,
+      "out_frame_exclusive": 696,
+      "first_and_last_frame_match": true
+    },
+    {
+      "shot_number": 8,
+      "in_frame": 696,
+      "out_frame_exclusive": 792,
+      "first_and_last_frame_match": true
+    },
+    {
+      "shot_number": 9,
+      "in_frame": 792,
+      "out_frame_exclusive": 888,
+      "first_and_last_frame_match": true
+    },
+    {
+      "shot_number": 10,
+      "in_frame": 888,
+      "out_frame_exclusive": 984,
+      "first_and_last_frame_match": true
+    },
+    {
+      "shot_number": 11,
+      "in_frame": 984,
+      "out_frame_exclusive": 1080,
+      "first_and_last_frame_match": true
+    },
+    {
+      "shot_number": 12,
+      "in_frame": 1080,
+      "out_frame_exclusive": 1200,
+      "first_and_last_frame_match": true
+    },
+    {
+      "shot_number": 13,
+      "in_frame": 1200,
+      "out_frame_exclusive": 1320,
+      "first_and_last_frame_match": true
+    },
+    {
+      "shot_number": 14,
+      "in_frame": 1320,
+      "out_frame_exclusive": 1440,
+      "first_and_last_frame_match": true
+    },
+    {
+      "shot_number": 15,
+      "in_frame": 1440,
+      "out_frame_exclusive": 1512,
+      "first_and_last_frame_match": true
+    }
+  ]
+}

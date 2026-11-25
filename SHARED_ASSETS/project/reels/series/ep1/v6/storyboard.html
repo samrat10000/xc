@@ -1,0 +1,530 @@
+<title>Night Terror: 3:12 AM</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800;900&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a cutting-room wall. Animatic monitor left, director slate right, then the shot wall, the fix list and the plan. Single dark look on purpose (night, sodium light). */
+:root{
+  --bg:#07090f; --panel:#0d111b; --line:#1d2536; --fg:#e7e2d6; --dim:#8b93a5;
+  --sodium:#ff9a2e; --blood:#e8343a; --ivory:#e9e1cf;
+  --display:"Big Shoulders Display","Arial Narrow",Impact,sans-serif;
+  --body:"IBM Plex Sans",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  color-scheme:dark;
+}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:15px;line-height:1.55;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 64px}
+.wrap{max-width:1180px;margin:0 auto;display:flex;flex-direction:column;gap:56px}
+h1,h2,h3{font-family:var(--display);text-transform:uppercase;letter-spacing:.02em;margin:0;text-wrap:balance;line-height:.95}
+h1{font-size:clamp(44px,7vw,84px);font-weight:900}
+h1 em{font-style:normal;color:var(--sodium)}
+h2{font-size:34px;font-weight:800;margin-bottom:18px}
+h3{font-size:22px;font-weight:800}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--sodium)}
+p{margin:0;max-width:65ch}
+.top{display:grid;grid-template-columns:minmax(0,380px) minmax(0,1fr);gap:40px;align-items:start}
+@media (max-width:820px){.top{grid-template-columns:1fr}}
+.monitor{display:flex;flex-direction:column;gap:10px}
+.screen{position:relative;width:100%;max-width:380px;aspect-ratio:9/16;background:#000;border:1px solid var(--line)}
+.screen canvas{width:100%;height:100%;display:block;image-rendering:pixelated}
+.hook{position:absolute;left:8%;right:22%;top:13%;font-family:var(--display);font-weight:900;font-size:clamp(20px,6vw,30px);line-height:1;text-transform:uppercase;color:var(--ivory);text-shadow:0 2px 0 #000,0 0 12px #000;pointer-events:none}
+.tc{display:flex;justify-content:space-between;font-family:var(--mono);font-size:13px;color:var(--dim);font-variant-numeric:tabular-nums}
+.tc b{color:var(--fg);font-weight:500}
+.ctrl{display:flex;gap:10px;align-items:center}
+button{font:500 13px var(--mono);background:var(--panel);color:var(--fg);border:1px solid var(--line);padding:8px 14px;cursor:pointer;text-transform:uppercase;letter-spacing:.08em}
+button:hover{border-color:var(--sodium)}
+button:focus-visible,input:focus-visible,.shot:focus-visible{outline:2px solid var(--sodium);outline-offset:2px}
+input[type=range]{flex:1;accent-color:var(--sodium)}
+.bar{display:flex;height:10px;gap:2px}
+.bar span{background:var(--line);cursor:pointer}
+.bar span.on{background:var(--sodium)}
+.slate{display:flex;flex-direction:column;gap:22px}
+.slate .log{font-size:19px;line-height:1.45;max-width:58ch}
+.specs{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.specs div{background:var(--panel);padding:12px 14px;display:flex;flex-direction:column;gap:2px}
+.specs dt{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--dim)}
+.specs dd{margin:0;font-weight:600}
+.acts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+@media (max-width:620px){.acts{grid-template-columns:1fr}}
+.acts div{border-top:2px solid var(--sodium);padding-top:10px;display:flex;flex-direction:column;gap:4px}
+.acts div:last-child{border-color:var(--blood)}
+.acts small{font-family:var(--mono);color:var(--dim)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:22px}
+.shot{background:var(--panel);border:1px solid var(--line);display:flex;flex-direction:column;cursor:pointer}
+.shot.on{border-color:var(--sodium)}
+.shot canvas{width:100%;aspect-ratio:9/16;max-width:100%;image-rendering:pixelated;display:block;background:#000}
+.shot .meta{padding:14px;display:flex;flex-direction:column;gap:8px}
+.shot .hd{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.shot .num{font-family:var(--mono);font-size:12px;color:var(--sodium);font-variant-numeric:tabular-nums}
+.shot dl{margin:0;display:grid;grid-template-columns:52px 1fr;gap:4px 10px;font-size:13.5px;line-height:1.45}
+.shot dt{font-family:var(--mono);font-size:11px;color:var(--dim);text-transform:uppercase;padding-top:2px}
+.shot dd{margin:0;min-width:0}
+.tag{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;border:1px solid var(--blood);color:var(--blood);padding:1px 6px;align-self:flex-start}
+.cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:40px}
+@media (max-width:820px){.cols{grid-template-columns:1fr}}
+ul.rules{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px}
+ul.rules li{padding-left:18px;position:relative;max-width:62ch}
+ul.rules li::before{content:"";position:absolute;left:0;top:.62em;width:8px;height:2px;background:var(--sodium)}
+.cue{font-family:var(--mono);font-size:13px;background:var(--panel);border:1px solid var(--line);padding:16px;white-space:pre-wrap;overflow-x:auto;line-height:1.6}
+table{border-collapse:collapse;width:100%;font-size:14px}
+td,th{border-bottom:1px solid var(--line);padding:9px 8px;text-align:left;vertical-align:top}
+th{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);font-weight:500}
+td.n{font-family:var(--mono);color:var(--sodium);font-variant-numeric:tabular-nums;white-space:nowrap}
+.tbl{overflow-x:auto}
+.ask{border:1px solid var(--sodium);padding:20px;display:flex;flex-direction:column;gap:10px}
+.acts{grid-template-columns:repeat(4,minmax(0,1fr))}
+@media (max-width:900px){.acts{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.acts{grid-template-columns:1fr}}
+.tag.new{border-color:var(--sodium);color:var(--sodium)}
+.lead{margin-bottom:16px;color:var(--dim)}
+.note{margin-top:16px;font-size:13.5px;color:var(--dim);border-left:2px solid var(--line);padding-left:12px}
+.cue+.cue{margin-top:14px}
+section>h2+.tbl,section>.lead+.tbl{margin-top:4px}
+.fix td:nth-child(3){white-space:nowrap;color:var(--dim);font-family:var(--mono);font-size:12px}
+@media (prefers-reduced-motion:reduce){.hook{transition:none}}
+</style>
+<div class="wrap">
+  <section class="top">
+    <div class="monitor">
+      <div class="screen"><canvas id="big" width="108" height="192" aria-label="Animatic player"></canvas></div>
+      <div class="bar" id="bar"></div>
+      <div class="ctrl"><button id="play" type="button">Pause</button><input id="scrub" type="range" min="0" max="60" step="0.01" value="0" aria-label="Timeline"></div>
+      <div class="tc"><span>Shot <b id="sn">01</b> · <span id="sname"></span></span><b id="time">00:00.00</b></div>
+    </div>
+    <div class="slate">
+      <span class="eyebrow">Night Terror: Dead Roads · Episode 1 · v6 plan · storyboard</span>
+      <h1>3:12 <em>AM</em></h1>
+      <p class="log">Sam wakes to a scream in the dark. His friend won't pick up, and his phone says don't open the door. He opens it anyway. One minute from bed to the thing on the bridge, ending on a call nobody answers.</p>
+      <dl class="specs">
+        <div><dt>Runtime</dt><dd>60.0 s · 27 shots</dd></div>
+        <div><dt>Format</dt><dd>1080×1920 · 24 fps</dd></div>
+        <div><dt>Tempo</dt><dd>90 BPM · every cut on a beat</dd></div>
+        <div><dt>Cast</dt><dd>Sam · the car · Screamer · Crawler · horde · Brute v2 · Stalker</dd></div>
+      </dl>
+      <div class="acts">
+        <div><h3>I · 0–14 s</h3><small>Wake</small><p>Cold open, the bedroom, the scream, the phone, the alert, the Screamer looks at his window.</p></div>
+        <div><h3>II · 14–30 s</h3><small>Run</small><p>Keys, stairwell, the Crawler, the size of the horde, the garage, ignition, the shutter.</p></div>
+        <div><h3>III · 30–43 s</h3><small>Drive</small><p>The burst, the city from above, ground level, a runner on the bonnet, the drift.</p></div>
+        <div><h3>IV · 43–60 s</h3><small>The fog</small><p>The Brute, silence, the Stalker's stitches tear, the lunge, the missed call.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <span class="eyebrow">Click any shot to play it in the monitor · the animatic is rough on purpose, the renders keep the v5 look</span>
+    <h2>Shot wall</h2>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section>
+    <h2>What v5 got wrong</h2>
+    <p class="lead">Your notes, plus what I found going through v5 frame by frame. Everything here is fixed in the plan above.</p>
+    <div class="tbl"><table class="fix">
+      <thead><tr><th>v5 time</th><th>Problem</th><th>Who</th><th>Fix in v6</th></tr></thead>
+      <tbody>
+        <tr><td class="n">0.0–2.7</td><td>Opens on a dark, noisy city aerial. Nothing happens in the first second, so people swipe.</td><td>Me</td><td>Cold open on the Stalker's jaw tearing (shot 1), then the bedroom.</td></tr>
+        <tr><td class="n">2.7–7.2</td><td>Crawler sound is awful. The Crawler gets 4.5 s on screen. Warm brown colour clashes with the blue night, and 6.2–6.8 is a blurry, out-of-focus face.</td><td>You + me</td><td>1.3 s on the stairs, new sound from Flow, the same cold grade as the rest.</td></tr>
+        <tr><td class="n">7.2–7.8</td><td>The Screamer is tiny on the roof before her close-up.</td><td>Me</td><td>She's now seen from Sam's window and turns to look at him (shot 7).</td></tr>
+        <tr><td class="n">13.3–15.8</td><td>A second slow-mo right after the scream, and the same framing held for 5 s.</td><td>You</td><td>A drone crane that rises and shows how huge the horde is, at real speed (shot 11).</td></tr>
+        <tr><td class="n">16.0–19.8</td><td>Headlights turn on, off and on again. The first 2 s of the garage are nearly black.</td><td>You + me</td><td>Tubes light the car one by one. Headlights stay off until the single ignition beat (shots 12–14).</td></tr>
+        <tr><td class="n">20.2–23.8</td><td>The chase shot is dark, the car hard to read, and the angle held 3.6 s.</td><td>Me</td><td>Split into the aerial, the ground-level pass and the bonnet runner.</td></tr>
+        <tr><td class="n">24.2–24.8</td><td>The runner looks clean, white and plastic.</td><td>Me</td><td>Dirt, wet clothes, blood and rot on every runner.</td></tr>
+        <tr><td class="n">25.2</td><td>A black leg fills the whole frame for a moment.</td><td>Me</td><td>The camera path check that fixed the parked car now covers creatures too.</td></tr>
+        <tr><td class="n">27.2</td><td>A one-frame red flash.</td><td>Me</td><td>Removed.</td></tr>
+        <tr><td class="n">28.0–29.8</td><td>Skid drifts, starts again, then brakes. Slow-mo not wanted here.</td><td>You</td><td>One smooth Tokyo drift to a full stop at real speed (shot 20).</td></tr>
+        <tr><td class="n">30.2–31.2</td><td>The Brute reveal is a silhouette against a light burst; you can't read it.</td><td>Me</td><td>It walks out of fog lit by the headlights.</td></tr>
+        <tr><td class="n">31.8–33.2</td><td>The Brute looks like a bald pink potato in jeans.</td><td>You</td><td>Full redesign (see below).</td></tr>
+        <tr><td class="n">33.4</td><td>No engine growl when the car faces the Brute.</td><td>You</td><td>A long V8 growl in reply to its roar (shot 21).</td></tr>
+        <tr><td class="n">36.4–38.7</td><td>The open mouth isn't scary enough.</td><td>You</td><td>Stitched mouth tears open, with blood and drool (shot 25).</td></tr>
+        <tr><td class="n">38.7–45.5</td><td>6.8 s of black. Viewers leave and the reel doesn't loop.</td><td>Me</td><td>The lunge matches the cold open (loop) plus a 3 s missed-call cliffhanger.</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section class="cols">
+    <div>
+      <h2>Ideas I'm adding</h2>
+      <ul class="rules">
+        <li><b>The reel is a loop.</b> Shot 1 is the last four frames of the lunge. When it replays, the end runs straight into the start. Replays push a reel further than likes do.</li>
+        <li><b>The phone is the title card.</b> All on-screen text comes from inside the world: the 3:12 clock, the call screen, the red BIOHAZARD alert. No titles over the beauty shots.</li>
+        <li><b>She looks back, then she's there.</b> The Screamer stops, turns to Sam's window, vanishes, and reappears with her face pressed to his glass. Now it's personal.</li>
+        <li><b>A 15 s teaser first.</b> Shots 2 to 7 cut as a standalone first-person scare reel, posted a day before the episode.</li>
+        <li><b>Sound tells the story first.</b> Inside the flat everything is muffled and quiet with no score. When the door bangs open, the world gets loud. The score proper starts in the stairwell and drops at the garage shutter.</li>
+        <li><b>One planned silence.</b> Under the overpass, music fades out completely. Only rain and the clicks. It makes the Stalker scream hit twice as hard.</li>
+        <li><b>The friend calls back.</b> The episode ends with his phone lighting up in the dark: incoming call, his friend. Cut. That's Episode 2's hook, and it makes people follow.</li>
+        <li><b>Never a cheat.</b> No slow-mo used twice. No blended frames. Every freeze is one take. Every cut lands on the beat.</li>
+      </ul>
+    </div>
+    <div>
+      <h2>What's working on Reels now</h2>
+      <p class="lead">Live from your Instagram: about 110 reels across 8 horror CGI and zombie accounts. Each reel's views are divided by that account's own median, so a 10x means it did ten times better than usual for that account.</p>
+      <div class="tbl"><table>
+        <thead><tr><th>Reel</th><th>Views</th><th>vs usual</th><th>Why it worked</th></tr></thead>
+        <tbody>
+          <tr><td>lights.are.off · "He wants to come in!"</td><td class="n">99M</td><td class="n">55x</td><td>15 s first-person: a pale thing walks up the porch and presses its face to YOUR window. 3.7M sends.</td></tr>
+          <tr><td>shatoot3d · "Underwater Nightmare II"</td><td class="n">253M</td><td class="n">23x</td><td>33 s. Beautiful, real-looking calm (a frozen lake), then a POV look down at your own feet, then what's under the ice.</td></tr>
+          <tr><td>shatoot3d · "Last Gear"</td><td class="n">235M</td><td class="n">22x</td><td>Night ride POV, the road becomes a nightmare. Caption says every frame is handmade, no AI.</td></tr>
+          <tr><td>shortestblockbusters · "Beneath The Surface"</td><td class="n">78M</td><td class="n">39x</td><td>Creature scale reveal from a POV. Runs as a numbered POV series and says "handcrafted CGI".</td></tr>
+          <tr><td>bramhastra.rt · "A bad dream"</td><td class="n">6.1M</td><td class="n">535x</td><td>One surreal, eerie, wallpaper-grade image. Short and quiet.</td></tr>
+          <tr><td>inversedynamics · eerie station</td><td class="n">12.7M</td><td class="n">11x</td><td>Blender environment with a creeping presence.</td></tr>
+          <tr><td>beaniesurvives · "Forty-one people…"</td><td class="n">161K</td><td class="n">3.8x</td><td>Zombie survival series. The caption tells the stakes and ends on a question: "Would you go?" Part 1 is pinned.</td></tr>
+          <tr><td>drawn.tosurvive · "Two days left"</td><td class="n">35K</td><td class="n">1.7x</td><td>Same format: numbered parts, a moral choice question, a rule ("watch the animals").</td></tr>
+        </tbody>
+      </table></div>
+      <ul class="rules" style="margin-top:16px">
+        <li><b>First-person dread wins by far.</b> The three biggest outliers put the viewer in the victim's eyes. So the apartment act is now shot from Sam's eyes, and the Screamer ends up pressed against his window.</li>
+        <li><b>Beautiful first, then wrong.</b> Realistic calm (the quiet bedroom, rain, 3:12 on the clock) makes the turn hit harder.</li>
+        <li><b>Short beats long.</b> The top outliers run 15 to 33 s. So we post a 15 s teaser first (the bedroom to her face at the window, shots 2 to 7), and its caption points to the full 60 s episode.</li>
+        <li><b>Say it's handmade.</b> The big CGI accounts all say "every frame handmade, no AI". Your captions should too.</li>
+        <li><b>Caption = stakes + a choice.</b> Episodic zombie accounts end every caption with a question to the viewer and a part number. Draft: <i>3:12 AM. The alert says don't open the door. Something is already at his window. Would you run for the car? Part 1.</i></li>
+      </ul>
+      <p class="note">Sample: 8 accounts, about 110 reels, read in your Chrome without liking, following or posting. Strong signal for first-person and short; the episodic-caption pattern rests on two smaller accounts, so treat it as a lead.</p></div>
+  </section>
+
+  <section class="cols">
+    <div>
+      <h2>Characters to rebuild</h2>
+      <ul class="rules">
+        <li><b>Sam (a normal human).</b> Full finger bones and joint limits on the rig, so hands bend only like real hands. Real motion capture (free CMU library) for waking up, reaching, grabbing keys and running. Fingers checked against the phone and keys so nothing passes through. Face mostly in shadow or phone light. Hand close-ups get their own detailed hand model.</li>
+        <li><b>Brute v2.</b> 4 m, hunched, plated spine, split jaw, one swollen mutated arm, rebar through the chest, glowing infected sores, charred grey skin. No jeans, no smooth pink skin.</li>
+        <li><b>Stalker mouth.</b> Thick black stitches across the lips that tear one by one, stretched skin, blood and black drool strings, a red-lit throat.</li>
+        <li><b>Crawler and runners.</b> Dirtier and wetter, with rot and blood, no clean white clothes. The Crawler's whole sound is rebuilt.</li>
+      </ul>
+    </div>
+    <div>
+      <h2>Music and sound</h2>
+      <p class="lead">New 60 s score from Flow, with the v5 score uploaded as the reference so the sound stays the same.</p>
+      <div class="cue">FLOW PROMPT (music, 60 s, 90 BPM, D minor)
+Cinematic horror-action score, instrumental. Same world
+as the reference: 80s analog synth, real orchestra,
+real electric guitar with bass.
+0-1.3 s: one sub hit, then silence.
+1.3-14 s: almost nothing. A low drone, a single
+  high piano note now and then. Very sparse.
+14 s: first kick. 15.3 s: 90 BPM pulse starts.
+18.7 s: synth arpeggio enters, tension builds.
+22-28 s: build on the beat, a sub drop at 26 s.
+30 s: FULL drop. Guitar power chords, drums,
+  orchestra, high-speed chase energy.
+32.7 s: main theme, big.
+43.3 s and 44.7 s: two huge brass braams.
+46 s: big hit.
+48 s: fade everything to silence by 49 s.
+50 s: string cluster creeping in.
+52-55 s: brass and choir swell to a scream.
+56.7 s: hard stop. Then the theme's last note
+  rings out softly over black until 60 s.
+Original melody. Clean, clear mix. No vocals.</div>
+      <div class="cue">FLOW SFX TO MAKE
+- crawler voice: wet rattling breath, joint cracks
+- phone ringback + two-tone emergency alert
+- keys, deadbolt, door slam in a stairwell
+- fluorescent tube ticks and hum
+- starter, V8 catch, long growl rev
+- garage shutter chain
+- fist impact, asphalt cracking
+- stitches tearing like wet thread
+- Stalker scream (keep v5 layer as a base)</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Cue sheet</h2>
+    <div class="tbl"><table>
+      <thead><tr><th>Time</th><th>Shot</th><th>Music</th><th>Sound</th></tr></thead>
+      <tbody id="cues"></tbody>
+    </table></div>
+  </section>
+
+  <section class="cols">
+    <div>
+      <h2>How it gets made</h2>
+      <ul class="rules">
+        <li><b>Keep what you loved.</b> The scream shot, the garage look, the burst freeze and the Stalker's scream are reused and extended.</li>
+        <li><b>Render on your Asus.</b> New shots and redesigned characters render on the RTX 3050 (OptiX), with the cloud CPUs as a second lane.</li>
+        <li><b>Order.</b> 1) Sam's rig with hands, 2) Brute v2 and the stitched mouth, 3) the apartment, stairwell and aerial city sets, 4) Flow music and SFX, 5) render and cut, 6) frame-by-frame check against this page.</li>
+        <li><b>Samples on the way.</b> I'll send a still of Sam's hands, Brute v2 and the stitches before the full render, so you can stop anything early.</li>
+      </ul>
+    </div>
+    <div class="ask">
+      <span class="eyebrow">Two things I need from you</span>
+      <h3>Your friend's name, and your look</h3>
+      <p>The phone shows "Calling…" and "Incoming call" with your friend's name. Tell me who it is (or a code name). For Sam, send a photo or describe your hair, build and what you'd wear at 3 AM. Otherwise I'll build a generic look in a dark hoodie and keep the face in shadow.</p>
+      <p>If the story works for you, say go and I start with Sam's rig and the Brute.</p>
+    </div>
+  </section>
+</div>
+<script>
+// ---------- palette + quantiser (no dithering, nearest colour) ----------
+const PAL=['#000000','#04060b','#0a0f1c','#121b30','#1d2a45','#2c3b5a','#46577a','#6b7a96','#a9b4c8',
+'#0e0c0c','#1f1a18','#3a302a','#5e4a3a','#8a6b4f','#4b5240','#6f7a5a','#9aa27a',
+'#e9e1cf','#c9bfa8','#c76a1e','#ff9a2e','#ffd36b','#fff6dc','#7a0d10','#b3161b','#e8343a','#ff5a1f',
+'#2e2a26','#d8cfbf','#8a8174','#b08458','#7a5634','#f2f2f2',
+'#6a4a7a','#cfd6dc','#3d7bd9','#7d93ad','#d04aa0','#e8c440','#4a4844','#9be05a','#5a6f8c','#26303d','#b8c4d0'];
+const PR=PAL.map(h=>[parseInt(h.slice(1,3),16),parseInt(h.slice(3,5),16),parseInt(h.slice(5,7),16)]);
+const LUT=new Uint8Array(32768);
+for(let i=0;i<32768;i++){const r=(i>>10)*8+4,g=((i>>5)&31)*8+4,b=(i&31)*8+4;let best=0,bd=1e9;
+ PR.forEach((p,k)=>{const d=(p[0]-r)**2*.3+(p[1]-g)**2*.59+(p[2]-b)**2*.11;if(d<bd){bd=d;best=k}});LUT[i]=best}
+function quant(ctx){const im=ctx.getImageData(0,0,108,192),d=im.data;
+ for(let i=0;i<d.length;i+=4){const p=PR[LUT[((d[i]>>3)<<10)|((d[i+1]>>3)<<5)|(d[i+2]>>3)]];d[i]=p[0];d[i+1]=p[1];d[i+2]=p[2];d[i+3]=255}
+ ctx.putImageData(im,0,0)}
+// ---------- drawing helpers ----------
+const W=108,H=192,cx=54;
+function mk(ctx){return{
+ r(x,y,w,h,c,a=1){ctx.globalAlpha=a;ctx.fillStyle=c;ctx.fillRect(Math.round(x),Math.round(y),Math.round(w),Math.round(h));ctx.globalAlpha=1},
+ p(pts,c,a=1){ctx.globalAlpha=a;ctx.fillStyle=c;ctx.beginPath();pts.forEach((q,i)=>i?ctx.lineTo(q[0],q[1]):ctx.moveTo(q[0],q[1]));ctx.closePath();ctx.fill();ctx.globalAlpha=1},
+ c(x,y,r,col,a=1){ctx.globalAlpha=a;ctx.fillStyle=col;ctx.beginPath();ctx.arc(x,y,Math.max(.5,r),0,7);ctx.fill();ctx.globalAlpha=1},
+ e(x,y,rx,ry,col,rot=0,a=1){ctx.globalAlpha=a;ctx.fillStyle=col;ctx.beginPath();ctx.ellipse(x,y,Math.max(.5,rx),Math.max(.5,ry),rot,0,7);ctx.fill();ctx.globalAlpha=1},
+ l(x1,y1,x2,y2,col,w=1,a=1){ctx.globalAlpha=a;ctx.strokeStyle=col;ctx.lineWidth=w;ctx.lineCap='round';ctx.beginPath();ctx.moveTo(x1,y1);ctx.lineTo(x2,y2);ctx.stroke();ctx.globalAlpha=1},
+ ctx}}
+const rnd=s=>{const x=Math.sin(s*127.1+311.7)*43758.5453;return x-Math.floor(x)};
+const cl=(v,a=0,b=1)=>Math.min(b,Math.max(a,v)), ease=v=>v*v*(3-2*v), lerp=(a,b,v)=>a+(b-a)*v;
+
+function sky(g,hz){const b=['#04060b','#0a0f1c','#121b30','#1d2a45'];b.forEach((c,i)=>g.r(0,i*hz/4,W,hz/4+1,c))}
+function skyline(g,hz,off=0,seed=1){for(let i=-1;i<14;i++){const x=((i*11+off)%154+154)%154-23,h=18+rnd(i+seed)*34,w=9+rnd(i*3+seed)*6;
+  g.r(x,hz-h,w,h,'#0a0f1c');for(let k=0;k<5;k++)if(rnd(i*7+k+seed)>.62)g.r(x+2+(k%2)*4,hz-h+4+k*6,1,1,'#c76a1e')}}
+function road(g,hz,vx=cx,scroll=0){g.p([[vx-2,hz],[vx+2,hz],[W+60,H],[-60,H]],'#0e0c0c');
+  for(let k=0;k<9;k++){const z=((k+scroll)%9)/9,y=hz+(H-hz)*z*z,y2=hz+(H-hz)*Math.min(1,(z+.05)**2);g.p([[vx-.3-z*1.5,y],[vx+.3+z*1.5,y],[vx+.3+z*1.6,y2],[vx-.3-z*1.6,y2]],'#c9bfa8',.8)}
+  for(let k=0;k<6;k++){const y=hz+8+k*14;g.r(0,y,W,1,'#1d2a45',.35)}} // wet sheen
+function rain(g,t,speed=1,n=70,len=6,col='#a9b4c8',a=.55){for(let i=0;i<n;i++){const x=rnd(i)*W,ph=rnd(i+9);const y=((ph*H+t*speed*220)%(H+20))-10;
+  const L=Math.max(.6,len*Math.min(1,speed));g.l(x,y,x-L*.25,y+L,col,1,a)}}
+function beam(g,x,y,dir,len,spread,a=.25){g.p([[x,y],[x+dir*len,y-spread],[x+dir*len,y+spread]],'#fff6dc',a*.5);g.p([[x,y],[x+dir*len,y-spread*.5],[x+dir*len,y+spread*.5]],'#ffd36b',a)}
+function flash(g,x,y,s,t){const k=s*(1+.3*Math.sin(t*90));for(let i=0;i<6;i++){const a=i/6*6.283+t*13;g.l(x,y,x+Math.cos(a)*k*(i%2?1:1.8),y+Math.sin(a)*k*(i%2?1:1.8),'#ffd36b',1.4)}g.c(x,y,k*.7,'#fff6dc')}
+function splat(g,x,y,s,k){for(let i=0;i<9;i++){const a=rnd(i+x)*6.28,d=s*(0.4+rnd(i*5+y))*k;g.c(x+Math.cos(a)*d,y+Math.sin(a)*d-k*s*.3,s*.25*(1-k*.6),i%3?'#b3161b':'#e8343a')}}
+// walker, front view. y = feet. s = height px. ph = walk phase. fall 0..1
+function walker(g,x,y,s,ph,fall=0,head=1,shade=0){const ctx=g.ctx;ctx.save();ctx.translate(x,y);ctx.rotate(fall*1.45*(shade%2?-1:1));ctx.translate(0,fall*s*.1);
+ const sw=Math.sin(ph)*s*.03,body=['#5e4a3a','#4b5240','#3a302a'][shade%3],skin=['#9aa27a','#8a8174','#b08458'][shade%3];
+ g.l(-s*.08,0,-s*.07+sw,-s*.45,'#1f1a18',Math.max(1,s*.07));g.l(s*.08,0,s*.07-sw,-s*.45,'#1f1a18',Math.max(1,s*.07));
+ g.p([[-s*.15,-s*.45],[s*.15,-s*.45],[s*.17+sw,-s*.8],[-s*.13+sw,-s*.82]],body);
+ g.l(-s*.14+sw,-s*.78,-s*.26+sw*2,-s*.55+Math.sin(ph+1)*s*.04,skin,Math.max(1,s*.05));
+ g.l(s*.15+sw,-s*.78,s*.22+sw*2,-s*.6+Math.sin(ph+2)*s*.04,skin,Math.max(1,s*.05));
+ if(head)g.c(sw*1.5+s*.01,-s*.9,s*.09,skin);
+ if(head&&s>30){g.r(sw*1.5-s*.045,-s*.91,1,1,'#ff9a2e');g.r(sw*1.5+s*.035,-s*.91,1,1,'#ff9a2e')}
+ ctx.restore()}
+// antler, recursive
+function antler(g,x,y,a,len,d,w){if(d<=0||len<1)return;const x2=x+Math.cos(a)*len,y2=y+Math.sin(a)*len;g.l(x,y,x2,y2,d>2?'#2e2a26':'#3a302a',w);
+ antler(g,x2,y2,a+.32,len*.72,d-1,Math.max(1,w*.7));if(d>1)antler(g,lerp(x,x2,.55),lerp(y,y2,.55),a-.55,len*.5,d-2,Math.max(1,w*.6))}
+// stalker, front view. y=feet. s=height. t time. jaw 0..1. eye 0..1
+function stalker(g,x,y,s,t,jaw=0,eye=1,tilt=0,crouch=0){const ctx=g.ctx;ctx.save();ctx.translate(x,y);
+ const bob=Math.sin(t*6)*s*.015,hy=-s*(.86-crouch*.35)+bob;
+ // stilt legs
+ [-1,1].forEach(sd=>{const st=Math.sin(t*6+(sd>0?3.1:0))*s*.02;g.l(sd*s*.06,-s*(.5-crouch*.2),sd*s*.13+st,-s*.25,'#d8cfbf',Math.max(1,s*.035));g.l(sd*s*.13+st,-s*.25,sd*s*.09,0,'#c9bfa8',Math.max(1,s*.03))});
+ // torso + ribs
+ g.p([[-s*.11,-s*(.5-crouch*.2)],[s*.11,-s*(.5-crouch*.2)],[s*.15,hy+s*.16],[-s*.15,hy+s*.16]],'#8a8174');
+ for(let i=0;i<5;i++){const yy=hy+s*.2+i*s*.05;g.l(-s*.13,yy,s*.13,yy,'#2e2a26',Math.max(1,s*.012))}
+ g.l(0,hy+s*.18,0,-s*(.5-crouch*.2),'#d8cfbf',Math.max(1,s*.02));
+ // long arms
+ [-1,1].forEach(sd=>{const sw=Math.sin(t*6+(sd>0?0:3.1))*s*.04;g.l(sd*s*.15,hy+s*.18,sd*s*.24+sw,hy+s*.42,'#c9bfa8',Math.max(1,s*.03));g.l(sd*s*.24+sw,hy+s*.42,sd*s*.2+sw,hy+s*.66+crouch*s*.2,'#c9bfa8',Math.max(1,s*.025));
+  for(let k=-1;k<=1;k++)g.l(sd*s*.2+sw,hy+s*.66+crouch*s*.2,sd*s*.2+sw+k*s*.02,hy+s*.72+crouch*s*.2,'#2e2a26',1)});
+ // head
+ ctx.translate(0,hy);ctx.rotate(tilt);
+ antler(g,-s*.04,-s*.04,-2.0,s*.17,4,Math.max(1,s*.025));antler(g,s*.04,-s*.04,-1.14,s*.17,4,Math.max(1,s*.025));
+ g.p([[-s*.06,-s*.06],[s*.06,-s*.06],[s*.035,s*.07],[-s*.035,s*.07]],'#d8cfbf');
+ g.r(-s*.035,s*.07,s*.07,s*.02+jaw*s*.06,'#7a0d10');g.p([[-s*.035,s*.09+jaw*s*.06],[s*.035,s*.09+jaw*s*.06],[s*.02,s*.11+jaw*s*.07],[-s*.02,s*.11+jaw*s*.07]],'#c9bfa8');
+ g.c(-s*.028,-s*.015,s*.018,'#000');g.c(s*.028,-s*.015,s*.018,'#000');
+ if(eye>0){g.c(-s*.028,-s*.015,s*.01*eye+.5,'#ff5a1f');g.c(s*.028,-s*.015,s*.01*eye+.5,'#ff5a1f');g.c(-s*.028,-s*.015,s*.03*eye,'#ff5a1f',.3*eye);g.c(s*.028,-s*.015,s*.03*eye,'#ff5a1f',.3*eye)}
+ ctx.restore()}
+// IVORY trike, side view facing left. x = centre, y = ground, s = length px, dist = travelled px for wheel spin
+function trike(g,x,y,s,dist,bob=0,rack=0,firing=0,t=0){const k=s/100;const by=y-bob*k;
+ const wheel=(wx,r)=>{g.c(wx,y-r,r,'#0e0c0c');g.c(wx,y-r,r*.72,'#3a302a');const a0=-dist/r;for(let i=0;i<5;i++){const a=a0+i*1.2566;g.l(wx,y-r,wx+Math.cos(a)*r*.68,y-r+Math.sin(a)*r*.68,'#8a8174',Math.max(1,k*1.2))}
+   for(let i=0;i<14;i++){const a=a0+i*.449;g.r(wx+Math.cos(a)*r-1,y-r+Math.sin(a)*r-1,2,2,'#1f1a18')}g.c(wx,y-r,r*.18,'#c9bfa8')};
+ // body
+ g.p([[x-48*k,by-20*k],[x-30*k,by-34*k],[x+5*k,by-40*k],[x+38*k,by-36*k],[x+46*k,by-22*k],[x+30*k,by-14*k],[x-38*k,by-12*k]],'#e9e1cf');
+ g.p([[x-8*k,by-40*k],[x+14*k,by-50*k],[x+30*k,by-40*k]],'#c76a1e');
+ g.p([[x-48*k,by-20*k],[x-30*k,by-34*k],[x-28*k,by-26*k],[x-44*k,by-16*k]],'#c76a1e');
+ g.r(x-20*k,by-30*k,30*k,4*k,'#2e2a26');
+ // fork guns
+ g.l(x-40*k,by-24*k,x-62*k,by-27*k,'#1f1a18',Math.max(1.5,3*k));g.l(x-40*k,by-19*k,x-60*k,by-21*k,'#1f1a18',Math.max(1.5,3*k));
+ if(firing){flash(g,x-64*k,by-27*k,4*k,t);flash(g,x-62*k,by-21*k,3*k,t+.2)}
+ // rider
+ rider(g,x+4*k,by-40*k,k,rack,t);
+ wheel(x-36*k,13*k);wheel(x+30*k,15*k);
+ g.r(x+42*k,by-30*k,3*k,3*k,'#e8343a');g.c(x-49*k,by-22*k,2*k,'#fff6dc')}
+function rider(g,x,y,k,rack,t){// seated, leaning forward, facing left
+ g.l(x+4*k,y,x-6*k,y+2*k,'#b08458',Math.max(1,4*k)); // thigh
+ g.l(x-6*k,y+2*k,x-8*k,y+16*k,'#7a5634',Math.max(1,4*k)); // boot
+ g.p([[x-2*k,y],[x+8*k,y],[x+4*k,y-18*k],[x-6*k,y-16*k]],'#b08458'); // jacket
+ g.l(x+5*k,y-14*k,x-5*k,y-4*k,'#5e4a3a',Math.max(1,1.5*k)); // bandolier
+ const ax=lerp(x-20*k,x-6*k,rack);g.l(x-2*k,y-14*k,ax,y-8*k,'#b08458',Math.max(1,3*k));g.c(ax,y-8*k,2*k,'#1f1a18');
+ g.c(x-3*k,y-21*k,4.5*k,'#e9e1cf'); // hair
+ g.c(x-6*k,y-20*k,3*k,'#c9bfa8'); // face
+ g.r(x-9*k,y-23*k,5*k,2*k,'#c76a1e');g.c(x-1*k,y-21*k,1.8*k,'#1f1a18'); // goggles + headset
+ for(let i=0;i<3;i++)g.l(x+1*k,y-24*k+i*2*k,x+5*k+Math.sin(t*20+i)*k,y-24*k+i*2*k,'#f2f2f2',1); // hair in wind
+}
+// top-down trike. angle rad (0 = facing up)
+function trikeTop(g,x,y,s,a,firing,t){const ctx=g.ctx;ctx.save();ctx.translate(x,y);ctx.rotate(a);const k=s/40;
+ g.r(-10*k,8*k,5*k,8*k,'#0e0c0c');g.r(5*k,8*k,5*k,8*k,'#0e0c0c');g.r(-2*k,-17*k,4*k,7*k,'#0e0c0c');
+ g.p([[-3*k,-16*k],[3*k,-16*k],[8*k,4*k],[7*k,14*k],[-7*k,14*k],[-8*k,4*k]],'#e9e1cf');g.e(0,4*k,4*k,6*k,'#c76a1e');g.c(0,0,3*k,'#e9e1cf');g.c(0,0,1.6*k,'#c76a1e');
+ g.l(-3*k,-12*k,-3*k,-24*k,'#1f1a18',2);g.l(3*k,-12*k,3*k,-24*k,'#1f1a18',2);
+ if(firing){flash(g,-3*k,-26*k,3,t);flash(g,3*k,-26*k,3,t+.3)}
+ ctx.restore()}
+
+// ---------- v6 helpers ----------
+function txt(g,s,x,y,col,px=5,al='left'){const c=g.ctx;c.globalAlpha=1;c.fillStyle=col;c.font=`bold ${px}px monospace`;c.textAlign=al;c.fillText(s,x,y);c.textAlign='left'}
+// Night Terror car, side view facing left. x centre, y ground, s length px, dist for wheel spin, hl headlights 0..1
+function car(g,x,y,s,dist=0,hl=0,bar=0,t=0,bob=0){const k=s/100,by=y-bob*k;
+ const wheel=(wx)=>{const r=11*k;g.c(wx,y-r,r,'#0e0c0c');g.c(wx,y-r,r*.62,'#b8c4d0');const a0=-dist/r;for(let i=0;i<6;i++){const a=a0+i*1.047;g.l(wx,y-r,wx+Math.cos(a)*r*.58,y-r+Math.sin(a)*r*.58,'#5a6f8c',Math.max(1,k*1.4))}g.c(wx,y-r,r*.16,'#26303d')};
+ g.p([[x-50*k,by-12*k],[x-48*k,by-22*k],[x-22*k,by-26*k],[x-10*k,by-38*k],[x+22*k,by-39*k],[x+38*k,by-27*k],[x+50*k,by-25*k],[x+50*k,by-11*k]],'#7d93ad');
+ g.p([[x-8*k,by-36*k],[x+20*k,by-37*k],[x+32*k,by-27*k],[x-18*k,by-26*k]],'#121b30'); // tinted glass
+ g.r(x-30*k,by-22*k,46*k,8*k,'#b8c4d0',.9);g.e(x-6*k,by-18*k,7*k,2.5*k,'#26303d');            // livery panel + skull mark
+ g.r(x-46*k,by-14*k,96*k,3*k,'#26303d');g.r(x+28*k,by-15*k,6*k,3*k,'#e8c440');
+ g.r(x-2*k,by-42*k,18*k,3*k,'#26303d');if(bar){const on=Math.floor(t*8)%2;g.r(x-1*k,by-43*k,7*k,2*k,on?'#d04aa0':'#3d7bd9');g.r(x+8*k,by-43*k,7*k,2*k,on?'#3d7bd9':'#d04aa0')}
+ wheel(x-32*k);wheel(x+32*k);
+ g.c(x-49*k,by-19*k,2.2*k,hl>0?'#fff6dc':'#46577a');if(hl>0){beam(g,x-50*k,by-19*k,-1,90*k,16*k,.35*hl)}
+ g.r(x+48*k,by-21*k,2*k,4*k,'#e8343a')}
+// top-down car, a=angle (0 = facing up)
+function carTop(g,x,y,s,a,hl=1){const ctx=g.ctx;ctx.save();ctx.translate(x,y);ctx.rotate(a);const k=s/40;
+ if(hl)g.p([[-4*k,-20*k],[4*k,-20*k],[16*k,-70*k],[-16*k,-70*k]],'#ffd36b',.22);
+ [[-9,-12],[5,-12],[-9,8],[5,8]].forEach(([wx,wy])=>g.r(wx*k,wy*k,4*k,7*k,'#0e0c0c'));
+ g.p([[-7*k,-20*k],[7*k,-20*k],[8*k,18*k],[-8*k,18*k]],'#7d93ad');g.r(-6*k,-8*k,12*k,12*k,'#121b30');g.r(-5*k,-3*k,10*k,2*k,'#26303d');
+ g.r(-6*k,-21*k,3*k,1.5*k,'#fff6dc');g.r(3*k,-21*k,3*k,1.5*k,'#fff6dc');g.r(-6*k,17*k,3*k,1.5*k,'#e8343a');g.r(3*k,17*k,3*k,1.5*k,'#e8343a');ctx.restore()}
+function screamer(g,x,y,s,t,mouth=1,turn=0){// front, y = feet
+ const ctx=g.ctx;ctx.save();ctx.translate(x,y);const sw=Math.sin(t*20)*s*.01*mouth;g.p([[-s*.16,-s*.05],[s*.16,-s*.05],[s*.12,-s*.6],[-s*.12,-s*.6]],'#6a4a7a');
+ g.l(-s*.12,-s*.58,-s*.24,-s*.32,'#cfd6dc',Math.max(1,s*.04));g.l(s*.12,-s*.58,s*.24,-s*.32,'#cfd6dc',Math.max(1,s*.04));
+ const hx=sw+turn*s*.05;g.e(hx,-s*.74,s*.09,s*.13,'#cfd6dc');for(let i=-3;i<=3;i++)g.l(hx+i*s*.03,-s*.84,hx+i*s*.05,-s*.45,'#000',Math.max(1,s*.025));
+ g.e(hx+turn*s*.02,-s*.68,s*.03,s*.05*mouth+.5,'#7a0d10');g.c(hx-s*.035+turn*s*.03,-s*.77,Math.max(.5,s*.012),'#000');g.c(hx+s*.035+turn*s*.03,-s*.77,Math.max(.5,s*.012),'#000');ctx.restore()}
+function brute(g,x,y,s,t,roar=0,arm=0){const ctx=g.ctx;ctx.save();ctx.translate(x,y);const br=Math.sin(t*3)*s*.01;
+ [-1,1].forEach(sd=>{g.p([[sd*s*.08,-s*.38],[sd*s*.22,-s*.38],[sd*s*.2,0],[sd*s*.07,0]],'#26303d')});
+ g.p([[-s*.3,-s*.36],[s*.3,-s*.36],[s*.42,-s*.8+br],[s*.1,-s*.95+br],[-s*.12,-s*.95+br],[-s*.4,-s*.78+br]],'#4a4844');
+ for(let i=0;i<5;i++){g.p([[-s*.05+i*s*.025,-s*.95-i*s*.01],[s*.0+i*s*.025,-s*1.02-i*s*.02],[s*.04+i*s*.025,-s*.93]],'#2e2a26')} // spine plates
+ for(let i=0;i<7;i++){g.c(-s*.25+rnd(i)*s*.5,-s*.45-rnd(i+3)*s*.4,Math.max(.6,s*.018),'#9be05a',.9)}                          // glowing pustules
+ g.l(-s*.3,-s*.62,-s*.3,-s*.35,'#7a0d10',1);g.l(s*.2,-s*.7,s*.26,-s*.4,'#3a302a',Math.max(1,s*.02));                            // scar + rebar
+ const ay=lerp(-s*.2,-s*1.05,arm);g.l(s*.36,-s*.74,s*.52,ay+s*.12,'#4a4844',Math.max(2,s*.16));g.e(s*.54,ay,s*.12,s*.1,'#2e2a26');   // giant mutated arm
+ g.l(-s*.36,-s*.72,-s*.42,-s*.38,'#4a4844',Math.max(1.5,s*.08));
+ g.e(0,-s*.88+br,s*.1,s*.08,'#5a6f8c');g.c(-s*.04,-s*.9+br,Math.max(.6,s*.014),'#9be05a');g.c(s*.04,-s*.9+br,Math.max(.6,s*.014),'#9be05a');
+ g.p([[-s*.07,-s*.84+br],[s*.07,-s*.84+br],[s*.04,-s*.84+br+s*.1*roar],[-s*.04,-s*.84+br+s*.1*roar]],'#7a0d10');      // split jaw
+ if(roar>.2)for(let i=-2;i<=2;i++)g.l(i*s*.025,-s*.84+br,i*s*.03,-s*.82+br+s*.03,'#d8cfbf',1);ctx.restore()}
+// Stalker close-up head with a stitched mouth. jaw 0..1 tears the stitches; pop = how many stitches have torn (0..1)
+function stalkerHead(g,x,y,s,t,jaw=0,eye=1,tilt=0,pop=0){const ctx=g.ctx;ctx.save();ctx.translate(x,y);ctx.rotate(tilt);
+ antler(g,-s*.12,-s*.18,-2.0,s*.55,5,Math.max(1,s*.05));antler(g,s*.12,-s*.18,-1.14,s*.55,5,Math.max(1,s*.05));
+ g.p([[-s*.2,-s*.22],[s*.2,-s*.22],[s*.12,s*.2],[-s*.12,s*.2]],'#d8cfbf');g.p([[-s*.2,-s*.22],[s*.2,-s*.22],[0,-s*.3]],'#c9bfa8');
+ const jo=jaw*s*.32;g.p([[-s*.11,s*.18],[s*.11,s*.18],[s*.08,s*.18+jo],[-s*.08,s*.18+jo]],'#7a0d10');                         // the mouth cavity
+ for(let i=0;i<6;i++)g.l(-s*.09+i*s*.036,s*.2,-s*.09+i*s*.036,s*.23,'#f2f2f2',1);
+ g.p([[-s*.12,s*.2+jo],[s*.12,s*.2+jo],[s*.07,s*.36+jo],[-s*.07,s*.36+jo]],'#c9bfa8');                                         // lower jaw
+ for(let i=0;i<7;i++){const xx=-s*.1+i*s*.033,torn=rnd(i*3.1)<pop;const top=s*.19,bot=s*.21+jo;                                 // stitches
+  if(!torn){g.l(xx,top,xx+s*.01,bot,'#0e0c0c',Math.max(1,s*.012))}else{g.l(xx,top,xx,top+s*.03,'#0e0c0c',1);g.l(xx,bot,xx,bot-s*.03,'#0e0c0c',1);g.r(xx,top+s*.03,1,Math.max(1,jo*.6*rnd(i)),'#b3161b')}}
+ if(jaw>.3)for(let i=0;i<4;i++){const dx=-s*.06+i*s*.04,len=(s*.1+rnd(i)*s*.2)*jaw+Math.sin(t*3+i)*2;g.l(dx,s*.2+jo,dx,s*.36+jo+len,'#7a0d10',1,.9)}  // blood + black drool strings
+ g.c(-s*.085,-s*.05,s*.05,'#000');g.c(s*.085,-s*.05,s*.05,'#000');
+ if(eye>0){[-1,1].forEach(sd=>{g.c(sd*s*.085,-s*.05,s*.022*eye+.5,'#ff5a1f');g.c(sd*s*.085,-s*.05,s*.07*eye,'#ff5a1f',.25*eye)})}
+ ctx.restore()}
+function room(g,t,flash=0){g.r(0,0,W,H,'#04060b');g.r(62,20,40,64,'#0a0f1c');for(let i=0;i<14;i++){const yy=((rnd(i)*64+t*10*(.5+rnd(i+1)))%64)+20;g.l(64+rnd(i+2)*36,yy,64+rnd(i+2)*36,yy+3,'#46577a',1,.7)}
+ g.r(80,20,2,64,'#121b30');g.r(62,51,40,2,'#121b30');for(let i=0;i<6;i++)g.r(66+i*6,70-rnd(i)*30,4,30,'#0a0f1c');
+ if(flash)g.r(0,0,W,H,'#a9b4c8',.25*flash)}
+function phone(g,x,y,s,glow=1){g.r(x-s*.3,y-s*.55,s*.6,s*1.1,'#0e0c0c');g.r(x-s*.27,y-s*.5,s*.54,s*1.0,glow?'#121b30':'#04060b')}
+function hand(g,x,y,s,grip=0,col='#b08458'){g.e(x,y,s*.22,s*.18,col);for(let i=0;i<4;i++){const fx=x-s*.15+i*s*.1;g.l(fx,y-s*.12,fx+grip*s*.04,y-s*.38+grip*s*.18+Math.abs(i-1.5)*s*.04,col,Math.max(1,s*.075))}
+ g.l(x+s*.18,y,x+s*.32,y-s*.16+grip*s*.08,col,Math.max(1,s*.08))}
+function fog(g,t,y0=60,n=5,a=.22){for(let i=0;i<n;i++)g.e(((t*6+i*36)%180)-36,y0+i*12,50,9,'#46577a',a)}
+function overpass(g,y){g.r(-5,y,W+10,10,'#26303d');g.r(-5,y-4,W+10,4,'#1d2a45');for(let i=0;i<9;i++)g.r(i*13,y-9,1,5,'#1d2a45');g.r(6,y+10,6,H,'#121b30');g.r(W-12,y+10,6,H,'#121b30')}
+// ---------- shots (90 BPM, 1 beat = 0.667 s; durations in beats) ----------
+const B=2/3;
+const SHOTS=[
+{n:'Cold open',b:2,act:'I',tag:'New · hook',cam:'Extreme close-up, 35 mm, lens almost touching the skull.',act2:'Four frames from the very end: the Stalker\'s stitched jaw rips open inside the lens. Smash cut to black.',snd:'One torn-flesh crack and half a scream, cut dead.',mus:'One sub hit, then nothing',
+draw(g,t,d){g.r(0,0,W,H,'#0a0f1c');if(t<.85){stalkerHead(g,cx,104,150,t,ease(cl(t/.6)),1.6,0,cl(t/.5));g.r(0,0,W,H,'#ff5a1f',.06)}else g.r(0,0,W,H,'#000')}},
+{n:'3:12 AM',b:4,act:'I',tag:'New',cam:'Wide, 24 mm, locked off, very slow creep in. Only light is the city through the rain on the window.',act2:'A dark apartment. Rain shadows crawl down the wall. The bedside clock flips to 3:12. Sam asleep under the blanket, back to us.',snd:'Rain on glass, a fridge hum, distant thunder. A car alarm somewhere far away.',mus:'Low drone only',
+draw(g,t,d){room(g,t);g.r(6,120,70,26,'#121b30');g.e(40,118,30,9,'#1d2a45');g.c(64,112,7,'#1f1a18');g.r(80,126,18,20,'#0e0c0c');
+ txt(g,t<1.2?'3:11':'3:12',89,124,'#e8343a',6,'center');for(let i=0;i<10;i++){const yy=((rnd(i)*90+t*14)%90)+60;g.l(10+rnd(i)*60,yy,10+rnd(i)*60,yy+6,'#1d2a45',2,.5)}}},
+{n:'Eyes open',b:2,act:'I',tag:'New',cam:'Extreme close-up on one eye, 100 mm macro. Phone-screen blue rim light.',act2:'The distant scream reaches the room. Sam\'s eye snaps open and darts toward the window.',snd:'The Screamer\'s scream (the approved v2 take), far away and muffled by glass. Heartbeat starts.',mus:'Drone swells a semitone',
+draw(g,t,d){g.r(0,0,W,H,'#04060b');g.e(cx,96,60,40,'#3a302a');const o=ease(cl((t-.35)/.15));g.e(cx,96,30,14*o+.5,'#d8cfbf');
+ if(o>.2){const dx=lerp(0,10,ease(cl((t-.6)/.2)));g.c(cx+dx,96,10*o,'#5e4a3a');g.c(cx+dx,96,4*o,'#000');g.c(cx+dx+3,93,1.5,'#f2f2f2')}g.l(cx-32,96-14*o,cx+32,96-14*o,'#1f1a18',2)}},
+{n:'Reach',b:3,act:'I',tag:'Hands must be perfect',cam:'First-person, his eye line, 28 mm. Slight handheld (Camera Shakify). The viewer is Sam.',act2:'He sits up and reaches for the phone on the nightstand. Fingers close round it naturally. The screen wakes and lights his face from below.',snd:'Sheets, the phone sliding off wood, a sharp breath.',mus:'Drone',
+draw(g,t,d){room(g,t);g.r(0,130,W,62,'#121b30');const k=ease(cl(t/1.3));phone(g,lerp(80,62,k),lerp(132,96,k),26,t>1.2);if(t>1.2)g.c(lerp(80,62,k),lerp(132,96,k),30,'#3d7bd9',.15);
+ hand(g,lerp(50,62,ease(cl(t/.8))),lerp(160,lerp(140,110,k),1),30,ease(cl((t-.6)/.3)));g.e(20,100,30,40,'#1f1a18');g.c(28,64,16,'#1f1a18')}},
+{n:'Calling…',b:3,act:'I',tag:'New',cam:'First-person phone shot, his own thumb in frame, 28 mm. The screen is the only light.',act2:'He calls his friend. The call screen rings, the avatar pulses. No answer.',snd:'The ringback tone, his breath, rain.',mus:'Drone + a single high piano note per ring',
+draw(g,t,d){g.r(0,0,W,H,'#04060b');phone(g,cx,96,150);g.c(cx,70,14+Math.sin(t*8)*1.5,'#5a6f8c');txt(g,'CALLING…',cx,100,'#b8c4d0',7,'center');txt(g,'(friend)',cx,112,'#6b7a96',6,'center');
+ g.c(cx,150,8,'#e8343a');hand(g,cx+30,180,60,1)}},
+{n:'The alert',b:3,act:'I',tag:'New · on-screen text lives here',cam:'Same insert. The banner drops in over the call.',act2:'The call fails. A red emergency banner slams down: BIOHAZARD ALERT. Stay indoors. Do not open your door. The phone buzzes in his hand.',snd:'A harsh two-tone emergency alarm, the phone rattling on his palm.',mus:'Alarm tone is the only music',
+draw(g,t,d){g.r(0,0,W,H,'#04060b');phone(g,cx,96,150);const k=ease(cl(t/.25));const by=lerp(-10,40,k);g.r(cx-38,by-14,76,40,'#7a0d10');g.r(cx-38,by-14,76,8,'#e8343a');
+ txt(g,'EMERGENCY ALERT',cx,by-8,'#fff6dc',5,'center');txt(g,'BIOHAZARD',cx,by+4,'#fff6dc',7,'center');txt(g,'Stay indoors.',cx,by+13,'#f2f2f2',5,'center');txt(g,'Do not open your door.',cx,by+21,'#f2f2f2',4,'center');
+ const sh=(Math.floor(t*30)%2?1:-1)*1.5;g.ctx.translate(sh,0);hand(g,cx+30,180,60,1)}},
+{n:'She sees him',b:4,act:'I',tag:'New · POV scare',cam:'First-person through the rain-streaked window, 85 mm. Rack focus from the drops to the roof across the street. No cut.',act2:'On the opposite rooftop the Screamer is mid-shriek. She stops and turns, slowly, straight to his window. He blinks, and she is gone. Then her face is pressed against HIS glass, inches away. (The top reel in the research, 99M views, is this exact beat.)',snd:'Scream cuts off. Total quiet except the rain. A wet click of her neck, then her nails on the glass.',mus:'Drone cuts out, one stinger on the face',
+draw(g,t,d){g.r(0,0,W,H,'#121b30');g.r(0,116,W,80,'#0a0f1c');for(let i=0;i<5;i++)g.r(8+i*20,126,8,10,'#c76a1e',.5);if(t<2.1)screamer(g,54,116,60,t,t<1.4?1:.1,ease(cl((t-1.6)/.6)));if(t>2.3){g.r(0,0,W,H,'#0a0f1c',.6);screamer(g,54,330,330,t,.4,0)}
+ for(let i=0;i<22;i++){const yy=((rnd(i)*H+t*20*(.3+rnd(i+5)))%H);g.e(rnd(i+1)*W,yy,1.5,2.5,'#a9b4c8',0,.6);g.l(rnd(i+1)*W,yy-8,rnd(i+1)*W,yy,'#a9b4c8',1,.25)}}},
+{n:'Keys',b:2,act:'II',tag:'Hands must be perfect',cam:'Insert, 50 mm, the key hook by the door.',act2:'His hand snatches the car keys (a skull keyring) off the hook. The door bangs open. The sound world opens up.',snd:'Keys jangle, the deadbolt, the door slam echoing in the stairwell.',mus:'First kick drum',
+draw(g,t,d){g.r(0,0,W,H,'#1f1a18');g.r(70,0,38,H,'#3a302a');g.r(20,70,30,4,'#8a8174');const gone=t>.45;if(!gone){g.l(30,74,30,92,'#b8c4d0',1);g.c(30,96,4,'#b8c4d0');g.c(30,104,5,'#d8cfbf')}
+ const hx=lerp(-20,34,ease(cl(t/.4)));const hx2=gone?lerp(34,-30,ease(cl((t-.45)/.3))):hx;hand(g,hx2,100,40,gone?1:0);if(gone){g.c(hx2+4,96,4,'#d8cfbf')}if(t>.9)g.r(70,0,38,H,'#a9b4c8',.2)}},
+{n:'Stairwell',b:3,act:'II',tag:'New',cam:'Top-down straight down the stairwell spiral, 18 mm. Locked.',act2:'He runs down the spiral, hand on the rail. At the bottom, under a flickering light, the Crawler is already dragging itself up the steps.',snd:'Fast footsteps echoing, his breath, the light buzzing.',mus:'Pulse starts, 90 BPM',
+draw(g,t,d){g.r(0,0,W,H,'#0a0f1c');for(let i=6;i>0;i--){g.e(cx,96,i*9,i*15,i%2?'#26303d':'#1d2a45')}const fl=rnd(Math.floor(t*12))>.3;g.c(cx,96,8,fl?'#9aa27a':'#121b30',.6);
+ const a=t*5;g.c(cx+Math.cos(a)*44*(1-t/3),96+Math.sin(a)*72*(1-t/3),3,'#b08458');g.e(cx+2,98,3,2,'#6f7a5a')}},
+{n:'Crawler',b:2,act:'II',tag:'Shorter · new sound',cam:'Low on the steps, 24 mm. One take, 1.3 s only.',act2:'The Crawler\'s head snaps up at the lens, jaw hanging. Clean, quick, gone.',snd:'NEW crawler voice: a wet rattling inhale, cracking joints, nails on concrete. Built in Flow, not synthesized.',mus:'Pulse',
+draw(g,t,d){g.r(0,0,W,H,'#0a0f1c');for(let i=0;i<6;i++)g.r(0,150-i*14,W,3,'#1d2a45');const up=ease(cl((t-.3)/.2));const ctx=g.ctx;ctx.save();ctx.translate(cx,140);
+ g.e(0,10,40,12,'#6f7a5a');g.l(-30,6,-46,26,'#6f7a5a',4);g.l(30,6,46,26,'#6f7a5a',4);g.e(0,-6-up*14,14,16,'#9aa27a');g.e(0,4-up*14,6,6+up*4,'#1f1a18');g.c(-5,-10-up*14,2,'#ff9a2e');g.c(5,-10-up*14,2,'#ff9a2e');ctx.restore()}},
+{n:'How big it is',b:5,act:'II',tag:'Replaces 14 s slow-mo',cam:'Drone crane: from the apartment window, rising up past the roofline and tilting down. One continuous move, real speed.',act2:'Hundreds of runners flood the avenue toward the scream, wall to wall, so many they look like a river. The scale is the scare.',snd:'The horde\'s roar swelling as we rise, a thousand feet on wet tarmac, wind at height.',mus:'Arp enters',
+draw(g,t,d){const k=ease(cl(t/d));const hz=lerp(30,8,k);g.r(0,0,W,H,'#0a0f1c');sky(g,hz);g.r(0,hz,W,H,'#121b30');const vx=cx;g.p([[vx-6,hz],[vx+6,hz],[W+40,H],[-40,H]],'#0e0c0c');
+ for(let i=0;i<220;i++){const z=rnd(i)*rnd(i+7),y=hz+(H-hz)*z+((t*20*(1-z))%6),x=vx+(rnd(i+3)-.5)*(12+z*150);g.r(x,y,1+z*2,1+z*3,i%3?'#4b5240':'#3a302a')}
+ for(let i=0;i<8;i++){g.r(-4,hz+i*16,22-i,10,'#1d2a45');g.r(W-18+i,hz+i*16,22,10,'#1d2a45')}rain(g,t,1,40,4)}},
+{n:'The garage',b:4,act:'II',tag:'Your best scene · bigger',cam:'Wide from the back of the garage, 24 mm, slow push. Same look as v5.',act2:'Darkness. Fluorescent tubes stutter on one by one, marching toward the car, until it is fully revealed. Headlights stay OFF. His silhouette runs to the door.',snd:'Tube-light ticks and hum, each tube a beat. His footsteps, keys.',mus:'Tubes land on beats',
+draw(g,t,d){g.r(0,0,W,H,'#04060b');const n=Math.floor(cl(t/2.2)*6);for(let i=0;i<6;i++){const on=i<n||(i==n&&rnd(Math.floor(t*20))>.5);const y=20+i*12;g.r(cx-18+i*2,y,36-i*4,2,on?'#f2f2f2':'#26303d');if(on)g.p([[cx-16,y+2],[cx+16,y+2],[cx+40,y+60],[cx-40,y+60]],'#b8c4d0',.06)}
+ g.r(0,150,W,42,'#121b30');car(g,cx,160,86,0,0,0,t);if(t>1.6){const x=lerp(110,78,ease(cl((t-1.6)/.9)));g.r(x,118,6,30,'#0e0c0c');g.c(x+3,114,4,'#0e0c0c')}}},
+{n:'Door thunk',b:2,act:'II',cam:'Close on the driver door, 50 mm. Tinted glass reflects the tubes.',act2:'The door swings shut. Through the tint we only sense him. The dash glows on.',snd:'Heavy door thunk, seatbelt click, his breathing muffled inside.',mus:'Pulse, filtered',
+draw(g,t,d){g.r(0,0,W,H,'#121b30');g.r(0,40,W,120,'#7d93ad');const k=ease(cl(t/.4));g.r(10,50,lerp(30,88,k),70,'#121b30');for(let i=0;i<4;i++)g.r(20+i*20,58,10,2,'#b8c4d0',.6);if(t>.9)g.r(14,104,20,6,'#3d7bd9',.6)}},
+{n:'Ignition',b:3,act:'II',tag:'Lights on ONCE',cam:'Low front three-quarter, 35 mm, at bumper height.',act2:'The engine fires. Exhaust smoke rolls. On the beat, the headlights ignite one time and stay on. The light bar strobes.',snd:'Starter whine, V8 catches, a deep growl rev that shakes the camera.',mus:'Sub drop on the ignition beat',
+draw(g,t,d){g.r(0,0,W,H,'#04060b');g.r(0,140,W,52,'#121b30');const on=t>1.0;car(g,62,160,110,0,on?1:0,on,t,Math.sin(t*40)*(t>.5?.4:0));if(t>.5)for(let i=0;i<6;i++){const q=(t*1.5+i/6)%1;g.c(104+q*10,150-q*20,2+q*6,'#6b7a96',.3*(1-q))}}},
+{n:'Shutter',b:3,act:'II',tag:'New',cam:'From inside, behind the car, 24 mm. The garage shutter fills the frame.',act2:'The shutter rattles up. Backlit by the street, the horde\'s legs, then bodies, then faces. They all turn to the light.',snd:'Shutter chain clatter, the horde noise rushing in, the engine idling.',mus:'Riser',
+draw(g,t,d){g.r(0,0,W,H,'#04060b');const up=ease(cl(t/1.6))*110;g.r(0,40,W,110,'#46577a');for(let i=0;i<12;i++){walker(g,6+i*9,150,40+rnd(i)*10,t*4+i,0,1,i%3)}g.r(0,40,W,110-up,'#26303d');for(let i=0;i<8;i++)g.r(0,40+i*(110-up)/8,W,1,'#121b30');
+ g.ctx.globalAlpha=1;g.p([[30,150],[78,150],[110,192],[-2,192]],'#ffd36b',.18)}},
+{n:'Burst',b:4,act:'III',tag:'One-take freeze (kept)',cam:'The v5 warp shot: real speed, BOOM, time almost stops while the camera glides to the side, then real speed again from there.',act2:'The car blasts out of the garage through the horde. Bodies and water hang in the air during the freeze.',snd:'Engine scream, impacts, then the freeze: everything pitched down to a hum, then snaps back.',mus:'Full band drop',
+draw(g,t,d){const fz=t>1&&t<2.2;const tt=fz?1+(t-1)*.04:t<1?t:1.05+(t-2.2);const hz=96;sky(g,hz);skyline(g,hz,0,4);g.r(0,hz,W,H,'#0e0c0c');
+ const x=lerp(130,cx,ease(cl(tt/1.05)));car(g,x,170,lerp(60,100,cl(tt)),tt*200,1,1,tt);for(let i=0;i<5;i++){const a=fz?.2:1;g.ctx.save();g.ctx.translate(30+i*14,120-i*3);g.ctx.rotate(rnd(i)*2*cl(tt-.9));walker(g,0,0,20,0,0,1,i%3);g.ctx.restore()}
+ rain(g,tt,fz?.05:1,60,fz?.8:6)}},
+{n:'Above the city',b:5,act:'III',tag:'New · wallpaper shot',cam:'Straight top-down drone, 200 m up, slow rotation.',act2:'The dark city grid in the rain. One pair of headlights carves through the streets. Behind it, the horde streams after the car like a dark river filling every road.',snd:'Wind at altitude, the engine distant, a helicopter far off.',mus:'Main theme, full',
+draw(g,t,d){const ctx=g.ctx;ctx.save();ctx.translate(cx,96);ctx.rotate(t*.05);ctx.translate(-cx,-96);g.r(-60,-60,W+120,H+120,'#0a0f1c');
+ for(let i=-3;i<8;i++)for(let j=-3;j<11;j++){g.r(i*22,j*22,16,16,'#121b30');if(rnd(i*31+j)>.85)g.r(i*22+3,j*22+3,2,2,'#c76a1e')}
+ const py=lerp(200,40,t/d);g.r(cx-3,-60,6,H+120,'#0e0c0c');carTop(g,cx,py,12,0);for(let i=0;i<150;i++){const y=py+20+rnd(i)*170,x=cx-3+rnd(i+2)*6;g.r(x,y,1,1,'#4b5240')}ctx.restore();rain(g,t,.5,30,2)}},
+{n:'Ground level',b:3,act:'III',cam:'Camera on the asphalt, 14 mm, 5 cm up. Locked.',act2:'The car roars straight over the lens. Spray hits the glass.',snd:'Engine Doppler, tyre hiss, water slap on the lens.',mus:'Snare fill',
+draw(g,t,d){const hz=110;sky(g,hz);skyline(g,hz,0,9);road(g,hz,cx,t*3);const z=ease(cl(t/1.6));const s=lerp(14,260,z*z);if(z<1){car(g,cx,hz+s*.25,s,0,1,1,t)}else{g.r(0,0,W,H,'#0e0c0c');for(let i=0;i<30;i++)g.c(rnd(i)*W,rnd(i+1)*H,2+rnd(i+2)*5,'#a9b4c8',.5)}rain(g,t,1,60,5)}},
+{n:'Hood rider',b:3,act:'III',tag:'New',cam:'Tracking alongside at window height, 35 mm.',act2:'A runner leaps from a wreck onto the bonnet, claws scraping the paint. A hard swerve flings it into a lamp post.',snd:'Body thud on metal, nails screeching on paint, the swerve skid, a crunch.',mus:'Stab',
+draw(g,t,d){const hz=110;sky(g,hz);skyline(g,hz,t*40,13);g.r(0,hz,W,H,'#0e0c0c');const sw=t>1.3?Math.sin((t-1.3)*6)*6:0;car(g,cx+sw,170,92,t*300,1,1,t);
+ if(t<1.3){const k=ease(cl(t/.5));walker(g,lerp(-10,40,k),lerp(110,132,k),28,t*8,0,1,1)}else{const k=ease(cl((t-1.3)/.4));walker(g,lerp(40,-30,k),lerp(132,120,k),28,0,k,1,1)}}},
+{n:'Tokyo drift',b:5,act:'III',tag:'One smooth slide · real speed',cam:'High three-quarter crane over the intersection, 24 mm. Follows the whole slide in one move.',act2:'Full opposite-lock drift through the crossroads, one continuous slide: the tail swings 90°, smoke and spray fan out, the car slows smoothly and settles to a dead stop, nose to the fog. No slow-mo, no stop-start.',snd:'One long rising tyre squeal that decays smoothly with the speed, engine off throttle, then just rain.',mus:'Hit on the stop',
+draw(g,t,d){const ctx=g.ctx;g.r(0,0,W,H,'#0a0f1c');g.r(cx-22,-10,44,H+20,'#0e0c0c');g.r(-10,70,W+20,44,'#0e0c0c');const u=ease(cl(t/2.8));
+ for(let i=0;i<20;i++){const q=i/20*u;g.c(lerp(cx,cx-6,q),lerp(190,92,Math.sqrt(q)),3+i*.4,'#6b7a96',.15)}carTop(g,lerp(cx,cx-6,u),lerp(190,92,Math.sqrt(u)),22,-u*1.57,1);fog(g,t,60,4,.25);rain(g,t,.6,40,2)}},
+{n:'The Brute',b:4,act:'IV',tag:'Redesigned',cam:'Low behind the car, 35 mm, the Brute walking out of the fog toward us.',act2:'A new Brute: 4 m tall, hunched, a split jaw, plated spine, one swollen mutated arm, rebar through its chest and glowing infected sores. It stops. The car answers with a long engine growl. It roars back.',snd:'Ground-shaking footsteps, the V8 growl revved in reply, the roar on the braam.',mus:'Two huge braams',
+draw(g,t,d){const hz=118;g.r(0,0,W,H,'#121b30');fog(g,t,70,6,.3);g.r(0,hz,W,H,'#0e0c0c');const s=lerp(90,120,ease(cl(t/1.6)));brute(g,cx,hz+10,s,t,ease(cl((t-1.8)/.3)),0);
+ g.r(10,150,88,40,'#26303d');g.r(14,152,10,4,'#e8343a');g.r(84,152,10,4,'#e8343a');g.p([[20,150],[88,150],[cx+60,hz],[cx-60,hz]],'#ffd36b',.1)}},
+{n:'The slam',b:3,act:'IV',tag:'New',cam:'Side, 24 mm, wide enough to see both. One take.',act2:'The fist comes down. The car reverses at full throttle, the fist misses by inches, cracks the road. The car spins away under the overpass.',snd:'Wheelspin shriek, the fist impact (sub boom, asphalt cracking), glass rain.',mus:'Big hit',
+draw(g,t,d){const hz=118;g.r(0,0,W,H,'#121b30');fog(g,t,70,4,.25);g.r(0,hz,W,H,'#0e0c0c');const back=ease(cl((t-.4)/.6));car(g,lerp(40,92,back),170,70,t*200,1,1,t);brute(g,24,hz+30,110,t,1,ease(cl(t/.7)));
+ if(t>.9){for(let i=0;i<12;i++)g.l(40,172,40+(rnd(i)-.5)*60,172+(rnd(i+1))*20,'#46577a',1);g.r(0,0,W,H,'#f2f2f2',.15*(1-cl((t-.9)/.3)))}}},
+{n:'Silence',b:3,act:'IV',tag:'Planned silence',cam:'Wide under the overpass, 24 mm, locked. The car small in the frame.',act2:'The car idles in the dark under the bridge. Rain falls past the edge. Nothing moves. Then a clicking sound from above.',snd:'All music gone (a fade, not a cut). Engine ticking, dripping water, then slow wet clicks overhead.',mus:'Silence',
+draw(g,t,d){g.r(0,0,W,H,'#0a0f1c');overpass(g,40);g.r(0,140,W,52,'#121b30');car(g,cx,160,50,0,1,0,t);for(let i=0;i<20;i++){const y=((rnd(i)*100+t*60)%100)+50;g.l(rnd(i+1)*W,y,rnd(i+1)*W,y+4,'#a9b4c8',1,.4)}}},
+{n:'On the bridge',b:3,act:'IV',cam:'Tilt up from the car roof to the overpass rail, 50 mm.',act2:'The Stalker stands on the rail against the moon, head cocked, looking straight down at the car.',snd:'Clicks get closer and faster. A low hum from its chest.',mus:'String cluster creeping in',
+draw(g,t,d){const k=ease(cl(t/1.4));const ctx=g.ctx;ctx.save();ctx.translate(0,lerp(-60,20,k));g.r(0,-60,W,H+120,'#1d2a45');g.c(30,30,18,'#b8c4d0');overpass(g,110);stalker(g,cx,108,90,t*.2,.1,1,Math.sin(t)*.1);car(g,cx,230,60,0,1,0,t);ctx.restore()}},
+{n:'Stitches tear',b:5,act:'IV',tag:'More horror',cam:'Close-up, 85 mm, then the head throws back. Same one take as v5.',act2:'It stares into the lens. Its mouth is sewn shut with thick black stitches. The jaw pushes and the stitches pop one by one, blood and black drool stringing. It throws its head back and screams at the sky.',snd:'Stitches snapping like wet thread, a gurgling inhale, then the Stalker\'s own scream.',mus:'Brass and choir swell',
+draw(g,t,d){g.r(0,0,W,H,'#46577a');fog(g,t,40,5,.25);const j=t<1.2?cl(t/1.2)*.25:t<2.2?.25+ease(cl((t-1.2)/.6))*.75:1;const pop=cl((t-.6)/1.4);stalkerHead(g,cx,110+(t>2.2?-6:0),90,t,j,1+j,t>2.2?-.18:0,pop)}},
+{n:'Lunge',b:2,act:'IV',cam:'Same lens as the cold open.',act2:'It drops off the bridge straight into the lens. The last frames match the cold open exactly, so the reel loops.',snd:'Impact boom, then silence.',mus:'Hard stop',
+draw(g,t,d){g.r(0,0,W,H,'#0a0f1c');if(t<.9){const s=lerp(60,170,ease(cl(t/.8)));stalkerHead(g,cx,104,s,t,1,1.6,0,1)}else g.r(0,0,W,H,'#000')}},
+{n:'Missed call',b:5,act:'IV',tag:'New · cliffhanger',cam:'Black. Then a phone screen lights up in the dark footwell of the car.',act2:'In the black, the phone buzzes. INCOMING CALL: his friend. Cut to black before he can answer. Small EP 2 at the end.',snd:'Phone vibration on plastic, the ringtone, cut. The theme\'s last note rings out.',mus:'Theme rings out over black',
+draw(g,t,d){g.r(0,0,W,H,'#000');if(t>.8&&t<2.9){phone(g,cx,110,60);g.c(cx,100,7,'#5a6f8c');txt(g,'INCOMING',cx,118,'#b8c4d0',5,'center');g.c(cx-10,132,4,'#9be05a');g.c(cx+10,132,4,'#e8343a');const sh=(Math.floor(t*30)%2?1:-1);g.ctx.translate(sh,0)}if(t>2.9)txt(g,'EP 2',cx,180,'#6b7a96',6,'center')}}
+];
+let acc=0;SHOTS.forEach(s=>{s.d=s.b*B;s.t0=acc;acc+=s.d});const TOTAL=acc;
+const fmt=x=>{const m=Math.floor(x/60),s=x-m*60;return String(m).padStart(2,'0')+':'+s.toFixed(2).padStart(5,'0')};
+const grid=document.getElementById('grid'),bar=document.getElementById('bar'),cues=document.getElementById('cues');
+const thumbs=[];
+SHOTS.forEach((s,i)=>{const el=document.createElement('article');el.className='shot';el.tabIndex=0;
+ el.innerHTML=`<canvas width="108" height="192"></canvas><div class="meta"><div class="hd"><h3>${s.n}</h3><span class="num">${String(i+1).padStart(2,'0')} · ${s.t0.toFixed(1)}–${(s.t0+s.d).toFixed(1)} s</span></div>${s.tag?`<span class="tag${/New/.test(s.tag)?' new':''}">${s.tag}</span>`:''}<dl><dt>Camera</dt><dd>${s.cam}</dd><dt>Action</dt><dd>${s.act2}</dd><dt>Sound</dt><dd>${s.snd}</dd></dl></div>`;
+ const go=()=>{T=s.t0;playing=true;btn.textContent='Pause';document.querySelector('.screen').scrollIntoView({behavior:'smooth',block:'center'})};
+ el.onclick=go;el.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();go()}};grid.appendChild(el);
+ const cv=el.querySelector('canvas');thumbs.push({cv,ctx:cv.getContext('2d',{willReadFrequently:true}),s,el,vis:false});
+ const sp=document.createElement('span');sp.style.flex=s.d;sp.title=s.n;sp.onclick=()=>{T=s.t0};bar.appendChild(sp);
+ const tr=document.createElement('tr');tr.innerHTML=`<td class="n">${s.t0.toFixed(1)}</td><td>${String(i+1).padStart(2,'0')} ${s.n}</td><td>${s.mus}</td><td>${s.snd}</td>`;cues.appendChild(tr)});
+const io=new IntersectionObserver(es=>es.forEach(e=>{const th=thumbs.find(x=>x.cv===e.target);if(th)th.vis=e.isIntersecting}));thumbs.forEach(th=>io.observe(th.cv));
+const big=document.getElementById('big').getContext('2d',{willReadFrequently:true});
+function render(ctx,s,t){ctx.setTransform(1,0,0,1,0,0);ctx.globalAlpha=1;ctx.fillStyle='#000';ctx.fillRect(0,0,W,H);const g=mk(ctx);ctx.save();try{s.draw(g,t,s.d)}catch(e){console.error(s.n,e)}ctx.restore();quant(ctx)}
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+let T=0,playing=!reduce,last=performance.now(),acc2=0,lastThumb=0;
+const btn=document.getElementById('play'),scrub=document.getElementById('scrub');scrub.max=TOTAL;
+btn.textContent=playing?'Pause':'Play';
+btn.onclick=()=>{playing=!playing;btn.textContent=playing?'Pause':'Play'};
+scrub.oninput=()=>{T=+scrub.value;draw()};
+const step=1/15;
+function shotAt(t){for(let i=SHOTS.length-1;i>=0;i--)if(t>=SHOTS[i].t0)return i;return 0}
+let curI=-1;
+function draw(){const i=shotAt(T),s=SHOTS[i];const lt=Math.floor((T-s.t0)/step)*step;render(big,s,lt);
+ if(i!==curI){curI=i;document.getElementById('sn').textContent=String(i+1).padStart(2,'0');document.getElementById('sname').textContent=s.n;
+  [...bar.children].forEach((b,k)=>b.classList.toggle('on',k===i));thumbs.forEach((th,k)=>th.el.classList.toggle('on',k===i))}
+ document.getElementById('time').textContent=fmt(T);scrub.value=T}
+function loop(now){const dt=Math.min(.1,(now-last)/1000);last=now;if(playing){T=(T+dt)%TOTAL}
+ acc2+=dt;if(acc2>=step||!playing){acc2=0;draw()}
+ if(now-lastThumb>1000/8){lastThumb=now;thumbs.forEach(th=>{if(!th.vis&&th.drawn)return;const tt=reduce?th.s.d*.6:((now/1000)%th.s.d);render(th.ctx,th.s,Math.floor(tt/step)*step);th.drawn=true})}
+ requestAnimationFrame(loop)}
+draw();requestAnimationFrame(loop);
+</script>

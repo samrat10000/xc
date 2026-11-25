@@ -1,0 +1,48 @@
+{
+  "picture": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_type": "video",
+        "width": 1080,
+        "height": 1920,
+        "r_frame_rate": "24/1",
+        "nb_read_frames": "1512"
+      },
+      {
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "r_frame_rate": "0/0",
+        "nb_read_frames": "2954"
+      }
+    ],
+    "format": {
+      "duration": "63.000000"
+    }
+  },
+  "mix_wav": {
+    "input_i": "-15.01",
+    "input_tp": "-2.97",
+    "input_lra": "10.90",
+    "input_thresh": "-25.12",
+    "output_i": "-15.92",
+    "output_tp": "-2.37",
+    "output_lra": "8.80",
+    "output_thresh": "-26.02",
+    "normalization_type": "dynamic",
+    "target_offset": "0.92"
+  },
+  "final_aac": {
+    "input_i": "-15.02",
+    "input_tp": "-2.80",
+    "input_lra": "11.00",
+    "input_thresh": "-25.14",
+    "output_i": "-15.92",
+    "output_tp": "-2.39",
+    "output_lra": "8.80",
+    "output_thresh": "-26.02",
+    "normalization_type": "dynamic",
+    "target_offset": "0.92"
+  }
+}

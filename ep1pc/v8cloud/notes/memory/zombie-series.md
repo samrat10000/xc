@@ -1,0 +1,26 @@
+---
+name: zombie-series
+description: Sam's episodic zombie-apocalypse reel series "Night Terror: Dead Roads" — plan, status, where files live
+metadata:
+  type: project
+  modified: 2026-11-18T15:02:22.772Z
+---
+
+Series plan published 2026-11-18: https://claude.ai/artifact/ToypruX4BXXjGg3pBrUowi (source: /mnt/project-files/reels/series/plan.src.html; concept frames + generator scenes.py in /mnt/project-files/reels/series/concept/).
+Premise: city falls at 3:12 AM, Sam builds the Night Terror (car GLB) and drives to rescue 3 friends in 3 cities, one rescue per season. S1 = trailer + 12 eps (15-20s, one big moment, cliffhanger, hook text on frame 0). Bridge jump EP7 mid-season cliffhanger.
+Cast: car + Sam + Friend 1-3 + 5 zombie types (walker, runner, crawler, screamer, brute); hordes via Geometry Nodes instancing. 6 sets from one city kit.
+Open questions asked of Sam: friends' real names/cities or code names, their look, voice vs text-only, OK to start with zombie rig + city kit then trailer.
+Style rules from [[reel-pipeline]] apply (no dithering, sketch->pixel tile wipe).
+Cast build (2026-11-18): Sam wants every character as detailed as the car, delivered as GLB + phone preview before the trailer. Method: MakeHuman CC0 base mesh + targets + default rig (fetched from raw.githubusercontent makehumancommunity/makehuman, saved in session scratch), then garments cut from the body by bone weights, procedural Cycles materials baked to textures for GLB. Scripts copied to /mnt/project-files/reels/series/models/. Walker WIP stills: models/progress/walker-wip-1.png.
+Story update 2026-11-18: Sam wants a virus/alien-mutation angle with creatures from his reference pics (rotting black skeletal husk with hooked claws; pale ribbed stilt-legged spiked alien). Plan: infection stages Walker/Runner -> Husk -> Stalker. Told Sam those refs look like other artists' art, so we build originals in the same mood unless he owns them (awaiting answer + realistic vs stylized for these two).
+Stalker v2 (2026-11-18): Sam rejected v1 as 'earthworm' (ringed tubes) and asked for a reindeer-style skull. v2 = deer skull + big burnt antlers (scratch cast/skull.py), sinew/tendon fibres along limbs, exposed ribs, spiked spine. Sheet: models/progress/stalker-v2-sheet.png. Avoid ring/banded displacement on creatures.
+Husk v1 (2026-11-19): MakeHuman base, charred stringy skin, hollow sockets + pinpoint eyes, lipless teeth, hooked claws, rags. GLB models/husk-v1.glb, script husk.py, in viewer. Cast viewer artifact: https://claude.ai/artifact/Sbb5R4UermYGKDcGQM7dkg (GLBs as base64 .txt). export.py takes DEC/DECH env to keep GLBs under ~8 MB.
+Sam 2026-11-19: Husk must match his FIRST ref (white bg: grey rotting skeletal, open ribcage, very long arms/hooked fingers, hanging shreds, torn pants, boots). Then build ALL remaining monsters, Sam + 3 friends, then EPISODE 1 before the trailer: 30-45 s (not 16 s), blockbuster/cinematic, real-world-looking scenes (not blocky), wallpaper-worthy frames. Message Sam after each character and the scene. Don't stop between steps.
+Status 2026-11-19: all monsters done (husk-v2, stalker-v2, crawler-v1, screamer-v1, brute-v1, runner-v2) + placeholder crew sam/f1/f2/f3 (survivor.py CHAR=..), all in viewer v9. Still waiting on Sam's look + friends' names/looks. Ep1 city kit in /mnt/project-files/reels/series/ep1/ (city.py, still_*.py); style frames in ep1/frames/. Car headlights are at world nose y~-5.4 when car root at (.4,-2); put spot lights just in front (y-5.65) or the body shadows them.
+Ep1 render (2026-11-19): ep1/shots.py SHOT=1..8 (RES .5 SAMP 16 ~45s/frame/queue), runq.sh runs 2 detached queues (setsid nohup); frames skip-if-exist so a container restart can resume. edit.py = grade+upscale+titles+numpy sound design -> out/ep1.mp4 (35.5s).
+Sam's time zone: IST (UTC+5:30). Sam likes a progress card for long renders (ep1/progress.py prints it; edit the same message ~every 30 min).
+Sam feedback 2026-11-19 (on ep1 preview): zombies must actually MOVE (no frozen poses), camera must not feel like a slideshow: many real angles, handheld, close-ups, web-series cutting; more realism/detail, nothing that looks AI-made. Wants images + progress every 30 min, full episode "by tonight". Rigged rebuilds: KEEP_RIG=1 OUT=cast/out/rig/<n> (zbuild keeps skeleton, rebinds on save).
+Ep1 v2 (2026-11-19): ep1/shots2.py CUT=2..21 (animated via ep1/anim.py on rigged chars), runq2.sh two detached queues, edit2.py (lens FX + new timeline, reuses s1 1-60 and s5 16-51) -> out/ep1_v2.mp4. Progress card = message cmsg_01WvbE7kL5XEqVcpnhhMuqJzMSzGY54kDjFsGxuhkTuMku, text from ep1/progress2.py. After a container restart: relaunch runq2.sh with remaining cuts (frames skip-if-exist).
+
+Sam's look (photo 2026-11-20, refs/sam-look-ref.png): South Asian man, ~late 20s, slim, long wavy/curly black shoulder-length hair with a centre part, red rectangular glasses, light stubble, black hoodie. Use this look for the Sam character.
+Sam's body/look (Sam 2026-11-20 11:40 PM IST, rejected sam-character-v1 as "ewy", not him): 6 ft tall, athletic ectomorph (lean but defined, adult ~late 20s, NOT a boyish 21-year-old). Always baggy jeans + loose hoodie, never skinny jeans. Long wavy/curly hair but NOT thick or voluminous. Fingers must never splay or bend outward.

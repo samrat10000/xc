@@ -1,0 +1,106 @@
+{
+  "shot": "13",
+  "frames": 120,
+  "resolution_percent": 100,
+  "camera_clip_m": [
+    0.014999999664723873,
+    1000.0
+  ],
+  "light_energy": {
+    "Amber doorway nightfall": 3.32,
+    "Faded blue room lamp": 0.49,
+    "Rim after slam": 56.0
+  },
+  "key_projections": [
+    {
+      "source_frame": 1,
+      "figures": [
+        {
+          "actor": "Sam_Rig",
+          "head_m": [
+            -0.261,
+            -0.597,
+            1.662
+          ],
+          "head_uv_depth": [
+            0.764,
+            0.833,
+            1.345
+          ]
+        }
+      ]
+    },
+    {
+      "source_frame": 30,
+      "figures": [
+        {
+          "actor": "Sam_Rig",
+          "head_m": [
+            -0.254,
+            -0.603,
+            1.546
+          ],
+          "head_uv_depth": [
+            0.756,
+            0.772,
+            1.345
+          ]
+        }
+      ]
+    },
+    {
+      "source_frame": 60,
+      "figures": [
+        {
+          "actor": "Sam_Rig",
+          "head_m": [
+            -0.153,
+            -0.572,
+            1.218
+          ],
+          "head_uv_depth": [
+            0.693,
+            0.614,
+            1.262
+          ]
+        }
+      ]
+    },
+    {
+      "source_frame": 90,
+      "figures": [
+        {
+          "actor": "Sam_Rig",
+          "head_m": [
+            -0.111,
+            -0.564,
+            1.159
+          ],
+          "head_uv_depth": [
+            0.684,
+            0.619,
+            1.195
+          ]
+        }
+      ]
+    },
+    {
+      "source_frame": 120,
+      "figures": [
+        {
+          "actor": "Sam_Rig",
+          "head_m": [
+            -0.133,
+            -0.54,
+            1.221
+          ],
+          "head_uv_depth": [
+            0.749,
+            0.708,
+            1.174
+          ]
+        }
+      ]
+    }
+  ]
+}

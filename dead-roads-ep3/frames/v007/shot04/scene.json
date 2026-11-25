@@ -1,0 +1,13 @@
+{
+  "shot": 4,
+  "name": "Dashcam",
+  "frames": 48,
+  "objects": 1091,
+  "camera": "Ep3 shot 4",
+  "device": "CPU",
+  "stage": "BLOCKING - contact, collision and motion need visual QA",
+  "scene": "C:\\Users\\cross\\Downloads\\xc\\dead-roads-ep3\\assets\\v007\\shot04.blend",
+  "warnings": [
+    "Authored human poses/contact need reference comparison and temporal QA"
+  ]
+}

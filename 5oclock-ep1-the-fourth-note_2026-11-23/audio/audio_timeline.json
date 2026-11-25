@@ -1,0 +1,111 @@
+{
+  "duration": 63,
+  "dialogue": [
+    {
+      "role": "Narrator",
+      "start": 0.4,
+      "end": 5.651,
+      "deadline": 5.9,
+      "text": "Every town in Japan plays a song at five o'clock. Ours has four notes.",
+      "take": "N1_takeA.mp3"
+    },
+    {
+      "role": "Narrator",
+      "start": 6.3,
+      "end": 11.301,
+      "deadline": 11.6,
+      "text": "It has played every day since 1964. Nobody ever asked why.",
+      "take": "N2_takeA.mp3"
+    },
+    {
+      "role": "Grandma",
+      "start": 14.2,
+      "end": 15.478,
+      "deadline": 15.6,
+      "text": "Ears. Quickly.",
+      "take": "G1_takeA.mp3"
+    },
+    {
+      "role": "Sam",
+      "start": 29.8,
+      "end": 31.755,
+      "deadline": 31.9,
+      "text": "...Hello?",
+      "take": "S1_takeA.mp3"
+    },
+    {
+      "role": "Grandma",
+      "start": 32.4,
+      "end": 34.119,
+      "deadline": 34.9,
+      "text": "Don't look at the mirror, Sam.",
+      "take": "G2_takeA.mp3"
+    },
+    {
+      "role": "Sam",
+      "start": 42.45,
+      "end": 44.119,
+      "deadline": 44.2,
+      "text": "That's not me.",
+      "take": "S2_takeA.mp3"
+    },
+    {
+      "role": "Mirror-Sam",
+      "start": 44.25,
+      "end": 45.413,
+      "deadline": 46.0,
+      "text": "Your turn.",
+      "take": "M1_takeA.mp3"
+    },
+    {
+      "role": "Narrator",
+      "start": 49.0,
+      "end": 52.137,
+      "deadline": 52.8,
+      "text": "The fourth note was never ours to play.",
+      "take": "N3_takeA.mp3"
+    },
+    {
+      "role": "Town",
+      "start": 54.0,
+      "end": 55.79,
+      "deadline": 55.9,
+      "text": "Okaeri, Sam.",
+      "takes": 8
+    },
+    {
+      "role": "Sam",
+      "start": 57.2,
+      "end": 57.902,
+      "deadline": 58.8,
+      "text": "Mom...?",
+      "take": "S3_takeA.mp3"
+    },
+    {
+      "role": "Narrator",
+      "start": 59.45,
+      "end": 62.562,
+      "deadline": 62.75,
+      "text": "Rule seven. Never finish the song.",
+      "take": "N4_takeA.mp3"
+    }
+  ],
+  "missing_takes": [],
+  "chime": {
+    "notes": [
+      66,
+      70,
+      73,
+      78
+    ],
+    "times": [
+      19.21,
+      20.21,
+      21.21,
+      46.62,
+      61.3,
+      61.75,
+      62.2
+    ]
+  }
+}

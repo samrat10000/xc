@@ -1,0 +1,12 @@
+# Episode 3 asset and source register
+
+This is a working register, not final end credits. Retain only assets actually used in the final cut, with exact edits and license versions. No social posting is authorized by this file.
+
+- Original buggy, trike and supplied characters: Sam's project assets. Source originals retained unchanged. Buggy refit, damage, camera animation and tunnel build by Codex for Sam. Underlying ownership/license of supplied assets is inherited from Sam, not independently certified here.
+- **Car Concept**, Eric Chadwick / Darmstadt Graphics Group GmbH (2024), [Khronos official asset](https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/CarConcept), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Based on a CC0 model by Unity Fan. Modified for scale, abandoned-car placement and material treatment. Visible trademarks/logos are excluded from the CC license; named logo/emblem objects are removed during preparation. Inspect remaining surfaces before final use. Exact downloaded metadata and license are retained beside the model.
+- **Toy Car**, Guido Odendahl, scene/extensions by Eric Chadwick (2020), [official asset](https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/ToyCar), model files CC0. Fabric removed and vehicle scaled for the tunnel. Metadata is CC BY 4.0; retained with the download.
+- **Camera Shakify recorded camera data**, Ian Hubert / Nathan Vegdahl, [official repository](https://github.com/EatTheFuture/camera_shakify), data CC0. Only data is parsed and baked; no add-on code installed or executed. Download hashes and data license are retained in `SHARED_ASSETS/ep3/v001/references/camera-shakify/`.
+- Existing scanned road, concrete, rusty metal, brick and street assets: Poly Haven / ambientCG, CC0. Item-level sources are in `dead-roads-ep2/assets/cc0/SOURCES.md`; copy that manifest with any distributed project package.
+- Pose-reference photos are internal reference only and must not appear as episode footage or be presented as cleared publication assets. Their URLs and authors are in `references/POSE_REFERENCE_SOURCES.json`.
+- Approved score reference: Sam's supplied v5 reference. A new Episode 3 score and final music license/provenance are pending.
+- No downloaded Freesound effect is in the Episode 3 mix yet. The prior episode's credits identify candidates only; do not claim they have been used. If used, preserve title, author, source URL, license version and modifications for each file.

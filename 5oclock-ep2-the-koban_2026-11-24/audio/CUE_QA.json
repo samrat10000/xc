@@ -1,0 +1,36 @@
+{
+  "chime_cues": [
+    {
+      "shot_frame": 35,
+      "time_seconds": 51.4167,
+      "first_87ms_peak": 0.1939
+    },
+    {
+      "shot_frame": 52,
+      "time_seconds": 52.125,
+      "first_87ms_peak": 0.2025
+    },
+    {
+      "shot_frame": 69,
+      "time_seconds": 52.8333,
+      "first_87ms_peak": 0.1951
+    },
+    {
+      "shot_frame": 86,
+      "time_seconds": 53.5417,
+      "first_87ms_peak": 0.1718
+    }
+  ],
+  "piano_drops_for_knock": true,
+  "knock_in_foley": true,
+  "pending_elevenlabs_takes": [
+    "N1",
+    "N2",
+    "MM1",
+    "N3",
+    "S1",
+    "N4",
+    "M1",
+    "N5"
+  ]
+}

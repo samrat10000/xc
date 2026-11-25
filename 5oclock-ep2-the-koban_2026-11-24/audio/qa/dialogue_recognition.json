@@ -1,0 +1,58 @@
+﻿[
+    {
+        "Role":  "Narrator",
+        "Start":  3.4,
+        "Expected":  "On the other side, everything is the same.",
+        "Recognized":  "It has a",
+        "Confidence":  0.001
+    },
+    {
+        "Role":  "Narrator",
+        "Start":  5.2,
+        "Expected":  "Just turned around.",
+        "Recognized":  "fit has",
+        "Confidence":  0.002
+    },
+    {
+        "Role":  "Mirror-Mom",
+        "Start":  12.6,
+        "Expected":  "You\u0027re late, Sam.",
+        "Recognized":  "been released and who",
+        "Confidence":  0.002
+    },
+    {
+        "Role":  "Narrator",
+        "Start":  25.0,
+        "Expected":  "Officer Tanaka lasted eleven days. He wrote everything down.",
+        "Recognized":  "was it love and it has everything to",
+        "Confidence":  0.021
+    },
+    {
+        "Role":  "Sam",
+        "Start":  30.6,
+        "Expected":  "Mom! I\u0027m here! Mom!",
+        "Recognized":  "not honor a lot",
+        "Confidence":  0.003
+    },
+    {
+        "Role":  "Narrator",
+        "Start":  42.5,
+        "Expected":  "Time runs differently on this side.",
+        "Recognized":  "of time rooms differently on the side and",
+        "Confidence":  0.013
+    },
+    {
+        "Role":  "Mirror-Sam",
+        "Start":  56.5,
+        "Expected":  "Sam. Let me in. It\u0027s my turn now.",
+        "Recognized":  "to have you not to",
+        "Confidence":  0.002
+    },
+    {
+        "Role":  "Narrator",
+        "Start":  60.5,
+        "Expected":  "Rule eight.",
+        "Recognized":  "locate a late",
+        "Confidence":  0.002
+    }
+]

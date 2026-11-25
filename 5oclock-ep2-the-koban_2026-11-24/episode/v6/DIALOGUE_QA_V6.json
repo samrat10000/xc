@@ -1,0 +1,44 @@
+[
+  {
+    "id": "N1",
+    "script": "On the other side, everything is the same.",
+    "transcription": "On the other side, everything is the same.",
+    "match": true
+  },
+  {
+    "id": "N2",
+    "script": "Just turned around.",
+    "transcription": "Just turned around.",
+    "match": true
+  },
+  {
+    "id": "MM1",
+    "script": "You're late, Sam.",
+    "transcription": "You're late, Sam.",
+    "match": true
+  },
+  {
+    "id": "N3",
+    "script": "Officer Tanaka lasted eleven days. He wrote everything down.",
+    "transcription": "Officer Tanaka lasted 11 days. He wrote everything down.",
+    "match": true
+  },
+  {
+    "id": "S1",
+    "script": "Mom! I'm here! Mom!",
+    "transcription": "Mom! I'm here! Mom!",
+    "match": true
+  },
+  {
+    "id": "M1",
+    "script": "Sam. Let me in. It's my turn now.",
+    "transcription": "Sam, let me in. It's my turn now.",
+    "match": true
+  },
+  {
+    "id": "N5",
+    "script": "Rule eight.",
+    "transcription": "Rule 8",
+    "match": true
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "role": "Narrator",
+    "time": 3.4,
+    "script": "On the other side, everything is the same.",
+    "transcription": "On the other side, everything is the same."
+  },
+  {
+    "role": "Narrator",
+    "time": 5.2,
+    "script": "Just turned around.",
+    "transcription": "just turned around."
+  },
+  {
+    "role": "Mirror-Mom",
+    "time": 12.6,
+    "script": "You're late, Sam.",
+    "transcription": "You're late, Sam."
+  },
+  {
+    "role": "Narrator",
+    "time": 25.0,
+    "script": "Officer Tanaka lasted eleven days. He wrote everything down.",
+    "transcription": "Officer Tanaka lasted 11 days. He wrote everything down."
+  },
+  {
+    "role": "Sam",
+    "time": 30.6,
+    "script": "Mom! I'm here! Mom!",
+    "transcription": "Mom! I'm here! Mom!"
+  },
+  {
+    "role": "Narrator",
+    "time": 42.5,
+    "script": "Time runs differently on this side.",
+    "transcription": "Time runs differently on this side."
+  },
+  {
+    "role": "Mirror-Sam",
+    "time": 56.5,
+    "script": "Sam. Let me in. It's my turn now.",
+    "transcription": "Sam, let me in. Sam, let me in. It's my turn now."
+  },
+  {
+    "role": "Narrator",
+    "time": 60.5,
+    "script": "Rule eight.",
+    "transcription": "Rule 8, Rule 8"
+  }
+]

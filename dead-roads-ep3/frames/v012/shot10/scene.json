@@ -1,0 +1,11 @@
+{
+  "shot": 10,
+  "name": "Screamer",
+  "frames": 48,
+  "objects": 1524,
+  "camera": "Ep3 shot 10",
+  "device": "CPU",
+  "stage": "BLOCKING - contact, collision and motion need visual QA",
+  "scene": "C:\\Users\\cross\\Downloads\\xc\\dead-roads-ep3\\assets\\v012\\shot10.blend",
+  "warnings": []
+}

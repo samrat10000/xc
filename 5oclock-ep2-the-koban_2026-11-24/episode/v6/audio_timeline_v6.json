@@ -1,0 +1,85 @@
+{
+  "duration": 57.416666666666664,
+  "dialogue": [
+    {
+      "id": "N1",
+      "role": "Narrator",
+      "start": 2.25,
+      "end": 4.8935,
+      "text": "On the other side, everything is the same.",
+      "take": "N1_takeA.mp3",
+      "source_trimmed_seconds": 2.6435,
+      "tempo": 1.0
+    },
+    {
+      "id": "N2",
+      "role": "Narrator",
+      "start": 5.18,
+      "end": 6.767,
+      "text": "Just turned around.",
+      "take": "N2_takeA.mp3",
+      "source_trimmed_seconds": 1.587,
+      "tempo": 1.0
+    },
+    {
+      "id": "MM1",
+      "role": "Mirror-Mom",
+      "start": 11.35,
+      "end": 12.8985,
+      "text": "You're late, Sam.",
+      "take": "MM1_takeA.mp3",
+      "source_trimmed_seconds": 1.5485,
+      "tempo": 1.0
+    },
+    {
+      "id": "N3",
+      "role": "Narrator",
+      "start": 21.5567,
+      "end": 26.5665,
+      "text": "Officer Tanaka lasted eleven days. He wrote everything down.",
+      "take": "N3_takeA.mp3",
+      "source_trimmed_seconds": 5.0098,
+      "tempo": 1.0
+    },
+    {
+      "id": "S1",
+      "role": "Sam",
+      "start": 27.75,
+      "end": 30.4946,
+      "text": "Mom! I'm here! Mom!",
+      "take": "S1_takeA.mp3",
+      "source_trimmed_seconds": 2.7446,
+      "tempo": 1.0
+    },
+    {
+      "id": "M1",
+      "role": "Mirror-Sam",
+      "start": 49.7567,
+      "end": 52.9293,
+      "text": "Sam. Let me in. It's my turn now.",
+      "take": "M1_takeA_edit.wav",
+      "source_trimmed_seconds": 3.1726,
+      "tempo": 1.0
+    },
+    {
+      "id": "N5",
+      "role": "Narrator",
+      "start": 54.9267,
+      "end": 55.8354,
+      "text": "Rule eight.",
+      "take": "N5_takeA_edit.wav",
+      "source_trimmed_seconds": 0.9087,
+      "tempo": 1.0
+    }
+  ],
+  "cut_line_ids": [
+    "N4"
+  ],
+  "theme": "SERIES_THEME recorded stems, Claude arrangement",
+  "insert_for_third_note": 45.916666666666664,
+  "fourth_note": 46.95833333333333,
+  "theme_silence": [
+    47.36666666666667,
+    47.986666666666665
+  ]
+}

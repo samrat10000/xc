@@ -1,0 +1,354 @@
+<title>Night Terror: Dead Roads</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a night-HUD series bible. Single dark look on purpose (it matches the reels). Sections stack; frames sit in a scrolling 9:16 strip. */
+:root{
+  --night:#100d1c; --panel:#1b1630; --line:#3a3160; --dim:#8f86b0;
+  --paper:#f1e9d8; --yel:#ffd65a; --org:#ff963c; --red:#ff4028; --cyan:#46d2e6; --zgreen:#709c5c;
+  --display:"Silkscreen", ui-monospace, monospace;
+  --body:"IBM Plex Sans", system-ui, -apple-system, sans-serif;
+  --mono:"IBM Plex Mono", ui-monospace, monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--night);color:var(--paper);font-family:var(--body);font-size:16px;line-height:1.55;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 64px}
+.wrap{max-width:1120px;margin:0 auto}
+h1,h2,h3{font-family:var(--display);font-weight:700;text-wrap:balance;margin:0;letter-spacing:.02em}
+h2{font-size:clamp(22px,3.4vw,30px);color:var(--yel);text-shadow:2px 2px 0 #000}
+h3{font-size:15px;color:var(--paper)}
+p{margin:0;max-width:66ch}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--cyan)}
+section{padding-block:56px 8px;display:grid;gap:22px}
+.lede{color:#d9d1e8}
+.muted{color:var(--dim)}
+img.px{height:auto;image-rendering:pixelated;image-rendering:crisp-edges;display:block;max-width:100%}
+.tag{display:inline-block;font-family:var(--display);font-size:12px;background:var(--panel);color:var(--paper);padding:2px 7px;border-bottom:2px solid var(--org)}
+.tag.c{border-color:var(--cyan)} .tag.r{border-color:var(--red);color:var(--red)} .tag.y{color:var(--yel)}
+
+/* hero */
+.hero{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:36px;align-items:center;padding-block:40px 0}
+.hero h1{font-size:clamp(34px,6.4vw,64px);line-height:1.02;color:var(--yel);text-shadow:3px 3px 0 #000, 0 0 0 var(--org)}
+.hero h1 span{display:block;color:var(--org)}
+.hero .copy{display:grid;gap:18px;min-width:0}
+.hero .shot{justify-self:center;width:min(320px,100%);border:3px solid var(--paper);box-shadow:6px 6px 0 #000}
+.facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:2px;background:var(--line);border:2px solid var(--line)}
+.facts div{background:var(--panel);padding:10px 12px;display:grid;gap:2px}
+.facts b{font-family:var(--display);font-size:21px;white-space:nowrap;color:var(--yel);font-variant-numeric:tabular-nums}
+.facts span{font-size:12px;color:var(--dim);font-family:var(--mono);text-transform:uppercase;letter-spacing:.08em}
+
+/* map + arc */
+.arc{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px;align-items:start}
+.map{width:100%;max-width:100%;aspect-ratio:16/10;border:3px solid var(--line);image-rendering:pixelated;background:var(--panel)}
+.acts{display:grid;gap:12px}
+.act{background:var(--panel);border-left:4px solid var(--org);padding:14px 16px;display:grid;gap:6px}
+.act:nth-child(2){border-color:var(--cyan)} .act:nth-child(3){border-color:var(--red)}
+.act .eps{font-family:var(--mono);font-size:12px;color:var(--dim)}
+.seasons{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.season{border:2px dashed var(--line);padding:12px 14px;display:grid;gap:4px}
+.season.now{border:2px solid var(--yel)}
+.season h3{color:var(--yel)}
+
+/* episode guide */
+.eplist{display:grid;gap:2px;background:var(--line);border:2px solid var(--line)}
+.ep{display:grid;grid-template-columns:64px minmax(0,1.1fr) minmax(0,1.3fr) minmax(0,1fr);gap:16px;background:var(--panel);padding:14px 16px;align-items:start}
+.ep .n{font-family:var(--display);font-size:22px;color:var(--yel);font-variant-numeric:tabular-nums}
+.ep .t{display:grid;gap:4px;min-width:0}
+.ep .t h3{font-size:14px}
+.ep .k{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);display:block;margin-bottom:2px}
+.ep .hook{color:var(--org);font-weight:500}
+.ep.big{background:#231c3d}
+.ep.trailer .n{color:var(--cyan)}
+.ep > div{min-width:0}
+
+/* frames */
+.strip{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(220px,260px);gap:18px;overflow-x:auto;padding-bottom:12px;scroll-snap-type:x mandatory}
+.frame{scroll-snap-align:start;display:grid;gap:10px;align-content:start}
+.frame img{border:2px solid var(--line);width:100%}
+.frame figcaption{font-size:14px;display:grid;gap:4px}
+.frame figcaption b{font-family:var(--display);font-size:13px;color:var(--yel)}
+figure{margin:0}
+
+/* cast */
+.cast{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px}
+.card{background:var(--panel);border:2px solid var(--line);padding:14px;display:grid;gap:8px;align-content:start}
+.card .pic{height:150px;display:flex;align-items:flex-end;justify-content:center;background:#151127;border-bottom:3px solid #0a0812}
+.card .pic img{max-height:140px;width:auto}
+.card.car{grid-column:span 2}
+.card .count{font-family:var(--mono);font-size:12px;color:var(--cyan)}
+.card p{font-size:14px;color:#d2cae0}
+.totals{display:flex;flex-wrap:wrap;gap:10px}
+.totals .tag{font-size:13px;padding:5px 10px}
+
+/* tables */
+.tbl{overflow-x:auto;border:2px solid var(--line)}
+table{border-collapse:collapse;width:100%;min-width:680px;font-size:14px}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);background:var(--panel)}
+td:first-child{font-weight:600;color:var(--paper)}
+td .y{color:var(--yel)} td .g{color:var(--zgreen)}
+tbody tr:hover{background:#17132a}
+
+/* pipeline */
+.pipe{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px;counter-reset:s}
+.pipe div{background:var(--panel);padding:12px;display:grid;gap:4px;border-top:3px solid var(--org);font-size:14px}
+.pipe div b{font-family:var(--display);font-size:12px;color:var(--yel)}
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px}
+ul.ticks{margin:0;padding:0;list-style:none;display:grid;gap:10px}
+ul.ticks li{padding-left:22px;position:relative;max-width:66ch}
+ul.ticks li::before{content:"";position:absolute;left:2px;top:.55em;width:9px;height:9px;background:var(--org)}
+
+/* cadence */
+.week{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:4px}
+.day{background:var(--panel);padding:10px;display:grid;gap:6px;align-content:start;font-size:13px;min-height:120px}
+.day .d{font-family:var(--display);font-size:12px;color:var(--dim)}
+.slot{padding:4px 6px;font-family:var(--mono);font-size:11px;line-height:1.35}
+.slot.e{background:var(--org);color:#1a0f05}
+.slot.x{background:#2a3b4a;color:var(--cyan)}
+.slot.b{background:#2c2440;color:var(--paper)}
+.slot.t{background:var(--yel);color:#1a1405}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:13px;color:var(--dim)}
+.legend span{display:inline-flex;gap:6px;align-items:center}
+.legend i{width:12px;height:12px;display:inline-block}
+
+.qs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.q{background:var(--panel);border:2px solid var(--yel);padding:14px 16px;display:grid;gap:6px}
+.q b{font-family:var(--display);font-size:13px;color:var(--yel)}
+.note{font-size:13px;color:var(--dim);font-family:var(--mono)}
+a{color:var(--cyan)}
+:focus-visible{outline:2px solid var(--yel);outline-offset:2px}
+
+@media (max-width:820px){
+  .hero,.arc,.two{grid-template-columns:1fr}
+  .hero .shot{width:min(300px,100%)}
+  .facts{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .seasons,.qs{grid-template-columns:1fr}
+  .ep{grid-template-columns:44px minmax(0,1fr)}
+  .ep > div:nth-child(3),.ep > div:nth-child(4){grid-column:2}
+  .pipe{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .week{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .card.car{grid-column:auto}
+}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+</style>
+
+<div class="wrap">
+
+<header class="hero">
+  <div class="copy">
+    <div class="eyebrow">Series plan · Season 1 · Instagram Reels + YouTube Shorts</div>
+    <h1>Night Terror<span>Dead Roads</span></h1>
+    <p class="lede">At 3:12 AM the city falls. Sam's three friends are stuck in three other cities, and their phones go quiet one by one. Sam builds the Night Terror in one night and drives out to bring them home, one rescue per season.</p>
+    <p class="muted">Every episode is 15 to 20 seconds long with one big moment and ends on a cliffhanger. It uses the same look as the V6 reel: sketch ink that turns into pixel art, the same HUD, and sound synced to the action. Everything is built once from reusable GLB assets, so later episodes are mostly new cameras and new story.</p>
+    <div class="facts">
+      <div><b>1+12</b><span>Trailer + episodes</span></div>
+      <div><b>15–20s</b><span>Per episode</span></div>
+      <div><b>10</b><span>Models (car + cast)</span></div>
+      <div><b>6</b><span>Locations</span></div>
+    </div>
+  </div>
+  <img class="px shot" src="{{f1}}" alt="Concept frame: burning city skyline, a zombie horde on the street and the Night Terror in the headlights, with the hook THE CITY FELL AT 3:12 AM" width="720" height="1280">
+</header>
+
+<section id="story">
+  <div class="eyebrow">The story</div>
+  <h2>One car, three friends, three cities</h2>
+  <p>Each season is one rescue. Season 1 covers Sam's escape and the drive to Friend 1. The route map is part of the series. It appears in the trailer and in the finale, so viewers can see how far there is still to go.</p>
+  <div class="arc">
+    <canvas class="map" id="map" width="160" height="100" aria-label="Pixel route map: Home city in the south-west, Friend 1 across the river to the north, Friend 2 to the east and Friend 3 far north-east. Season 1 route highlighted."></canvas>
+    <div class="acts">
+      <div class="act"><span class="eyebrow">Act 1 · Ep 1–5</span><h3>Get out of the city</h3><p>The fall, the build, the first kill and the first horde. It sets the rules: walkers are slow, runners are fast, and a screamer brings everyone.</p></div>
+      <div class="act"><span class="eyebrow">Act 2 · Ep 6–8</span><h3>The road</h3><p>Fuel runs low, the Brute attacks at the gas station, and the bridge has collapsed. The big mid-season cliffhanger is a freeze frame of the car in mid-air.</p></div>
+      <div class="act"><span class="eyebrow">Act 3 · Ep 9–12</span><h3>Friend 1</h3><p>The rooftop rescue, a scratch nobody wants to talk about, and the dawn finale with two cities still left.</p></div>
+    </div>
+  </div>
+  <div class="seasons">
+    <div class="season now"><span class="eyebrow">Season 1 · now</span><h3>Dead Roads</h3><p class="muted">Rescue Friend 1. Introduces all 5 zombie types.</p></div>
+    <div class="season"><span class="eyebrow">Season 2</span><h3>Worse Here</h3><p class="muted">Friend 2's city. It's flooded, and zombies come out of the water.</p></div>
+    <div class="season"><span class="eyebrow">Season 3</span><h3>Last Light</h3><p class="muted">Friend 3, far north. Snow, and running out of everything.</p></div>
+  </div>
+</section>
+
+<section id="episodes">
+  <div class="eyebrow">Episode guide · Season 1</div>
+  <h2>13 reels, each ending on a hook</h2>
+  <p class="muted">The hook text is visible on frame 0, because frame 0 is the thumbnail. The last two seconds tease the next episode. Darker rows are the tentpole episodes that get the most render time.</p>
+  <div class="eplist">
+    <div class="ep trailer big"><div class="n">00</div><div class="t"><h3>Trailer: Day 1</h3><span class="tag c">45–60s</span></div><div><span class="k">Big moment</span>A fast montage of the fall, the build, the horde smash and the bridge jump, all cut to the engine bangs.</div><div><span class="k">Hook</span><span class="hook">"3 friends. 3 cities. 1 car." EP 1 tomorrow.</span></div></div>
+    <div class="ep big"><div class="n">01</div><div class="t"><h3>3:12 AM</h3><span class="tag">Home city</span></div><div><span class="k">Big moment</span>Sam's phone lights up with three texts from three cities. Sirens. The garage door rolls up into the headlights.</div><div><span class="k">Hook</span><span class="hook">"I have one car. They have three days."</span></div></div>
+    <div class="ep"><div class="n">02</div><div class="t"><h3>The Build</h3><span class="tag">Garage</span></div><div><span class="k">Big moment</span>The signature sketch-to-pixel montage: the ram bar, the plating, and the roof LED blinking on for the first time.</div><div><span class="k">Hook</span><span class="hook">Something slams into the garage door.</span></div></div>
+    <div class="ep"><div class="n">03</div><div class="t"><h3>First Blood</h3><span class="tag">Home street</span></div><div><span class="k">Big moment</span>Five walkers and the first smash, in 1/84 slow-mo. The kill counter starts.</div><div><span class="k">Hook</span><span class="hook">One of them doesn't walk. It runs.</span></div></div>
+    <div class="ep"><div class="n">04</div><div class="t"><h3>Runners</h3><span class="tag">Downtown</span></div><div><span class="k">Big moment</span>An alley chase with a runner on the bonnet, shaken off with a handbrake turn.</div><div><span class="k">Hook</span><span class="hook">A screamer opens its mouth.</span></div></div>
+    <div class="ep big"><div class="n">05</div><div class="t"><h3>The Horde</h3><span class="tag">Downtown</span></div><div><span class="k">Big moment</span>The scream pulls in 200+ zombies. Sam plows straight down Main Street through all of them.</div><div><span class="k">Hook</span><span class="hook">The HUD blinks FUEL LOW.</span></div></div>
+    <div class="ep"><div class="n">06</div><div class="t"><h3>The Gas Station</h3><span class="tag">Gas station</span></div><div><span class="k">Big moment</span>A quiet fill-up with crawlers under the cars. Then the Brute flips a wreck, and the ram bar meets the Brute.</div><div><span class="k">Hook</span><span class="hook">Radio crackle from Friend 1: "...the bridge... gone..."</span></div></div>
+    <div class="ep big"><div class="n">07</div><div class="t"><h3>The Bridge Is Gone</h3><span class="tag r">Mid-season</span></div><div><span class="k">Big moment</span>No brakes. Full send off the broken deck.</div><div><span class="k">Hook</span><span class="hook">Freeze frame in mid-air. TO BE CONTINUED.</span></div></div>
+    <div class="ep"><div class="n">08</div><div class="t"><h3>Landing</h3><span class="tag">Highway</span></div><div><span class="k">Big moment</span>A hard landing. A tyre is gone and the car limps toward the city lights.</div><div><span class="k">Hook</span><span class="hook">Friend 1's building is surrounded.</span></div></div>
+    <div class="ep"><div class="n">09</div><div class="t"><h3>The Rooftop</h3><span class="tag">Friend 1 city</span></div><div><span class="k">Big moment</span>A torch beam on the roof, and the car's LED matrix answering HOLD ON.</div><div><span class="k">Hook</span><span class="hook">The zombies start climbing the wall.</span></div></div>
+    <div class="ep big"><div class="n">10</div><div class="t"><h3>The Pickup</h3><span class="tag">Friend 1 city</span></div><div><span class="k">Big moment</span>Friend 1 jumps from the fire escape onto the moving car, and they break out.</div><div><span class="k">Hook</span><span class="hook">A red mark on Friend 1's arm.</span></div></div>
+    <div class="ep"><div class="n">11</div><div class="t"><h3>The Scratch</h3><span class="tag">Highway</span></div><div><span class="k">Big moment</span>A tense, quiet drive. The HUD shows a heart-rate line. Is it a bite?</div><div><span class="k">Hook</span><span class="hook">Comment-bait: "Bite or scratch?" The answer comes in EP 12.</span></div></div>
+    <div class="ep big"><div class="n">12</div><div class="t"><h3>Two Cities Left</h3><span class="tag r">Finale</span></div><div><span class="k">Big moment</span>Dawn on the route map. It was a scratch. Then Friend 2 comes on the radio.</div><div><span class="k">Hook</span><span class="hook">"Don't come. It's worse here." Season 2.</span></div></div>
+  </div>
+</section>
+
+<section id="frames">
+  <div class="eyebrow">Concept frames · 9:16</div>
+  <h2>How the scenes will look</h2>
+  <p class="muted">These are mockups drawn on the reel's 180×320 HUD grid, using your real Night Terror (taken from the hero render and quantised to the palette). The final episodes come out of the Blender pipeline with proper zombie models, so the lighting and motion will be much better than this. The layout, HUD and hook placement are what to judge here. There is no dithering anywhere, only flat palette colours.</p>
+  <div class="strip">
+    <figure class="frame"><img class="px" src="{{f1}}" alt="Cold open frame" width="720" height="1280"><figcaption><b>EP 1 · Cold open</b>The burning skyline, the horde in silhouette and the car in its own headlights. The clock HUD replaces the RPM readout.</figcaption></figure>
+    <figure class="frame"><img class="px" src="{{f2}}" alt="Build frame, half sketch, half pixel" width="720" height="1280"><figcaption><b>EP 2 · The build</b>The signature move: the sketch ink turns to pixel art in 5×5 tiles, with callouts for each upgrade.</figcaption></figure>
+    <figure class="frame"><img class="px" src="{{f3}}" alt="Slow-mo smash frame" width="720" height="1280"><figcaption><b>EP 3 · The smash</b>Slow-mo at 1/84 with walkers flying off the ram bar. The kill counter ticks on every hit and each hit has its own bang.</figcaption></figure>
+    <figure class="frame"><img class="px" src="{{f4}}" alt="Horde frame with 240 zombies" width="720" height="1280"><figcaption><b>EP 5 · The horde</b>240 zombies made from 5 models. The Brute is visible in the crowd, which sets up EP 6.</figcaption></figure>
+    <figure class="frame"><img class="px" src="{{f5}}" alt="Bridge jump frame" width="720" height="1280"><figcaption><b>EP 7 · Cliffhanger</b>The freeze frame in mid-air, the broken deck and the moon on the river. TO BE CONTINUED.</figcaption></figure>
+    <figure class="frame"><img class="px" src="{{f6}}" alt="Rooftop rescue frame" width="720" height="1280"><figcaption><b>EP 9 · The rooftop</b>Friend 1's torch beam, runners climbing the wall, and the roof LED spelling HOLD ON.</figcaption></figure>
+  </div>
+</section>
+
+<section id="cast">
+  <div class="eyebrow">Cast</div>
+  <h2>10 models, up to 250 on screen</h2>
+  <div class="totals"><span class="tag y">1 hero car</span><span class="tag c">4 humans</span><span class="tag">5 zombie types</span><span class="tag">×6 colourways = 30 looks</span><span class="tag r">~250 per shot via instancing</span></div>
+  <div class="cast">
+    <div class="card car"><div class="pic"><img class="px" src="{{car}}" alt="Night Terror pixel sprite"></div><h3>Night Terror</h3><span class="count">Hero · already built (your GLB)</span><p>The ram bar, the mud tyres and the 15×3 roof LED matrix, which doubles as a speech device for signs like HOLD ON. Damage gets added per episode: dents, a lost tyre, cracked glass.</p></div>
+    <div class="card"><div class="pic"><img class="px" src="{{sam}}" alt="Sam sprite"></div><h3>Sam</h3><span class="count">Driver · every episode</span><p>An orange hoodie and a bat. Mostly seen through the windshield, with hands on the wheel.</p></div>
+    <div class="card"><div class="pic"><img class="px" src="{{f1s}}" alt="Friend 1 sprite"></div><h3>Friend 1</h3><span class="count">S1 rescue · EP 1, 6, 9–12</span><p>Has a torch and holds out on a rooftop. Heard on the radio before they're ever seen.</p></div>
+    <div class="card"><div class="pic"><img class="px" src="{{f2s}}" alt="Friend 2 sprite"></div><h3>Friend 2</h3><span class="count">S2 rescue · voice in EP 1, 12</span><p>Has the radio and is the one who warns them off. Their city is flooded.</p></div>
+    <div class="card"><div class="pic"><img class="px" src="{{f3s}}" alt="Friend 3 sprite"></div><h3>Friend 3</h3><span class="count">S3 rescue · text in EP 1</span><p>Carries a backpack and goes silent after the first text. They're the long mystery.</p></div>
+    <div class="card"><div class="pic"><img class="px" src="{{zw}}" alt="Walker sprite"></div><h3>Walker</h3><span class="count">Base horde · ~80% of the crowd</span><p>Slow, with arms out. One rig, 6 shirt colours and a random walk-cycle offset.</p></div>
+    <div class="card"><div class="pic"><img class="px" src="{{zr}}" alt="Runner sprite"></div><h3>Runner</h3><span class="count">Debut EP 3</span><p>Leans forward, has red eyes and jumps on the bonnet.</p></div>
+    <div class="card"><div class="pic"><img class="px" src="{{zc}}" alt="Crawler sprite"></div><h3>Crawler</h3><span class="count">Debut EP 6</span><p>Hides under wrecks and grabs the tyres. It's cheap to make: a walker mesh with a crawl animation.</p></div>
+    <div class="card"><div class="pic"><img class="px" src="{{zs}}" alt="Screamer sprite"></div><h3>Screamer</h3><span class="count">Debut EP 4</span><p>Arms up and mouth open. Its scream is the cue for the horde and gets its own sound.</p></div>
+    <div class="card"><div class="pic"><img class="px" src="{{zb}}" alt="Brute sprite"></div><h3>Brute</h3><span class="count">Boss · EP 5 tease, EP 6</span><p>Twice the size of a walker and flips cars. There's only ever one, so it gets the most detail.</p></div>
+  </div>
+</section>
+
+<section id="locations">
+  <div class="eyebrow">Locations</div>
+  <h2>6 sets, all built from one city kit</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>Set</th><th>Built from</th><th>Episodes</th><th>Key detail</th></tr></thead>
+    <tbody>
+      <tr><td>Garage</td><td>A new small interior</td><td>2, (1)</td><td>Workbench, sparks, the roller door</td></tr>
+      <tr><td>Home street</td><td>City kit + the existing wet asphalt and street lamps</td><td>1, 3</td><td>The night street from the V6 reel, with debris added</td></tr>
+      <tr><td>Downtown / Main St</td><td>City kit, tall variants, fires</td><td>4, 5, trailer</td><td>Burning skyline, alleys, horde space</td></tr>
+      <tr><td>Gas station</td><td>New set: canopy, pumps, store</td><td>6</td><td>Wrecks for crawlers to hide under</td></tr>
+      <tr><td>Bridge + highway</td><td>Bridge piece + a broken variant, road strip</td><td>7, 8, 11</td><td>The gap, the river, the moon</td></tr>
+      <tr><td>Friend 1's block</td><td>City kit + one hero building with a fire escape</td><td>9, 10</td><td>Lit windows, the rooftop, the climbing wall</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note">The route map and the phone and radio screens are 2D HUD layers drawn by the compositor, so they cost no 3D render time.</p>
+</section>
+
+<section id="production">
+  <div class="eyebrow">Production plan</div>
+  <h2>Build the library once, then shoot episodes from it</h2>
+  <p>Most of the work goes into the asset library up front. After that, an episode is a script, a few cameras and a render. These are the tricks that keep rendering cheap:</p>
+  <div class="two">
+    <ul class="ticks">
+      <li><b>Instanced hordes.</b> Blender Geometry Nodes scatters one zombie mesh hundreds of times. Each copy gets a random colourway, walk-cycle offset, scale and facing direction. 250 zombies cost about as much memory as 5.</li>
+      <li><b>Render at pixel resolution.</b> Pixel frames render at 270×480 (the LESSONS rule), which is about 1/16 of full HD. Only sketch frames need full resolution.</li>
+      <li><b>Pixel art hides cheap physics.</b> Smash hits are simple rigid-body tosses with a spin. At 4 px per pixel nobody can tell them apart from ragdolls.</li>
+    </ul>
+    <ul class="ticks">
+      <li><b>Reuse cameras and lighting.</b> Each set ships with 6 to 8 saved cameras and a light rig, previewed with <code>PREVIEW=cams.json</code> before any full render.</li>
+      <li><b>One clock drives everything.</b> The same <code>timeline.py</code> approach syncs the kill counter, the hits, the shake and the sound, so the sound design doesn't drift.</li>
+      <li><b>Spend the budget on tentpoles.</b> EP 1, 5, 7, 10 and 12 get the longest renders. The quiet episodes reuse sets and have smaller casts.</li>
+    </ul>
+  </div>
+
+  <div class="tbl"><table>
+    <thead><tr><th>Asset</th><th>How we get it</th><th>One-off effort</th><th>Reused in</th></tr></thead>
+    <tbody>
+      <tr><td>Night Terror</td><td><span class="y">Done.</span> Your GLB, plus damage variants</td><td>Small</td><td>Every episode</td></tr>
+      <tr><td>Zombie rig + 5 types</td><td>A CC0 low-poly character pack or a custom low-poly build, with Mixamo animations (walk, run, crawl, scream, smash)</td><td>Large, but done once</td><td>Every episode</td></tr>
+      <tr><td>Sam + 3 friends</td><td>Chunky low-poly characters, the same rig as the zombies</td><td>Medium</td><td>1, 9–12, S2, S3</td></tr>
+      <tr><td>City kit</td><td>6 modular buildings, lamps, wrecks ×3, barricades, debris</td><td>Medium</td><td>Every outdoor set</td></tr>
+      <tr><td>Hero sets</td><td>Garage, gas station, bridge (+ broken), Friend 1's building</td><td>Medium each</td><td>Their own episodes</td></tr>
+      <tr><td>Sound kit</td><td>Synth hit, splat, scream, radio crackle, LED blip, plus the existing engine bangs</td><td>Small</td><td>Every episode</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>Per-episode pipeline</h3>
+  <div class="pipe">
+    <div><b>Script</b>Beats, hook line, shot list (8–10 shots)</div>
+    <div><b>Block</b>Place the cast, animate, check cameras</div>
+    <div><b>Preview</b>Half-res stills to you for a framing OK</div>
+    <div><b>Render</b>Pixel passes at 270×480, sketch at full res</div>
+    <div><b>Compose</b>Stylise, HUD, captions, hook on frame 0</div>
+    <div><b>Sound + post</b>Synced audio, your final OK, then post</div>
+  </div>
+  <p class="note">The estimate after the library is built is about 1 to 1.5 hours of render per 16-second episode, based on the V6 reel's roughly 60 minutes. Fewer shots need the full-res sketch look, so it might be less. The library itself is the big job and comes first.</p>
+</section>
+
+<section id="launch">
+  <div class="eyebrow">Launch + cadence</div>
+  <h2>Trailer first, then one episode a day</h2>
+  <div class="two">
+    <ul class="ticks">
+      <li><b>Day 0: the trailer.</b> It tests whether people care before we commit all 12 episodes. The trailer is built from the EP 1, 5 and 7 tentpole shots, so nothing is wasted.</li>
+      <li><b>Bank 5 episodes before EP 1 goes out.</b> A daily series that skips a day loses its momentum.</li>
+      <li><b>Same time every day</b> on both IG and YouTube, with an "EP n" badge on every thumbnail so the order is obvious in the grid.</li>
+      <li><b>Side reels between episodes.</b> "How it works" explainers on the car's parts (ram bar, LED matrix, tyres) reuse the V6 reel format and send people back to the series.</li>
+    </ul>
+    <ul class="ticks">
+      <li><b>Hook rules.</b> The hook text is on frame 0. The last 2 seconds tease the next episode. The end card reads "EP 4 TOMORROW".</li>
+      <li><b>Comment prompts that matter:</b> "Bite or scratch?", "Which friend next?". Later, viewers vote on the route.</li>
+      <li><b>Pin and group.</b> Pin the trailer + EP 1 on IG and keep a YouTube Shorts playlist in order, so new followers can binge it.</li>
+      <li><b>Later:</b> when auto-posting starts, the day becomes 1 episode + 2 side reels + 1 build clip, each previewed with you first.</li>
+    </ul>
+  </div>
+  <div class="week" aria-label="Example launch week">
+    <div class="day"><span class="d">Day 0</span><span class="slot t">Trailer</span><span class="slot b">Car reveal</span></div>
+    <div class="day"><span class="d">Day 1</span><span class="slot e">EP 1</span><span class="slot x">V6 explainer</span></div>
+    <div class="day"><span class="d">Day 2</span><span class="slot e">EP 2</span><span class="slot b">Sketch build clip</span></div>
+    <div class="day"><span class="d">Day 3</span><span class="slot e">EP 3</span><span class="slot x">Ram bar explainer</span></div>
+    <div class="day"><span class="d">Day 4</span><span class="slot e">EP 4</span><span class="slot b">Zombie types card</span></div>
+    <div class="day"><span class="d">Day 5</span><span class="slot e">EP 5</span><span class="slot x">LED matrix explainer</span></div>
+    <div class="day"><span class="d">Day 6</span><span class="slot e">EP 6</span><span class="slot b">"Bridge?" teaser</span></div>
+  </div>
+  <div class="legend"><span><i style="background:var(--yel)"></i>Trailer</span><span><i style="background:var(--org)"></i>Episode</span><span><i style="background:#2a3b4a"></i>How-it-works side reel</span><span><i style="background:#2c2440"></i>Build / teaser clip</span></div>
+</section>
+
+<section id="questions">
+  <div class="eyebrow">Your call</div>
+  <h2>Four things I need from you</h2>
+  <div class="qs">
+    <div class="q"><b>Friends' names + cities</b><p>Should we use real first names and cities, or code names? Real names make it personal, and code names keep their privacy.</p></div>
+    <div class="q"><b>How they look</b><p>Chunky pixel versions with one signature item each (torch, radio, backpack), or should we match their real looks?</p></div>
+    <div class="q"><b>Voice or text</b><p>Text-only (HUD, phone screens, LED matrix) is faceless and cheaper. A voiceover from you adds personality.</p></div>
+    <div class="q"><b>First step</b><p>I'd start with the zombie rig and the city kit, then render the trailer. Sound good?</p></div>
+  </div>
+</section>
+
+</div>
+
+<script>
+(function(){
+  const c=document.getElementById('map'); if(!c) return; const g=c.getContext('2d');
+  const W=160,H=100; const C={bg:'#1b1630',land:'#231d3a',land2:'#2a2346',water:'#14183a',road:'#3a3160',route:'#ff963c',done:'#ffd65a',txt:'#f1e9d8',dim:'#8f86b0',red:'#ff4028',cyan:'#46d2e6'};
+  g.fillStyle=C.land;g.fillRect(0,0,W,H);
+  // land blocks (chunky)
+  g.fillStyle=C.land2;[[10,10,30,18],[90,8,40,14],[118,40,30,26],[20,64,40,22],[70,70,30,20]].forEach(r=>g.fillRect(...r));
+  // river
+  g.fillStyle=C.water;for(let x=0;x<W;x+=2){const y=Math.round(46+Math.sin(x/14)*6);g.fillRect(x,y,2,6);}
+  // roads
+  function line(a,b,col,w){g.fillStyle=col;const [x0,y0]=a,[x1,y1]=b;const n=Math.max(Math.abs(x1-x0),Math.abs(y1-y0));for(let i=0;i<=n;i++){g.fillRect(Math.round(x0+(x1-x0)*i/n),Math.round(y0+(y1-y0)*i/n),w,w);}}
+  const home=[26,80],f1=[52,20],f2=[128,58],f3=[146,12];
+  line(home,[40,50],C.road,2);line([40,50],f1,C.road,2);line(f1,[100,30],C.road,2);line([100,30],f2,C.road,2);line([100,30],f3,C.road,2);line(home,[90,78],C.road,2);line([90,78],f2,C.road,2);
+  // season 1 route, blocky dashes
+  function dash(a,b){const [x0,y0]=a,[x1,y1]=b;const n=Math.max(Math.abs(x1-x0),Math.abs(y1-y0));for(let i=0;i<=n;i++){if(Math.floor(i/3)%2)continue;g.fillStyle=C.route;g.fillRect(Math.round(x0+(x1-x0)*i/n),Math.round(y0+(y1-y0)*i/n),2,2);}}
+  dash(home,[40,50]);dash([40,50],f1);
+  // broken bridge marker
+  g.fillStyle=C.red;g.fillRect(38,46,6,2);g.fillRect(40,44,2,6);
+  // pins
+  function pin(p,col,label,dx,dy){g.fillStyle='#0a0812';g.fillRect(p[0]-3,p[1]-3,7,7);g.fillStyle=col;g.fillRect(p[0]-2,p[1]-2,5,5);txt(label,p[0]+dx,p[1]+dy,col);}
+  // tiny 3x5 font
+  const F={A:'010101111101101',B:'110101110101110',C:'011100100100011',D:'110101101101110',E:'111100110100111',F:'111100110100100',G:'011100101101011',H:'101101111101101',I:'111010010010111',K:'101101110101101',L:'100100100100111',M:'101111111101101',N:'110101101101101',O:'010101101101010',P:'110101110100100',R:'110101110101101',S:'011100010001110',T:'111010010010010',U:'101101101101111',W:'101101111111101',Y:'101101010010010','1':'010110010010111','2':'110001010100111','3':'110001010001110',' ':'000000000000000','?':'110001010000010'};
+  function txt(s,x,y,col){g.fillStyle=col;let cx=x;for(const ch of s){const m=F[ch]||F[' '];for(let i=0;i<15;i++)if(m[i]==='1')g.fillRect(cx+i%3,y+Math.floor(i/3),1,1);cx+=4;}}
+  pin(home,C.done,'HOME',-8,6);pin(f1,C.route,'FRIEND 1',-14,-10);pin(f2,C.cyan,'FRIEND 2',-30,5);pin(f3,C.cyan,'FRIEND 3',-34,-1);
+  txt('BRIDGE',22,38,C.red);
+  txt('S1 ROUTE',4,4,C.route);
+})();
+</script>

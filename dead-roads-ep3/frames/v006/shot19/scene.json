@@ -1,0 +1,11 @@
+{
+  "shot": 19,
+  "name": "Click",
+  "frames": 36,
+  "objects": 1,
+  "camera": "Ep3 shot 19",
+  "device": "CPU",
+  "stage": "BLOCKING - contact, collision and motion need visual QA",
+  "scene": "C:\\Users\\cross\\Downloads\\xc\\dead-roads-ep3\\assets\\v006\\shot19.blend",
+  "warnings": []
+}

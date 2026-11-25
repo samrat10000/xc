@@ -1,0 +1,35 @@
+{
+  "shot": "08",
+  "frames": 96,
+  "resolution_percent": 100,
+  "camera_clip_m": [
+    0.014999999664723873,
+    1000.0
+  ],
+  "light_energy": {
+    "Small upper bounce": 2.65,
+    "Cool fill": 0.31
+  },
+  "key_projections": [
+    {
+      "source_frame": 1,
+      "figures": []
+    },
+    {
+      "source_frame": 24,
+      "figures": []
+    },
+    {
+      "source_frame": 48,
+      "figures": []
+    },
+    {
+      "source_frame": 72,
+      "figures": []
+    },
+    {
+      "source_frame": 96,
+      "figures": []
+    }
+  ]
+}

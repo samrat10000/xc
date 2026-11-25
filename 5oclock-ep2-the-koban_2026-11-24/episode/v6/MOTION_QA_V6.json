@@ -1,0 +1,187 @@
+{
+  "method": "Within-segment mean absolute grayscale delta, 135x240; low motion below 0.25/255. Excludes the authored blackout.",
+  "v5": [
+    {
+      "shot": 1,
+      "pixel_change_mean": 1.689,
+      "low_motion_pct": 0.0,
+      "pairs": 71
+    },
+    {
+      "shot": 2,
+      "pixel_change_mean": 1.713,
+      "low_motion_pct": 0.0,
+      "pairs": 95
+    },
+    {
+      "shot": 3,
+      "pixel_change_mean": 0.473,
+      "low_motion_pct": 0.0,
+      "pairs": 95
+    },
+    {
+      "shot": 4,
+      "pixel_change_mean": 1.402,
+      "low_motion_pct": 1.1,
+      "pairs": 95
+    },
+    {
+      "shot": 5,
+      "pixel_change_mean": 1.938,
+      "low_motion_pct": 2.1,
+      "pairs": 95
+    },
+    {
+      "shot": 6,
+      "pixel_change_mean": 2.477,
+      "low_motion_pct": 16.0,
+      "pairs": 119
+    },
+    {
+      "shot": 7,
+      "pixel_change_mean": 1.952,
+      "low_motion_pct": 2.5,
+      "pairs": 119
+    },
+    {
+      "shot": 8,
+      "pixel_change_mean": 0.784,
+      "low_motion_pct": 0.0,
+      "pairs": 95
+    },
+    {
+      "shot": 9,
+      "pixel_change_mean": 3.198,
+      "low_motion_pct": 0.0,
+      "pairs": 95
+    },
+    {
+      "shot": 10,
+      "pixel_change_mean": 7.374,
+      "low_motion_pct": 9.5,
+      "pairs": 95
+    },
+    {
+      "shot": 11,
+      "pixel_change_mean": 0.596,
+      "low_motion_pct": 0.0,
+      "pairs": 95
+    },
+    {
+      "shot": 12,
+      "pixel_change_mean": 1.03,
+      "low_motion_pct": 5.0,
+      "pairs": 119
+    },
+    {
+      "shot": 13,
+      "pixel_change_mean": 3.675,
+      "low_motion_pct": 0.0,
+      "pairs": 119
+    },
+    {
+      "shot": 14,
+      "pixel_change_mean": 0.426,
+      "low_motion_pct": 5.4,
+      "pairs": 112
+    },
+    {
+      "shot": 15,
+      "pixel_change_mean": 2.94,
+      "low_motion_pct": 0.0,
+      "pairs": 71
+    }
+  ],
+  "v6": [
+    {
+      "shot": 1,
+      "pixel_change_mean": 4.205,
+      "low_motion_pct": 0.0,
+      "pairs": 46
+    },
+    {
+      "shot": 2,
+      "pixel_change_mean": 1.713,
+      "low_motion_pct": 0.0,
+      "pairs": 95
+    },
+    {
+      "shot": 3,
+      "pixel_change_mean": 0.777,
+      "low_motion_pct": 1.1,
+      "pairs": 89
+    },
+    {
+      "shot": 4,
+      "pixel_change_mean": 1.372,
+      "low_motion_pct": 1.1,
+      "pairs": 95
+    },
+    {
+      "shot": 5,
+      "pixel_change_mean": 5.027,
+      "low_motion_pct": 2.4,
+      "pairs": 84
+    },
+    {
+      "shot": 6,
+      "pixel_change_mean": 3.692,
+      "low_motion_pct": 17.5,
+      "pairs": 97
+    },
+    {
+      "shot": 7,
+      "pixel_change_mean": 2.451,
+      "low_motion_pct": 4.7,
+      "pairs": 127
+    },
+    {
+      "shot": 8,
+      "pixel_change_mean": 0.946,
+      "low_motion_pct": 0.0,
+      "pairs": 69
+    },
+    {
+      "shot": 9,
+      "pixel_change_mean": 3.449,
+      "low_motion_pct": 0.0,
+      "pairs": 50
+    },
+    {
+      "shot": 10,
+      "pixel_change_mean": 6.966,
+      "low_motion_pct": 0.0,
+      "pairs": 95
+    },
+    {
+      "shot": 11,
+      "pixel_change_mean": 2.168,
+      "low_motion_pct": 0.0,
+      "pairs": 54
+    },
+    {
+      "shot": 12,
+      "pixel_change_mean": 1.042,
+      "low_motion_pct": 5.0,
+      "pairs": 119
+    },
+    {
+      "shot": 13,
+      "pixel_change_mean": 4.226,
+      "low_motion_pct": 0.0,
+      "pairs": 125
+    },
+    {
+      "shot": 14,
+      "pixel_change_mean": 0.441,
+      "low_motion_pct": 5.4,
+      "pairs": 112
+    },
+    {
+      "shot": 15,
+      "pixel_change_mean": 1.827,
+      "low_motion_pct": 1.1,
+      "pairs": 95
+    }
+  ]
+}

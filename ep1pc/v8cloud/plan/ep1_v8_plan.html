@@ -1,0 +1,129 @@
+<title>Night Terror Ep1 v8</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: a camcorder logbook. One column, acts as tape reels, shots as log rows. Single dark look on purpose (it is a night horror series). */
+:root{
+  --bg:#0d0e10; --panel:#16181b; --line:#2a2d32; --fg:#e6e2da; --mute:#9b978f;
+  --rec:#e0392b; --keep:#4fae74; --fix:#e0a23a; --new:#6aa8e8;
+  --display:'Oswald',Impact,'Arial Narrow',sans-serif; --body:'IBM Plex Sans',system-ui,sans-serif; --mono:'IBM Plex Mono',ui-monospace,monospace;
+  color-scheme:dark;
+}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);line-height:1.55}
+.wrap{max-width:1100px;margin:0 auto;padding-block:28px 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--display);letter-spacing:.02em;text-wrap:balance;margin:0}
+h1{font-size:clamp(30px,6vw,52px);text-transform:uppercase}
+h2{font-size:24px;text-transform:uppercase;margin-top:40px}
+h3{font-size:17px;margin-top:18px}
+p{max-width:68ch}
+.rec{font-family:var(--mono);color:var(--rec);font-size:13px;letter-spacing:.12em}
+.rec::before{content:"";display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--rec);margin-right:8px;vertical-align:1px}
+.meta{display:flex;flex-wrap:wrap;gap:8px 20px;font-family:var(--mono);font-size:13px;color:var(--mute);margin-top:10px}
+.legend{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 0}
+.pill{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;padding:2px 8px;border-radius:3px;border:1px solid currentColor;white-space:nowrap}
+.keep{color:var(--keep)}.fix{color:var(--fix)}.new{color:var(--new)}
+.scroll{overflow-x:auto;margin-top:12px;border:1px solid var(--line);border-radius:4px}
+table{border-collapse:collapse;width:100%;min-width:860px;font-size:13.5px}
+th,td{text-align:left;vertical-align:top;padding:9px 10px;border-bottom:1px solid var(--line)}
+th{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--mute);background:var(--panel);position:sticky;top:0}
+td.t,td.id{font-family:var(--mono);white-space:nowrap;font-variant-numeric:tabular-nums}
+td.id{font-weight:600}
+tr.act td{background:var(--panel);font-family:var(--display);font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:var(--fg)}
+.say{color:#f3d9a4}
+.note{color:var(--mute);font-size:12.5px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin-top:12px}
+.box{background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:14px 16px;min-width:0}
+.box ul{margin:6px 0 0;padding-left:18px}.box li{margin:4px 0}
+ol.rules{padding-left:22px}ol.rules li{margin:7px 0;max-width:80ch}
+code{font-family:var(--mono);font-size:12.5px}
+a{color:var(--new)}
+</style>
+<div class="wrap">
+<div class="rec">REC  NOV 23  03:47:12  TAPE 1</div>
+<h1>Night Terror: Dead Roads · Episode 1 v8</h1>
+<div class="meta"><span>Plan for approval, before any rebuild</span><span>~106 s · 1080×1920 · 24 fps</span><span>Real sound only · one music piece at the climax</span></div>
+<p>This plan rebuilds Episode 1 from Sam's review of the v7 cut, plus 14 mistakes I found myself. Everything Sam called perfect stays as it is. Every jump cut gets the missing move between the two places. The Brute encounter gets a real outcome. The Stalker is the teaser model with the teaser skull movement. The whole thing is framed as found footage: Sam's camcorder, and a second camera that someone is secretly using to film him.</p>
+<div class="legend"><span class="pill keep">keep</span><span class="pill fix">fix</span><span class="pill new">new</span></div>
+
+<h2>Shot list</h2>
+<div class="scroll"><table>
+<thead><tr><th>Shot</th><th>Time</th><th></th><th>Picture and camera</th><th>Sound and lines</th></tr></thead>
+<tbody>
+<tr class="act"><td colspan="5">Hook · 0–5 s</td></tr>
+<tr><td class="id">000_hook</td><td class="t">0–5</td><td><span class="pill new">new</span></td><td>A hidden long-lens camcorder on a rooftop across the avenue films the burning skyline (REC dot and timestamp), then hunts and zooms onto one penthouse window. At "boom" a tower far behind erupts. This is a flash-forward of the blast he is about to see.</td><td>Rain on the roof, a distant siren, the watcher's breathing behind the lens. <span class="say">Sam (narration, deep, dry): "This was New York City. Three forty-seven a.m." … "Then… boom."</span> Real low boom + glass rattle. <span class="say">"And I slept through it."</span></td></tr>
+<tr class="act"><td colspan="5">Act 1 · The call · 5–31.5 s</td></tr>
+<tr><td class="id">001_ring</td><td class="t">5–9</td><td><span class="pill keep">keep</span></td><td>Approved v2. The tripod camcorder frames the burning city while Sam sleeps in the chair and the phone rings.</td><td>Rain on glass, fridge hum, real ringtone + vibration on wood.</td></tr>
+<tr><td class="id">002_phone</td><td class="t">9–10.5</td><td><span class="pill keep">keep</span></td><td>Approved. Insert of the phone, "Akash", trimmed to 1.5 s.</td><td>Ring, buzz.</td></tr>
+<tr><td class="id">003_answer</td><td class="t">10.5–13.5</td><td><span class="pill keep">keep</span></td><td>Approved v2. He answers. This is now the only repeat of the tripod frame: 004 starts on his move, not on the same wide.</td><td><span class="say">Sam: "Akash? It's like four in the—"</span> <span class="say">Akash (phone band): "Sam! Are you seeing this? Look outside. Look outside!"</span> No narration under the call.</td></tr>
+<tr><td class="id">004_look_outside</td><td class="t">13.5–20</td><td><span class="pill keep">keep</span></td><td>Approved. He stands and walks to the glass, and the tower erupts.</td><td>Boom, glass rattle, car alarms. <span class="say">Sam (whisper): "…oh my God."</span></td></tr>
+<tr><td class="id">004w_watcher</td><td class="t">20–22.5</td><td><span class="pill new">new</span></td><td>The same hidden long lens as the hook: Sam's silhouette at the lit window, a slow zoom, the focus hunting. We never learn who is filming.</td><td>The watcher's breathing, a lens zoom motor, rain.</td></tr>
+<tr><td class="id">005_bridge</td><td class="t">22.5–25</td><td><span class="pill keep">keep</span></td><td>Approved v2.</td><td><span class="say">Akash: "Don't take the bridge, they closed the—"</span> The call breaks into broken words, then a dead line (no beeps).</td></tr>
+<tr><td class="id">006_screamer</td><td class="t">25–29</td><td><span class="pill fix">fix</span></td><td>The Screamer stands STILL on the opposite roof (no floating turn). One slow push-in from 135 mm into the open mouth as it screams. Look matched to the episode (fire key, rain), not flat orange fog.</td><td>The earlier scream Sam loved, restored from the v5/v6 stems (never the v7 swap), with a street echo.</td></tr>
+<tr><td class="id">007_grab</td><td class="t">29–31.5</td><td><span class="pill fix">fix</span></td><td>The camcorder is ripped off the tripod and handheld from here. The chair is EMPTY (no second Sam left sitting), then keys, chain, deadbolt.</td><td>miniDV handling, keys jingle, chain, deadbolt. <span class="say">Sam: "Keys, keys…"</span></td></tr>
+<tr class="act"><td colspan="5">Act 2 · Down and out · 31.5–63.5 s (one continuous run, no jumps)</td></tr>
+<tr><td class="id">030_corridor</td><td class="t">31.5–34.5</td><td><span class="pill fix">fix</span></td><td>Keep the picture. He shoulders the EXIT door, and the last frame is the stairwell door opening, matching 040's first frame.</td><td>Re-voice with Sam's male voice (the v7 take read female). <span class="say">Sam: "Come on, come on."</span></td></tr>
+<tr><td class="id">040_stairwell</td><td class="t">34.5–46</td><td><span class="pill keep">keep</span> + extend</td><td>The approved take (the best scene). Extend it about 2 s: after the Crawler jolt he vaults the rail, lands on the flight below and runs the last flight to a door marked LOBBY, all without a cut.</td><td>Approved stair sound + landing thump. <span class="say">Sam: "—Jesus!"</span></td></tr>
+<tr><td class="id">050_lobby</td><td class="t">46–50</td><td><span class="pill fix">fix</span></td><td>The first frame is that LOBBY door opening (continuous POV). The horde slaps the glass, he turns to the B1 PARKING sign and goes for the stairs down.</td><td>Glass slap, crowd through the glass, off-hook tone.</td></tr>
+<tr><td class="id">055_b1_stairs</td><td class="t">50–52.5</td><td><span class="pill new">new</span></td><td>POV down a short concrete flight, shouldering the B1 fire door into the dark garage. The tubes clunk on, and the last frame matches 060's first frame.</td><td>Concrete steps, door bar clunk, tube ballast clunk + buzz.</td></tr>
+<tr><td class="id">060_garage</td><td class="t">52.5–58.5</td><td><span class="pill keep">keep</span></td><td>Perfect per Sam: the garage, the car, the door opening.</td><td>Keep.</td></tr>
+<tr><td class="id">070_in_the_car</td><td class="t">58.5–62</td><td><span class="pill fix">rebuild</span></td><td>Teaser-style dashcam: he props the camcorder on the dash facing the driver seat. His hoodie, arm and hands are in frame (face cut by the frame top and shadow), and HIS hand tosses the phone onto the passenger seat. No invisible hand.</td><td>Camera handling, the door thump, rain on the roof. <span class="say">Sam: "Please start. Please."</span></td></tr>
+<tr><td class="id">080_ignition</td><td class="t">62–63.5</td><td><span class="pill keep">keep</span></td><td>Approved picture.</td><td>Teaser-grade V8: real starter crank, catch, two revs (no generic loop).</td></tr>
+<tr class="act"><td colspan="5">Act 3 · The streets · 63.5–81 s</td></tr>
+<tr><td class="id">090_gate_burst</td><td class="t">63.5–67</td><td><span class="pill new">new</span></td><td>The car bursts up the garage ramp through the half-open gate into the rain: one continuous take with a low side-follow.</td><td>Tyre squeal on wet concrete, gate scrape, splash, V8 under load.</td></tr>
+<tr><td class="id">095_watcher_street</td><td class="t">67–69.5</td><td><span class="pill new">new</span></td><td>The hidden camera again, from a dark window: REC, the car fishtails past below and the zoom follows it.</td><td>Pass-by recording, rain. <span class="say">Sam (narration): "Akash said don't take the bridge. The bridge was the only way out."</span></td></tr>
+<tr><td class="id">100_tyre_cam</td><td class="t">69.5–71</td><td><span class="pill keep">keep</span></td><td>Approved picture.</td><td>Re-sound with the teaser's real tyre and pass-by recordings.</td></tr>
+<tr><td class="id">110_chase</td><td class="t">71–73.5</td><td><span class="pill keep">keep</span></td><td>Picture kept, car swapped to the hero black fastback if it reads differently.</td><td>Runners' feet + breath, V8, splashes.</td></tr>
+<tr><td class="id">120_drift</td><td class="t">73.5–75</td><td><span class="pill keep">keep</span></td><td>Approved picture.</td><td>Real drift squeal (teaser drift set).</td></tr>
+<tr><td class="id">125_brute</td><td class="t">75–81</td><td><span class="pill fix">rebuild</span></td><td>Brute v2 steps out and roars, and the car brakes hard (nose dips, skid). It charges, Sam slams reverse and J-turns, and the Brute's club fist smashes the bonnet edge as the car whips round (dent, one headlight dies). The car escapes the other way and the Brute roars after it. Collision-checked: nothing passes through anything.</td><td>Stomps, deep roar, brakes + skid, reverse whine, metal impact, glass. <span class="say">Sam: "Nope. Nope nope nope—"</span> … <span class="say">"Bridge it is."</span></td></tr>
+<tr class="act"><td colspan="5">Act 4 · The bridge · 81–106 s</td></tr>
+<tr><td class="id">130_overpass</td><td class="t">81–84</td><td><span class="pill fix">fix</span></td><td>The car rolls up to the overpass and STOPS. It is parked: wipers going, idle, headlights in the rain.</td><td>Idle, wipers, rain on the roof, his breathing.</td></tr>
+<tr><td class="id">135_dash_reveal</td><td class="t">84–86.5</td><td><span class="pill new">new</span></td><td>The dashcam view through the wet windscreen: on top of the overpass, the Stalker stands in the headlights. It is the teaser model.</td><td>Silence drops out, a heartbeat. <b>The music piece starts here.</b></td></tr>
+<tr><td class="id">140_crash_zoom</td><td class="t">86.5–88.5</td><td><span class="pill fix">rebuild</span></td><td>Teaser 909-style crash zoom up to the skull: the bull skull, ember-vein eyes, the teaser skull tilt and eye saccades.</td><td>Bone clicks, music building.</td></tr>
+<tr><td class="id">150_scream</td><td class="t">88.5–91</td><td><span class="pill fix">rebuild</span></td><td>The teaser Stalker: the stitched mouth tears open, the head snaps to the sky, lightning, the scream.</td><td>Teaser scream layers + thunder crack. Music peak.</td></tr>
+<tr><td class="id">152_watcher_bridge</td><td class="t">91–92.5</td><td><span class="pill new">new</span></td><td>The hidden long lens from far away: the parked car small in frame, the Stalker drops off the overpass toward it, and the focus is lost.</td><td>Music hit on the drop.</td></tr>
+<tr><td class="id">155_black</td><td class="t">92.5–94</td><td><span class="pill keep">keep</span></td><td>Hard black.</td><td>Music tail rings out, then nothing.</td></tr>
+<tr><td class="id">160_empty_seat</td><td class="t">94–104.5</td><td><span class="pill keep">keep</span></td><td>Perfect per Sam: the dashcam, the door open, the seat empty, the phone lights "Akash calling". Re-render at full frame rate with a readable phone screen.</td><td>Rain, idle, buzz ×2. <span class="say">Akash (voicemail): "Sam, it's me. I'm at the… I don't know where I am. If you get this, don't come to—"</span> Click, dead line.</td></tr>
+<tr><td class="id">165_rec_end</td><td class="t">104.5–106</td><td><span class="pill new">new</span></td><td>The hidden camcorder's viewfinder from far away: the car with its door open, the REC dot blinking, then a tape stop to black. The question for Episode 2 is who was filming.</td><td>Tape motor, tape stop.</td></tr>
+</tbody></table></div>
+
+<h2>Sound plan</h2>
+<div class="grid">
+<div class="box"><h3>No background music</h3><ul><li>Only real recordings: rain, thunder, sirens, footsteps on the right surface, a real V8 (start, idle, rev, pass-by), tyre squeal and skid, using the teaser's credited CC0 / CC-BY set.</li><li><b>One music piece</b>, about 6–8 s, from 135 to the black at 92.5 s, landing its hit on the Stalker's drop. Candidate: the ending of the v5 score Sam loved, re-timed and blended into the rain.</li></ul></div>
+<div class="box"><h3>Voices</h3><ul><li><b>Sam</b> keeps the deep male voice Sam liked, for both narration and on-screen lines. The voice is locked; the female-sounding take is gone.</li><li><b>Akash</b> has a different male voice through the phone band.</li><li>Narration only goes in gaps, never over a call line.</li><li>Every line sits 9–12 dB above its bed, and everything else ducks under it.</li></ul></div>
+<div class="box"><h3>Dynamics</h3><ul><li>The apartment is quiet (around −26 LUFS short-term), the stairs build, and the chase and the Brute are loud (−14).</li><li>The bridge drops to near silence before the music.</li><li>The master is −14 LUFS integrated, −1.5 dBTP.</li></ul></div>
+</div>
+
+<h2>What changes from v7</h2>
+<div class="grid">
+<div class="box"><h3>From Sam's review</h3><ul>
+<li>The Screamer scream is restored and the floating turn is gone.</li>
+<li>No Sam is left on the sofa during the key grab.</li>
+<li>The corridor voice is male.</li>
+<li>Stairs, lobby, B1 and garage play as one continuous run.</li>
+<li>No invisible hand with the phone: Sam is shown in the dashcam.</li>
+<li>Car sounds are at teaser grade.</li>
+<li>The Brute has an outcome: a hit, a J-turn, an escape.</li>
+<li>Teaser Stalker, parked car at the bridge.</li>
+<li>No music except the climax piece; narration is clear.</li>
+<li>Hidden-camera documentary shots and an IG hook.</li>
+</ul></div>
+<div class="box"><h3>From my own review</h3><ul>
+<li>No tripod wide repeated four times.</li>
+<li>One car throughout (the black fastback).</li>
+<li>The missing gate and street exit are built.</li>
+<li>Every shot is a 1080 final from the Asus, with no 720p or cloud test frames.</li>
+<li>No dead air before the ignition.</li>
+<li>Two full-cut review passes before anything is called final.</li>
+</ul></div>
+</div>
+
+<h2>Build order</h2>
+<ol class="rules">
+<li>Lock this plan with Sam.</li>
+<li>Voices: record or generate every line in the locked voices and listen to each one.</li>
+<li>Cloud: code the new and fixed shots and probe 3–6 frames each, using the teaser Stalker code (<code>stalker_body</code>, <code>eye_scale</code>, bull skull) and the Brute J-turn with a per-frame collision check.</li>
+<li>Asus: 1080 finals in batches overnight (about 2,550 frames at 32–45 s each, so roughly 25–30 h of GPU time over 2–3 nights).</li>
+<li>Sound per shot from the teaser library, then the climax music piece.</li>
+<li>Assemble, run two review passes against the shot table, then deliver.</li>
+</ol>
+</div>

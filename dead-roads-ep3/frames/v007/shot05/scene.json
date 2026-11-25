@@ -1,0 +1,11 @@
+{
+  "shot": 5,
+  "name": "Steam",
+  "frames": 60,
+  "objects": 1000,
+  "camera": "Ep3 shot 5",
+  "device": "CPU",
+  "stage": "BLOCKING - contact, collision and motion need visual QA",
+  "scene": "C:\\Users\\cross\\Downloads\\xc\\dead-roads-ep3\\assets\\v007\\shot05.blend",
+  "warnings": []
+}
